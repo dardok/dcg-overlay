@@ -12,7 +12,7 @@ if [[ ${PV} == "9999" ]] ; then
 	EGIT_REPO_URI="https://github.com/zfsonlinux/${PN}.git"
 else
 	inherit eutils versionator
-	MY_PV=$(replace_version_separator 3 '-')
+	MY_PV=$(replace_version_separator 4 '-')
 	SRC_URI="https://github.com/zfsonlinux/${PN}/archive/${PN}-${MY_PV}.tar.gz"
 	S="${WORKDIR}/${PN}-${PN}-${MY_PV}"
 	KEYWORDS="~amd64"
@@ -60,7 +60,7 @@ pkg_setup() {
 	kernel_is ge 2 6 26 || die "Linux 2.6.26 or newer required"
 
 	[ ${PV} != "9999" ] && \
-		{ kernel_is le 3 19 || die "Linux 3.19 is the latest supported version."; }
+		{ kernel_is le 4 0 || die "Linux 4.0 is the latest supported version."; }
 
 	check_extra_config
 }
