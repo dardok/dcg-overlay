@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/puppet/puppet-4.0.0.ebuild,v 1.1 2015/04/16 17:54:50 prometheanfire Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/puppet/puppet-4.0.0-r2.ebuild,v 1.1 2015/04/30 01:28:39 prometheanfire Exp $
 
 EAPI="5"
 
@@ -17,7 +17,7 @@ SRC_URI="http://downloads.puppetlabs.com/puppet/${P}.tar.gz"
 LICENSE="Apache-2.0 GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~hppa ~ppc ~sparc ~x86"
-IUSE="augeas diff doc emacs ldap minimal rrdtool selinux shadow sqlite3 vim-syntax xemacs"
+IUSE="augeas diff doc emacs ldap rrdtool selinux shadow sqlite3 vim-syntax xemacs"
 
 ruby_add_rdepend "
 	dev-ruby/hiera
@@ -80,48 +80,38 @@ all_ruby_compile() {
 
 each_ruby_install() {
 	each_fakegem_install
-	#${RUBY} install.rb --destdir="${D}" install || die
 }
 
 all_ruby_install() {
 	all_fakegem_install
 
-	#systemd stuffs
+	# systemd stuffs
 	insinto /usr/lib/systemd/system
 	doins "${WORKDIR}/all/${P}/ext/systemd/puppet.service"
+	doins "${WORKDIR}/all/${P}/ext/systemd/puppetmaster.service"
+
+	# tmpfiles stuff
 	insinto /usr/lib/tmpfiles.d
 	newins "${FILESDIR}/tmpfiles.d" "puppet.conf"
 
-	newinitd "${FILESDIR}"/puppet.init-r1 puppet
+	# openrc init stuff
+	newinitd "${FILESDIR}"/puppet.init-4.x puppet
+	newinitd "${FILESDIR}"/puppetmaster.init-4.x puppetmaster
+	newconfd "${FILESDIR}"/puppetmaster.confd puppetmaster
 
-	# Initial configuration files
-	insinto /etc/puppet
+	keepdir /etc/puppetlabs/puppet/ssl
 
-	# Location of log and data files
-	keepdir /var/log/puppet
-	fowners -R puppet:puppet /var/log/puppet
+	keepdir /var/lib/puppet/facts
+	keepdir /var/lib/puppet/files
+	fowners -R puppet:puppet /var/lib/puppet
 
-	if use minimal ; then
-		rm "${ED}/etc/puppet/auth.conf"
-	else
-		insinto /usr/lib/systemd/system
-		doins "${WORKDIR}/all/${P}/ext/systemd/puppetmaster.service"
-		newinitd "${FILESDIR}"/puppetmaster.init-r1 puppetmaster
-		newconfd "${FILESDIR}"/puppetmaster.confd puppetmaster
+	fperms 0750 /var/lib/puppet
 
-		insinto /etc/puppet
-
-		keepdir /etc/puppet/manifests
-		keepdir /etc/puppet/modules
-
-		keepdir /var/lib/puppet/ssl
-		keepdir /var/lib/puppet/facts
-		keepdir /var/lib/puppet/files
-		fowners -R puppet:puppet /var/lib/puppet
-		fperms 0750 /var/lib/puppet
-	fi
-	fperms 0750 /etc/puppet
-	fowners :puppet /etc/puppet
+	fperms 0750 /etc/puppetlabs
+	fperms 0750 /etc/puppetlabs/puppet
+	fperms 0750 /etc/puppetlabs/puppet/ssl
+	fowners -R :puppet /etc/puppetlabs
+	fowners -R :puppet /var/lib/puppet
 
 	if use emacs ; then
 		elisp-install ${PN} ext/emacs/puppet-mode.el*
@@ -152,23 +142,14 @@ pkg_postinst() {
 	elog "http://forge.puppetlabs.com/gentoo/portage"
 	elog
 
-	if [ \
-		-f "${EPREFIX}/etc/puppet/puppetd.conf" -o \
-		-f "${EPREFIX}/etc/puppet/puppetmaster.conf" -o \
-		-f "${EPREFIX}/etc/puppet/puppetca.conf" \
-	] ; then
+	if [ "$(get_major_version $REPLACING_VERSIONS)" = "3" ]; then
 		elog
-		elog "Please remove deprecated config files."
-		elog "	/etc/puppet/puppetca.conf"
-		elog "	/etc/puppet/puppetd.conf"
-		elog "	/etc/puppet/puppetmasterd.conf"
-		elog
-	fi
-
-	if [ "$(get_major_version $REPLACING_VERSIONS)" = "2" ]; then
-		elog
-		elog "If you're upgrading from 2.x then we strongly suggest you to read:"
-		elog "http://docs.puppetlabs.com/guides/upgrading.html"
+		elog "If you're upgrading from 3.x then please move everything in /etc/puppet to"
+		elog "/etc/puppetlabs/puppet"
+		elog "Also, puppet now uses config directories for modules and manifests."
+		elog "See https://docs.puppetlabs.com/puppet/4.0/reference/upgrade_agent.html"
+		elog "and https://docs.puppetlabs.com/puppet/4.0/reference/upgrade_server.html"
+		elog "for more information."
 		elog
 	fi
 
