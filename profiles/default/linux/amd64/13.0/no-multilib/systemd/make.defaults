@@ -1,0 +1,5 @@
+CUSTOM_PROFILE="yes"
+
+ACCEPT_KEYWORDS="~amd64"
+
+USE="${USE} -consolekit systemd udev introspection"

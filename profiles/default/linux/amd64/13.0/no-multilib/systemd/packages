@@ -1,0 +1,5 @@
+*app-admin/ansible
+*app-editors/vim
+*dev-vcs/git
+*sys-kernel/dracut
+*sys-fs/squashfs-tools
