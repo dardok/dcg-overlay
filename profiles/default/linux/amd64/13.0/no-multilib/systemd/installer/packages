@@ -1,0 +1,12 @@
+*app-crypt/mit-krb5
+*dev-tcltk/expect
+*sys-apps/haveged
+*sys-apps/hwloc
+*sys-apps/ipmitool
+*sys-apps/pciutils
+*sys-apps/smartmontools
+*sys-block/parted
+*sys-boot/grub
+*sys-boot/os-prober
+*sys-fs/btrfs-progs
+*sys-fs/dosfstools
