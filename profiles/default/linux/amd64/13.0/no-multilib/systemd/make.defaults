@@ -2,4 +2,6 @@ CUSTOM_PROFILE="yes"
 
 ACCEPT_KEYWORDS="~amd64"
 
+LINGUAS="en"
+
 USE="${USE} -consolekit systemd udev introspection"
