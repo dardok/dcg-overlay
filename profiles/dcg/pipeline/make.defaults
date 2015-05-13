@@ -6,7 +6,7 @@ OFED_DRIVERS="mthca mlx4 mlx5"
 
 PYTHON_SINGLE_TARGET="-* python2_7"
 PYTHON_TARGETS="-* python2_7 python3_4"
-RUBY_TARGETS="-* ruby19 ruby22"
+RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
 
 USE="-debug -doc -examples -suid"
 USE="${USE} dbus gudev pam policykit session"
