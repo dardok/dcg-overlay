@@ -1,0 +1,5 @@
+media-libs/freetype -harfbuzz auto-hinter
+media-sound/pulseaudio -X realtime bluetooth
+media-video/libav cpudetection ieee1394 mp3 pulseaudio x264 x265 xvid
+x11-libs/cairo xcb
+x11-libs/gdk-pixbuf -X

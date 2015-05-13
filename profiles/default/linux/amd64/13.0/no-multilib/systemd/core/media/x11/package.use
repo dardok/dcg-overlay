@@ -1,0 +1,15 @@
+media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc -vaapi
+media-sound/pulseaudio realtime bluetooth
+sys-apps/hwloc -opencl gl
+sys-devel/llvm python clang gold
+x11-apps/xdpyinfo dga dmx
+x11-base/xorg-server dmx glamor tslib xnest xvfb
+x11-drivers/xf86-video-ati glamor
+x11-drivers/xf86-video-dummy dga
+x11-drivers/nvidia-drivers uvm
+x11-libs/cairo xcb xlib-xcb
+x11-libs/gtk+ broadway
+x11-libs/libdrm libkms
+x11-libs/libva nvidia
+x11-terms/xterm Xaw3d
+x11-libs/gdk-pixbuf X
