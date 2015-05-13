@@ -25,7 +25,7 @@ net-nds/openldap minimal
 
 sys-infiniband/ofed ibacm mstflint perftest rds srp
 
-sys-libs/glibc nscd systemtap
+sys-libs/glibc nscd
 sys-libs/timezone-data leaps_timezone
 
 sys-libs/libcap-ng python
