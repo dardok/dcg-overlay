@@ -1,5 +1,7 @@
 CUSTOM_PROFILE="yes"
 
+ACCEPT_LICENSE="*"
+
 ACCEPT_KEYWORDS="~amd64"
 
 LINGUAS="-* en"
