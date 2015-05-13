@@ -1,4 +1,4 @@
-media-libs/freetype -harfbuzz
+media-libs/freetype harfbuzz
 
 media-sound/pulseaudio X
 
