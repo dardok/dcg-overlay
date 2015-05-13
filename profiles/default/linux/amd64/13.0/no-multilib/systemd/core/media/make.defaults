@@ -1,6 +1,6 @@
 ACCEPT_LICENSE="*"
 
-ALSA_CARDS="hda-intel usb-audio"
+ALSA_CARDS="-* hda-intel usb-audio"
 
 USE="${USE} -sdl"
 USE="${USE} alsa pulseaudio jack v4l gstreamer wifi joystick"
