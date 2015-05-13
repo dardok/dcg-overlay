@@ -1,0 +1,3 @@
+app-crypt/mit-krb5 keyutils pkinit
+
+sys-apps/hwloc xml
