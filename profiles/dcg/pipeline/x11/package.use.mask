@@ -1,0 +1,3 @@
+media-sound/pulseaudio -X
+
+x11-libs/gdk-pixbuf -X
