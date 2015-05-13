@@ -11,7 +11,9 @@ app-emulation/spice -smartcard
 dev-libs/libxml2 python
 dev-libs/libxslt python
 
-media-libs/freetype -harfbuzz auto-hinter
+media-libs/freetype auto-hinter
+
+media-sound/pulseaudio realtime bluetooth
 
 media-video/libav cpudetection ieee1394 mp3 pulseaudio x264 x265 xvid
 

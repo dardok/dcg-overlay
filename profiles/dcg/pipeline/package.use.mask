@@ -1,1 +1,5 @@
-*/* -X
+media-libs/freetype -harfbuzz
+
+media-sound/pulseaudio X
+
+x11-libs/gdk-pixbuf X
