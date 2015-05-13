@@ -1,3 +1,9 @@
+media-libs/freetype -harfbuzz auto-hinter
+media-sound/pulseaudio X realtime bluetooth
+media-video/libav cpudetection ieee1394 mp3 pulseaudio x264 x265 xvid
+x11-libs/cairo xcb
+x11-libs/gdk-pixbuf X
+
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 media-sound/pulseaudio realtime bluetooth
 sys-apps/hwloc -opencl gl
@@ -12,4 +18,3 @@ x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia
 x11-terms/xterm Xaw3d
-x11-libs/gdk-pixbuf X
