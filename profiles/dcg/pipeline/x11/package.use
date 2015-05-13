@@ -12,7 +12,7 @@ x11-drivers/nvidia-drivers uvm
 x11-drivers/xf86-video-ati glamor
 x11-drivers/xf86-video-dummy dga
 
-x11-libs/cairo xcb xlib-xcb
+x11-libs/cairo xlib-xcb
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia

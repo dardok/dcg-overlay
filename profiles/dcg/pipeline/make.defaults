@@ -1,5 +1,3 @@
-ACCEPT_LICENSE="*"
-
 ALSA_CARDS="-* hda-intel usb-audio"
 
 OFED_DRIVERS="mthca mlx4 mlx5"
