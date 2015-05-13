@@ -1,5 +1,6 @@
-VIDEO_CARDS="nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l"
-INPUT_DEVICES="evdev keyboard mouse tslib joystick"
+VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l"
+
+INPUT_DEVICES="-* evdev keyboard mouse tslib joystick"
 
 USE="${USE} X"
 USE="${USE} dri vaapi vdpau"
