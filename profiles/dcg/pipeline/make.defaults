@@ -1,6 +1,6 @@
 ALSA_CARDS="-* hda-intel usb-audio"
 
-OFED_DRIVERS="mthca mlx4 mlx5"
+OFED_DRIVERS="mthca mlx4 mlx5 ipath"
 
 PYTHON_SINGLE_TARGET="-* python2_7"
 PYTHON_TARGETS="-* python2_7 python3_4"
@@ -29,3 +29,5 @@ USE="${USE} alsa pulseaudio jack v4l gstreamer wifi joystick"
 USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
 USE="${USE} gif jpeg jbig jpeg2k openexr tiff apng png svg imagemagick"
 USE="${USE} speex ogg theora webp vpx libav"
+
+USE="${USE} afs infiniband smartcard pkcs11 xfs zfs"
