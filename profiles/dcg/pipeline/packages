@@ -64,6 +64,7 @@
 *sys-auth/pam_krb5
 *sys-block/parted
 *sys-fs/btrfs-progs
+*sys-fs/zfs
 *sys-infiniband/ofed
 *sys-kernel/linux-firmware
 *sys-process/atop
