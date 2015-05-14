@@ -62,6 +62,7 @@
 *sys-auth/nss_ldap
 *sys-auth/pam-afs-session
 *sys-auth/pam_krb5
+*sys-block/parted
 *sys-fs/btrfs-progs
 *sys-infiniband/ofed
 *sys-kernel/linux-firmware
