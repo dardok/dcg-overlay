@@ -24,3 +24,9 @@ USE="${USE} bzip2 zlib lzma lzo"
 USE="${USE} berkdb gdbm sqlite"
 
 USE="${USE} afs infiniband smartcard pkcs11"
+
+USE="${USE} -sdl"
+USE="${USE} alsa pulseaudio jack v4l wifi joystick"
+
+USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
+USE="${USE} gif jpeg jbig jpeg2k openexr tiff apng png svg imagemagick"

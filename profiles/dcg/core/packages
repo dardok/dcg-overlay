@@ -11,9 +11,13 @@
 *dev-lang/go
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
+*dev-libs/dbus-glib
+*dev-python/pygobject
+*dev-python/virtualenv
 *dev-util/cmake
 *dev-util/strace
 *dev-util/sysdig
+*media-libs/alsa-lib
 *net-analyzer/tcpdump
 *net-fs/openafs
 *net-fs/openafs-kernel

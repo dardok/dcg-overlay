@@ -24,3 +24,8 @@ sys-libs/glibc nscd
 sys-libs/timezone-data leaps_timezone
 
 sys-libs/libcap-ng python
+media-libs/freetype auto-hinter
+
+media-sound/pulseaudio realtime bluetooth
+
+x11-libs/cairo xcb
