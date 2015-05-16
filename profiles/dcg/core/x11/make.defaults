@@ -1,0 +1,9 @@
+VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l"
+
+INPUT_DEVICES="-* evdev keyboard mouse tslib joystick"
+
+USE="X"
+USE="${USE} dri vaapi vdpau"
+
+USE="${USE} opengl opencl cuda"
+USE="${USE} gtk3 vnc xinerama xkb colord"
