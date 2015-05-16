@@ -23,6 +23,7 @@
 *net-fs/openafs-kernel
 *net-libs/nodejs
 *net-misc/bridge-utils
+*net-misc/keychain
 *net-misc/quagga
 *net-misc/socat
 *sys-apps/ethtool
