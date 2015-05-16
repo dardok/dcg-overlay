@@ -4,7 +4,7 @@ app-crypt/mit-krb5 keyutils pkinit
 
 app-editors/vim python_single_target_python2_7 lua luajit ruby
 
-app-emulation/qemu rbd numa spice tls usb usbredir
+app-emulation/qemu rbd numa spice tls usb usbredir xfs
 app-emulation/spice -smartcard
 
 dev-libs/libxml2 python
