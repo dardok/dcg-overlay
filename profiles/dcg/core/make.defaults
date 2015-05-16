@@ -23,7 +23,7 @@ USE="${USE} pcre expat xml"
 USE="${USE} bzip2 zlib lzma lzo"
 USE="${USE} berkdb gdbm sqlite"
 
-USE="${USE} afs infiniband smartcard pkcs11"
+USE="${USE} afs infiniband smartcard pkcs11 xfs zfs"
 
 USE="${USE} -sdl"
 USE="${USE} alsa pulseaudio jack v4l wifi joystick"
