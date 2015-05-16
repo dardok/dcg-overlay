@@ -1,0 +1,4 @@
+net-nds/openldap experimental icu kerberos overlays sasl -tcpd
+
+app-crypt/mit-krb5 keyutils pkinit threads
+
