@@ -2,4 +2,4 @@ APACHE2_MODULES="proxy proxy_ajp proxy_balancer proxy_fcgi proxy_ftp proxy_http 
 
 APACHE2_MPMS="event"
 
-RUBY_TARGETS="-* ruby19"
+RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
