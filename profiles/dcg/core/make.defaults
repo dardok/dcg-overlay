@@ -31,4 +31,4 @@ USE="${USE} alsa pulseaudio jack v4l wifi joystick"
 USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
 USE="${USE} gif jpeg jbig jpeg2k openexr tiff apng png svg imagemagick"
 
-USE="${USE} speex ogg theora webp vpx"
+USE="${USE} speex ogg theora webp vpx x264"
