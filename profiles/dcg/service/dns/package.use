@@ -1,1 +1,1 @@
-net-dns/bind geoip gost gssapi idn ipv6 json seccomp
+net-dns/bind geoip gost gssapi idn ipv6 json seccomp dlz
