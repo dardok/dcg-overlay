@@ -18,7 +18,7 @@ net-misc/quagga multipath tcp-zebra
 
 net-nds/openldap minimal
 
-sys-infiniband/ofed ibacm mstflint perftest rds srp
+sys-infiniband/ofed ibacm mstflint perftest rds srp -opensm
 
 sys-libs/glibc nscd
 sys-libs/timezone-data leaps_timezone
