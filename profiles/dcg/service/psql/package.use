@@ -1,0 +1,5 @@
+dev-db/postgresql python uuid
+
+sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml
+
+sci-libs/armadillo lapack
