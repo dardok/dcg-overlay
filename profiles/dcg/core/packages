@@ -31,6 +31,7 @@
 *sys-apps/likwid
 *sys-apps/microcode-ctl
 *sys-apps/pcsc-lite
+*sys-apps/unscd
 *sys-auth/nss_afspag
 *sys-auth/nss_ldap
 *sys-auth/pam-afs-session
