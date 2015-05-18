@@ -9,5 +9,6 @@
 *sys-boot/grub
 *sys-fs/btrfs-progs
 *sys-fs/dosfstools
+*sys-fs/mdadm
 *sys-fs/squashfs-tools
 *sys-kernel/dracut
