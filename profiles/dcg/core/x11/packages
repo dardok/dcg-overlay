@@ -15,6 +15,7 @@
 *x11-libs/libXScrnSaver
 *x11-misc/lightdm-gtk-greeter
 *x11-misc/lightdm
+*x11-misc/notify-osd
 *x11-misc/unclutter
 *x11-misc/vdpauinfo
 *x11-misc/x2x
