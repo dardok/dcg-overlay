@@ -21,4 +21,4 @@ x11-libs/libva nvidia
 
 x11-terms/xterm Xaw3d
 
-x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf startup-notification xft
+x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf startup-notification
