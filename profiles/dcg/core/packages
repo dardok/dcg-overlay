@@ -1,5 +1,6 @@
 *app-admin/puppet
 *app-admin/sudo
+*app-admin/ulogd
 *app-arch/star
 *app-crypt/ccid
 *app-emulation/qemu
@@ -20,12 +21,15 @@
 *mail-mta/nullmailer
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
+*net-firewall/ebtables
 *net-fs/openafs
 *net-fs/openafs-kernel
 *net-libs/nodejs
 *net-libs/libnet
 *net-libs/libnetfilter_queue
 *net-libs/libnetfilter_log
+*net-libs/libnetfilter_conntrack
+*net-libs/libnetfilter_acct
 *net-misc/bridge-utils
 *net-misc/keychain
 *net-misc/quagga
