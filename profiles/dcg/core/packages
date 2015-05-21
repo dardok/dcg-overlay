@@ -11,6 +11,7 @@
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
 *dev-libs/dbus-glib
+*dev-libs/jansson
 *dev-python/pygobject
 *dev-python/virtualenv
 *dev-util/cmake
@@ -22,6 +23,9 @@
 *net-fs/openafs
 *net-fs/openafs-kernel
 *net-libs/nodejs
+*net-libs/libnet
+*net-libs/libnetfilter_queue
+*net-libs/libnetfilter_log
 *net-misc/bridge-utils
 *net-misc/keychain
 *net-misc/quagga
