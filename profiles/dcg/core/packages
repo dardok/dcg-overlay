@@ -47,6 +47,8 @@
 *sys-auth/nss_ldap
 *sys-auth/pam-afs-session
 *sys-auth/pam_krb5
+*sys-cluster/openmpi
+*sys-cluster/slurm
 *sys-fs/multipath-tools
 *sys-infiniband/ofed
 *sys-kernel/linux-firmware

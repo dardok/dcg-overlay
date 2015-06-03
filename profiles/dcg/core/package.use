@@ -30,3 +30,4 @@ media-sound/pulseaudio realtime bluetooth
 
 x11-libs/cairo xcb
 
+sys-cluster/openmpi gcrypt heterogeneous

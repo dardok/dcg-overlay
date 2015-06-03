@@ -2,6 +2,10 @@ ALSA_CARDS="-* hda-intel usb-audio"
 
 OFED_DRIVERS="mthca mlx4 mlx5 ipath"
 
+OPENMPI_FABRICS="ofed"
+OPENMPI_OFED_FEATURES="connectx-xrc control-hdr-padding dynamic-sl failover rdmacm udcm"
+OPENMPI_RM="slurm"
+
 PYTHON_SINGLE_TARGET="-* python2_7"
 PYTHON_TARGETS="-* python2_7 python3_4"
 RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
