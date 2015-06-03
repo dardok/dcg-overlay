@@ -2,6 +2,8 @@
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 
 net-analyzer/wireshark -qt4 qt5
+dev-qt/qtgui accessibility
+dev-libs/libpcre pcre16
 
 # build breaks with opencl
 sys-apps/hwloc -opencl gl
