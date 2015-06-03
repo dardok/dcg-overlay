@@ -23,6 +23,7 @@
 *mail-mta/nullmailer
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
+*net-dns/avahi
 *net-firewall/ebtables
 *net-fs/openafs
 *net-fs/openafs-kernel
