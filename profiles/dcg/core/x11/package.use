@@ -1,6 +1,8 @@
 # avoid vaapi circular dependency, enable good stuff
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 
+net-analyzer/wireshark -qt4 qt5
+
 # build breaks with opencl
 sys-apps/hwloc -opencl gl
 
