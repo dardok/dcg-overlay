@@ -8,6 +8,7 @@
 *app-misc/tmux
 *app-portage/eix
 *app-portage/gentoolkit
+*app-shells/bash-completion
 *dev-lang/go
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
