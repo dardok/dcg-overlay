@@ -1,3 +1,7 @@
-media-video/libav cpudetection ieee1394 mp3 x265 xvid
+media-video/libav cpudetection ieee1394 mp3 x265 xvid tools
 
 dev-qt/qtchooser qt5
+
+dev-qt/qtquick1 webkit
+
+dev-qt/qtwebkit gstreamer
