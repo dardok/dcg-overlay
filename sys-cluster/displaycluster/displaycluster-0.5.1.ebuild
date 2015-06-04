@@ -12,6 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
+# NOTE: replace qtquick1 with qtdeclarative when possible
 RDEPEND="
     >=dev-libs/boost-1.41.0
 	>=dev-libs/deflect-0.4
@@ -34,6 +35,11 @@ RDEPEND="
 DEPEND="${RDEPEND}
     sys-devel/llvm
 "
+
+src_prepare() {
+    # test linkage is broken (/usr/lib64/libX11.so.6: error adding symbols: DSO missing from command line)
+    sed -i -e '/add_subdirectory(tests)/d' ${S}/CMakeLists.txt
+}
 
 src_configure() {
     mycmakeargs=(
