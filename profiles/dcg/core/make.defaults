@@ -12,7 +12,6 @@ RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
 
 USE="-debug -doc -examples -suid"
 USE="${USE} dbus gudev pam policykit session"
-
 USE="${USE} cxx fortran nptl gmp openmp libffi"
 USE="${USE} readline ncurses -slang"
 USE="${USE} nls icu unicode iconv"
@@ -29,7 +28,6 @@ USE="${USE} berkdb gdbm sqlite"
 
 USE="${USE} afs infiniband smartcard pkcs11 xfs zfs"
 
-USE="${USE} -sdl"
 USE="${USE} alsa pulseaudio jack v4l wifi joystick"
 
 USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
