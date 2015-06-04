@@ -17,8 +17,8 @@ RDEPEND="
 	servus? ( dev-libs/servus )
     >=media-libs/libjpeg-turbo-1.2.1
     glut? ( media-libs/freeglut )
-	dev-qt/qtcore:5
 	dev-qt/qtconcurrent:5
+	dev-qt/qtcore:5
 	dev-qt/qtnetwork:5
 	dev-qt/qtwidgets:5
     slurm? ( sys-cluster/slurm )
