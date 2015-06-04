@@ -15,16 +15,31 @@ IUSE="debug +cxx11-stdlib"
 RDEPEND="
     >=dev-libs/lunchbox-1.10
     >=dev-libs/boost-1.41.0
-	>=dev-libs/servus-1.0
+    >=dev-libs/servus-1.0
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+src_prepare() {
+    # violates sandbox
+    sed -i -e '/^install_symlinkd' ${S}/apps/hw_sd/CMakeLists.txt
+    sed -i -e '/^install_symlinkd' ${S}/apps/hw_sd_list/CMakeLists.txt
+}
+
 src_configure() {
     mycmakeargs=(
-		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
     cmake-utils_src_configure
+}
+
+src_install() {
+    cmake-utils_src_install
+
+    ln -sf hw_sd ${I}/bin/gpu_sd
+    ln -sf hw_sd ${I}/bin/net_sd
+    ln -sf hw_sd_list ${I}/bin/gpu_sd_list
+    ln -sf hw_sd_list ${I}/bin/net_sd_list
 }
