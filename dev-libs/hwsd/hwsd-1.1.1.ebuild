@@ -38,8 +38,8 @@ src_configure() {
 src_install() {
     cmake-utils_src_install
 
-    ln -sf hw_sd ${I}/bin/gpu_sd
-    ln -sf hw_sd ${I}/bin/net_sd
-    ln -sf hw_sd_list ${I}/bin/gpu_sd_list
-    ln -sf hw_sd_list ${I}/bin/net_sd_list
+    ln -sf hw_sd ${D}/usr/bin/gpu_sd
+    ln -sf hw_sd ${D}/usr/bin/net_sd
+    ln -sf hw_sd_list ${D}/usr/bin/gpu_sd_list
+    ln -sf hw_sd_list ${D}/usr/bin/net_sd_list
 }
