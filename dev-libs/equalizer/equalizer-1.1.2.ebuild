@@ -13,12 +13,14 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
-	>=dev-libs/vmmlib-1.8
+    >=dev-libs/vmmlib-1.8
     >=dev-libs/lunchbox-1.10
     >=dev-libs/collage-1.1
     virtual/opengl
-	>=dev-libs/boost-1.41.0
+    >=dev-libs/boost-1.41.0
     >=dev-libs/pression-1.0
+    >=dev-libs/hwsd-1.1
+    >=dev-libs/glstats-0.3
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
@@ -26,7 +28,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
     cmake-utils_src_configure
