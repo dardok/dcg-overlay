@@ -5,10 +5,10 @@
 EAPI=5
 inherit git-r3 cmake-utils
 
-DESCRIPTION="C++ network utility library"
-HOMEPAGE="https://github.com/HBPVIS/Servus"
+DESCRIPTION="A collaborative software for driving large display walls"
+HOMEPAGE="https://github.com/BlueBrain/DisplayCluster"
 
-EGIT_REPO_URI="git://github.com/HBPVIS/Servus.git"
+EGIT_REPO_URI="git://github.com/BlueBrain/DisplayCluster.git"
 EGIT_BRANCH="master"
 
 LICENSE="LGPL-3"
@@ -16,7 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	dev-libs/deflect
+"
 RDEPEND="${DEPEND}"
 
 src_configure() {
