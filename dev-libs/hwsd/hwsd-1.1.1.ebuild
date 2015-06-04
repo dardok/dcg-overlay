@@ -23,8 +23,8 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
     # violates sandbox
-    sed -i -e '/^install_symlinkd' ${S}/apps/hw_sd/CMakeLists.txt
-    sed -i -e '/^install_symlinkd' ${S}/apps/hw_sd_list/CMakeLists.txt
+    sed -i -e '/^install_symlink/d' ${S}/apps/hw_sd/CMakeLists.txt
+    sed -i -e '/^install_symlink/d' ${S}/apps/hw_sd_list/CMakeLists.txt
 }
 
 src_configure() {
