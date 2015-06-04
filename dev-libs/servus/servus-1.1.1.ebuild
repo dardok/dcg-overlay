@@ -1,7 +1,3 @@
-# Copyright 1999-2015 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: $
-
 EAPI=5
 inherit git-r3 cmake-utils
 
@@ -14,19 +10,20 @@ EGIT_BRANCH="master"
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 x86"
-IUSE=""
+IUSE="debug +cxx11-stdlib"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="
+    >=dev-libs/boost-1.41.0
+    net-dns/avahi
+"
+DEPEND="${RDEPEND}
+	sys-devel/llvm
+"
 
 src_configure() {
-        cmake-utils_src_configure
-}
+    mycmakeargs=(
+        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+    )
 
-src_compile() {
-        cmake-utils_src_compile
-}
-
-src_install() {
-        cmake-utils_src_install
+    cmake-utils_src_configure
 }
