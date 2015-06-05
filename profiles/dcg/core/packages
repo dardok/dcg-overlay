@@ -53,6 +53,7 @@
 *sys-fs/multipath-tools
 *sys-infiniband/ofed
 *sys-kernel/linux-firmware
+*sys-power/acpid
 *sys-process/atop
 *sys-process/lsof
 *sys-process/nmon
