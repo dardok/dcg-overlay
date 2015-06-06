@@ -28,9 +28,9 @@ sys-libs/timezone-data leaps_timezone
 sys-libs/libcap-ng python
 media-libs/freetype auto-hinter
 
-media-sound/pulseaudio realtime bluetooth
+media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 
 x11-libs/cairo xcb
 
-sys-cluster/openmpi gcrypt heterogeneous
+sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
