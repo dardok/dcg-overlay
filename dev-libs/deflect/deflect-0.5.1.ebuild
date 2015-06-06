@@ -14,13 +14,13 @@ IUSE="debug +cxx11-stdlib +servus +glut +slurm"
 
 RDEPEND="
     >=dev-libs/boost-1.41.0
-	servus? ( dev-libs/servus )
+    servus? ( dev-libs/servus )
     >=media-libs/libjpeg-turbo-1.2.1
     glut? ( media-libs/freeglut )
-	dev-qt/qtconcurrent:5
-	dev-qt/qtcore:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
+    dev-qt/qtconcurrent:5
+    dev-qt/qtcore:5
+    dev-qt/qtnetwork:5
+    dev-qt/qtwidgets:5
     slurm? ( sys-cluster/slurm )
 "
 DEPEND="${RDEPEND}

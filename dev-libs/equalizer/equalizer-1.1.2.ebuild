@@ -28,7 +28,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+       $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
     cmake-utils_src_configure

@@ -13,7 +13,7 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
-	>=dev-libs/boost-1.41.0
+    >=dev-libs/boost-1.41.0
     >=dev-libs/lunchbox-1.10
 "
 DEPEND="${RDEPEND}

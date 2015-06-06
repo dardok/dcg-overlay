@@ -14,7 +14,7 @@ IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
     >=dev-libs/lunchbox-1.10
-	virtual/opengl
+    virtual/opengl
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
@@ -22,7 +22,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+       $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
     cmake-utils_src_configure

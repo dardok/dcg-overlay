@@ -14,7 +14,7 @@ IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
     >=dev-libs/boost-1.41.0
-	>=dev-libs/servus-1.0
+    >=dev-libs/servus-1.0
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
