@@ -77,7 +77,7 @@ S=${WORKDIR}/${MY_P}
 DOCS=(AUTHORS.txt ChangeLog NEWS.txt)
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.2.1-cmake.patch
+	"${FILESDIR}"/${PN}-3.3.7-cmake.patch
 )
 
 src_configure() {

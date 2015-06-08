@@ -1,15 +1,15 @@
-diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
---- OpenSceneGraph-3.2.1/CMakeLists.txt	2014-07-04 13:29:02.000000000 +0200
-+++ new/CMakeLists.txt	2014-08-20 00:45:08.857600038 +0200
-@@ -486,6 +486,7 @@
+diff -ruN OpenSceneGraph-3.3.7/CMakeLists.txt new/CMakeLists.txt
+--- OpenSceneGraph-3.3.7/CMakeLists.txt	2015-04-15 14:05:43.000000000 -0400
++++ new/CMakeLists.txt	2015-06-08 09:35:35.221601960 -0400
+@@ -586,6 +586,7 @@
  
  # INSTALL_FILES(/include/osg/ FILES "${OPENSCENEGRAPH_CONFIG_HEADER}")
  
 +INCLUDE(MacroOptionalFindPackage)
  
  ################################################################################
- # Set Version Info resource file
-@@ -515,37 +516,37 @@
+ # Set Vertsion header file
+@@ -630,44 +631,44 @@
      ANDROID_3RD_PARTY()
  ELSE()
  # Common to all platforms except android:
@@ -29,6 +29,8 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
 -    FIND_PACKAGE(LibVNCServer)
 -    FIND_PACKAGE(OurDCMTK)
 -    FIND_PACKAGE(FFmpeg)
+-    FIND_PACKAGE(GStreamer COMPONENTS app pbutils)
+-    FIND_PACKAGE(GLIB COMPONENTS gobject)
 +    MACRO_OPTIONAL_FIND_PACKAGE(Freetype)
 +    MACRO_OPTIONAL_FIND_PACKAGE(Inventor)
 +    MACRO_OPTIONAL_FIND_PACKAGE(Jasper)
@@ -45,11 +47,15 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
 +    MACRO_OPTIONAL_FIND_PACKAGE(LibVNCServer)
 +    MACRO_OPTIONAL_FIND_PACKAGE(OurDCMTK)
 +    MACRO_OPTIONAL_FIND_PACKAGE(FFmpeg)
++    MACRO_OPTIONAL_FIND_PACKAGE(GStreamer COMPONENTS app pbutils)
++    MACRO_OPTIONAL_FIND_PACKAGE(GLIB COMPONENTS gobject)
      FIND_PACKAGE(DirectShow)
+-    FIND_PACKAGE(SDL2)
 -    FIND_PACKAGE(SDL)
 -    FIND_PACKAGE(Poppler-glib)
 -    FIND_PACKAGE(RSVG)
 -    FIND_PACKAGE(GtkGl)
++    MACRO_OPTIONAL_FIND_PACKAGE(SDL2)
 +    MACRO_OPTIONAL_FIND_PACKAGE(SDL)
 +    MACRO_OPTIONAL_FIND_PACKAGE(Poppler-glib)
 +    MACRO_OPTIONAL_FIND_PACKAGE(RSVG)
@@ -59,9 +65,25 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
 +    MACRO_OPTIONAL_FIND_PACKAGE(NVTT)
      IF (NOT WIN32)
 -        FIND_PACKAGE(Asio)
-+        MACRO_OPTIONAL_FIND_PACKAGE(Asio)
++	    MACRO_OPTIONAL_FIND_PACKAGE(Asio)
      ENDIF()
      FIND_PACKAGE(ZeroConf)
+ 
+-    FIND_PACKAGE(Boost) # used by LIBLAS
+-    FIND_PACKAGE(LIBLAS)
++    MACRO_OPTIONAL_FIND_PACKAGE(Boost) # used by LIBLAS
++    MACRO_OPTIONAL_FIND_PACKAGE(LIBLAS)
+ 
+     IF (NOT(OSG_USE_LOCAL_LUA_SOURCE))
+-        FIND_PACKAGE(Lua52)
++        MACRO_OPTIONAL_FIND_PACKAGE(Lua52)
+         IF (NOT (LUA_LIBRARIES AND LUA_INCLUDE_DIR))
+-            FIND_PACKAGE(Lua51)
++            MACRO_OPTIONAL_FIND_PACKAGE(Lua51)
+         ENDIF()
+     ENDIF()
+ 
+@@ -677,7 +678,7 @@
  ENDIF()
  
  IF(CMAKE_MAJOR_VERSION EQUAL 2 AND CMAKE_MINOR_VERSION LESS 8)
@@ -70,18 +92,18 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  ENDIF()
  
  # Include macro utilities here
-@@ -560,16 +561,16 @@
+@@ -692,16 +693,16 @@
  
      IF  (DESIRED_QT_VERSION)
          IF  (DESIRED_QT_VERSION MATCHES 5)
 -              FIND_PACKAGE(Qt5Widgets)
-+              MACRO_OPTIONAL_FIND_PACKAGE(Qt5Widgets)
++            MACRO_OPTIONAL_FIND_PACKAGE(Qt5Widgets)
          ELSEIF (DESIRED_QT_VERSION MATCHES 4)
 -              FIND_PACKAGE(Qt4)
-+              MACRO_OPTIONAL_FIND_PACKAGE(Qt4)
++            MACRO_OPTIONAL_FIND_PACKAGE(Qt4)
          ELSE()
 -              FIND_PACKAGE(Qt3)
-+              MACRO_OPTIONAL_FIND_PACKAGE(Qt3)
++            MACRO_OPTIONAL_FIND_PACKAGE(Qt3)
          ENDIF()
  
      ELSE()
@@ -91,7 +113,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  
          IF ( Qt5Widgets_FOUND )
              # CMake 2.8.8 or greater required
-@@ -585,17 +586,17 @@
+@@ -717,17 +718,17 @@
          ENDIF( )
  
          IF ( NOT Qt5Widgets_FOUND )
@@ -112,7 +134,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
      ENDIF()
  
  ENDIF()
-@@ -604,12 +605,12 @@
+@@ -736,12 +737,12 @@
  IF   (BUILD_OSG_EXAMPLES AND NOT ANDROID)
  
  
@@ -129,7 +151,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  
  ENDIF(BUILD_OSG_EXAMPLES AND NOT ANDROID)
  
-@@ -630,10 +631,10 @@
+@@ -762,10 +763,10 @@
  # can use Quicktime.
  IF(NOT ANDROID)
      IF(NOT APPLE)
@@ -138,13 +160,13 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
 -        FIND_PACKAGE(PNG)
 -        FIND_PACKAGE(TIFF)
 +        MACRO_OPTIONAL_FIND_PACKAGE(GIFLIB)
-+        MACRO_OPTIONAL_FIND_PACKAGE(JPEG)
-+        MACRO_OPTIONAL_FIND_PACKAGE(PNG)
-+        MACRO_OPTIONAL_FIND_PACKAGE(TIFF)
++	MACRO_OPTIONAL_FIND_PACKAGE(JPEG)
++	MACRO_OPTIONAL_FIND_PACKAGE(PNG)
++	MACRO_OPTIONAL_FIND_PACKAGE(TIFF)
          # QuickTime is required for OS X, but optional for Windows.
          IF(WIN32)
              FIND_PACKAGE(QuickTime)
-@@ -689,15 +690,7 @@
+@@ -821,15 +822,7 @@
    SET(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -D_DEBUG")
  ENDIF()
  
@@ -161,7 +183,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  
  # Here we apparantly do some funky stuff with making the bin/ and lib/
  # folders which is probably needed to work around a very old CMake bug?
-@@ -1001,7 +994,7 @@
+@@ -1164,7 +1157,7 @@
          ${PROJECT_BINARY_DIR}/doc/OpenSceneGraphReferenceDocs/osg32-32.png COPYONLY
      )
      #INSTALL(FILES ${PROJECT_BINARY_DIR}/doc/${PROJECT_NAME}ReferenceDocs-${OPENSCENEGRAPH_VERSION}.chm DESTINATION doc OPTIONAL COMPONENT openscenegraph-doc)
@@ -170,7 +192,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  
      # now set up openthreads documentation generation
      IF(BUILD_REF_DOCS_TAGFILE)
-@@ -1017,7 +1010,7 @@
+@@ -1180,7 +1173,7 @@
          ${PROJECT_BINARY_DIR}/doc/OpenThreadsReferenceDocs/osg32-32.png COPYONLY
      )
      #INSTALL(FILES ${PROJECT_BINARY_DIR}/doc/${PROJECT_NAME}ReferenceDocs-${OPENSCENEGRAPH_VERSION}.chm DESTINATION doc OPTIONAL COMPONENT openscenegraph-doc)
@@ -179,9 +201,9 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeLists.txt new/CMakeLists.txt
  
      # Process our other doxyfiles but don't create targets for these
      CONFIGURE_FILE(${PROJECT_SOURCE_DIR}/doc/Doxyfiles/all_Doxyfile
-diff -ruN OpenSceneGraph-3.2.1/CMakeModules/COPYING-CMAKE-SCRIPTS new/CMakeModules/COPYING-CMAKE-SCRIPTS
---- OpenSceneGraph-3.2.1/CMakeModules/COPYING-CMAKE-SCRIPTS	1970-01-01 01:00:00.000000000 +0100
-+++ new/CMakeModules/COPYING-CMAKE-SCRIPTS	2014-08-20 00:27:15.371715620 +0200
+diff -ruN OpenSceneGraph-3.3.7/CMakeModules/COPYING-CMAKE-SCRIPTS new/CMakeModules/COPYING-CMAKE-SCRIPTS
+--- OpenSceneGraph-3.3.7/CMakeModules/COPYING-CMAKE-SCRIPTS     1970-01-01 01:00:00.000000000 +0100
++++ new/CMakeModules/COPYING-CMAKE-SCRIPTS      2014-08-20 00:27:15.371715620 +0200
 @@ -0,0 +1,22 @@
 +Redistribution and use in source and binary forms, with or without
 +modification, are permitted provided that the following conditions
@@ -206,9 +228,9 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeModules/COPYING-CMAKE-SCRIPTS new/CMakeModul
 +(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 +THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 diff -ruN OpenSceneGraph-3.2.1/CMakeModules/FindFLTK.cmake new/CMakeModules/FindFLTK.cmake
---- OpenSceneGraph-3.2.1/CMakeModules/FindFLTK.cmake	2010-11-11 17:51:46.000000000 +0100
-+++ new/CMakeModules/FindFLTK.cmake	2014-08-20 00:29:31.229439251 +0200
-@@ -1,52 +0,0 @@
+--- OpenSceneGraph-3.3.7/CMakeModules/FindFLTK.cmake	2014-04-29 08:19:21.000000000 -0400
++++ new/CMakeModules/FindFLTK.cmake	2015-06-08 09:43:11.225570447 -0400
+@@ -1,61 +0,0 @@
 -# Locate FLTK
 -# This module defines
 -# FLTK_LIBRARY
@@ -219,6 +241,15 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeModules/FindFLTK.cmake new/CMakeModules/Find
 -# correspond to the ./configure --prefix=$FLTK_DIR
 -#
 -# Created by Robert Osfield. 
+-
+-# prefer FindFLTK from cmake distribution
+-if(EXISTS ${CMAKE_ROOT}/Modules/FindFLTK.cmake)
+-  include(${CMAKE_ROOT}/Modules/FindFLTK.cmake)
+-
+-  if(FLTK_FOUND)
+-    return()
+-  endif()
+-endif()
 -
 -FIND_PATH(FLTK_INCLUDE_DIR Fl/Fl.H Fl/Fl.h
 -    $ENV{FLTK_DIR}/include
@@ -261,8 +292,7 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeModules/FindFLTK.cmake new/CMakeModules/Find
 -IF(FLTK_LIBRARY AND FLTK_INCLUDE_DIR)
 -    SET(FLTK_FOUND "YES")
 -ENDIF(FLTK_LIBRARY AND FLTK_INCLUDE_DIR)
-diff -ruN OpenSceneGraph-3.2.1/CMakeModules/MacroOptionalFindPackage.cmake new/CMakeModules/MacroOptionalFindPackage.cmake
---- OpenSceneGraph-3.2.1/CMakeModules/MacroOptionalFindPackage.cmake	1970-01-01 01:00:00.000000000 +0100
+--- OpenSceneGraph-3.3.7/CMakeModules/MacroOptionalFindPackage.cmake	1970-01-01 01:00:00.000000000 +0100
 +++ new/CMakeModules/MacroOptionalFindPackage.cmake	2014-08-20 00:32:02.142858484 +0200
 @@ -0,0 +1,28 @@
 +# - MACRO_OPTIONAL_FIND_PACKAGE() combines FIND_PACKAGE() with an OPTION()
@@ -293,8 +323,8 @@ diff -ruN OpenSceneGraph-3.2.1/CMakeModules/MacroOptionalFindPackage.cmake new/C
 +   endif (WITH_${_name})
 +endmacro (MACRO_OPTIONAL_FIND_PACKAGE)
 +
-diff -ruN OpenSceneGraph-3.2.1/CMakeModules/OsgMacroUtils.cmake new/CMakeModules/OsgMacroUtils.cmake
---- OpenSceneGraph-3.2.1/CMakeModules/OsgMacroUtils.cmake	2014-04-13 18:03:17.000000000 +0200
+diff -ruN OpenSceneGraph-3.3.7/CMakeModules/OsgMacroUtils.cmake new/CMakeModules/OsgMacroUtils.cmake
+--- OpenSceneGraph-3.3.7/CMakeModules/OsgMacroUtils.cmake	2014-04-13 18:03:17.000000000 +0200
 +++ new/CMakeModules/OsgMacroUtils.cmake	2014-08-20 07:31:10.261828759 +0200
 @@ -453,7 +453,7 @@
          IF(APPLE)
