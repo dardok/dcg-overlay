@@ -43,7 +43,7 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	doc? ( dev-python/sphinx )"
 
-S=${WORKDIR}/${PN}-${P}
+#S=${WORKDIR}/${PN}-${P}
 
 PATCHES=( "${FILESDIR}"/osgearth-2.6-cmake-options.patch )
 
