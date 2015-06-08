@@ -78,9 +78,9 @@ PATCHES=(
 	"${FILESDIR}/${PN}-2.4.3-gcc47.patch"
 	"${FILESDIR}/${PN}-2.4.2-cflags.patch"
 	"${FILESDIR}/${PN}-2.4.8-javamagic.patch"
-	"${FILESDIR}/${PN}-2.4.9-libav10.patch"
 	"${FILESDIR}/${PN}-2.4.9-cuda-pkg-config.patch"
 	"${FILESDIR}/${PN}-2.4.10-pic-x86.patch"
+	"${FILESDIR}/${PN}-2.4.11-libav10.patch"
 )
 
 pkg_setup() {
