@@ -15,7 +15,7 @@ EGIT_BRANCH="master"
 LICENSE="LGPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc protobuf qt4 qt5"
+IUSE="doc protobuf qt5"
 
 RDEPEND="
 	dev-db/sqlite:3
@@ -29,11 +29,6 @@ RDEPEND="
 	virtual/opengl
 	x11-libs/libX11
     protobuf? ( dev-libs/protobuf )
-	qt4? (
-		dev-qt/qtcore:4
-		dev-qt/qtgui:4
-		dev-qt/qtopengl:4
-	)
 	qt5? (
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5
@@ -53,7 +48,7 @@ src_configure() {
 	# https://github.com/gwaldron/osgearth/issues/333
 	local mycmakeargs=(
 		-DWITH_EXTERNAL_TINYXML=ON
-		$(cmake-utils_use qt4 OSGEARTH_USE_QT)
+		$(cmake-utils_use qt5 OSGEARTH_USE_QT)
 		-DOSGEARTH_USE_V8=OFF
 		-DOSGEARTH_USE_JAVASCRIPTCORE=OFF
 		-DOSGEARTH_USE_LIBNOISE=OFF
