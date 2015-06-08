@@ -182,6 +182,10 @@ src_configure() {
 			mycmakeargs+=( "-DWITH_CUDA=ON" )
 			mycmakeargs+=( "-DWITH_CUBLAS=ON" )
 			mycmakeargs+=( "-DWITH_CUFFT=ON" )
+
+            if [[ "$(nvcc -V)" =~ "V7" ]]; then
+			    mycmakeargs+=( "-DCUDA_ARCH_BIN=\"2.0 2.1(2.0) 3.0 3.5\"" )
+            fi
 		fi
 	else
 		mycmakeargs+=( "-DWITH_CUDA=OFF" )
