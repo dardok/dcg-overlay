@@ -27,6 +27,7 @@ RDEPEND="
     qt5? ( 
         dev-qt/qtcore:5
         dev-qt/qtconcurrent:5
+        dev-qt/qtnetwork:5
         dev-qt/qtopengl:5
         dev-qt/qtwidgets:5
     )
