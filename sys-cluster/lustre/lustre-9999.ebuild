@@ -39,7 +39,8 @@ RDEPEND="
 	"
 DEPEND="${RDEPEND}
     dev-python/docutils
-	|| ( client? server? ) ( virtual/linux-sources )"
+	server? ( virtual/linux-sources )
+	client? ( virtual/linux-sources )"
 
 pkg_setup() {
 	filter-mfpmath sse
