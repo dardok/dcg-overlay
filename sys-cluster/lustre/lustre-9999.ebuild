@@ -46,9 +46,11 @@ pkg_setup() {
 	filter-mfpmath sse
 	filter-mfpmath i386
 	filter-flags -msse* -mavx* -mmmx -m3dnow
-	linux-mod_pkg_setup
-	ARCH="$(tc-arch-kernel)"
-	ABI="${KERNEL_ABI}"
+    if use client or use server; then
+	    linux-mod_pkg_setup
+	    ARCH="$(tc-arch-kernel)"
+	    ABI="${KERNEL_ABI}"
+    fi
 }
 
 src_prepare() {
