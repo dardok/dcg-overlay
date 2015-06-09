@@ -34,3 +34,5 @@ x11-libs/cairo xcb
 
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
+
+sys-cluster/lustre -client -server
