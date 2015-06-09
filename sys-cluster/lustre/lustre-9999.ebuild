@@ -62,13 +62,6 @@ src_prepare() {
 	eautoheader
 	eautomake
 	eautoconf
-	# now walk in configure dirs
-	einfo "Reconfiguring source in libsysio"
-	cd libsysio
-	eaclocal
-	eautomake
-	eautoconf
-	cd ..
 }
 
 use_disable() {
