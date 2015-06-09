@@ -78,6 +78,9 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}usr/src/${ZFS_PATH} \
 							--with-zfs-obj=${EROOT}usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
+    if not use server and not use client; then
+        myconf="${myconf} --disable-modules"
+    fi
 	econf \
 		${myconf} \
 		--disable-ldiskfs \
