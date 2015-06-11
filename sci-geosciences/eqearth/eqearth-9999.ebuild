@@ -27,5 +27,6 @@ src_compile() {
 }
 
 src_install() {
+    mkdir -p ${D}/usr/bin
 	cp ${S}/eqEarth ${D}/usr/bin/eqEarth
 }
