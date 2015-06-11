@@ -1,6 +1,6 @@
 EAPI=5
 
-inherit git-r3 cmake-utils
+inherit git-r3
 
 DESCRIPTION="osgEarth/Equalizer integration WIP"
 HOMEPAGE="http://github.com/dardok/eqEarth/"
@@ -19,13 +19,13 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 src_configure() {
-	cmake-utils_src_configure
+    default
 }
 
 src_compile() {
-	cmake-utils_src_compile
+	make -j16
 }
 
 src_install() {
-	cmake-utils_src_install
+	cp ${S}/eqEarth ${D}/usr/bin/eqEarth
 }
