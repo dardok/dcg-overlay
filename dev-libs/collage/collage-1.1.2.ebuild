@@ -4,7 +4,8 @@ inherit git-r3 cmake-utils
 DESCRIPTION="Cross-platform C++ library for building heterogenous, distributed applications"
 HOMEPAGE="http://libcollage.net/"
 
-EGIT_REPO_URI="git://github.com/Eyescale/Collage.git"
+#EGIT_REPO_URI="git://github.com/Eyescale/Collage.git"
+EGIT_REPO_URI="git://github.com/dardok/Collage.git"
 EGIT_BRANCH="master"
 
 LICENSE="LGPL-3"
