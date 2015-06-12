@@ -17,7 +17,7 @@ LICENSE="wxWinLL-3 LGPL-2.1"
 SLOT="0"
 KEYWORDS="amd64 ppc x86"
 IUSE="asio curl debug doc examples ffmpeg fltk fox gdal gif glut gstreamer gtk
-jpeg jpeg2k openexr openinventor osgapps pdf png qt4 sdl svg tiff truetype vnc
+jpeg jpeg2k openexr openinventor osgapps pdf png qt4 qt5 sdl svg tiff truetype vnc
 wxwidgets xine xrandr zlib"
 
 # TODO: COLLADA, FBX, GTA, ITK, OpenVRML, Performer, DCMTK
@@ -38,13 +38,18 @@ RDEPEND="
 			dev-qt/qtgui:4
 			dev-qt/qtopengl:4
 		)
+		qt5? (
+			dev-qt/qtcore:5
+			dev-qt/qtgui:5
+			dev-qt/qtopengl:5
+		)
 		sdl? ( media-libs/libsdl )
 		wxwidgets? ( x11-libs/wxGTK[opengl,X] )
 	)
 	ffmpeg? ( virtual/ffmpeg )
 	gdal? ( sci-libs/gdal )
 	gif? ( media-libs/giflib )
-    gstreamer? ( media-libs/gstreamer:1.0 )
+	gstreamer? ( media-libs/gstreamer:1.0 )
 	jpeg? ( virtual/jpeg )
 	jpeg2k? ( media-libs/jasper )
 	openexr? (
