@@ -1,5 +1,5 @@
 media-video/libav cpudetection ieee1394 mp3 x265 xvid
 
-dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr
+dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr qt5
 
 sci-libs/gdal geos
