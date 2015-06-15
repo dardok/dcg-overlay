@@ -14,7 +14,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="doc"
 
 RDEPEND="
-	sci-geosciences/osgearth
+    sci-geosciences/osgearth
     dev-libs/equalizer"
 DEPEND="${RDEPEND}"
 
@@ -23,10 +23,10 @@ src_configure() {
 }
 
 src_compile() {
-	make -j16
+    make -j16 || die
 }
 
 src_install() {
-    mkdir -p ${D}/usr/bin
-	cp ${S}/eqEarth ${D}/usr/bin/eqEarth
+    mkdir -p ${D}/usr/bin || die
+    cp ${S}/eqEarth ${D}/usr/bin/eqEarth || die
 }
