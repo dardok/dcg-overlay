@@ -4,4 +4,4 @@ dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr qt5
 
 sci-libs/gdal geos
 
-dev-libs/equalizaer hwsd glstats osg qt5
+dev-libs/equalizer hwsd glstats osg qt5
