@@ -17,8 +17,15 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="sys-infiniband/libibverbs:${SLOT}
-		>=dev-lang/tk-8.4"
+		>=dev-lang/tk-8.4
+        media-gfx/graphviz[tcl]"
 RDEPEND="${DEPEND}
 		!sys-infiniband/openib-userspace"
 
 block_other_ofed_versions
+
+src_configure() {
+    # force tcl detection since 8.6 is latest and ibdiag doesn't know about >= 8.5
+	econf \
+        --with-tcl=/usr
+}
