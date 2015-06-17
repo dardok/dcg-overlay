@@ -27,5 +27,5 @@ block_other_ofed_versions
 src_configure() {
     # force tcl detection since 8.6 is latest and ibdiag doesn't know about >= 8.5
 	econf \
-        --with-tcl=/usr
+        --with-tk-lib=/usr
 }
