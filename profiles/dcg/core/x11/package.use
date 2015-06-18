@@ -31,3 +31,5 @@ sys-cluster/openmpi cuda
 
 # for ibutils
 media-gfx/graphviz tcl gdk-pixbuf gtk
+
+net-print/cups zeroconf

@@ -1,6 +1,7 @@
 *media-libs/glew
 *net-analyzer/wireshark
 *net-misc/tigervnc
+*net-print/cups
 *sys-infiniband/ibutils
 *x11-apps/xdpyinfo
 *x11-apps/xev
