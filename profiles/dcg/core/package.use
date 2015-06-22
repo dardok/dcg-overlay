@@ -25,6 +25,8 @@ sys-infiniband/ofed ibacm mstflint perftest rds srp opensm
 sys-libs/glibc nscd
 sys-libs/timezone-data leaps_timezone
 
+dev-libs/nss utils
+
 sys-libs/libcap-ng python
 media-libs/freetype auto-hinter
 
