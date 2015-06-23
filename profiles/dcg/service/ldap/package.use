@@ -1,1 +1,1 @@
-net-nds/openldap experimental icu kerberos overlays sasl -tcpd
+net-nds/openldap experimental icu kerberos overlays sasl odbc -tcpd
