@@ -34,3 +34,5 @@ media-gfx/graphviz tcl gdk-pixbuf gtk
 
 net-print/cups zeroconf
 app-text/ghostscript-gpl cups
+
+sys-cluster/ceph gtk

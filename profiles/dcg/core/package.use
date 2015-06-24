@@ -34,6 +34,8 @@ media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 
 x11-libs/cairo xcb
 
+sys-cluster/ceph fuse cryptopp
+
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
 
