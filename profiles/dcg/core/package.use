@@ -4,6 +4,8 @@ app-admin/ulogd pcap nfacct
 
 app-editors/vim python_single_target_python2_7 lua luajit ruby
 
+app-emulation/libvirt audit avahi firewalld fuse parted
+
 app-emulation/qemu rbd numa spice tls usb usbredir
 app-emulation/spice -smartcard
 
