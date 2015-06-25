@@ -26,6 +26,7 @@
 *x11-misc/xcompmgr
 *x11-misc/xkeycaps
 *x11-misc/xscreensaver
+*x11-misc/virtualgl
 *x11-terms/xterm
 *x11-terms/rxvt-unicode
 *x11-wm/awesome
