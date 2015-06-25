@@ -5,9 +5,7 @@
 *app-arch/star
 *app-crypt/ccid
 *app-emulation/qemu
-*app-emulation/libvirt
-*app-emulation/libvirt-glib
-*app-emulation/libvirt-snmp
+*app-emulation/docker
 *app-misc/jq
 *app-misc/tmux
 *app-portage/eix
@@ -18,7 +16,6 @@
 *dev-libs/opensc
 *dev-libs/dbus-glib
 *dev-libs/jansson
-*dev-python/libvirt-python
 *dev-python/pygobject
 *dev-python/virtualenv
 *dev-util/cmake
@@ -63,4 +60,3 @@
 *sys-power/acpid
 *sys-process/atop
 *sys-process/lsof
-*sys-process/nmon
