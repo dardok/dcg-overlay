@@ -3,3 +3,4 @@
 =sys-kernel/spl-9999 **
 =sys-fs/zfs-9999 **
 =sys-fs/zfs-kmod-9999 **
+=sys-fs/btrfs-progs-9999 **
