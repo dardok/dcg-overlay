@@ -36,3 +36,5 @@ net-print/cups zeroconf
 app-text/ghostscript-gpl cups
 
 sys-cluster/ceph gtk
+
+app-emulation/spice client
