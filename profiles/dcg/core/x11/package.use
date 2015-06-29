@@ -37,4 +37,4 @@ app-text/ghostscript-gpl cups
 
 sys-cluster/ceph gtk
 
-app-emulation/spice client
+app-emulation/virt-viewer sasl
