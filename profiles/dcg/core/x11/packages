@@ -1,6 +1,6 @@
-*app-emulation/virt-viewer
 *media-libs/glew
 *net-analyzer/wireshark
+*net-misc/spice-gtk
 *net-misc/tigervnc
 *net-print/cups
 *sys-infiniband/ibutils

@@ -37,4 +37,4 @@ app-text/ghostscript-gpl cups
 
 sys-cluster/ceph gtk
 
-app-emulation/virt-viewer sasl
+net-misc/spice-gtk gtk3 lz4 python usbredir webdav
