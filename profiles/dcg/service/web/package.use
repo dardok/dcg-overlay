@@ -1,3 +1,5 @@
 www-servers/apache threads
 
 dev-libs/apr-util openssl
+
+dev-vcs/git cgi
