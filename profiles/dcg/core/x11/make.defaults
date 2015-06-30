@@ -1,4 +1,4 @@
-VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l"
+VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l qxl"
 
 INPUT_DEVICES="-* evdev keyboard mouse tslib joystick"
 
