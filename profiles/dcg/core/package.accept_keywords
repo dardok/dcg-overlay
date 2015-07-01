@@ -1,3 +1,4 @@
+=app-emulation/qemu-9999 **
 =sys-cluster/lustre-9999 **
 =sys-cluster/ceph-9999 **
 =sys-kernel/spl-9999 **
