@@ -1,5 +1,5 @@
 # avoid vaapi circular dependency, enable good stuff
-media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc -vaapi
+media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
 
 media-sound/pulseaudio gnome gtk
 
