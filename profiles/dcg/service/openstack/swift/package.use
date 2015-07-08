@@ -1,0 +1,3 @@
+sys-cluster/openstack-meta swift
+
+sys-cluster/swift account container object proxy

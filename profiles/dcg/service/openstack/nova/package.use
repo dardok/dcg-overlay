@@ -1,0 +1,3 @@
+sys-cluster/openstack-meta nova
+
+sys-cluster/nova -rabbitmq
