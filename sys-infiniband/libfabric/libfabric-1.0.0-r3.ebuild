@@ -13,6 +13,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="
+	sys-infiniband/librdmacm:${SLOT}
 	sys-infiniband/libibverbs:${SLOT}
 	sys-infiniband/libibumad:${SLOT}
 	"
