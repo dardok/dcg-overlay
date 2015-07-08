@@ -98,6 +98,9 @@ case ${MY_PN} in
 	ofa_kernel|compat-rdma)
 		EXT="tgz"
 		;;
+	libfabric)
+		EXT="tar.bz2"
+		;;
 	*)
 		EXT="tar.gz"
 		;;
