@@ -1,0 +1,5 @@
+sys-cluster/openstack-meta  cinder glance keystone neutron nova swift
+
+sys-cluster/swift account container object proxy
+
+sys-cluster/nova -rabbitmq

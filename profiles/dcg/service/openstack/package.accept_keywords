@@ -1,0 +1,6 @@
+=sys-cluster/openstack-meta-2015.1.9999 **
+=sys-cluster/neutron-2015.1.9999 **
+=sys-auth/keystone-2015.1.9999 **
+=sys-cluster/nova-2015.1.9999 **
+=app-admin/glance-2015.1.9999 **
+=sys-cluster/cinder-2015.1.9999 **
