@@ -134,7 +134,7 @@ CDEPEND="
 		!sdl2? ( media-libs/libsdl[X] )
 		sdl2? ( media-libs/libsdl2[X] )
 	)
-	smartcard? ( dev-libs/nss !app-emulation/libcacard )
+	smartcard? ( dev-libs/nss )
 	spice? (
         >=app-emulation/spice-protocol-0.12.3
         >=app-emulation/libcacard-0.1.2
