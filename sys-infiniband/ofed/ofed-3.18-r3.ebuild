@@ -7,7 +7,7 @@ EAPI="5"
 OFED_VER="3.18"
 OFED_RC="1"
 OFED_RC_VER="3"
-OFED_SUFFIX="rc3.1.g93d3112"
+OFED_SUFFIX="rc3.1.ge72998b"
 
 IUSE_OFED_DRIVERS="
 		ofed_drivers_cxgb3
