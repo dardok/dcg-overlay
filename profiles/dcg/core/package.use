@@ -41,3 +41,5 @@ sys-cluster/slurm lua
 sys-cluster/lustre -client -server
 
 net-misc/openvswitch -modules
+
+net-firewall/ipset -modules
