@@ -26,6 +26,7 @@
 *net-analyzer/tcpdump
 *net-dns/avahi
 *net-firewall/ebtables
+*net-firewall/ipset
 *net-fs/openafs
 *net-fs/openafs-kernel
 *net-libs/nodejs
