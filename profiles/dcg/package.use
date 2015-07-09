@@ -1,4 +1,4 @@
-sys-apps/systemd nat policykit idn audit gcrypt importd python http curl lzma qrcode
+sys-apps/systemd nat policykit idn gcrypt importd python http curl lzma qrcode
 
 net-libs/libmicrohttpd epoll messages
 
