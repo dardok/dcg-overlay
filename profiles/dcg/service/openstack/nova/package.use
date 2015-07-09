@@ -2,4 +2,4 @@ sys-cluster/openstack-meta nova
 
 sys-cluster/nova -rabbitmq
 
-app-emulation/libvirt rbd avahi virt-network fuse
+app-emulation/libvirt rbd avahi
