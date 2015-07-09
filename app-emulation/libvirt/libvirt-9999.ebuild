@@ -14,7 +14,7 @@ BACKPORTS=""
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
-	EGIT_REPO_URI="git://libvirt.org/libvirt.git"
+	EGIT_REPO_URI="git://github.com/libvirt/libvirt.git"
 	SRC_URI=""
 	KEYWORDS=""
 	SLOT="0"
