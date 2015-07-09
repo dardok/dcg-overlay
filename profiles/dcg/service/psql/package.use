@@ -1,4 +1,4 @@
-dev-db/postgresql python uuid
+dev-db/postgresql server python uuid
 
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml
 
