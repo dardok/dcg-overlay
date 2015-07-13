@@ -1,3 +1,3 @@
 sys-cluster/openstack-meta neutron
 
-sys-cluster/neutron server
+sys-cluster/neutron server openvswitch
