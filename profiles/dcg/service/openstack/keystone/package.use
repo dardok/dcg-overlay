@@ -1,1 +1,5 @@
 sys-cluster/openstack-meta keystone
+
+www-servers/apache threads
+
+dev-libs/apr-util openssl
