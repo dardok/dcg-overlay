@@ -4,8 +4,9 @@
 *app-admin/ulogd
 *app-arch/star
 *app-crypt/ccid
-*app-emulation/qemu
 *app-emulation/docker
+*app-emulation/libvirt
+*app-emulation/qemu
 *app-misc/jq
 *app-misc/tmux
 *app-portage/eix
