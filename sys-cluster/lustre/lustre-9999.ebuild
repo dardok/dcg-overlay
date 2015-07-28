@@ -90,6 +90,7 @@ src_configure() {
 	econf \
 		${myconf} \
 		--disable-ldiskfs \
+		--disable-gss \
 		--with-linux="${KV_DIR}" \
 		--with-linux-obj="${KV_OUT_DIR}" \
 		$(use_enable client) \
