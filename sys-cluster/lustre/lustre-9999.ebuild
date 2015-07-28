@@ -73,6 +73,8 @@ use_disable() {
 }
 
 src_configure() {
+    set_arch_to_kernel
+
 	local myconf
 	if use server; then
 		SPL_PATH=$(basename $(echo "${EROOT}usr/src/spl-"*)) \
