@@ -16,7 +16,7 @@ else
 	EGIT_TAG="${PV}"
 fi
 
-inherit git-r3 autotools linux-mod toolchain-funcs udev flag-o-matic
+inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
 DESCRIPTION="Lustre is a parallel distributed file system"
 HOMEPAGE="http://wiki.whamcloud.com/"
@@ -43,6 +43,7 @@ DEPEND="${RDEPEND}
 	client? ( virtual/linux-sources )"
 
 pkg_setup() {
+    linux-info_pkg_setup
 	filter-mfpmath sse
 	filter-mfpmath i386
 	filter-flags -msse* -mavx* -mmmx -m3dnow
