@@ -1,1 +1,1 @@
-sys-cluster/lustre server -checksum lru-resize
+sys-cluster/lustre client server -checksum lru-resize
