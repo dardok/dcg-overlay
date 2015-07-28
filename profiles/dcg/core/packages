@@ -33,6 +33,7 @@
 *net-fs/openafs
 *net-fs/openafs-kernel
 *net-libs/nodejs
+*net-libs/libgssglue
 *net-libs/libnet
 *net-libs/libnetfilter_queue
 *net-libs/libnetfilter_log
