@@ -9,6 +9,8 @@ app-emulation/libvirt rbd avahi
 app-emulation/qemu rbd numa spice tls usb usbredir virtfs vde iscsi
 app-emulation/spice -smartcard
 
+app-emulation/docker btrfs overlay experimental
+
 dev-db/postgresql -server
 
 dev-libs/libpcre pcre16
