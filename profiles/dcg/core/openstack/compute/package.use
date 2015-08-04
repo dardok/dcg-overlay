@@ -2,3 +2,5 @@ sys-cluster/openstack-meta nova neutron
 
 sys-cluster/nova compute-only
 sys-cluster/neutron compute-only openvswitch
+
+net-dns/dnsmasq dhcp-tools
