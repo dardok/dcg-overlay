@@ -12,6 +12,7 @@
 *app-portage/eix
 *app-portage/gentoolkit
 *app-shells/bash-completion
+*app-shells/tcsh
 *dev-lang/go
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
