@@ -3,3 +3,5 @@
 
 # too soon
 >=net-libs/nodejs-0.12.0
+
+>sys-libs/ncurses-5.9
