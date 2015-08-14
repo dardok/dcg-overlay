@@ -24,7 +24,6 @@
 *dev-python/virtualenv
 *dev-util/cmake
 *dev-util/strace
-*dev-util/sysdig
 *mail-mta/nullmailer
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
