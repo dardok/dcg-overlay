@@ -32,6 +32,8 @@
 *net-dns/avahi
 *net-firewall/ebtables
 *net-firewall/ipset
+*net-fs/nfs-utils
+*net-fs/nfs4-acl-tools
 *net-fs/openafs
 *net-fs/openafs-kernel
 *net-libs/nodejs
@@ -41,6 +43,7 @@
 *net-libs/libnetfilter_log
 *net-libs/libnetfilter_conntrack
 *net-libs/libnetfilter_acct
+*net-libs/libnfsidmap
 *net-misc/bridge-utils
 *net-misc/keychain
 *net-misc/openvswitch
