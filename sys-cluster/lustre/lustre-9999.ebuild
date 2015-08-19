@@ -84,7 +84,7 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}usr/src/${ZFS_PATH} \
 							--with-zfs-obj=${EROOT}usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
-    if ! use server and ! use client; then
+    if ! use server && ! use client; then
         myconf="${myconf} --disable-modules"
     fi
 	econf \
