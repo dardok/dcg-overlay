@@ -20,7 +20,7 @@
 *dev-libs/dbus-glib
 *dev-libs/jansson
 *dev-libs/libnl
-*dev-python/python-openstackclient
+#*dev-python/python-openstackclient
 *dev-python/pygobject
 *dev-python/virtualenv
 *dev-util/cmake
