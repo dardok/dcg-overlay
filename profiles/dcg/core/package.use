@@ -44,6 +44,8 @@ x11-libs/cairo xcb
 
 sys-cluster/ceph fuse
 
+sys-fs/zfs -rootfs
+
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
 
