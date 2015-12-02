@@ -6,3 +6,4 @@
 =sys-kernel/spl-9999 **
 =sys-fs/zfs-9999 **
 =sys-fs/zfs-kmod-9999 **
+=sys-kernel/linux-firmware-99999999 **
