@@ -1,2 +1,0 @@
-# unsupported by cuda
->=sys-devel/gcc-4.9
