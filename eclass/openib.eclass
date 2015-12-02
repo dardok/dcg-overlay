@@ -46,6 +46,7 @@ OFED_VERSIONS=(
 	"3.5"
 	"3.12"
 	"3.18"
+	"3.18-1"
 	)
 
 # @FUNCTION: block_other_ofed_versions
@@ -69,14 +70,20 @@ else
 	SRC_URI="https://www.openfabrics.org/downloads/OFED/ofed-${OFED_BASE_VER}/OFED-${OFED_VER}-rc${OFED_RC_VER}.tgz"
 fi
 
+MY_SEP="-"
 case ${PN} in
 	ofed)
 		case ${PV} in
 			1.5.*|1.5.*.*)
 				MY_PN="ofa_kernel"
 				;;
+			*-*)
+				MY_PN="compat-rdma"
+                MY_SEP="."
+				;;
 			*)
 				MY_PN="compat-rdma"
+                MY_SEP="-"
 				;;
 		esac
 		;;
@@ -109,7 +116,7 @@ esac
 if [ -z ${OFED_SRC_SNAPSHOT} ]; then
 	S="${WORKDIR}/${MY_PN}-${MY_PV}"
 else
-	S="${WORKDIR}/${MY_PN}-${MY_PV}-${OFED_SUFFIX}"
+	S="${WORKDIR}/${MY_PN}-${MY_PV}${MY_SEP}${OFED_SUFFIX}"
 fi
 
 
