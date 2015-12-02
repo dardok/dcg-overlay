@@ -116,7 +116,7 @@ esac
 if [ -z ${OFED_SRC_SNAPSHOT} ]; then
 	S="${WORKDIR}/${MY_PN}-${MY_PV}"
 else
-	S="${WORKDIR}/${MY_PN}-${MY_PV}${MY_SEP}${OFED_SUFFIX}"
+	S="${WORKDIR}/${MY_PN}-${MY_PV}-${OFED_SUFFIX}"
 fi
 
 
@@ -128,7 +128,7 @@ openib_src_unpack() {
 	if [ -z ${OFED_RC} ]; then
 		case ${PN} in
 			ofed)
-				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}-${OFED_SUFFIX}.src.rpm"
+				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}${MY_SEP}${OFED_SUFFIX}.src.rpm"
 				;;
 			*)
 				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${MY_PV}-${OFED_SUFFIX}.src.rpm"
