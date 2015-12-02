@@ -73,17 +73,17 @@ fi
 MY_SEP="-"
 case ${PN} in
 	ofed)
-		case ${PV} in
+		case ${OFED_VER} in
 			1.5.*|1.5.*.*)
 				MY_PN="ofa_kernel"
 				;;
 			*-*)
 				MY_PN="compat-rdma"
-                MY_SEP="."
+				MY_SEP="."
 				;;
 			*)
 				MY_PN="compat-rdma"
-                MY_SEP="-"
+				MY_SEP="-"
 				;;
 		esac
 		;;
@@ -137,7 +137,7 @@ openib_src_unpack() {
 	else
 		case ${PN} in
 			ofed)
-				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${OFED_VER}-${OFED_SUFFIX}.src.rpm"
+				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${OFED_VER}${MY_SEP}${OFED_SUFFIX}.src.rpm"
 				;;
 			*)
 				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${MY_PV}-${OFED_SUFFIX}.src.rpm"
@@ -147,7 +147,15 @@ openib_src_unpack() {
 	if [ -z ${OFED_SNAPSHOT} ]; then
 		case ${PN} in
 			ofed)
-				unpack ./${MY_PN}-${OFED_VER}.${EXT}
+				case ${OFED_VER} in
+					*-*)
+						COMPAT_VER=${PV}
+						;;
+					*)
+						COMPAT_VER=${OFED_VER}
+						;;
+				esac
+				unpack ./${MY_PN}-${COMPAT_VER}.${EXT}
 				;;
 			*)
 				unpack ./${MY_PN}-${MY_PV}.${EXT}
@@ -156,7 +164,15 @@ openib_src_unpack() {
 	else
 		case ${PN} in
 			ofed)
-				unpack ./${MY_PN}-${OFED_VER}-${OFED_SUFFIX}.${EXT}
+				case ${OFED_VER} in
+					*-*)
+						COMPAT_VER=${PV}
+						;;
+					*)
+						COMPAT_VER=${OFED_VER}
+						;;
+				esac
+				unpack ./${MY_PN}-${COMPAT_VER}-${OFED_SUFFIX}.${EXT}
 				;;
 			*)
 				unpack ./${MY_PN}-${MY_PV}-${OFED_SUFFIX}.${EXT}

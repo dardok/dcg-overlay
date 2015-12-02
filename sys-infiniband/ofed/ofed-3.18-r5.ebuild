@@ -59,7 +59,16 @@ DEPEND="${RDEPEND}
 		"
 block_other_ofed_versions
 
-S="${WORKDIR}/${MY_PN}-${OFED_VER}"
+case ${OFED_VER} in
+	*-*)
+		COMPAT_VER=${PV}
+		;;
+	*)
+		COMPAT_VER=${OFED_VER}
+		;;
+esac
+
+S="${WORKDIR}/${MY_PN}-${COMPAT_VER}"
 SCRIPTDIR="${S}/ofed_scripts"
 
 src_configure() { :; }
