@@ -57,4 +57,7 @@ net-firewall/ipset -modules
 
 dev-libs/cyrus-sasl -postgres
 
-sys-auth/sssd augeas autofs netlink nfsv4
+sys-auth/sssd augeas autofs netlink nfsv4 -acl
+
+net-dns/bind-tools gssapi
+sys-libs/libseccomp static-libs
