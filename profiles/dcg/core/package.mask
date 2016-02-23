@@ -1,2 +1,0 @@
-# too soon
->=net-libs/nodejs-0.12.0
