@@ -61,3 +61,5 @@ sys-auth/sssd augeas autofs netlink nfsv4 -acl
 
 net-dns/bind-tools gssapi
 sys-libs/libseccomp static-libs
+sys-libs/tevent python
+sys-libs/tdb python
