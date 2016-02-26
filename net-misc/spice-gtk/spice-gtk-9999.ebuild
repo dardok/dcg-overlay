@@ -8,17 +8,23 @@ WANT_AUTOMAKE="1.12"
 VALA_MIN_API_VERSION="0.14"
 VALA_USE_DEPEND="vapigen"
 
-PYTHON_COMPAT=( python2_7 )
+PYTHON_COMPAT=( python2_7 python3_4 )
 
-inherit autotools eutils multibuild python-single-r1 vala
+if [[ $PV = *9999* ]]; then
+    KEYWORDS=""
+    EGIT_BRANCH="master"
+fi
+
+inherit autotools eutils multibuild python-single-r1 vala git-r3 autotools
 
 DESCRIPTION="Set of GObject and Gtk objects for connecting to Spice servers and a client GUI"
 HOMEPAGE="http://spice-space.org http://gitorious.org/spice-gtk"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-SRC_URI="http://spice-space.org/download/gtk/${P}.tar.bz2"
-KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+#SRC_URI="http://spice-space.org/download/gtk/${P}.tar.bz2"
+EGIT_REPO_URI="git://anongit.freedesktop.org/spice/spice-gtk"
+KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
 IUSE="dbus gstreamer gtk3 +introspection lz4 policykit pulseaudio python sasl smartcard static-libs usbredir vala webdav"
 
 REQUIRED_USE="
@@ -38,12 +44,12 @@ RDEPEND="
 	>=x11-libs/pixman-0.17.7
 	>=media-libs/celt-0.5.1.1:0.5.1
 	media-libs/opus
-	dev-libs/openssl:=
+	dev-libs/openssl:0=
 	gtk3? ( x11-libs/gtk+:3[introspection?] )
 	x11-libs/gtk+:2[introspection?]
 	>=dev-libs/glib-2.28:2
 	>=x11-libs/cairo-1.2
-	virtual/jpeg:=
+	virtual/jpeg:0=
 	sys-libs/zlib
 	introspection? ( dev-libs/gobject-introspection )
 	lz4? ( app-arch/lz4 )
@@ -66,11 +72,13 @@ RDEPEND="
 		>=net-libs/libsoup-2.49.91 )
 "
 DEPEND="${RDEPEND}
-	dev-lang/python
-	dev-python/pyparsing
+	=app-emulation/spice-protocol-9999
 	dev-perl/Text-CSV
+	dev-python/pyparsing[${PYTHON_USEDEP}]
+	dev-python/six[${PYTHON_USEDEP}]
 	>=dev-util/gtk-doc-am-1.14
 	>=dev-util/intltool-0.40.0
+	${PYTHON_DEPS}
 	>=sys-devel/gettext-0.17
 	virtual/pkgconfig
 	vala? ( $(vala_depend) )
@@ -89,6 +97,13 @@ src_prepare() {
 }
 
 src_configure() {
+    if [[ ${PV} == 9999 ]]; then
+        git submodule update --init --recursive
+        gtkdocize
+        eautoreconf
+        intltoolize -f
+    fi
+
 	local myconf
 	local audio="no"
 
