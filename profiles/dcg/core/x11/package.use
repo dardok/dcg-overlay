@@ -47,3 +47,5 @@ x11-drivers/xf86-video-qxl xspice
 net-misc/openvswitch monitor
 
 x11-misc/notify-osd minimal
+
+dev-vcs/git gtk
