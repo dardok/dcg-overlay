@@ -11,7 +11,7 @@ if [[ $PV = *9999* ]]; then
     EGIT_BRANCH="master"
 fi
 
-inherit eutils python-any-r1 git-r3
+inherit eutils python-any-r1 git-r3 autotools
 
 DESCRIPTION="SPICE server"
 HOMEPAGE="http://spice-space.org/"
