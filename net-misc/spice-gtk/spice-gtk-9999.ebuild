@@ -95,7 +95,7 @@ src_prepare() {
 
 	sed -i -e 's|^include|#include|g' "${S}/doc/reference/Makefile.am"
 
-	AT_NO_RECURSIVE="yes" eautoreconf
+	eautoreconf
 
 	use vala && vala_src_prepare
 }
