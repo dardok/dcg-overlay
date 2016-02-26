@@ -62,6 +62,7 @@
 *sys-auth/pam_krb5
 *sys-auth/sssd
 *sys-cluster/ceph
+*sys-cluster/lustre
 *sys-cluster/openmpi
 *sys-cluster/slurm
 *sys-fs/multipath-tools
