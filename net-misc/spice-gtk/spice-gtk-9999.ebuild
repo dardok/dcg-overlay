@@ -99,9 +99,8 @@ src_prepare() {
 src_configure() {
     if [[ ${PV} == 9999 ]]; then
         git submodule update --init --recursive
-        gtkdocize
+        touch gtk-doc.make
         eautoreconf
-        intltoolize -f
     fi
 
 	local myconf
