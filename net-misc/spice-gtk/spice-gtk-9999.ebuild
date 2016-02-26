@@ -99,7 +99,7 @@ src_prepare() {
 src_configure() {
     if [[ ${PV} == 9999 ]]; then
         git submodule update --init --recursive
-        touch "${S}/gtk-doc.make" || die
+        sed -i -e 's|^include|#include|g' "${S}/doc/reference/Makefile.am"
         eautoreconf
     fi
 
