@@ -71,3 +71,4 @@
 *sys-power/acpid
 *sys-process/atop
 *sys-process/lsof
+*x11-apps/xauth
