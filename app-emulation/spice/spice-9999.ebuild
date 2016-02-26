@@ -60,6 +60,11 @@ pkg_setup() {
 
 src_prepare() {
 	epatch_user
+    if [[ ${PV} == 9999 ]]; then
+        git submodule update --init --recursive
+        mkdir -p m4
+        eautoreconf
+    fi
 }
 
 src_configure() {
