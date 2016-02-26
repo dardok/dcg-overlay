@@ -91,18 +91,16 @@ DEPEND="${RDEPEND}
 src_prepare() {
 	epatch_user
 
+	git submodule update --init --recursive
+
+	sed -i -e 's|^include|#include|g' "${S}/doc/reference/Makefile.am"
+
 	AT_NO_RECURSIVE="yes" eautoreconf
 
 	use vala && vala_src_prepare
 }
 
 src_configure() {
-    if [[ ${PV} == 9999 ]]; then
-        git submodule update --init --recursive
-        sed -i -e 's|^include|#include|g' "${S}/doc/reference/Makefile.am"
-        eautoreconf
-    fi
-
 	local myconf
 	local audio="no"
 
