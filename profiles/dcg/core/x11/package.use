@@ -29,6 +29,8 @@ x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf
 
 sys-cluster/openmpi cuda
 
+dev-util/nvidia-cuda-toolkit profiler
+
 # for ibutils
 media-gfx/graphviz tcl gdk-pixbuf gtk
 
