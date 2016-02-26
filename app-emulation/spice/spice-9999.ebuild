@@ -59,8 +59,6 @@ pkg_setup() {
 # * opengl support is currently broken
 
 src_prepare() {
-	epatch "${FILESDIR}/0.11.0-gold.patch"
-
 	epatch_user
 }
 
