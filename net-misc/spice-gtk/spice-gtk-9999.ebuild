@@ -158,7 +158,7 @@ src_test() {
 }
 
 src_install() {
-	dodoc AUTHORS ChangeLog NEWS README THANKS TODO
+	dodoc AUTHORS NEWS README TODO
 
 	multibuild_foreach_variant run_in_build_dir default
 
