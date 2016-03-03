@@ -53,3 +53,6 @@ dev-vcs/git gtk
 sys-devel/distcc gtk
 
 gnome-base/gvfs google gnome-online-accounts gtk ios zeroconf udisks
+dev-libs/libgdata gnome-online-accounts
+app-crypt/pinentry gnome-keyring
+app-crypt/gcr gtk
