@@ -53,5 +53,4 @@ dev-vcs/git gtk
 sys-devel/distcc gtk
 
 gnome-base/gvfs gtk ios zeroconf udisks
-app-crypt/pinentry gnome-keyring
 app-crypt/gcr gtk
