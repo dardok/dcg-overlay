@@ -1,1 +1,2 @@
 sys-devel/gcc:5
+>=sys-apps/likwid-4
