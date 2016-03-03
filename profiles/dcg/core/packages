@@ -66,6 +66,7 @@
 *sys-cluster/openmpi
 *sys-cluster/slurm
 *sys-devel/distcc
+*sys-devel/llvm
 *sys-fs/multipath-tools
 *sys-infiniband/ofed
 *sys-kernel/linux-firmware

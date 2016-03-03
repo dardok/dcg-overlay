@@ -8,8 +8,6 @@ net-analyzer/wireshark -qt4
 # build breaks with opencl
 sys-apps/hwloc -opencl gl
 
-sys-devel/llvm python clang gold
-
 x11-apps/xdpyinfo dga dmx
 
 x11-base/xorg-server dmx glamor tslib xnest xvfb
