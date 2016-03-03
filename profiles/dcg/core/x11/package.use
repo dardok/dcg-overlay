@@ -52,4 +52,4 @@ dev-vcs/git gtk
 
 sys-devel/distcc gtk
 
-gnome-base/gvfs google gtk ios zeroconf udisks
+gnome-base/gvfs google gnome-online-accounts gtk ios zeroconf udisks
