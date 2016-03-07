@@ -1,3 +1,4 @@
+*app-admin/fleet
 *app-admin/mcelog
 *app-admin/puppet
 *app-admin/sudo
@@ -14,6 +15,7 @@
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/tcsh
+*dev-db/etcd
 *dev-lang/go
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
