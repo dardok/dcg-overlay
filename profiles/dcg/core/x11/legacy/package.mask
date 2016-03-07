@@ -1,4 +1,4 @@
->x11-drivers/nvidia-drivers-340.76
+>x11-drivers/nvidia-drivers-340.96
 >x11-drivers/nvidia-settings-340.58
 >dev-util/nvidia-cuda-toolkit-6.5.14
 >sys-apps/hwloc-1.10.0-r2
