@@ -7,11 +7,10 @@ OPENMPI_OFED_FEATURES="connectx-xrc control-hdr-padding dynamic-sl failover rdma
 OPENMPI_RM="slurm"
 
 PYTHON_SINGLE_TARGET="-* python2_7"
-PYTHON_TARGETS="-* python2_7 python3_4"
+PYTHON_TARGETS="-* python2_7 python3_4 python3_5"
 RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
 
-USE="-debug -doc -examples -suid"
-USE="${USE} dbus gudev pam policykit session"
+USE="dbus gudev pam policykit session"
 USE="${USE} cxx fortran nptl gmp openmp libffi"
 USE="${USE} readline ncurses -slang"
 USE="${USE} nls icu unicode iconv"
@@ -26,7 +25,9 @@ USE="${USE} pcre expat xml"
 USE="${USE} bzip2 zlib lzma lzo minizip"
 USE="${USE} berkdb gdbm sqlite"
 
-USE="${USE} afs infiniband smartcard pkcs11 xfs zfs"
+USE="${USE} afs infiniband"
+USE="${USE} xfs zfs"
+USE="${USE} smartcard pkcs11"
 
 USE="${USE} alsa pulseaudio jack v4l wifi joystick"
 

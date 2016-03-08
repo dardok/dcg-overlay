@@ -1,3 +1,7 @@
 app-crypt/mit-krb5 keyutils pkinit
 
 sys-apps/hwloc xml
+sys-libs/libcap-ng python
+sys-libs/ncurses threads
+sys-process/audit ldap
+

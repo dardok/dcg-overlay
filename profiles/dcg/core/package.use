@@ -35,7 +35,6 @@ sys-libs/timezone-data leaps_timezone
 
 dev-libs/nss utils
 
-sys-libs/libcap-ng python
 media-libs/freetype auto-hinter
 
 media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
