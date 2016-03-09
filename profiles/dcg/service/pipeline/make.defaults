@@ -1,1 +1,1 @@
-USE="gstreamer orc libav"
+USE="gstreamer orc"
