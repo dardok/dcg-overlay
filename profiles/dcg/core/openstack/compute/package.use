@@ -4,3 +4,5 @@ sys-cluster/nova compute-only
 sys-cluster/neutron compute-only openvswitch
 
 net-dns/dnsmasq dhcp-tools
+
+dev-python/unicodecsv PYTHON_TARGETS="python2_7 python3_4"
