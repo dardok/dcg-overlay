@@ -1,11 +1,17 @@
 EAPI=5
-inherit git-r3 cmake-utils
+inherit cmake-utils
 
 DESCRIPTION="Generic OpenGL overlay statistics renderer"
 HOMEPAGE="https://github.com/Eyescale/GLStats"
 
-EGIT_REPO_URI="git://github.com/Eyescale/GLStats.git"
-EGIT_BRANCH="master"
+if [[ ${PV} = *9999* ]]; then
+    inherit git-r3
+    EGIT_REPO_URI="git://github.com/Eyescale/GLStats.git"
+    EGIT_BRANCH="master"
+else
+    SRC_URI="https://github.com/Eyescale/GLStats/archive/0.3.1.tar.gz"
+    S=${WORKDIR}/GLStats-${PV}
+fi
 
 LICENSE="LGPL-3"
 SLOT="0"
