@@ -9,7 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/Equalizer"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/Equalizer/archive/1.10.0.tar.gz"
+    SRC_URI="https://github.com/Eyescale/Equalizer/archive/1.10.0.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/Equalizer-${PV}
 fi
 

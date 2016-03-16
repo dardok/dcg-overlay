@@ -9,7 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/hwsd.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/hwsd/archive/1.3.0.tar.gz"
+    SRC_URI="https://github.com/Eyescale/hwsd/archive/1.3.0.tar.gz -> ${P}.tar.gz"
 fi
 
 LICENSE="LGPL-3"

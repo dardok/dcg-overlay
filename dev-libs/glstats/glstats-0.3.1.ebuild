@@ -9,7 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/GLStats.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/GLStats/archive/0.3.1.tar.gz"
+    SRC_URI="https://github.com/Eyescale/GLStats/archive/${PV}.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/GLStats-${PV}
 fi
 
