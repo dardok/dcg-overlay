@@ -1,3 +1,16 @@
+diff -u -r -N a/examples/eqNBody/client.cpp b/examples/eqNBody/client.cpp
+--- a/examples/eqNBody/client.cpp	2015-11-06 07:13:36.000000000 -0500
++++ b/examples/eqNBody/client.cpp	2016-03-16 12:15:48.813570538 -0400
+@@ -73,9 +73,6 @@
+         disconnectServer( _server );
+         return EXIT_FAILURE;
+     }
+-    else if( _config->getError( ))
+-        LBWARN << "Error during initialization: " << _config->getError()
+-               << std::endl;
+ 
+     return EXIT_SUCCESS;
+ }
 diff -u -r -N a/examples/eqNBody/config.cpp b/examples/eqNBody/config.cpp
 --- a/examples/eqNBody/config.cpp	2015-11-06 07:13:36.000000000 -0500
 +++ b/examples/eqNBody/config.cpp	2016-03-16 12:05:36.882214074 -0400
