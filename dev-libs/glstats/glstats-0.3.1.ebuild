@@ -24,6 +24,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
+	dev-util/cppcheck
 "
 
 src_configure() {
