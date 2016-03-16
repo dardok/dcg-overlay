@@ -1,11 +1,11 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
+# $Header: /var/cvsroot/gentoo-x86/media-libs/opencv/opencv-2.4.10.ebuild,v 1.4 2015/05/23 19:50:32 dilfridge Exp $
 
 EAPI=5
 PYTHON_COMPAT=( python2_7 )
 
-inherit toolchain-funcs cmake-utils python-single-r1 java-pkg-opt-2 java-ant-2
+inherit base toolchain-funcs cmake-utils python-single-r1 java-pkg-opt-2 java-ant-2
 
 DESCRIPTION="A collection of algorithms and sample code for various computer vision problems"
 HOMEPAGE="http://opencv.willowgarage.com"
@@ -35,8 +35,8 @@ RDEPEND="
 		!libav? ( media-video/ffmpeg:0= )
 	)
 	gstreamer? (
-		media-libs/gstreamer:1.0
-		media-libs/gst-plugins-base:1.0
+		media-libs/gstreamer:0.10
+		media-libs/gst-plugins-base:0.10
 	)
 	gtk? (
 		dev-libs/glib:2
@@ -73,17 +73,22 @@ DEPEND="${RDEPEND}
 	java? ( >=virtual/jdk-1.6 )
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-2.3.1a-libav-0.7.patch"
+	"${FILESDIR}/${PN}-2.4.3-gcc47.patch"
+	"${FILESDIR}/${PN}-2.4.2-cflags.patch"
+	"${FILESDIR}/${PN}-2.4.8-javamagic.patch"
+	"${FILESDIR}/${PN}-2.4.9-cuda-pkg-config.patch"
+	"${FILESDIR}/${PN}-2.4.11-libav10.patch"
+)
+
 pkg_setup() {
 	use python && python-single-r1_pkg_setup
 	java-pkg-opt-2_pkg_setup
 }
 
 src_prepare() {
-	epatch "${FILESDIR}/${PN}-2.3.1a-libav-0.7.patch" \
-        	"${FILESDIR}/${PN}-2.4.3-gcc47.patch" \
-        	"${FILESDIR}/${PN}-2.4.2-cflags.patch" \
-        	"${FILESDIR}/${PN}-2.4.8-javamagic.patch" \
-        	"${FILESDIR}/${PN}-2.4.9-cuda-pkg-config.patch"
+	base_src_prepare
 
 	# remove bundled stuff
 	rm -rf 3rdparty
@@ -168,11 +173,19 @@ src_configure() {
 	fi
 
 	if use cuda; then
-		mycmakeargs+=( "-DWITH_CUDA=ON" )
-		mycmakeargs+=( "-DWITH_CUBLAS=ON" )
-		mycmakeargs+=( "-DWITH_CUFFT=ON" )
-		if [[ "$(nvcc -V)" =~ "V7" ]]; then
-			mycmakeargs+=( "-DCUDA_ARCH_BIN=\"2.0 2.1(2.0) 3.0 3.5\"" )
+		if [[ "$(gcc-version)" > "4.8" ]]; then
+			ewarn "CUDA and >sys-devel/gcc-4.8 do not play well together. Disabling CUDA support."
+			mycmakeargs+=( "-DWITH_CUDA=OFF" )
+			mycmakeargs+=( "-DWITH_CUBLAS=OFF" )
+			mycmakeargs+=( "-DWITH_CUFFT=OFF" )
+		else
+			mycmakeargs+=( "-DWITH_CUDA=ON" )
+			mycmakeargs+=( "-DWITH_CUBLAS=ON" )
+			mycmakeargs+=( "-DWITH_CUFFT=ON" )
+
+            if [[ "$(nvcc -V)" =~ "V7" ]]; then
+			    mycmakeargs+=( "-DCUDA_ARCH_BIN=\"2.0 2.1(2.0) 3.0 3.5\"" )
+            fi
 		fi
 	else
 		mycmakeargs+=( "-DWITH_CUDA=OFF" )

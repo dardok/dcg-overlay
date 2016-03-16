@@ -28,7 +28,7 @@ RDEPEND="
     >=dev-libs/pression-1.0
     hwsd? ( >=dev-libs/hwsd-1.1 )
     glstats? ( >=dev-libs/glstats-0.3 )
-    opencv? ( media-libs/opencv:2.4 )
+    opencv? ( media-libs/opencv:0/2.4 )
     osg? ( >=dev-games/openscenegraph-3.0 )
     glew? ( media-libs/glew )
     qt5? ( 
