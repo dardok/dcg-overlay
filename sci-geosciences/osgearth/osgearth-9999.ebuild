@@ -41,7 +41,7 @@ DEPEND="${RDEPEND}
 
 #S=${WORKDIR}/${PN}-${P}
 
-PATCHES=( "${FILESDIR}"/osgearth-2.6-cmake-options.patch )
+#PATCHES=( "${FILESDIR}"/osgearth-2.6-cmake-options.patch )
 
 src_configure() {
 	# V8 disabled due to
