@@ -1,0 +1,20 @@
+--- eq/glx/window.cpp.orig	2016-03-16 08:11:16.195304303 -0400
++++ eq/glx/window.cpp	2016-03-16 08:11:33.938400066 -0400
+@@ -180,7 +180,7 @@
+                 return 0;
+             }
+             attributes.push_back( GLX_RENDER_TYPE );
+-            attributes.push_back( GLX_RGBA_FLOAT_BIT );
++            attributes.push_back( GLX_RGBA_FLOAT_BIT_ARB );
+             colorSize = colorSize == RGBA16F ? 16 : 32;
+             break;
+ 
+@@ -362,7 +362,7 @@
+         ( getIAttribute( IATTR_PLANES_COLOR ) == RGBA16F ||
+           getIAttribute( IATTR_PLANES_COLOR ) == RGBA32F ))
+     {
+-        type = GLX_RGBA_FLOAT_TYPE;
++        type = GLX_RGBA_FLOAT_TYPE_ARB;
+     }
+ 
+     GLXContext context = 0;
