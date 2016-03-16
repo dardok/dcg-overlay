@@ -2,6 +2,10 @@ media-video/ffmpeg cpudetection ieee1394 libv4l network mp3 x265 xvid aac aacplu
 
 dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr qt5
 
+media-libs/opencv gstreamer ffmpeg
+
+dev-libs/equalizer opencv
+
 sci-libs/gdal geos
 
 dev-libs/equalizer hwsd glstats osg qt5
