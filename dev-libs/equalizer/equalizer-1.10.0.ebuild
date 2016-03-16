@@ -10,7 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_BRANCH="master"
 else
     SRC_URI="https://github.com/Eyescale/Equalizer/archive/1.10.0.tar.gz"
-	S=Equalizer-${PV}
+	S=${WORKDIR}/Equalizer-${PV}
 fi
 
 LICENSE="LGPL-3"
