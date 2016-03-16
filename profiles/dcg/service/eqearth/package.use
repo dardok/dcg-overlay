@@ -8,4 +8,6 @@ dev-libs/equalizer opencv
 
 sci-libs/gdal geos
 
+media-plugins/frei0r-plugins -facedetect
+
 dev-libs/equalizer hwsd glstats osg qt5
