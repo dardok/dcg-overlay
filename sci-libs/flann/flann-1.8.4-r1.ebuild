@@ -38,6 +38,7 @@ PATCHES=(
 	"${FILESDIR}"/${P}-examples.patch
 	"${FILESDIR}"/${P}-options.patch
 	"${FILESDIR}"/${P}-CUDA_NVCC_FLAGS.patch
+	"${FILESDIR}"/${P}-NVCC_COMPILER_BINDIR.patch
 	"${FILESDIR}"/${P}-cuda5.5.patch
 	"${FILESDIR}"/${P}-multilib.patch
 	"${FILESDIR}"/${P}-docdir.patch
@@ -67,6 +68,7 @@ src_prepare() {
 		-e "/CUSTOM_TARGET/a\INSTALL(FILES \${MEX_FILE} DESTINATION libexec/octave/site/oct/${CHOST})" \
 		src/matlab/CMakeLists.txt || die
 	use cuda && cuda_src_prepare
+
 	# Change sm
     sed -i -e 's/sm_13/sm_20/g' src/cpp/CMakeLists.txt
 
