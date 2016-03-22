@@ -8,7 +8,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/Pression/archive/1.1.0.tar.gz -> ${P}.tar.gz"
+    SRC_URI="https://github.com/Eyescale/Pression/archive/${PV}.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/Pression-${PV}
 fi
 

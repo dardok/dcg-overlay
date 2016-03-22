@@ -9,7 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/vmmlib.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/vmmlib/archive/1.9.0.tar.gz -> ${P}.tar.gz"
+    SRC_URI="https://github.com/Eyescale/vmmlib/archive/${PV}.tar.gz -> ${P}.tar.gz"
 fi
 
 LICENSE="LGPL-3"

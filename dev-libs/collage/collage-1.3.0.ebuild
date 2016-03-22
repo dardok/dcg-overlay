@@ -10,7 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/dardok/Collage.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/Collage/archive/1.3.0.tar.gz -> ${P}.tar.gz"
+    SRC_URI="https://github.com/Eyescale/Collage/archive/${PV}.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/Collage-${PV}
 fi
 
