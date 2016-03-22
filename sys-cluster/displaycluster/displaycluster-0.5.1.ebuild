@@ -17,7 +17,7 @@ RDEPEND="
     >=dev-libs/boost-1.41.0
     >=dev-libs/deflect-0.4
     dev-libs/fcgi
-    media-video/libav
+    media-video/ffmpeg
     sys-cluster/openmpi
     virtual/opengl
     dev-qt/qtconcurrent:5
