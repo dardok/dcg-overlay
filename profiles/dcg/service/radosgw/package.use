@@ -1,5 +1,1 @@
-www-servers/apache threads
-
 sys-cluster/ceph radosgw
-
-dev-libs/apr-util openssl

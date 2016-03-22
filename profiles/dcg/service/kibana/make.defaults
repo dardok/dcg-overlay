@@ -1,3 +1,1 @@
-APACHE2_MODULES="proxy proxy_fcgi"
-
-APACHE2_MPMS="event"
+APACHE2_MODULES="-*"
