@@ -1,4 +1,4 @@
-APACHE2_MODULES="proxy proxy_ajp proxy_balancer proxy_fcgi proxy_ftp proxy_http proxy_wstunnel remoteip lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat slotmem_shm"
+APACHE2_MODULES="http2 proxy proxy_ajp proxy_balancer proxy_fcgi proxy_ftp proxy_http proxy_wstunnel remoteip lbmethod_bybusyness lbmethod_byrequests lbmethod_bytraffic lbmethod_heartbeat slotmem_shm"
 
 APACHE2_MPMS="event"
 
