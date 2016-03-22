@@ -1,11 +1,18 @@
 EAPI=5
-inherit git-r3 cmake-utils
+inherit cmake-utils
 
 DESCRIPTION="C++ network utility library"
 HOMEPAGE="https://github.com/HBPVIS/Servus"
 
-EGIT_REPO_URI="git://github.com/HBPVIS/Servus.git"
-EGIT_BRANCH="master"
+if [[ ${PV} = *9999* ]]; then
+    inherit git-r3
+    EGIT_REPO_URI="git://github.com/HBPVIS/Servus.git"
+    EGIT_BRANCH="master"
+else
+	SRC_URI="https://github.com/HBPVIS/Servus/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    S=${WORKDIR}/Servus${PV}
+fi
+
 
 LICENSE="LGPL-3"
 SLOT="0"
