@@ -5,3 +5,5 @@ dev-qt/qtchooser qt5
 dev-qt/qtquick1 webkit
 
 dev-qt/qtwebkit gstreamer
+
+media-plugins/frei0r-plugins -facedetect
