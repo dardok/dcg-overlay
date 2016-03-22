@@ -1,11 +1,17 @@
 EAPI=5
-inherit git-r3 cmake-utils
+inherit cmake-utils
 
 DESCRIPTION="C++ library for building applications to stream pixels to DisplayCluster"
 HOMEPAGE="https://github.com/BlueBrain/Deflect"
 
-EGIT_REPO_URI="git://github.com/BlueBrain/Deflect.git"
-EGIT_BRANCH="master"
+if [[ ${PV} = *9999* ]]; then
+    inherit git-r3
+    EGIT_REPO_URI="git://github.com/BlueBrain/Deflect.git"
+    EGIT_BRANCH="master"
+else
+    SRC_URI="https://github.com/BlueBrain/Deflect/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    S=${WORKDIR}/Deflect-${PV}
+fi
 
 LICENSE="LGPL-3"
 SLOT="0"
