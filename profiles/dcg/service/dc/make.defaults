@@ -1,1 +1,3 @@
+RUBY_TARGETS="-* ruby23"
+
 USE="ffmpeg"
