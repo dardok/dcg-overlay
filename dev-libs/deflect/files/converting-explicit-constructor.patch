@@ -1,14 +1,14 @@
 --- a/deflect/MTQueue.h	2016-03-07 05:06:13.000000000 -0500
-+++ b/deflect/MTQueue.h	2016-03-23 05:56:16.192859890 -0400
++++ b/deflect/MTQueue.h	2016-03-23 06:06:05.091412509 -0400
 @@ -84,8 +84,10 @@
      /** Clears the queue. */
      void clear()
      {
-+        std::queue<T> empty;
++        std::queue<T> emptyQueue;
 +
          std::lock_guard<std::mutex> lock( _mutex );
 -        _queue = {};
-+        std::swap(_queue, empty);
++        std::swap(_queue, emptyQueue);
          _full.notify_one();
      }
  
