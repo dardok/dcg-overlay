@@ -10,7 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_BRANCH="master"
 else
 	SRC_URI="https://github.com/HBPVIS/Servus/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Servus${PV}
+    S=${WORKDIR}/Servus-${PV}
 fi
 
 
