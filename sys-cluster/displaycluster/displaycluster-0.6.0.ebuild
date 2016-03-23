@@ -1,11 +1,17 @@
 EAPI=5
-inherit git-r3 cmake-utils
+inherit cmake-utils
 
 DESCRIPTION="A collaborative software for driving large display walls"
 HOMEPAGE="https://github.com/BlueBrain/DisplayCluster"
 
-EGIT_REPO_URI="git://github.com/BlueBrain/DisplayCluster.git"
-EGIT_BRANCH="master"
+if [[ ${PV} = *9999* ]]; then
+    inherit git-r3
+    EGIT_REPO_URI="git://github.com/BlueBrain/DisplayCluster.git"
+    EGIT_BRANCH="master"
+else
+    SRC_URI="https://github.com/BlueBrain/DisplayCluster/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+    S=${WORKDIR}/DisplayCluster-${PV}
+fi
 
 LICENSE="LGPL-3"
 SLOT="0"
