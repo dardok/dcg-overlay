@@ -40,7 +40,7 @@ sys-cluster/ceph gtk
 net-libs/phodav spice zeroconf
 net-misc/spice-gtk gtk3 lz4 python usbredir webdav -smartcard vala
 
-app-emulation/qemu gtk bluetooth vte
+app-emulation/qemu gtk vte opengl virgl
 
 x11-drivers/xf86-video-qxl xspice
 
@@ -54,3 +54,5 @@ sys-devel/distcc gtk
 
 gnome-base/gvfs gtk ios zeroconf udisks
 app-crypt/gcr gtk
+
+dev-util/cmake -qt5
