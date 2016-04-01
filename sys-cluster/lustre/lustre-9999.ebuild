@@ -24,7 +24,7 @@ EGIT_REPO_URI="git://git.hpdd.intel.com/fs/lustre-release.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+client +utils server liblustre readline tests tcpd +checksum lru-resize snmp"
+IUSE="+client +utils server liblustre readline tests tcpd +checksum lru-resize snmp gss"
 
 RDEPEND="
 	virtual/awk
@@ -104,7 +104,8 @@ src_configure() {
 		$(use_enable tests) \
 		$(use_disable checksum) \
 		$(use_enable lru-resize) \
-		$(use_enable snmp)
+		$(use_enable snmp) \
+		$(use_enable gss)
 }
 
 src_compile() {
