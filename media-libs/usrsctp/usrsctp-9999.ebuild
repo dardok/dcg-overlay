@@ -14,7 +14,6 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 EGIT_REPO_URI="https://github.com/sctplab/usrsctp.git"
 KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
-IUSE="dbus gstreamer gtk3 +introspection lz4 policykit pulseaudio python sasl smartcard static-libs usbredir vala webdav"
 
 src_prepare() {
 	epatch_user
