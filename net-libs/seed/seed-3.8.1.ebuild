@@ -13,7 +13,7 @@ SRC_URI="http://ftp.gnome.org/pub/GNOME/sources/seed/3.8/seed-3.8.1.tar.xz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
-USE="+X +cairo +sqlite"
+IUSE="+X +cairo +sqlite"
 
 RDEPEND="
   cairo? ( x11-libs/cairo )
