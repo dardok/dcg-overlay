@@ -22,7 +22,7 @@ fi
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
-IUSE="+X +cairo +sqlite"
+IUSE="+X +cairo +sqlite static"
 
 RDEPEND="
 	net-libs/webkit-gtk:${WEBKIT_SLOT}
@@ -33,12 +33,15 @@ DEPEND="${RDEPEND}
 	dev-util/gtk-doc"
 
 src_prepare() {
+	[ -e ./autogen.sh ] || return
+
     NOCONFIGURE=1 ./autogen.sh || die "autogen failed"
 }
 
 src_configure() {
 	econf \
 		--with-webkit=${WEBKIT_SLOT}.0 \
+		$(use_enable static ) \
 		$(use_enable X xorg-module ) \
 		$(use_enable cairo cairo-module ) \
 		$(use_enable sqlite sqlite-module )
