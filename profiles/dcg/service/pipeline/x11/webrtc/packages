@@ -1,3 +1,5 @@
 *net-libs/libnice
-*media-libs/usrsctp
+*net-libs/usrsctp
 *net-libs/webkit-gtk
+*net-libs/seed
+*net-libs/gnome-js-common
