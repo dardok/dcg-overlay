@@ -11,8 +11,15 @@ SRC_URI="http://ftp.gnome.org/pub/GNOME/sources/gnome-js-common/0.1/gnome-js-com
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
-IUSE="+seed"
+IUSE="seed gjs"
 
 RDEPEND="
-	seed? ( net-libs/seed )"
+	seed? ( net-libs/seed )
+	gjs? ( dev-libs/gjs )"
 DEPEND="${RDEPEND}"
+
+src_configure() {
+	econf \
+		$(use_enable seed ) \
+		$(use_enable gjs )
+}
