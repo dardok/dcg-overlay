@@ -25,6 +25,7 @@ KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
 IUSE="+X +cairo +sqlite static"
 
 RDEPEND="
+    net-libs/gnome-js-common
 	net-libs/webkit-gtk:${WEBKIT_SLOT}
 	cairo? ( x11-libs/cairo )
 	sqlite? ( dev-db/sqlite )"
