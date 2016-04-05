@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils autotools
+inherit eutils autotools git-r3
 
 DESCRIPTION="OpenWebRTC specific GStreamer plugins"
 HOMEPAGE="https://github.com/EricssonResearch/openwebrtc-gst-plugins"
