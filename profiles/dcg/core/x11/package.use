@@ -56,3 +56,7 @@ gnome-base/gvfs gtk ios zeroconf udisks
 app-crypt/gcr gtk
 
 dev-util/cmake -qt5
+
+net-misc/modemmanager -qmi
+
+
