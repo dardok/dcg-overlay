@@ -38,6 +38,7 @@ src_prepare() {
 
 src_configure() {
 	econf \
+		--with-webkit=${WEBKIT_SLOT}.0 \
 		$(use_enable X xorg-module ) \
 		$(use_enable cairo cairo-module ) \
 		$(use_enable sqlite sqlite-module )
