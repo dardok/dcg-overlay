@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit eutils autotools autotools-utils
+inherit eutils autotools
 
 DESCRIPTION="Seed is a library and interpreter, dynamically bridging (through GObjectIntrospection) the WebKit JavaScriptCore engine, with the GNOME platform."
 HOMEPAGE="https://wiki.gnome.org/action/show/Projects/Seed"
@@ -29,7 +29,12 @@ RDEPEND="
 	cairo? ( x11-libs/cairo )
 	sqlite? ( dev-db/sqlite )"
 DEPEND="${RDEPEND}
+	gnome-base/gnome-common
 	dev-util/gtk-doc"
+
+src_prepare() {
+    NOCONFIGURE=1 ./autogen.sh || die "autogen failed"
+}
 
 src_configure() {
 	econf \
