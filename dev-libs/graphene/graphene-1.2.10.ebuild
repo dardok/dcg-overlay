@@ -1,5 +1,7 @@
 EAPI=5
 
+inherit eutils autotools
+
 DESCRIPTION="A thin layer of graphic data types"
 HOMEPAGE="http://ebassi.github.com/graphene"
 
@@ -13,5 +15,9 @@ fi
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 x86"
 IUSE=""
+
+src_prepare() {
+    eautoreconf
+}
