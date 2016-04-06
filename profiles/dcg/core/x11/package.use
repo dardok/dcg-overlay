@@ -38,7 +38,7 @@ app-text/ghostscript-gpl cups
 sys-cluster/ceph gtk
 
 net-libs/phodav spice zeroconf
-net-misc/spice-gtk gtk3 lz4 python usbredir webdav -smartcard vala
+net-misc/spice-gtk gtk3 lz4 python usbredir webdav smartcard vala
 
 app-emulation/qemu gtk vte opengl virgl
 
