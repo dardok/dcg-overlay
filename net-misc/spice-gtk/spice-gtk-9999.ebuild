@@ -133,7 +133,7 @@ src_configure() {
 
 	# Parameter of --with-gtk
 	MULTIBUILD_VARIANTS=( 2.0 )
-	use gtk3 && MULTIBUILD_VARIANTS+=( 3.0 )
+	use gtk3 && MULTIBUILD_VARIANTS=( 3.0 )
 
 	configure() {
 		local myconf=()
