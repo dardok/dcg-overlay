@@ -76,6 +76,7 @@ DEPEND="${RDEPEND}
 	dev-perl/Text-CSV
 	dev-python/pyparsing[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
+	dev-util/gtk-doc
 	>=dev-util/gtk-doc-am-1.14
 	>=dev-util/intltool-0.40.0
 	${PYTHON_DEPS}
