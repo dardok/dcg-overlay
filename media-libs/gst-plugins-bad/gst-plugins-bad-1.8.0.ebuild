@@ -32,6 +32,7 @@ RDEPEND="
 	egl? ( >=media-libs/mesa-9.1.6[egl,${MULTILIB_USEDEP}] )
 	gles2? ( >=media-libs/mesa-9.1.6[gles2,${MULTILIB_USEDEP}] )
 	opengl? (
+	    >=dev-libs/graphene-1.2.10
 		>=media-libs/mesa-9.1.6[${MULTILIB_USEDEP}]
 		virtual/glu[${MULTILIB_USEDEP}] )
 	X? ( x11-libs/libX11[${MULTILIB_USEDEP}] )
