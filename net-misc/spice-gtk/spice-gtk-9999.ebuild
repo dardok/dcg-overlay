@@ -92,7 +92,11 @@ DEPEND="${RDEPEND}
 src_prepare() {
 	epatch_user
 
-	AT_NO_RECURSIVE="yes" eautoreconf
+	if [[ ${PV} = *9999* ]]; then
+		NOCONFIGURE=1 ./autogen.sh
+	else
+		AT_NO_RECURSIVE="yes" eautoreconf
+	fi
 
 	use vala && vala_src_prepare
 }
