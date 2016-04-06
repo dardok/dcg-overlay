@@ -8,3 +8,5 @@
 =sys-fs/zfs-9999 **
 =sys-fs/zfs-kmod-9999 **
 =sys-kernel/linux-firmware-99999999 **
+=app-emulation/spice-9999 **
+=app-emulation/spice-protocol-9999 **
