@@ -12,6 +12,6 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 RDEPEND="
-	>=dev-libs/openssl-1.0.1:0[${MULTILIB_USEDEP}]
+	net-libs/libsrtp
 "
 DEPEND="${RDEPEND}"
