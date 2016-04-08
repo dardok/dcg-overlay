@@ -9,7 +9,8 @@ inherit eutils autotools git-r3
 DESCRIPTION="OpenWebRTC"
 HOMEPAGE="https://github.com/EricssonResearch/OpenWebRTC"
 
-EGIT_REPO_URI="https://github.com/EricssonResearch/openwebrtc.git"
+#EGIT_REPO_URI="https://github.com/EricssonResearch/openwebrtc.git"
+EGIT_REPO_URI="https://github.com/dardok/openwebrtc.git"
 EGIT_BRANCH="master"
 
 LICENSE="LGPL-3"
