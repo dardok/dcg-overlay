@@ -13,10 +13,10 @@ if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
 else
 	MY_PV="${PV/_/-}"
-	DOCKER_GITCOMMIT="d12ea79"
+	DOCKER_GITCOMMIT=""
 	EGIT_COMMIT="v${MY_PV}"
 	SRC_URI="https://${EGO_PN}/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm ~x86"
 	[ "$DOCKER_GITCOMMIT" ] || die "DOCKER_GITCOMMIT must be added manually for each bump!"
 	inherit golang-vcs-snapshot
 fi
@@ -59,6 +59,9 @@ RDEPEND="
 	sys-process/procps
 	>=dev-vcs/git-1.7
 	>=app-arch/xz-utils-4.9
+
+	>app-emulation/containerd-0.1.0
+	>app-emulation/runc-0.0.9
 
 	apparmor? (
 		sys-libs/libapparmor[static-libs]
@@ -169,6 +172,7 @@ pkg_setup() {
 
 src_prepare() {
 	cd "src/${EGO_PN}" || die
+	epatch "${FILESDIR}/docker-containerd.patch"
 	# allow user patches (use sparingly - upstream won't support them)
 	epatch_user
 }
@@ -226,8 +230,8 @@ src_install() {
 	cd "src/${EGO_PN}" || die
 	VERSION="$(cat VERSION)"
 	newbin "bundles/$VERSION/dynbinary/docker-$VERSION" docker
-	exeinto /usr/libexec/docker
-	newexe "bundles/$VERSION/dynbinary/dockerinit-$VERSION" dockerinit
+	#exeinto /usr/libexec/docker
+	#newexe "bundles/$VERSION/dynbinary/dockerinit-$VERSION" dockerinit
 
 	newinitd contrib/init/openrc/docker.initd docker
 	newconfd contrib/init/openrc/docker.confd docker
