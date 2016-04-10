@@ -18,6 +18,7 @@ KEYWORDS="alpha amd64 ~arm ia64 ppc ~ppc64 sparc x86"
 
 RDEPEND="
 	media-libs/gstreamer:1.0
+	media-libs/gst-plugins-base:1.0
 	net-libs/usrsctp"
 DEPEND="${RDEPEND}"
 
