@@ -70,3 +70,5 @@ sys-cluster/lustre -checksum lru-resize
 
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
+
+dev-libs/boost python
