@@ -1,1 +1,4 @@
 net-libs/gnome-js-common -seed -gjs
+
+# unnecessary here
+media-libs/opencv -qt5
