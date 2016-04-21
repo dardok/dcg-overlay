@@ -31,6 +31,14 @@ RDEPEND="app-accessibility/sphinxbase
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
+src_prepare() {
+	epatch_user
+
+	elibtoolize
+	eaclocal
+	eautoreconf
+}
+
 run_distutils() {
 	if use python; then
 		pushd python > /dev/null || die
