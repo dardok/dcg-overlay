@@ -6,7 +6,7 @@ EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
 DISTUTILS_OPTIONAL=1
-inherit eutils distutils-r1
+inherit eutils autotools-utils distutils-r1
 
 DESCRIPTION="Large open source vocabulary, speaker-independent continuous speech recognition engine"
 HOMEPAGE="https://sourceforge.net/projects/cmusphinx/"
