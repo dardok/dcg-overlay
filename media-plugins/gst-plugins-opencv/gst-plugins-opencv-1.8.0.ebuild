@@ -11,5 +11,5 @@ DESCRIPTION="GStreamer plugin for OpenCV"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND=">=media-libs/opencv-3.0.0[${MULTILIB_USEDEP}]"
+RDEPEND="<media-libs/opencv-3.0.0[${MULTILIB_USEDEP}]"
 DEPEND="${RDEPEND}"
