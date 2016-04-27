@@ -72,3 +72,5 @@ sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
 
 dev-libs/boost python
+
+net-misc/curl http2 adns
