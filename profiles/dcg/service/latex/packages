@@ -1,0 +1,5 @@
+*app-vim/vim-latex
+*dev-texlive/texlive-latex
+*dev-texlive/texlive-latexrecommended
+*dev-texlive/texlive-latexextra
+*virtual/latex-base
