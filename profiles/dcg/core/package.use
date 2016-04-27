@@ -74,3 +74,4 @@ sys-devel/llvm python clang gold
 dev-libs/boost python
 
 net-misc/curl http2
+net-libs/nghttp2 hpack-tools
