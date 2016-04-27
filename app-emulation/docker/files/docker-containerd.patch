@@ -1,8 +1,6 @@
-diff --git a/libcontainerd/remote_linux.go b/libcontainerd/remote_linux.go
-index f0284ca..e44a1d1 100644
---- a/libcontainerd/remote_linux.go
-+++ b/libcontainerd/remote_linux.go
-@@ -27,7 +27,7 @@ const (
+--- a/libcontainerd/remote_linux.go	2016-04-27 12:01:07.486000000 +0000
++++ b/libcontainerd/remote_linux.go	2016-04-27 12:01:41.100000000 +0000
+@@ -30,7 +30,7 @@
  	maxConnectionRetryCount   = 3
  	connectionRetryDelay      = 3 * time.Second
  	containerdShutdownTimeout = 15 * time.Second
@@ -11,12 +9,12 @@ index f0284ca..e44a1d1 100644
  	containerdPidFilename     = "docker-containerd.pid"
  	containerdSockFilename    = "docker-containerd.sock"
  	eventTimestampFilename    = "event.ts"
-@@ -338,7 +338,7 @@ func (r *remote) runContainerdDaemon() error {
+@@ -349,7 +349,7 @@
  	}
  
  	// Start a new instance
--	args := []string{"-l", r.rpcAddr, "--runtime", "docker-runc"}
-+	args := []string{"-l", r.rpcAddr, "--runtime", "runc"}
+-	args := []string{"-l", r.rpcAddr, "--runtime", "docker-runc", "--metrics-interval=0"}
++	args := []string{"-l", r.rpcAddr, "--runtime", "runc", "--metrics-interval=0"}
  	if r.debugLog {
- 		args = append(args, "--debug", "true")
+ 		args = append(args, "--debug")
  	}
