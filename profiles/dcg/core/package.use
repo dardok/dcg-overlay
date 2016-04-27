@@ -73,4 +73,4 @@ sys-devel/llvm python clang gold
 
 dev-libs/boost python
 
-net-misc/curl http2 adns
+net-misc/curl http2
