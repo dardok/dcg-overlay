@@ -25,6 +25,8 @@ net-analyzer/net-snmp pci python
 
 net-fs/nfs-utils nfsv41 nfsdcld
 
+net-misc/ptpd ntp
+
 net-misc/quagga multipath tcp-zebra
 
 net-nds/openldap minimal
