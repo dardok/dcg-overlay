@@ -50,6 +50,7 @@
 *net-misc/bridge-utils
 *net-misc/keychain
 *net-misc/openvswitch
+*net-misc/ptpd
 *net-misc/quagga
 *net-misc/s3cmd
 *net-misc/socat
