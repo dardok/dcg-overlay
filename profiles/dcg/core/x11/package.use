@@ -59,4 +59,4 @@ dev-util/cmake -qt5
 
 net-misc/modemmanager -qmi
 
-
+x11-libs/vte python
