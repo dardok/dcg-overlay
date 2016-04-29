@@ -9,7 +9,7 @@ app-editors/vim python_single_target_python2_7 lua luajit ruby
 app-emulation/libvirt rbd avahi
 
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
-#app-emulation/spice -smartcard
+app-emulation/spice -smartcard
 
 app-emulation/docker btrfs overlay experimental
 
