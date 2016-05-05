@@ -1,5 +1,5 @@
---- a/libcontainerd/remote_linux.go	2016-04-27 12:01:07.486000000 +0000
-+++ b/libcontainerd/remote_linux.go	2016-04-27 12:01:41.100000000 +0000
+--- a/libcontainerd/remote_linux.go	2016-05-05 05:27:26.458000000 +0000
++++ b/libcontainerd/remote_linux.go	2016-05-05 05:28:21.825000000 +0000
 @@ -30,7 +30,7 @@
  	maxConnectionRetryCount   = 3
  	connectionRetryDelay      = 3 * time.Second
@@ -13,8 +13,8 @@
  	}
  
  	// Start a new instance
--	args := []string{"-l", r.rpcAddr, "--runtime", "docker-runc", "--metrics-interval=0"}
-+	args := []string{"-l", r.rpcAddr, "--runtime", "runc", "--metrics-interval=0"}
+-	args := []string{"-l", r.rpcAddr, "--runtime", "docker-runc"}
++	args := []string{"-l", r.rpcAddr, "--runtime", "runc"}
  	if r.debugLog {
- 		args = append(args, "--debug")
+ 		args = append(args, "--debug", "--metrics-interval=0")
  	}
