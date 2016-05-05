@@ -1,7 +1,7 @@
 =app-emulation/libvirt-9999 **
 =app-emulation/containerd-9999 **
 =app-emulation/runc-9999 **
-=app-emulation/docker-9999 **
+#=app-emulation/docker-9999 **
 =dev-python/libvirt-python-9999 **
 =app-emulation/qemu-9999 **
 #=sys-cluster/lustre-9999 **
