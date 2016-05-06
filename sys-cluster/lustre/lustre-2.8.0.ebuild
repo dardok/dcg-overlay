@@ -13,7 +13,7 @@ if [[ $PV = *9999* ]]; then
 	EGIT_BRANCH="master"
 else
 	KEYWORDS="~amd64"
-	EGIT_TAG="${PV}"
+	EGIT_COMMIT="${PV}"
 fi
 
 inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
