@@ -2,4 +2,4 @@ sys-apps/hwloc xml
 sys-libs/libcap-ng python
 sys-libs/ncurses threads
 
-sys-fs/lvm2 device-mapper-only
+sys-fs/lvm2 -thin device-mapper-only
