@@ -4,6 +4,3 @@ media-libs/freetype harfbuzz
 # disable X (on by default)
 media-sound/pulseaudio X
 x11-libs/gdk-pixbuf X
-
-# re-enable full lvm2
-sys-fs/lvm2 thin -device-mapper-only
