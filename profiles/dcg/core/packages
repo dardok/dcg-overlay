@@ -35,6 +35,7 @@
 *net-dns/avahi
 *net-firewall/ebtables
 *net-firewall/ipset
+*net-firewall/nftables
 *net-fs/nfs-utils
 *net-fs/nfs4-acl-tools
 *net-fs/openafs
