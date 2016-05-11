@@ -25,7 +25,7 @@ USE="${USE} pcre expat xml"
 USE="${USE} bzip2 zlib lzma lzo minizip"
 USE="${USE} berkdb gdbm sqlite"
 
-USE="${USE} afs infiniband"
+USE="${USE} afs infiniband rdma"
 USE="${USE} xfs zfs"
 USE="${USE} smartcard pkcs11"
 
