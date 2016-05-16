@@ -2,4 +2,5 @@
 *dev-texlive/texlive-latex
 *dev-texlive/texlive-latexrecommended
 *dev-texlive/texlive-latexextra
+*dev-tex/biblatex
 *virtual/latex-base
