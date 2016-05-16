@@ -9,7 +9,8 @@ inherit git-r3 cmake-utils
 DESCRIPTION="Dynamic map generation toolkit for OpenSceneGraph"
 HOMEPAGE="http://osgearth.org/"
 
-EGIT_REPO_URI="git://github.com/gwaldron/osgearth.git"
+#EGIT_REPO_URI="git://github.com/gwaldron/osgearth.git"
+EGIT_REPO_URI="git://github.com/dardok/osgearth.git"
 EGIT_BRANCH="master"
 
 LICENSE="LGPL-2+"
