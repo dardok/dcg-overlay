@@ -126,10 +126,10 @@ python_install() {
 	keepdir /etc/heat
 
 	insinto /etc/heat
-	insopts -m0640 -o cinder -g cinder
+	insopts -m0640 -o heat -g heat
 	doins "etc/heat/api-paste.ini"
 	doins "etc/heat/policy.json"
-	insinto /etc/cinder/environment.d
+	insinto /etc/heat/environment.d
     doins "etc/heat/environment.d/default.yaml"
 
 	dodir /var/log/heat
