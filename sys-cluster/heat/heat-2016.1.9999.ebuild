@@ -130,7 +130,7 @@ python_install() {
 	doins "etc/heat/api-paste.ini"
 	doins "etc/heat/policy.json"
 	insinto /etc/cinder/environment.d
-	newins "etc/heat/environment.d/default.yaml"
+    doins "etc/heat/environment.d/default.yaml"
 
 	dodir /var/log/heat
 	fowners heat:heat /var/log/heat
