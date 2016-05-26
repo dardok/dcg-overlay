@@ -58,17 +58,6 @@ RDEPEND="
 	>=dev-python/six-1.9.0[${PYTHON_USEDEP}]
 "
 
-python_prepare_all() {
-	local PATCHES=(
-		"${FILESDIR}"/remove-unmaintained-tests.patch
-	)
-
-	sed -i '/^argparse/d' requirements.txt || die
-	sed -i '/^hacking/d' test-requirements.txt || die
-
-	distutils-r1_python_prepare_all
-}
-
 python_compile_all() {
 	use doc && esetup.py build_sphinx
 }
