@@ -15,7 +15,7 @@ HOMEPAGE="http://libcloud.apache.org/index.html"
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/apache/libcloud.git"
-	EGIT_BRANCH="master"
+	EGIT_BRANCH="trunk"
 else
 	SRC_URI="mirror://apache/${PN}/apache-${P}.tar.bz2"
 fi
