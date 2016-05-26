@@ -58,7 +58,6 @@ RDEPEND="
 	>=dev-python/pycrypto-2.6[${PYTHON_USEDEP}]
 	>=dev-python/pyparsing-2.0.1[${PYTHON_USEDEP}]
 	>=dev-python/python-barbicanclient-3.3.0[${PYTHON_USEDEP}]
-	>=dev-python/python-ceilometerclient-2.2.1[${PYTHON_USEDEP}]
 	>=dev-python/python-designateclient-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/python-glanceclient-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/python-heatclient-0.6.0[${PYTHON_USEDEP}]
@@ -99,6 +98,7 @@ RDEPEND="
 	>=dev-python/stevedore-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/webob-1.2.3-r1[${PYTHON_USEDEP}]"
 
+# python-ceilometerclient>=2.2.1 # Apache-2.0
 # python-magnumclient>=0.2.1 # Apache-2.0
 # python-manilaclient>=1.3.0 # Apache-2.0
 # python-mistralclient>=1.0.0 # Apache-2.0
