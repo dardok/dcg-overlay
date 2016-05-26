@@ -25,6 +25,7 @@
 *dev-libs/jansson
 *dev-libs/libnl
 *dev-python/python-openstackclient
+*dev-python/python-heatclient
 *dev-python/pygobject
 *dev-python/virtualenv
 *dev-util/cmake
