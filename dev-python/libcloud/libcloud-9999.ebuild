@@ -18,6 +18,7 @@ if [[ ${PV} = *9999* ]]; then
 	EGIT_BRANCH="trunk"
 else
 	SRC_URI="mirror://apache/${PN}/apache-${P}.tar.bz2"
+	S="${WORKDIR}/apache-${P}"
 fi
 
 LICENSE="Apache-2.0"
@@ -32,8 +33,6 @@ DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 		dev-python/lockfile[${PYTHON_USEDEP}]
 		 $(python_gen_cond_dep 'dev-python/backports-ssl-match-hostname[${PYTHON_USEDEP}]' python{2_7,3_4} pypy)
 	)"
-
-S="${WORKDIR}/apache-${P}"
 
 python_prepare_all() {
 	if use examples; then
