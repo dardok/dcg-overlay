@@ -1,1 +1,3 @@
 >=dev-python/docker-py-1.8
+
+>=sys-cluster/ceph-10.0.0
