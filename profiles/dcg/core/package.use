@@ -70,6 +70,7 @@ sys-libs/tdb python
 dev-vcs/git tk
 
 sys-cluster/lustre -checksum lru-resize
+sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
 
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
