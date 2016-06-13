@@ -11,6 +11,8 @@ app-emulation/libvirt rbd avahi
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
 #app-emulation/spice -smartcard
 
+app-emulation/rkt rkt_stage1_kvm
+
 app-emulation/docker btrfs overlay experimental
 
 dev-db/postgresql -server
