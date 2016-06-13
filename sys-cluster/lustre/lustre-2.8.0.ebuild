@@ -109,6 +109,7 @@ src_configure() {
 }
 
 src_compile() {
+	touch undef.h
 	default
 }
 
