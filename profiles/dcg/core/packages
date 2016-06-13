@@ -75,7 +75,7 @@
 *sys-block/nbd
 *sys-cluster/ceph
 *sys-cluster/glusterfs
-#*sys-cluster/lustre
+*sys-cluster/lustre
 *sys-cluster/openmpi
 *sys-cluster/slurm
 *sys-devel/distcc
