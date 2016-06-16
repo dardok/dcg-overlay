@@ -20,6 +20,8 @@
 *app-shells/tcsh
 *dev-db/etcd
 *dev-lang/go
+*dev-libs/apr
+*dev-libs/apr-util
 *dev-libs/engine_pkcs11
 *dev-libs/opensc
 *dev-libs/dbus-glib
@@ -33,6 +35,7 @@
 *dev-python/virtualenv
 *dev-util/cmake
 *dev-util/strace
+*dev-vcs/subversion
 *mail-mta/nullmailer
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
