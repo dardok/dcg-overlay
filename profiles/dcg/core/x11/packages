@@ -5,7 +5,7 @@
 *net-misc/spice-gtk
 *net-misc/tigervnc
 *net-print/cups
-*sys-infiniband/ibutils
+*sys-fabric/ibutils
 *x11-apps/xdpyinfo
 *x11-apps/xev
 *x11-apps/xhost

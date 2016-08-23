@@ -85,7 +85,7 @@
 *sys-devel/distcc
 *sys-devel/llvm
 *sys-fs/multipath-tools
-*sys-infiniband/ofed
+*sys-fabric/ofed
 *sys-kernel/linux-firmware
 *sys-power/acpid
 *sys-process/atop
