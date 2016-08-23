@@ -3,3 +3,6 @@ sys-apps/systemd nat policykit idn gcrypt importd python http curl lzma qrcode
 net-libs/libmicrohttpd epoll messages
 
 sys-libs/timezone-data leaps_timezone
+
+app-editors/vim python_single_target_python2_7 python
+
