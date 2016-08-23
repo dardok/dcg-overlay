@@ -9,7 +9,7 @@ app-editors/vim lua luajit ruby
 app-emulation/libvirt rbd avahi
 
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
-#app-emulation/spice -smartcard
+app-emulation/spice -smartcard
 
 app-emulation/rkt rkt_stage1_kvm
 
