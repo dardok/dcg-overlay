@@ -2,4 +2,4 @@
 
 >=sys-cluster/ceph-10.0.0
 
->=sys-fs/xfs-progs-4.7.0
+>=sys-fs/xfsprogs-4.7.0
