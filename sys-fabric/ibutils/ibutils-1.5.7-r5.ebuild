@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/ibutils/ibutils-1.5.7-r3.ebuild,v 1.1 2014/04/16 08:22:29 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/ibutils/ibutils-1.5.7-r3.ebuild,v 1.1 2014/04/16 08:22:29 alexxy Exp $
 
 EAPI="5"
 
@@ -16,10 +16,10 @@ DESCRIPTION="OpenIB userspace tools"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
-DEPEND="sys-infiniband/libibverbs:${SLOT}
+DEPEND="sys-fabric/libibverbs:${SLOT}
 		=dev-lang/tk-8.5.17
         media-gfx/graphviz[tcl]"
 RDEPEND="${DEPEND}
-		!sys-infiniband/openib-userspace"
+		!sys-fabric/openib-userspace"
 
 block_other_ofed_versions

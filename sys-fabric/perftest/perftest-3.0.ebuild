@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/perftest/perftest-2.0.ebuild,v 1.1 2014/04/16 08:22:29 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/perftest/perftest-2.0.ebuild,v 1.1 2014/04/16 08:22:29 alexxy Exp $
 
 EAPI="5"
 
@@ -18,9 +18,9 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="
-	sys-infiniband/libibverbs:${SLOT}
-	sys-infiniband/libibumad:${SLOT}
-	sys-infiniband/librdmacm:${SLOT}"
+	sys-fabric/libibverbs:${SLOT}
+	sys-fabric/libibumad:${SLOT}
+	sys-fabric/librdmacm:${SLOT}"
 RDEPEND="${DEPEND}"
 block_other_ofed_versions
 

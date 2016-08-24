@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/opensm/opensm-3.3.17-r1.ebuild,v 1.1 2015/02/11 04:45:41 bircoph Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/opensm/opensm-3.3.17-r1.ebuild,v 1.1 2015/02/11 04:45:41 bircoph Exp $
 
 EAPI="5"
 
@@ -16,8 +16,8 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE="tools"
 
 DEPEND="
-	sys-infiniband/libibmad:${SLOT}
-	sys-infiniband/libibumad:${SLOT}"
+	sys-fabric/libibmad:${SLOT}
+	sys-fabric/libibumad:${SLOT}"
 RDEPEND="$DEPEND
 	 tools? (
 		net-misc/iputils

@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/ofed/ofed-3.12_rc1.ebuild,v 1.2 2014/04/16 10:11:04 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/ofed/ofed-3.12_rc1.ebuild,v 1.2 2014/04/16 10:11:04 alexxy Exp $
 
 EAPI="5"
 
@@ -27,31 +27,31 @@ DESCRIPTION="OpenIB system files"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE="dapl +diags ibacm mstflint +opensm perftest qperf rds srp ${IUSE_OFED_DRIVERS}"
 
-RDEPEND="!sys-infiniband/openib
-		!sys-infiniband/openib-files
-		sys-infiniband/libibcm:${SLOT}
-		sys-infiniband/libibmad:${SLOT}
-		sys-infiniband/libibumad:${SLOT}
-		sys-infiniband/librdmacm:${SLOT}
-		dapl? ( sys-infiniband/dapl:${SLOT} )
-		diags? ( sys-infiniband/infiniband-diags:${SLOT} )
-		ibacm? ( sys-infiniband/ibacm:${SLOT} )
-		mstflint? ( sys-infiniband/mstflint:${SLOT} )
-		opensm? ( sys-infiniband/opensm:${SLOT} )
-		perftest? ( sys-infiniband/perftest:${SLOT} )
-		qperf? ( sys-infiniband/qperf:${SLOT} )
-		srp? ( sys-infiniband/srptools:${SLOT} )
-		rds? ( sys-infiniband/rds-tools:${SLOT} )
-		ofed_drivers_cxgb3? ( sys-infiniband/libcxgb3:${SLOT} )
-		ofed_drivers_cxgb4? ( sys-infiniband/libcxgb4:${SLOT} )
-		ofed_drivers_ehca? ( sys-infiniband/libehca:${SLOT} )
-		ofed_drivers_ipath? ( sys-infiniband/libipathverbs:${SLOT} )
-		ofed_drivers_mlx4? ( sys-infiniband/libmlx4:${SLOT} )
-		ofed_drivers_mlx5? ( sys-infiniband/libmlx5:${SLOT} )
-		ofed_drivers_mthca? ( sys-infiniband/libmthca:${SLOT} )
-		ofed_drivers_nes? ( sys-infiniband/libnes:${SLOT} )
-		ofed_drivers_ocrdma? ( sys-infiniband/libocrdma:${SLOT} )
-		ofed_drivers_psm? ( sys-infiniband/infinipath-psm:${SLOT} )
+RDEPEND="!sys-fabric/openib
+		!sys-fabric/openib-files
+		sys-fabric/libibcm:${SLOT}
+		sys-fabric/libibmad:${SLOT}
+		sys-fabric/libibumad:${SLOT}
+		sys-fabric/librdmacm:${SLOT}
+		dapl? ( sys-fabric/dapl:${SLOT} )
+		diags? ( sys-fabric/infiniband-diags:${SLOT} )
+		ibacm? ( sys-fabric/ibacm:${SLOT} )
+		mstflint? ( sys-fabric/mstflint:${SLOT} )
+		opensm? ( sys-fabric/opensm:${SLOT} )
+		perftest? ( sys-fabric/perftest:${SLOT} )
+		qperf? ( sys-fabric/qperf:${SLOT} )
+		srp? ( sys-fabric/srptools:${SLOT} )
+		rds? ( sys-fabric/rds-tools:${SLOT} )
+		ofed_drivers_cxgb3? ( sys-fabric/libcxgb3:${SLOT} )
+		ofed_drivers_cxgb4? ( sys-fabric/libcxgb4:${SLOT} )
+		ofed_drivers_ehca? ( sys-fabric/libehca:${SLOT} )
+		ofed_drivers_ipath? ( sys-fabric/libipathverbs:${SLOT} )
+		ofed_drivers_mlx4? ( sys-fabric/libmlx4:${SLOT} )
+		ofed_drivers_mlx5? ( sys-fabric/libmlx5:${SLOT} )
+		ofed_drivers_mthca? ( sys-fabric/libmthca:${SLOT} )
+		ofed_drivers_nes? ( sys-fabric/libnes:${SLOT} )
+		ofed_drivers_ocrdma? ( sys-fabric/libocrdma:${SLOT} )
+		ofed_drivers_psm? ( sys-fabric/infinipath-psm:${SLOT} )
 		"
 DEPEND="${RDEPEND}
 		virtual/pkgconfig

@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/librdmacm/librdmacm-1.0.18.ebuild,v 1.3 2014/08/20 10:44:31 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/librdmacm/librdmacm-1.0.18.ebuild,v 1.3 2014/08/20 10:44:31 ago Exp $
 
 EAPI="5"
 
@@ -15,7 +15,7 @@ DESCRIPTION="OpenIB userspace RDMA CM library"
 KEYWORDS="amd64 x86 ~amd64-linux"
 IUSE=""
 
-DEPEND="sys-infiniband/libibverbs:${SLOT}"
+DEPEND="sys-fabric/libibverbs:${SLOT}"
 RDEPEND="${DEPEND}
-		!sys-infiniband/openib-userspace"
+		!sys-fabric/openib-userspace"
 block_other_ofed_versions

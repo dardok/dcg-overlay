@@ -1,6 +1,6 @@
 # Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/mstflint/mstflint-3.5.0.ebuild,v 1.1 2014/04/16 08:22:26 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/mstflint/mstflint-3.5.0.ebuild,v 1.1 2014/04/16 08:22:26 alexxy Exp $
 
 EAPI="5"
 
@@ -18,7 +18,7 @@ IUSE=""
 
 DEPEND="
 	sys-libs/zlib
-	sys-infiniband/libibmad:${SLOT}
+	sys-fabric/libibmad:${SLOT}
 	"
 RDEPEND="${DEPEND}"
 block_other_ofed_versions

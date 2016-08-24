@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-infiniband/libmlx4/libmlx4-1.0.5.ebuild,v 1.2 2015/02/24 09:03:51 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fabric/libmlx4/libmlx4-1.0.5.ebuild,v 1.2 2015/02/24 09:03:51 patrick Exp $
 
 EAPI="5"
 
@@ -16,8 +16,8 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="
-	sys-infiniband/libibverbs:${SLOT}
+	sys-fabric/libibverbs:${SLOT}
 	"
 RDEPEND="
-		!sys-infiniband/openib-userspace"
+		!sys-fabric/openib-userspace"
 block_other_ofed_versions

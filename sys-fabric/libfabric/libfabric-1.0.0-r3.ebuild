@@ -13,9 +13,9 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="
-	sys-infiniband/librdmacm:${SLOT}
-	sys-infiniband/libibverbs:${SLOT}
-	sys-infiniband/libibumad:${SLOT}
+	sys-fabric/librdmacm:${SLOT}
+	sys-fabric/libibverbs:${SLOT}
+	sys-fabric/libibumad:${SLOT}
 	"
 RDEPEND="${DEPEND}"
 block_other_ofed_versions
