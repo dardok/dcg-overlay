@@ -54,10 +54,10 @@ OFED_VERSIONS=(
 # function that creates blockers list for ofed
 block_other_ofed_versions() {
 	local slot
-	RDEPEND="${RDEPEND} !sys-infiniband/${PN}:0"
+	RDEPEND="${RDEPEND} !sys-fabric/${PN}:0"
 	for slot in ${OFED_VERSIONS[@]}; do
 		if [[ ${slot} != ${SLOT} ]]; then
-			RDEPEND+=" !sys-infiniband/${PN}:${slot}"
+			RDEPEND+=" !sys-fabric/${PN}:${slot}"
 		fi
 	done
 }

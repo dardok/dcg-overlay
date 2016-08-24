@@ -23,7 +23,7 @@ RDEPEND="
     >=dev-libs/boost-1.41.0
     >=dev-libs/lunchbox-1.10
     >=dev-libs/pression-1.0
-    infiniband? ( sys-infiniband/librdmacm )
+    infiniband? ( sys-fabric/librdmacm )
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
