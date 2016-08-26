@@ -16,6 +16,7 @@
 *app-portage/eix
 *app-portage/layman
 *app-portage/gentoolkit
+*app-portage/repoman
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/tcsh
