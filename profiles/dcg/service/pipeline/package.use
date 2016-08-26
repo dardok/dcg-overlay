@@ -2,4 +2,6 @@ media-video/ffmpeg cpudetection ieee1394 libv4l network mp3 x265 xvid aac aacplu
 
 media-libs/opencv gstreamer -examples
 
-media-libs/x264 opencl
+app-emulation/spice -gstreamer
+
+media-plugins/frei0r-plugins -facedetect
