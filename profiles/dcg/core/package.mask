@@ -4,4 +4,4 @@
 
 >=sys-fs/xfsprogs-4.7.0
 
->sys-cluster/lustre-2.8.0
+#>sys-cluster/lustre-2.8.0
