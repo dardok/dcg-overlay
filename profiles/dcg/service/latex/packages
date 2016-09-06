@@ -1,7 +1,8 @@
 *app-vim/vim-latex
+*dev-tex/biblatex
+*dev-tex/latexmk
 *dev-texlive/texlive-latex
 *dev-texlive/texlive-latexrecommended
 *dev-texlive/texlive-latexextra
-*dev-tex/biblatex
-*dev-tex/latexmk
+*dev-texlive/texlive-pstricks
 *virtual/latex-base
