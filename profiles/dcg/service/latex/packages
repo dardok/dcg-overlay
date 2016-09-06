@@ -3,4 +3,5 @@
 *dev-texlive/texlive-latexrecommended
 *dev-texlive/texlive-latexextra
 *dev-tex/biblatex
+*dev-tex/latexmk
 *virtual/latex-base
