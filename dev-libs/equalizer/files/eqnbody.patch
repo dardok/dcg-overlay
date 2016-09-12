@@ -11,16 +11,6 @@ diff -u -r -N a/examples/eqNBody/client.cpp b/examples/eqNBody/client.cpp
  
      return EXIT_SUCCESS;
  }
-diff -u -r -N a/examples/eqNBody/CMakeLists.txt b/examples/eqNBody/CMakeLists.txt
---- a/examples/eqNBody/CMakeLists.txt	2015-11-06 07:13:36.000000000 -0500
-+++ b/examples/eqNBody/CMakeLists.txt	2016-03-16 12:53:58.575129293 -0400
-@@ -70,5 +70,5 @@
-     ${CUDA_LIBRARIES}
-   )
- 
--install(FILES nbody_kernel.cu ${CMAKE_SOURCE_DIR}/CMake/CompilerVersion.cmake
-+install(FILES nbody_kernel.cu ${CMAKE_SOURCE_DIR}/CMake/common/CompilerVersion.cmake
-   DESTINATION share/Equalizer/examples/eqNBody COMPONENT examples)
 diff -u -r -N a/examples/eqNBody/config.cpp b/examples/eqNBody/config.cpp
 --- a/examples/eqNBody/config.cpp	2015-11-06 07:13:36.000000000 -0500
 +++ b/examples/eqNBody/config.cpp	2016-03-16 12:05:36.882214074 -0400
