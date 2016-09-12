@@ -1,1 +1,2 @@
+>=dev-games/openscenegraph-3.5.1
 >=media-libs/opencv-3.0
