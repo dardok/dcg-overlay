@@ -1,4 +1,3 @@
->dev-libs/glstats-0.3.1
 >dev-libs/vmmlib-1.9.0
 >dev-libs/pression-1.1.0
 >dev-libs/lunchbox-1.12.0
