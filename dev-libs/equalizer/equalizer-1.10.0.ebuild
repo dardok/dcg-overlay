@@ -45,7 +45,6 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-    "${FILESDIR}/window-glx.patch"
     "${FILESDIR}/eqnbody.patch"
 )
 
