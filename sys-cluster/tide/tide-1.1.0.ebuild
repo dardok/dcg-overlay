@@ -9,7 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/BlueBrain/Tide.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/BlueBrain/Tide/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+    SRC_URI="https://github.com/BlueBrain/Tide/archive/${PV}.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/Tide${PV}
 fi
 
