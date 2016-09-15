@@ -35,6 +35,7 @@ RDEPEND="
     dev-qt/qtwidgets:5
     dev-qt/qtxml:5
     dev-qt/qtxmlpatterns:5
+	dev-qt/qtgraphicaleffects:5
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
