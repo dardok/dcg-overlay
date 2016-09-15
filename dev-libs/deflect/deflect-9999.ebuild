@@ -19,8 +19,8 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib +servus +glut +slurm"
 
 RDEPEND="
-    >=dev-libs/boost-1.41.0
-    servus? ( dev-libs/servus )
+    >=dev-libs/boost-1.54.0
+    servus? ( =dev-libs/servus-9999 )
     >=media-libs/libjpeg-turbo-1.2.1
     glut? ( media-libs/freeglut )
     dev-qt/qtconcurrent:5

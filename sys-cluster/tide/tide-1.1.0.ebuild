@@ -20,7 +20,7 @@ IUSE="debug +cxx11-stdlib"
 
 # NOTE: replace qtquick1 with qtdeclarative when possible
 RDEPEND="
-    >=dev-libs/boost-1.41.0
+    >=dev-libs/boost-1.54.0
     >=dev-libs/deflect-0.11.1
     dev-libs/fcgi
     media-video/ffmpeg

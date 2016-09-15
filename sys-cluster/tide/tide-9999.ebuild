@@ -10,7 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_BRANCH="master"
 else
     SRC_URI="https://github.com/BlueBrain/Tide/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Tide${PV}
+    S=${WORKDIR}/Tide-${PV}
 fi
 
 LICENSE="LGPL-3"
@@ -18,12 +18,9 @@ SLOT="0"
 KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
-# NOTE: replace qtquick1 with qtdeclarative when possible
 RDEPEND="
-    >=dev-libs/boost-1.41.0
-    >=dev-libs/deflect-0.11.1
-    >=dev-libs/servus-1.4.0
-    dev-libs/fcgi
+    >=dev-libs/boost-1.54.0
+    =dev-libs/deflect-9999
     media-video/ffmpeg
     sys-cluster/openmpi
     virtual/opengl
