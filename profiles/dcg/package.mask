@@ -1,3 +1,4 @@
 >=sys-devel/gcc-5
 >sys-kernel/linux-headers-4.3
 >=sys-libs/ncurses-6.0
+>dev-lang/perl-5.22
