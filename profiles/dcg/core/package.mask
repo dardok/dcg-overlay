@@ -7,3 +7,5 @@
 >sys-cluster/lustre-2.8.0
 
 >sys-apps/net-tools-1.60_p20160215155418
+
+>dev-db/postgresql-9.5.9999
