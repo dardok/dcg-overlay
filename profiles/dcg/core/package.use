@@ -87,4 +87,4 @@ sys-fs/lvm2 thin -device-mapper-only
 
 sys-apps/busybox -pam
 
-ys-process/tini static
+sys-process/tini static
