@@ -84,3 +84,5 @@ net-misc/curl http2
 net-libs/nghttp2 hpack-tools
 
 sys-fs/lvm2 thin -device-mapper-only
+
+sys-apps/busybox -pam
