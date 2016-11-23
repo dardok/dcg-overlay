@@ -11,7 +11,8 @@ app-emulation/libvirt rbd avahi
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
 app-emulation/spice -smartcard
 
-app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host
+#app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host
+app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_host
 
 app-emulation/docker btrfs overlay experimental
 
