@@ -11,3 +11,5 @@
 >dev-db/postgresql-9.5.9999
 
 >net-misc/openvswitch-2.5.9999
+
+>dev-ruby/facter-3.4.9999
