@@ -13,6 +13,10 @@ app-emulation/spice -smartcard
 
 #app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host
 app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_host
+sys-apps/attr static-libs
+sys-libs/zlib static-libs
+x11-libs/pixman static-libs
+sys-libs/libcap static-libs
 
 app-emulation/docker btrfs overlay experimental
 
