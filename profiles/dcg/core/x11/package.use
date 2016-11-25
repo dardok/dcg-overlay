@@ -12,7 +12,7 @@ x11-apps/xdpyinfo dga dmx
 
 x11-base/xorg-server dmx glamor tslib xnest xvfb
 
-x11-drivers/nvidia-drivers uvm tools
+x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
 x11-drivers/xf86-video-dummy dga
 
