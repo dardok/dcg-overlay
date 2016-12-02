@@ -1,0 +1,14 @@
+--- a/ext/libav/gstavauddec.c	2016-07-25 06:22:16.000000000 -0400
++++ b/ext/libav/gstavauddec.c	2016-12-02 06:48:04.592803305 -0500
+@@ -878,7 +878,10 @@
+         (in_plugin->id >= AV_CODEC_ID_PCM_S16LE &&
+             in_plugin->id <= AV_CODEC_ID_PCM_BLURAY) ||
+         (in_plugin->id >= AV_CODEC_ID_PCM_S8_PLANAR &&
+-            in_plugin->id <= AV_CODEC_ID_PCM_S16BE_PLANAR)) {
++            in_plugin->id <= AV_CODEC_ID_PCM_S16BE_PLANAR_DEPRECATED) ||
++        in_plugin->id == AV_CODEC_ID_PCM_S24LE_PLANAR ||
++        in_plugin->id == AV_CODEC_ID_PCM_S32LE_PLANAR ||
++        in_plugin->id == AV_CODEC_ID_PCM_S16BE_PLANAR) {
+       goto next;
+     }
+ 
