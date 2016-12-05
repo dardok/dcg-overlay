@@ -46,6 +46,7 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
     "${FILESDIR}/eqnbody.patch"
+    "${FILESDIR}/std-promise.patch"
 )
 
 src_prepare() {

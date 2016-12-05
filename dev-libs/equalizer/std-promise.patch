@@ -1,0 +1,11 @@
+--- a/eq/deflect/proxy.cpp	2016-12-05 08:25:41.796878063 -0500
++++ b/eq/deflect/proxy.cpp	2016-12-05 08:26:01.031034903 -0500
+@@ -41,7 +41,7 @@
+ 
+ ::deflect::Stream::Future make_ready_future( const bool value )
+ {
+-    boost::promise< bool > promise;
++    std::promise< bool > promise;
+     promise.set_value( value );
+     return promise.get_future();
+ }
