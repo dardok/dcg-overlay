@@ -215,6 +215,7 @@ gdal_src_configure() {
 		$(use_with sqlite sqlite3 "${EPREFIX}"/usr) \
 		$(use_with threads) \
 		$(use_with xls freexl) \
+		$(use_with webp) \
 		${myopts}
 
 	# mysql-config puts this in (and boy is it a PITA to get it out)
