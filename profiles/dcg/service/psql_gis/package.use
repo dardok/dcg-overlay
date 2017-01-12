@@ -4,4 +4,4 @@ sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits n
 
 sci-libs/armadillo lapack
 
-sci-libs/hdf5 -fortran
+sci-libs/hdf5 -fortran -threads
