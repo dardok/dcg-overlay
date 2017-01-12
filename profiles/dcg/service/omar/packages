@@ -8,4 +8,4 @@
 *dev-java/commons-compress
 *dev-java/commons-lang
 *www-servers/tomcat
-
+*dev-java/jdbc-postgresql
