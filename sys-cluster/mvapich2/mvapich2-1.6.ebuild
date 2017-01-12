@@ -130,7 +130,7 @@ src_configure() {
 
 src_install() {
 	emake  DESTDIR="${D}"|| die
-	dodoc CHANGES_MPICH2 COPYRIGHT COPYRIGHT_MVAPICH2 LICENSE.TXT \
+	dodoc COPYRIGHT LICENSE.TXT \
 		README* RELEASE_NOTES*
 }
 
