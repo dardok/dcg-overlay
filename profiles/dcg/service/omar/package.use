@@ -6,4 +6,4 @@ dev-java/icedtea-bin -cups -gtk -alsa headless-awt
 
 sys-cluster/mvapich2 -fortran
 
-sci-libs/hdf5 -fortran -threads -cxx
+sci-libs/hdf5 -fortran -threads
