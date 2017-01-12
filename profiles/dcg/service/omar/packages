@@ -5,4 +5,7 @@
 *dev-games/openscenegraph
 *virtual/ffmpeg
 *sci-geosciences/laszip
+*dev-java/commons-compress
+*dev-java/commons-lang
+*www-servers/tomcat
 

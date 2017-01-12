@@ -5,3 +5,5 @@ sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml
 sci-libs/armadillo lapack
 
 dev-java/icedtea-bin -cups -gtk -alsa headless-awt
+
+sys-cluster/mvapich2 -threads

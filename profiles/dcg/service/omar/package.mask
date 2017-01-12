@@ -1,3 +1,7 @@
 >media-libs/jasper-1.900.6
 
 >=dev-games/openscenegraph-3.4.0
+
+>=dev-java/commons-lang-3.0
+
+>=www-servers/tomcat-9.0
