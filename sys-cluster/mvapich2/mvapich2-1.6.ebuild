@@ -74,7 +74,8 @@ src_configure() {
 	local c="--with-rdma=gen2
 		--with-pm=mpd
 		$(use_enable romio)
-		--with-mpe=no"
+		--with-mpe=no
+		--with-hwloc=no"
 
 	# TODO Shared libs should build with this, but they don't
 	# --enable-shared=gcc"
