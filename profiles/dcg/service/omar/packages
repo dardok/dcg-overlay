@@ -1,0 +1,8 @@
+*dev-db/postgresql
+*dev-db/postgis
+*sys-cluster/mvapich2
+*dev-java/groovy
+*dev-games/openscenegraph
+*virtual/ffmpeg
+*sci-geosciences/laszip
+
