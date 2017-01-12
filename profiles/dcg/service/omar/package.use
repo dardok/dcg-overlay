@@ -3,3 +3,5 @@ dev-db/postgresql server python uuid
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml
 
 sci-libs/armadillo lapack
+
+dev-java/icedtea-bin -cups -gtk -alsa headless-awt
