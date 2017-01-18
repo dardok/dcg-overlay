@@ -52,7 +52,7 @@ media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 
 x11-libs/cairo xcb
 
-sys-cluster/ceph fuse -xfs
+sys-cluster/ceph fuse -xfs -gcrypt
 
 sys-fs/zfs -rootfs
 
@@ -93,3 +93,5 @@ sys-fs/lvm2 thin -device-mapper-only
 sys-apps/busybox -pam
 
 sys-process/tini static
+
+>=app-text/xmlto-0.0.28-r1 text
