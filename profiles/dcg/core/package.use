@@ -52,7 +52,8 @@ media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 
 x11-libs/cairo xcb
 
-sys-cluster/ceph fuse -xfs -gcrypt
+sys-cluster/ceph fuse -xfs
+sys-fs/cryptsetup -gcrypt
 
 sys-fs/zfs -rootfs
 
