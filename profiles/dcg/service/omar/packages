@@ -1,5 +1,4 @@
 sci-libs/gdal
-sys-cluster/mvapich2
 dev-java/groovy
 dev-games/openscenegraph
 virtual/ffmpeg
