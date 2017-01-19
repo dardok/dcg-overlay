@@ -1,3 +1,3 @@
-*www-servers/apache
-*www-apache/mod_log_rotate
-*net-libs/nghttp2
+www-servers/apache
+www-apache/mod_log_rotate
+net-libs/nghttp2
