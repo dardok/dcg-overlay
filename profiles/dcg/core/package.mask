@@ -1,4 +1,4 @@
->=dev-python/docker-py-1.8
+#>=dev-python/docker-py-1.8
 
 #>=sys-cluster/ceph-10.0.0
 
@@ -12,6 +12,6 @@
 
 >dev-ruby/facter-3.4.9999
 
->app-emulation/rkt-1.18.0
+#>app-emulation/rkt-1.18.0
 
 >=dev-python/twisted-16.0.0
