@@ -2,8 +2,6 @@
 
 >sys-kernel/linux-headers-4.3
 
->=sys-libs/readline-7.0
-
 >dev-lang/perl-5.22.3_rc4
 >virtual/perl-File-Temp-0.230.400-r5
 >virtual/perl-Data-Dumper-2.158.0-r1
@@ -23,4 +21,5 @@
 >virtual/perl-Text-ParseWords-3.300.0-r2
 >virtual/perl-version-0.990.900-r3
 >virtual/perl-CPAN-Meta-2.150.1-r1
-
+>virtual/perl-Digest-SHA-5.880.0-r1
+>virtual/perl-Digest-MD5-2.530.0-r3
