@@ -1,2 +1,2 @@
-*dev-db/postgresql
-*dev-db/postgis
+dev-db/postgresql
+dev-db/postgis

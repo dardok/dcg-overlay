@@ -1,4 +1,4 @@
-*media-libs/openwebrtc
-*app-accessibility/pocketsphinx
-*app-accessibility/espeak
-*media-plugins/gst-plugins-espeak
+media-libs/openwebrtc
+app-accessibility/pocketsphinx
+app-accessibility/espeak
+media-plugins/gst-plugins-espeak
