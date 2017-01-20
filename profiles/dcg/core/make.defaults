@@ -6,10 +6,6 @@ OPENMPI_FABRICS="ofed"
 OPENMPI_OFED_FEATURES="connectx-xrc control-hdr-padding dynamic-sl failover rdmacm udcm"
 OPENMPI_RM="slurm"
 
-PYTHON_SINGLE_TARGET="-* python2_7"
-PYTHON_TARGETS="-* python2_7 python3_5"
-RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22 ruby23"
-
 USE="dbus gudev pam policykit session"
 USE="${USE} cxx fortran nptl gmp openmp libffi"
 USE="${USE} readline ncurses -slang"
