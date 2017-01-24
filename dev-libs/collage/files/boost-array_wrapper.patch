@@ -1,0 +1,52 @@
+diff --git a/co/dataIStreamArchive.h b/co/dataIStreamArchive.h
+index 66fea020..75c60305 100644
+--- a/co/dataIStreamArchive.h
++++ b/co/dataIStreamArchive.h
+@@ -72,7 +72,7 @@ public:
+ 
+     /** @internal use optimized load for arrays. */
+     template< typename T >
+-    void load_array( boost::serialization::array< T >& a, unsigned int );
++    void load_array( boost::serialization::array_wrapper< T >& a, unsigned int );
+ 
+     /** @internal enable serialization optimization for arrays. */
+     struct use_array_optimization
+diff --git a/co/dataIStreamArchive.ipp b/co/dataIStreamArchive.ipp
+index e100dc80..2270490a 100644
+--- a/co/dataIStreamArchive.ipp
++++ b/co/dataIStreamArchive.ipp
+@@ -22,7 +22,7 @@ namespace co
+ {
+ 
+ template< typename T >
+-void DataIStreamArchive::load_array( boost::serialization::array< T >& a,
++void DataIStreamArchive::load_array( boost::serialization::array_wrapper< T >& a,
+                                      unsigned int )
+ {
+     _stream >> Array< T >( a.address(), a.count( ));
+diff --git a/co/dataOStreamArchive.h b/co/dataOStreamArchive.h
+index 3c248e3f..80c78ab8 100644
+--- a/co/dataOStreamArchive.h
++++ b/co/dataOStreamArchive.h
+@@ -68,7 +68,7 @@ public:
+ 
+     /** @internal use optimized save for arrays. */
+     template< typename T >
+-    void save_array( const boost::serialization::array< T >& a, unsigned int );
++    void save_array( const boost::serialization::array_wrapper< T >& a, unsigned int );
+ 
+     /** @internal enable serialization optimization for arrays. */
+     struct use_array_optimization
+diff --git a/co/dataOStreamArchive.ipp b/co/dataOStreamArchive.ipp
+index b817f43f..51494ee7 100644
+--- a/co/dataOStreamArchive.ipp
++++ b/co/dataOStreamArchive.ipp
+@@ -17,7 +17,7 @@
+ 
+ 
+ template< typename T >
+-void DataOStreamArchive::save_array( const boost::serialization::array< T >& a,
++void DataOStreamArchive::save_array( const boost::serialization::array_wrapper< T >& a,
+                                      unsigned int )
+ {
+     _stream << Array< const T >( a.address(), a.count( ));
