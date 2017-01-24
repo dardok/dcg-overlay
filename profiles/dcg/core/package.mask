@@ -15,3 +15,5 @@
 #>app-emulation/rkt-1.18.0
 
 >=dev-python/twisted-16.0.0
+
+>media-libs/jasper-1.900.6
