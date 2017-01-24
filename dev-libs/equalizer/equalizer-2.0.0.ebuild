@@ -19,7 +19,7 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib hwsd glstats opencv osg +glew qt5"
 
 RDEPEND="
-    >=dev-libs/vmmlib-1.8
+    >=dev-libs/vmmlib-1.12
     >=dev-libs/lunchbox-1.10
     >=dev-libs/collage-1.1
     >=dev-libs/deflect-0.4
