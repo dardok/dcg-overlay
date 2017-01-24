@@ -25,6 +25,10 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+src_prepare() {
+	git -C pression/compressor clone https://github.com/facebook/zstd.git
+}
+
 src_configure() {
     mycmakeargs=(
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
