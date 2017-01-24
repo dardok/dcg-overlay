@@ -27,6 +27,7 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	git -C pression/compressor clone https://github.com/facebook/zstd.git
+	git -C pression/compressor reset --hard 83543a7b26f8130ede672628d86c063d9a6c3f38
 }
 
 src_configure() {
