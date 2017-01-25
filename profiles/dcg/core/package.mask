@@ -1,19 +1,11 @@
-#>=dev-python/docker-py-1.8
+>=sys-fs/xfsprogs-4.7.0 # broken last I checked
 
-#>=sys-cluster/ceph-10.0.0
+>dev-db/postgresql-9.5.9999 # not ready for >= 9.6
 
->=sys-fs/xfsprogs-4.7.0
+>dev-ruby/facter-3.4.9999 # I forget
 
-#>sys-cluster/lustre-2.8.0
+>=dev-python/twisted-16.0.0 # breaks a ton of old stuff
 
->dev-db/postgresql-9.5.9999
+>media-libs/jasper-1.900.6 # for gdal
 
-#>net-misc/openvswitch-2.5.9999
-
->dev-ruby/facter-3.4.9999
-
-#>app-emulation/rkt-1.18.0
-
->=dev-python/twisted-16.0.0
-
->media-libs/jasper-1.900.6
+>dev-python/jinja-2.9 # for ansible
