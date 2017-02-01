@@ -1,3 +1,3 @@
->dev-python/py-amqp-1
->dev-python/kombu-3
->dev-python/oslo-messaging-4
+>=dev-python/py-amqp-2
+>=dev-python/kombu-4
+>=dev-python/oslo-messaging-5
