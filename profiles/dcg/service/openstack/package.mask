@@ -1,1 +1,2 @@
 >dev-python/kombu-3
+>dev-python/oslo-messaging-4
