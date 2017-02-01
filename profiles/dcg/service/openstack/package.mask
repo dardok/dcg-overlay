@@ -1,0 +1,1 @@
+>dev-python/kombu-3
