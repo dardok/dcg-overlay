@@ -4,4 +4,4 @@ www-servers/apache threads
 
 dev-libs/apr-util openssl
 
-www-servers/uwsgi python python_gevent
+www-servers/uwsgi apache2 python python_gevent
