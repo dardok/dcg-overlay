@@ -1,5 +1,0 @@
-APACHE2_MODULES="remoteip"
-
-APACHE2_MPMS="event"
-
-RUBY_TARGETS="-* ruby19 ruby20 ruby21 ruby22"
