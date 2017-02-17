@@ -78,6 +78,7 @@
 *sys-apps/sg3_utils
 *sys-auth/sssd
 *sys-block/nbd
+*sys-block/open-iscsi
 *sys-cluster/ceph
 *sys-cluster/glusterfs
 *sys-cluster/lustre
