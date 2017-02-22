@@ -35,6 +35,7 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
     "${FILESDIR}/converting-explicit-constructor.patch"
+    "${FILESDIR}/stdexcept.patch"
 )
 
 src_prepare() {
