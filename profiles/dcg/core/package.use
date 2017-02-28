@@ -96,3 +96,5 @@ sys-apps/busybox -pam
 sys-process/tini static
 
 >=app-text/xmlto-0.0.28-r1 text
+
+net-fs/samba addc addns ads client cluster dmapi fam
