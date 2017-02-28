@@ -97,4 +97,4 @@ sys-process/tini static
 
 >=app-text/xmlto-0.0.28-r1 text
 
-net-fs/samba ads client cluster dmapi fam
+net-fs/samba ads client cluster dmapi fam gnutls
