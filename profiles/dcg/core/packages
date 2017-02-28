@@ -7,6 +7,8 @@
 *app-arch/unrar
 *app-crypt/ccid
 *app-crypt/coolkey
+*app-crypt/pkcs11-data
+*app-crypt/pkcs11-dump
 *app-emulation/docker
 *app-emulation/libvirt
 *app-emulation/qemu
@@ -76,6 +78,7 @@
 *sys-auth/nss-mdns
 *sys-auth/pam-afs-session
 *sys-auth/pam_krb5
+*sys-auth/pam_pkcs11
 *sys-apps/sg3_utils
 *sys-auth/sssd
 *sys-block/nbd
