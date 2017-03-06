@@ -2,6 +2,7 @@
 *gnome-base/gnome-settings-daemon
 *media-libs/glew
 *net-analyzer/wireshark
+*net-misc/freerdp
 *net-misc/spice-gtk
 *net-misc/tigervnc
 *net-print/cups

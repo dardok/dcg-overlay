@@ -59,5 +59,7 @@ dev-util/cmake -qt5
 
 net-misc/modemmanager -qmi
 
+net-misc/freerdp xv
+
 x11-libs/vte python
 net-libs/gtk-vnc python

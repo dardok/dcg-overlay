@@ -32,6 +32,7 @@
 *dev-libs/dbus-glib
 *dev-libs/jansson
 *dev-libs/libnl
+*dev-python/awscli
 *dev-python/docker-py
 *dev-python/libcloud
 *dev-python/python-openstackclient
@@ -52,6 +53,7 @@
 *net-fs/nfs4-acl-tools
 *net-fs/openafs
 *net-fs/openafs-kernel
+*net-fs/samba
 *net-libs/nodejs
 *net-libs/libgssglue
 *net-libs/libnet
