@@ -11,3 +11,5 @@
 >dev-python/jinja-2.9 # for ansible
 
 >dev-python/psutil-2.0.0 # for nova
+
+>=sys-apps/irqbalance-1.2.0 # broken
