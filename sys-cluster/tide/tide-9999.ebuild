@@ -41,6 +41,18 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+PATCHES=(
+    "${FILESDIR}/local.patch"
+)
+
+src_prepare() {
+	epatch "${PATCHES[@]}"
+
+	epatch_user
+
+	cmake-utils_src_prepare
+}
+
 src_configure() {
     mycmakeargs=(
 		-DSUBPROJECT_TUIO=OFF

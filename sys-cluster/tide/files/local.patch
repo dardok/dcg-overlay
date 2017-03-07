@@ -1,0 +1,39 @@
+diff -u -r -N a/tide/wall/TextureNode.cpp b/tide/wall/TextureNode.cpp
+--- a/tide/wall/TextureNode.cpp	2017-03-07 12:37:56.525950280 -0500
++++ b/tide/wall/TextureNode.cpp	2017-03-07 12:38:21.577140938 -0500
+@@ -54,13 +54,13 @@
+     setMipmapFiltering( QSGTexture::Linear );
+ }
+ 
+-void TextureNode::setMipmapFiltering( const QSGTexture::Filtering filtering )
++void TextureNode::setMipmapFiltering( const QSGTexture::Filtering filtering_ )
+ {
+     auto mat = static_cast<QSGOpaqueTextureMaterial*>( material( ));
+     auto opaqueMat = static_cast<QSGOpaqueTextureMaterial*>( opaqueMaterial( ));
+ 
+-    mat->setMipmapFiltering( filtering );
+-    opaqueMat->setMipmapFiltering( filtering );
++    mat->setMipmapFiltering( filtering_ );
++    opaqueMat->setMipmapFiltering( filtering_ );
+ }
+ 
+ uint TextureNode::getBackGlTexture() const
+diff -u -r -N a/tide/wall/TextureNodeYUV.cpp b/tide/wall/TextureNodeYUV.cpp
+--- a/tide/wall/TextureNodeYUV.cpp	2017-03-07 12:37:56.525950280 -0500
++++ b/tide/wall/TextureNodeYUV.cpp	2017-03-07 12:38:49.634354438 -0500
+@@ -193,12 +193,12 @@
+     return _rect;
+ }
+ 
+-void TextureNodeYUV::setRect( const QRectF& rect )
++void TextureNodeYUV::setRect( const QRectF& rect_ )
+ {
+-    if( _rect == rect )
++    if( _rect == rect_ )
+         return;
+ 
+-    _rect = rect;
++    _rect = rect_;
+     QSGGeometry::updateTexturedRectGeometry( _node.geometry(), _rect,
+                                              UNIT_RECTF );
+     _node.markDirty( QSGNode::DirtyGeometry );
