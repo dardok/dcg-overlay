@@ -61,13 +61,12 @@ sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
 
 sys-cluster/lustre gss client -server
-#sys-cluster/lustre -client -server
 
 net-misc/openvswitch -modules
 
 net-firewall/ipset -modules
 
-dev-libs/cyrus-sasl -postgres
+dev-libs/cyrus-sasl openldap postgres
 
 sys-auth/sssd augeas autofs netlink nfsv4 -acl
 
