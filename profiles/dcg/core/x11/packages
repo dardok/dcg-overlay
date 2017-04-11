@@ -1,6 +1,7 @@
 *app-emulation/virt-viewer
 *gnome-base/gnome-settings-daemon
 *media-libs/glew
+*media-sound/alsa-utils
 *net-analyzer/wireshark
 *net-misc/freerdp
 *net-misc/spice-gtk
