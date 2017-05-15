@@ -4,7 +4,7 @@
 
 >dev-ruby/facter-3.4.9999 # I forget
 
->=dev-python/twisted-16.0.0 # breaks a ton of old stuff
+#>=dev-python/twisted-16.0.0 # breaks a ton of old stuff
 
 >media-libs/jasper-1.900.6 # for gdal
 
@@ -13,3 +13,7 @@
 >dev-python/psutil-2.0.0 # for nova
 
 >=sys-apps/irqbalance-1.2.0 # broken
+
+>net-misc/openvswitch-2.6.9999 # for neutron
+
+>=dev-python/pbr-3.0.0 # for python-novaclient

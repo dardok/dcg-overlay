@@ -67,7 +67,7 @@ net-misc/openvswitch -modules
 
 net-firewall/ipset -modules
 
-dev-libs/cyrus-sasl openldap
+#dev-libs/cyrus-sasl openldap
 
 sys-auth/sssd augeas autofs netlink nfsv4 -acl
 
@@ -98,3 +98,5 @@ sys-process/tini static
 >=app-text/xmlto-0.0.28-r1 text
 
 net-fs/samba ads client cluster dmapi fam gnutls
+
+dev-python/twisted conch
