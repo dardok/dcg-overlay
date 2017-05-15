@@ -67,7 +67,7 @@ net-misc/openvswitch -modules
 
 net-firewall/ipset -modules
 
-#dev-libs/cyrus-sasl openldap
+dev-libs/cyrus-sasl -postgres #openldap
 
 sys-auth/sssd augeas autofs netlink nfsv4 -acl
 

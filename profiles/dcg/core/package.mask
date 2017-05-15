@@ -16,4 +16,4 @@
 
 >net-misc/openvswitch-2.6.9999 # for neutron
 
->=dev-python/pbr-3.0.0 # for python-novaclient
+>=dev-python/pbr-2.0.0 # for python-novaclient
