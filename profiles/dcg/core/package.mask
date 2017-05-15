@@ -4,7 +4,7 @@
 
 >dev-ruby/facter-3.4.9999 # I forget
 
-#>=dev-python/twisted-16.0.0 # breaks a ton of old stuff
+>=dev-python/twisted-16.0.0 # breaks a ton of old stuff
 
 >media-libs/jasper-1.900.6 # for gdal
 
