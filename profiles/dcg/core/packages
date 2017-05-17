@@ -55,7 +55,7 @@
 *net-fs/nfs4-acl-tools
 *net-fs/openafs
 *net-fs/openafs-kernel
-*net-fs/samba
+*>=net-fs/samba-4.6.3
 *net-libs/nodejs
 *net-libs/libgssglue
 *net-libs/libnet
