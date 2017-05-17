@@ -1,3 +1,6 @@
 www-servers/apache
 www-apache/mod_log_rotate
+www-apache/mod_security
+www-apache/modsecurity-crs
+www-apache/modsec-flameeyes
 net-libs/nghttp2
