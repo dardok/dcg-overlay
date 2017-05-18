@@ -1,9 +1,0 @@
-media-video/ffmpeg cpudetection ieee1394 libv4l network mp3 x265 xvid aac aacplus bluray faac frei0r ladspa libass libcaca librtmp modplug opus schroedinger snappy twolame
-
-dev-qt/qtchooser qt5
-
-dev-qt/qtquick1 webkit
-
-dev-qt/qtwebkit gstreamer
-
-media-plugins/frei0r-plugins -facedetect
