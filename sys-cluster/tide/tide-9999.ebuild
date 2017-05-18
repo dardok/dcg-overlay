@@ -41,13 +41,13 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
-PATCHES=(
-    "${FILESDIR}/local.patch"
-)
-
-src_prepare() {
-	epatch "${PATCHES[@]}"
-}
+#PATCHES=(
+#    "${FILESDIR}/local.patch"
+#)
+#
+#src_prepare() {
+#	epatch "${PATCHES[@]}"
+#}
 
 src_configure() {
     mycmakeargs=(
