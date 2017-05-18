@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt	2017-05-18 10:52:04.462331620 -0400
++++ b/CMakeLists.txt	2017-05-18 10:55:07.896263598 -0400
+@@ -26,7 +26,7 @@
+ 
+ common_find_package(Boost COMPONENTS program_options unit_test_framework)
+ common_find_package(GLUT)
+-common_find_package(LibJpegTurbo 1.4)
++common_find_package(LibJpegTurbo VERSION_GREATER 1.2)
+ if(NOT LibJpegTurbo_FOUND)
+   common_find_package(LibJpegTurbo 1.2 REQUIRED)
+   list(APPEND COMMON_FIND_PACKAGE_DEFINES DEFLECT_USE_LEGACY_LIBJPEGTURBO)
