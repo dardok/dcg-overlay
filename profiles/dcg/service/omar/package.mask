@@ -3,3 +3,5 @@
 >=dev-java/commons-lang-3.0
 
 >=www-servers/tomcat-9.0
+
+>=sci-libs/geos-3.6
