@@ -1,2 +1,2 @@
->=dev-lang/php-7.1.4 zip xmlreader pdo xmlwriter gd fpm
+>=dev-lang/php-7.1.4 zip xmlreader pdo xmlwriter gd fpm apache2
 >=app-eselect/eselect-php-0.9.2 fpm
