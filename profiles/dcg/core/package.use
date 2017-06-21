@@ -100,3 +100,5 @@ sys-process/tini static
 net-fs/samba ads client cluster dmapi fam gnutls
 
 dev-python/twisted conch
+
+dev-libs/glib systemtap fam
