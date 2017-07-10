@@ -26,6 +26,7 @@
 *app-shells/bash-completion
 *app-shells/tcsh
 *dev-db/etcd
+*dev-go/go-protobuf
 *dev-lang/go
 *dev-libs/apr
 *dev-libs/apr-util
@@ -34,9 +35,12 @@
 *dev-libs/dbus-glib
 *dev-libs/jansson
 *dev-libs/libnl
+*dev-libs/protobuf
+*dev-libs/protobuf-c
 *dev-python/awscli
 *dev-python/docker-py
 *dev-python/libcloud
+*dev-python/protobuf-python
 *dev-python/python-openstackclient
 *dev-python/python-heatclient
 *dev-python/pygobject
