@@ -61,7 +61,7 @@ sys-fs/zfs -rootfs
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
 
-sys-cluster/lustre gss client -server
+sys-cluster/lustre -gss client -server
 
 net-misc/openvswitch -modules
 
