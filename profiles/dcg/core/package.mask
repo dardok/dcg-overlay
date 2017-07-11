@@ -19,3 +19,5 @@
 >=dev-python/pbr-2.0.0 # for python-novaclient
 
 >dev-python/keystoneauth-2.18.0 # for nova
+
+>=app-admin/puppet-5 # too new
