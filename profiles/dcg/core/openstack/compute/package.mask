@@ -1,2 +1,1 @@
->dev-python/keystoneauth-2.18.0
 >=dev-python/oslo-policy-1.23.0

@@ -17,3 +17,5 @@
 >net-misc/openvswitch-2.6.9999 # for neutron
 
 >=dev-python/pbr-2.0.0 # for python-novaclient
+
+>dev-python/keystoneauth-2.18.0 # for nova
