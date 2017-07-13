@@ -4,6 +4,3 @@
 
 # broken
 >sys-apps/net-tools-1.60_p20160215155418
-
-# r3 is brpken?
->sys-apps/systemd-233-r1
