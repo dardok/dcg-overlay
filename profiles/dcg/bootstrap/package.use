@@ -4,3 +4,5 @@ sys-libs/ncurses threads
 dev-libs/boehm-gc threads
 
 sys-fs/lvm2 -thin device-mapper-only
+
+sys-apps/dbus user-session
