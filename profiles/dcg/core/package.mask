@@ -23,5 +23,3 @@
 >=app-admin/puppet-5 # too new
 
 >=dev-libs/leatherman-1 # breaks old facter
-
->sys-apps/dbus-1.10.18 # 1.10.20 is broken!?!
