@@ -26,3 +26,4 @@ media-plugins/gst-plugins-jack
 media-plugins/gst-plugins-x264
 media-plugins/gst-plugins-x265
 #*media-plugins/gst-plugins-opencv
+dev-python/gst-python
