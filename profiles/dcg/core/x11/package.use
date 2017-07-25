@@ -63,3 +63,5 @@ net-misc/freerdp xv
 
 x11-libs/vte python
 net-libs/gtk-vnc python
+
+dev-libs/weston lcms rdp screen-sharing wayland-compositor xwayland
