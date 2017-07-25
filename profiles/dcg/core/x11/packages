@@ -1,5 +1,6 @@
 *app-emulation/virt-viewer
 *dev-libs/weston
+*dev-qt/qtwayland
 *gnome-base/gnome-settings-daemon
 *media-libs/glew
 *media-sound/alsa-utils
