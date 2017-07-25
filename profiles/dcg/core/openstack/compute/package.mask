@@ -1,1 +1,3 @@
 >=dev-python/oslo-policy-1.23.0
+
+>=dev-python/ovs-2.7.0
