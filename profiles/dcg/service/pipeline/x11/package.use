@@ -2,3 +2,5 @@
 net-misc/spice-gtk -gstreamer
 
 media-libs/gst-plugins-bad gtk
+
+dev-python/PyQt5 widgets gui bluetooth dbus debug declarative designer gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg testlib webchannel webengine webkit websockets widgets x11extras xmlpatterns
