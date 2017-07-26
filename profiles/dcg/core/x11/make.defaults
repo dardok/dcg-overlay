@@ -2,7 +2,7 @@ VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l qxl 
 
 INPUT_DEVICES="-* evdev keyboard mouse tslib joystick"
 
-USE="X wayland"
+USE="X wayland egl"
 USE="${USE} dri vaapi vdpau"
 
 USE="${USE} opengl opencl cuda"
