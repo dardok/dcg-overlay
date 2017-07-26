@@ -1,0 +1,5 @@
+dev-python/PyQt5 widgets gui bluetooth dbus debug declarative designer gui location multimedia network opengl positioning printsupport sensors serialport sql svg testlib webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-qt/qtwebchannel qml
+dev-qt/qtwebkit printsupport
+dev-qt/qtwebengine widgets
+dev-qt/qtmultimedia widgets
