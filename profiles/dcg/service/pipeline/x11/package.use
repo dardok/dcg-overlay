@@ -1,2 +1,4 @@
 # don't rebuild from dcg/core/x11
 net-misc/spice-gtk -gstreamer
+
+media-libs/gst-plugins-bad gtk
