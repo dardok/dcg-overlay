@@ -47,6 +47,7 @@
 *dev-python/python-systemd
 *dev-python/virtualenv
 *dev-util/cmake
+*dev-util/debugedit
 *dev-util/strace
 *dev-util/systemtap
 *dev-vcs/subversion
