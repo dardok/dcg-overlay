@@ -1,4 +1,4 @@
->dev-games/openscenegraph-3.4.0
+#>dev-games/openscenegraph-3.4.0
 
 >media-video/ffmpeg-2.8.10
 
