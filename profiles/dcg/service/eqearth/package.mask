@@ -1,8 +1,8 @@
 #>dev-games/openscenegraph-3.4.0
 
->media-video/ffmpeg-2.8.10
+>media-video/ffmpeg-2.8.11
 
->sys-devel/bison-2.7.1
->sys-devel/flex-2.6.1
+#>sys-devel/bison-2.7.1
+#>sys-devel/flex-2.6.1
 
 >=sci-libs/geos-3.6
