@@ -45,11 +45,6 @@ DEPEND="${RDEPEND}
 #PATCHES=( "${FILESDIR}"/osgearth-2.6-cmake-options.patch )
 
 src_configure() {
-    CMAKE_BUILD_TYPE="Release"
-    if use debug; then
-        CMAKE_BUILD_TYPE="Debug"
-    fi
-
 	# V8 disabled due to
 	# https://github.com/gwaldron/osgearth/issues/333
 	local mycmakeargs=(
