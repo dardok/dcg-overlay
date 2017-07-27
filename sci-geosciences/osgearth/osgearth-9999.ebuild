@@ -16,7 +16,7 @@ EGIT_BRANCH="master"
 LICENSE="LGPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc protobuf qt5"
+IUSE="doc debug protobuf qt5"
 
 RDEPEND="
 	dev-db/sqlite:3
