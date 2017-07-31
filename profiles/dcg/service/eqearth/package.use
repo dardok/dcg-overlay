@@ -4,7 +4,7 @@ dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr qt5 las
 
 media-libs/opencv gstreamer ffmpeg
 
-dev-libs/equalizer opencv
+dev-libs/equalizer -opencv
 
 sci-libs/gdal geos
 
