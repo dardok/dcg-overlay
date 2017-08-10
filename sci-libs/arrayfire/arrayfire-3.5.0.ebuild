@@ -21,11 +21,11 @@ RDEPEND="
     media-libs/freeimage
     cpu? (
         virtual/blas
-        sci-libs/fftw:3
+        sci-libs/fftw:3.0
     )
     graphics? (
         >=media-libs/glfw-3.1.4
-        media-libs/fontconfig:1
+        media-libs/fontconfig:1.0
     )
     cuda? ( dev-util/nvidia-cuda-toolkit )
     opencl? (
