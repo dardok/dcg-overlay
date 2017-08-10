@@ -10,6 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_BRANCH="master"
 else
     SRC_URI="http://arrayfire.com/arrayfire_source/arrayfire-full-${PV}.tar.bz2"
+	S=${WORKDIR}/arrayfire-full-${PV}
 fi
 
 LICENSE="BSD-with-attribution"
