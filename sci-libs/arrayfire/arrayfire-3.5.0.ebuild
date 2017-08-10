@@ -1,4 +1,4 @@
-EAPI=6
+EAPI=5
 inherit cmake-utils
 
 DESCRIPTION="ArrayFire is a high performance software library for parallel computing with an easy-to-use API. Its array based function set makes parallel programming more accessible."
