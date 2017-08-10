@@ -10,7 +10,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_BRANCH="master"
 else
     SRC_URI="http://arrayfire.com/arrayfire_source/arrayfire-full-${PV}.tar.bz2"
-	S=${WORKDIR}/arrayfire-full-${PV}
+    S=${WORKDIR}/arrayfire-full-${PV}
 fi
 
 LICENSE="BSD-with-attribution"
@@ -32,8 +32,8 @@ RDEPEND="
     opencl? (
         >=dev-libs/boost-1.48
         virtual/opencl
-		sci-libs/clblas
-		sci-libs/clblast
+        sci-libs/clblas
+        sci-libs/clblast
     )
 "
 
@@ -47,8 +47,9 @@ src_configure() {
        $(cmake-utils_use_build nonfree NONFREE)
        $(cmake-utils_use_build examples EXAMPLES)
        $(cmake-utils_use_build test TEST)
-	   -DUSE_SYSTEM_CLBLAS=ON
-	   -DUSE_SYSTEM_CLBLAST=ON
+       -DUSE_SYSTEM_CLBLAS=ON
+       -DUSE_SYSTEM_CLBLAST=ON
+       -DOPENCL_BLAS_LIBRARY=CLBlast
     )
 
     cmake-utils_src_configure
