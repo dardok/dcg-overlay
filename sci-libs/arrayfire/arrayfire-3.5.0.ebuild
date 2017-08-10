@@ -28,7 +28,7 @@ RDEPEND="
         >=media-libs/glfw-3.1.4
         media-libs/fontconfig:1.0
     )
-    cuda? ( dev-util/nvidia-cuda-toolkit )
+    cuda? ( >=dev-util/nvidia-cuda-toolkit-8.0 )
     opencl? (
         >=dev-libs/boost-1.48
         virtual/opencl
