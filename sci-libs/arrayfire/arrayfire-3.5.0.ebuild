@@ -21,7 +21,7 @@ IUSE="debug +unified +cpu cuda opencl examples graphics nonfree test examples"
 RDEPEND="
     media-libs/freeimage
     cpu? (
-        virtual/blas
+        virtual/cblas
         sci-libs/fftw:3.0
     )
     graphics? (
