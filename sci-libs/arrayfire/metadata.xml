@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="project">
+		<email>dc-dev@cmf.nrl.navy.mil</email>
+		<name>ArrayFire</name>
+	</maintainer>
+	<use>
+		<flag name="unified">Enable the UNIFIED backend.</flag>
+		<flag name="cpu">Enable the CPU backend.</flag>
+		<flag name="cuda">Enable the CUDA backend.</flag>
+		<flag name="opencl">Enable the OPENCL backend.</flag>
+		<flag name="graphics">Build with Forge Graphics.</flag>
+		<flag name="nonfree">Build the nonfree algorithms (i.e. SIFT).</flag>
+		<flag name="examples">Install the examples.</flag>
+	</use>
+</pkgmetadata>
