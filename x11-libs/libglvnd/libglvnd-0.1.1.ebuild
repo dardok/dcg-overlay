@@ -1,4 +1,4 @@
-inherit pam
+inherit eutils autotools
 
 DESCRIPTION="libglvnd is a vendor-neutral dispatch layer for arbitrating OpenGL API calls between multiple vendors."
 HOMEPAGE="https://github.com/NVIDIA/libglvnd"
@@ -11,3 +11,7 @@ IUSE=""
 
 DEPEND="x11-libs/libXext x11-libs/libX11 x11-proto/glproto"
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+    ./autogen.sh || die "autogen failed"
+}
