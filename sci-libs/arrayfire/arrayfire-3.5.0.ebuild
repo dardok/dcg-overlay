@@ -32,7 +32,6 @@ RDEPEND="
     opencl? (
         >=dev-libs/boost-1.48
         virtual/opencl
-        sci-libs/clblas
         sci-libs/clblast
     )
 "
