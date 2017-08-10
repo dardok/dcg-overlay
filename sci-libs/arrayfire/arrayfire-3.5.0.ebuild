@@ -47,7 +47,6 @@ src_configure() {
        $(cmake-utils_use_build nonfree NONFREE)
        $(cmake-utils_use_build examples EXAMPLES)
        $(cmake-utils_use_build test TEST)
-       -DUSE_SYSTEM_CLBLAS=ON
        -DUSE_SYSTEM_CLBLAST=ON
        -DOPENCL_BLAS_LIBRARY=CLBlast
     )
