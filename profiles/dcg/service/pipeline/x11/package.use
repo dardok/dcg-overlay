@@ -3,3 +3,5 @@ net-misc/spice-gtk -gstreamer
 
 media-libs/gst-plugins-bad gtk
 media-libs/libvpx svc
+
+sci-libs/arrayfire graphics

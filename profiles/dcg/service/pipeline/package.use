@@ -8,3 +8,5 @@ media-plugins/frei0r-plugins -facedetect
 
 # fscking demands jasper-2.0
 x11-libs/gdk-pixbuf -jpeg2k
+
+sci-libs/arrayfire nonfree
