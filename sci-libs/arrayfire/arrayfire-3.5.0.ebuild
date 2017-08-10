@@ -32,6 +32,8 @@ RDEPEND="
     opencl? (
         >=dev-libs/boost-1.48
         virtual/opencl
+		sci-libs/clblas
+		sci-libs/clblast
     )
 "
 
@@ -39,13 +41,14 @@ src_configure() {
     local mycmakeargs=(
        $(cmake-utils_use_build unified UNIFIED)
        $(cmake-utils_use_build cpu CPU)
-       $(cmake-utils_use_build cpu CPU_ASYNC)
        $(cmake-utils_use_build cuda CUDA)
        $(cmake-utils_use_build opencl OPENCL)
        $(cmake-utils_use_build graphics GRAPHICS)
        $(cmake-utils_use_build nonfree NONFREE)
        $(cmake-utils_use_build examples EXAMPLES)
        $(cmake-utils_use_build test TEST)
+	   -DUSE_SYSTEM_CLBLAS=ON
+	   -DUSE_SYSTEM_CLBLAST=ON
     )
 
     cmake-utils_src_configure
