@@ -6,7 +6,7 @@ media-libs/opencv gstreamer ffmpeg
 
 dev-libs/equalizer -opencv
 
-sci-libs/gdal geos
+sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
 sci-geosciences/liblas gdal
 

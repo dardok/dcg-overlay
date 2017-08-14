@@ -1,6 +1,6 @@
 dev-db/postgresql server python uuid
 
-sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp
+sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
 sci-libs/armadillo lapack
 
