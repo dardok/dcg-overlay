@@ -8,6 +8,10 @@ dev-libs/equalizer -opencv
 
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
+sci-libs/armadillo lapack
+
+sci-libs/hdf5 -fortran -threads
+
 sci-geosciences/liblas gdal
 
 media-plugins/frei0r-plugins -facedetect
