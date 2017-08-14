@@ -3,6 +3,7 @@
 *dev-qt/qtwayland
 *gnome-base/gnome-settings-daemon
 *media-libs/glew
+*media-libs/vulkan-loader
 *media-sound/alsa-utils
 *net-analyzer/wireshark
 *net-misc/freerdp
