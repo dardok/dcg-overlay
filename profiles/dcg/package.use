@@ -6,7 +6,7 @@ sys-libs/timezone-data leaps_timezone
 
 app-editors/vim python_single_target_python2_7 python
 
-dev-lang/python sqlite
+dev-lang/python sqlite threads
 
 sys-apps/smartmontools update_drivedb
 

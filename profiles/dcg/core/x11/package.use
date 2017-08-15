@@ -1,6 +1,8 @@
 # avoid vaapi circular dependency, enable good stuff
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
 
+dev-lang/python tk
+
 media-sound/pulseaudio gnome gtk
 
 net-analyzer/wireshark -qt4
