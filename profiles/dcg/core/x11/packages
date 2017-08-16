@@ -1,6 +1,8 @@
 *app-emulation/virt-viewer
 *gnome-base/gnome-settings-daemon
+*media-fonts/freefont
 *media-libs/glew
+*media-libs/glm
 *media-libs/vulkan-loader
 *media-sound/alsa-utils
 *net-analyzer/wireshark
