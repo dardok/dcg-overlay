@@ -1,0 +1,8 @@
+20,24c20
+< if { rpm -q sles-release || rpm -q openSUSE-release; } >/dev/null 2>&1; then
+<    default_stop="0 1 4 6"
+< else
+<    default_stop="0 1 6"
+< fi
+---
+> default_stop="0 1 6"
