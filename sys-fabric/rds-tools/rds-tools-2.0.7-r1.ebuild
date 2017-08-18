@@ -7,7 +7,7 @@ EAPI="5"
 OFED_VER="3.18-3"
 OFED_RC=""
 OFED_RC_VER=""
-OFED_SUFFIX="1"
+OFED_SUFFIX="1.16"
 
 inherit base openib toolchain-funcs
 
