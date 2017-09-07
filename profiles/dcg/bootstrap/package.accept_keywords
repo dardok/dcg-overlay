@@ -1,3 +1,5 @@
+app-crypt/mit-krb5
+
 =sys-fs/btrfs-progs-4.12
 
 sys-libs/readline:0
