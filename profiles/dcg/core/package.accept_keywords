@@ -1,34 +1,74 @@
+app-admin/elektra
 app-admin/fleet
+
+app-crypt/coolkey
+app-crypt/pkcs11-data
+app-crypt/pkcs11-dump
 
 app-crypt/mit-krb5
 
+app-emulation/containerd
 app-emulation/docker
+app-emulation/docker-runc
 app-emulation/libvirt
 app-emulation/qemu
 app-emulation/rkt
 
 =app-text/xmlto-0.0.28-r1
 
-=dev-libs/boost-1.63.0
+dev-db/etcd
 
+dev-go/go-protobuf
+
+=dev-libs/boost-1.63.0
+dev-libs/libbytesize
+dev-libs/libuv
+dev-libs/protobuf
+dev-libs/volume_key
+
+dev-python/awscli
+dev-python/Babel
+dev-python/botocore
+dev-python/chardet
+dev-python/cliff
+dev-python/deprecation
 dev-python/docker-py
-dev-python/python-openstackclient
+dev-python/keystoneauth
+dev-python/openstacksdk
+dev-python/osc-lib
+dev-python/os-client-config
+dev-python/protobuf-python
+dev-python/python-cinderclient
+dev-python/python-glanceclient
 dev-python/python-heatclient
+dev-python/python-novaclient
+dev-python/python-openstackclient
 dev-python/python-systemd
+dev-python/requests
+dev-python/s3transfer
+dev-python/urllib3
+
+dev-util/boost-build
+dev-util/google-perftools
+
+net-firewall/nftables
 
 net-fs/openafs
 net-fs/openafs-kernel
-
 net-fs/nfs4-acl-tools
 >=net-fs/samba-4.6.3
 
+net-libs/libnftnl
 net-libs/nodejs
 
 net-misc/ptpd
 
 =sys-apps/irqbalance-1.1.0
+sys-apps/keyutils
 
 sys-auth/nss_afspag
+sys-auth/pam-afs-session
+sys-auth/pam_pkcs11
 
 sys-cluster/ceph
 sys-cluster/lustre
@@ -56,9 +96,15 @@ sys-fabric/perftest:3.18-1
 sys-fabric/rds-tools:3.18-1
 sys-fabric/srptools:3.18-1
 
+sys-fs/zfs
+sys-fs/zfs-kmod
+sys-kernel/spl
+
 =sys-kernel/linux-firmware-99999999 **
 
 sys-libs/libblockdev
+
+sys-process/tini
 
 #=app-emulation/libvirt-9999 **
 #=app-emulation/containerd-9999 **
