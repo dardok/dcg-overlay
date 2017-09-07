@@ -1,1 +1,5 @@
-dev-lang/python:3.5 ~amd64
+dev-lang/python:3.5
+
+sys-apps/gentoo-systemd-integration-7
+
+sys-apps/systemd-234-r2
