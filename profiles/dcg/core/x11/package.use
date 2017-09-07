@@ -3,13 +3,13 @@ app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
-dev-util/cmake qt5 server
+dev-util/cmake server
 dev-util/nvidia-cuda-toolkit profiler
 dev-vcs/git gtk
 gnome-base/gvfs gtk ios zeroconf udisks
 media-gfx/graphviz tcl gdk-pixbuf gtk
 media-libs/cogl gles2
-media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 vaapi
+media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
 media-sound/pulseaudio gnome gtk
 net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
 net-libs/gtk-vnc python

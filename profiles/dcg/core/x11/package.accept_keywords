@@ -1,6 +1,6 @@
 net-analyzer/wireshark
 
-sys-fabric/ibutils:3.18-1
+sys-fabric/ibutils:3.18-3
 
 x11-drivers/nvidia-drivers
 

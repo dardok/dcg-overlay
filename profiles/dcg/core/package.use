@@ -25,6 +25,7 @@ media-libs/freetype auto-hinter
 media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 net-analyzer/net-snmp pci python
 net-dns/bind-tools gssapi
+net-dns/dnsmasq script
 net-firewall/ipset -modules
 net-fs/nfs-utils nfsv41 nfsdcld
 net-fs/samba ads client cluster dmapi fam gnutls
