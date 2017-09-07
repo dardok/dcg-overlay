@@ -3,6 +3,7 @@ app-crypt/mit-krb5
 app-emulation/docker
 app-emulation/libvirt
 app-emulation/qemu
+app-emulation/rkt
 
 =app-text/xmlto-0.0.28-r1
 

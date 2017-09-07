@@ -1,1 +1,1 @@
-sys-cluster/lustre -gss client server -checksum lru-resize
+sys-cluster/lustre server
