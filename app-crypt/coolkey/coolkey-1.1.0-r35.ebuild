@@ -22,21 +22,6 @@ DEPEND="${RDEPEND}
 	>=app-crypt/ccid-1.4.0
 	virtual/pkgconfig"
 
-PATCHES=(
-	"${FILESDIR}/coolkey-cache-dir-move.patch"
-	"${FILESDIR}/coolkey-gcc43.patch"
-	"${FILESDIR}/coolkey-latest.patch"
-	"${FILESDIR}/coolkey-simple-bugs.patch"
-	"${FILESDIR}/coolkey-thread-fix.patch"
-	"${FILESDIR}/coolkey-cac.patch"
-	"${FILESDIR}/coolkey-cac-1.patch"
-	"${FILESDIR}/coolkey-pcsc-lite-fix.patch"
-	"${FILESDIR}/coolkey-fix-token-removal-failure.patch"
-	"${FILESDIR}/coolkey-update.patch"
-	"${FILESDIR}/coolkey-more-keys.patch"
-	"${FILESDIR}/coolkey-1.1.0-max-cpu-bug.patch"
-)
-
 pkg_setup() {
 	pk="pk11install"
 	dbdir="/etc/pki/nssdb"
@@ -46,6 +31,21 @@ pkg_setup() {
 		ewarn "No /etc/pki/nssdb found; check under \$HOME/.pki and"
 		ewarn "follow the suggested commands using the correct path."
 	fi
+}
+
+src_prepare() {
+	epatch -p0 "${FILESDIR}/coolkey-cache-dir-move.patch"
+	epatch -p0 "${FILESDIR}/coolkey-gcc43.patch"
+	epatch -p0 "${FILESDIR}/coolkey-latest.patch"
+	epatch -p0 "${FILESDIR}/coolkey-simple-bugs.patch"
+	epatch -p0 "${FILESDIR}/coolkey-thread-fix.patch"
+	epatch -p0 "${FILESDIR}/coolkey-cac.patch"
+	epatch -p0 "${FILESDIR}/coolkey-cac-1.patch"
+	epatch -p0 "${FILESDIR}/coolkey-pcsc-lite-fix.patch"
+	epatch -p1 "${FILESDIR}/coolkey-fix-token-removal-failure.patch"
+	epatch -p0 "${FILESDIR}/coolkey-update.patch"
+	epatch -p0 "${FILESDIR}/coolkey-more-keys.patch"
+	epatch -p0 "${FILESDIR}/coolkey-1.1.0-max-cpu-bug.patch"
 }
 
 src_configure() {
