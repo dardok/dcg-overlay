@@ -3,7 +3,7 @@ app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
-dev-util/cmake server
+dev-util/cmake server -qt5
 dev-util/nvidia-cuda-toolkit profiler
 dev-vcs/git gtk
 gnome-base/gvfs gtk ios zeroconf udisks
