@@ -1,8 +1,11 @@
+sys-apps/dbus user-session
+
 sys-apps/hwloc xml
-sys-libs/libcap-ng python
-sys-libs/ncurses threads
-dev-libs/boehm-gc threads
 
 sys-fs/lvm2 -thin device-mapper-only
 
-sys-apps/dbus user-session
+sys-libs/libcap-ng python
+
+sys-libs/ncurses threads
+
+dev-libs/boehm-gc threads

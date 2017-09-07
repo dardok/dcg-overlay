@@ -1,13 +1,15 @@
-sys-apps/systemd nat policykit idn gcrypt importd python http curl lzma qrcode
-
-net-libs/libmicrohttpd epoll messages
-
-sys-libs/timezone-data leaps_timezone
-
 app-editors/vim python_single_target_python2_7 python
 
 dev-lang/python sqlite threads
 
+net-libs/libmicrohttpd epoll messages
+
 sys-apps/smartmontools update_drivedb
 
+sys-apps/systemd nat policykit idn gcrypt importd python http curl lzma qrcode
+
 sys-firmware/intel-microcode monolithic
+
+sys-libs/libblockdev python_single_target_python3_5
+
+sys-libs/timezone-data leaps_timezone
