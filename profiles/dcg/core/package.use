@@ -107,4 +107,4 @@ dev-libs/glib systemtap fam
 
 net-wireless/bluez user-session
 
-sys-libs/libblockdev PYTHON_SINGLE_TARGET: -* python3_5
+sys-libs/libblockdev PYTHON_SINGLE_TARGET: python3_5
