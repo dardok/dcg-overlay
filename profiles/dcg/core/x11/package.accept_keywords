@@ -1,3 +1,10 @@
-=dev-libs/weston-9999 **
-=dev-libs/wayland-9999 **
-=dev-libs/wayland-protocols-9999 **
+net-analyzer/wireshark
+
+sys-fabric/ibutils:3.18-1
+
+x11-drivers/nvidia-drivers
+
+x11-wm/awesome
+
+x11-misc/lightdm-gtk-greeter
+x11-misc/lightdm

@@ -11,11 +11,11 @@ USE="${USE} cxx fortran nptl gmp openmp libffi"
 USE="${USE} readline ncurses -slang"
 USE="${USE} nls icu unicode iconv"
 USE="${USE} acl aio caps xattr inotify"
-USE="${USE} numa sockets threads device-mapper"
+USE="${USE} numa sockets device-mapper"
 USE="${USE} ssl openssl ssh sasl crypt cracklib sudo"
 USE="${USE} vim vim-syntax bash-completion"
 USE="${USE} kerberos keyring snmp ldap curl lm_sensors"
-USE="${USE} xinetd -tcpd"
+USE="${USE} -xinetd -tcpd"
 
 USE="${USE} pcre expat xml"
 USE="${USE} bzip2 zlib lzma lzo minizip"
@@ -28,7 +28,7 @@ USE="${USE} smartcard pkcs11"
 USE="${USE} alsa pulseaudio jack v4l wifi joystick"
 
 USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
-USE="${USE} gif jpeg jbig jpeg2k openexr tiff apng png svg imagemagick"
+USE="${USE} gif jpeg jbig openexr tiff apng png svg imagemagick"
 
 USE="${USE} speex ogg theora webp vpx x264"
 

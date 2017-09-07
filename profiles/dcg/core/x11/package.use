@@ -1,73 +1,38 @@
-# avoid vaapi circular dependency, enable good stuff
-media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
-
+app-crypt/gcr gtk
+app-emulation/libvirt wireshark-plugins
+app-emulation/qemu gtk vte opengl virgl
+app-text/ghostscript-gpl cups
 #dev-lang/python tk
-
+dev-util/cmake qt5 server
+dev-util/nvidia-cuda-toolkit profiler
+dev-vcs/git gtk
+gnome-base/gvfs gtk ios zeroconf udisks
+media-gfx/graphviz tcl gdk-pixbuf gtk
+media-libs/cogl gles2
+media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 vaapi
 media-sound/pulseaudio gnome gtk
-
 net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
-
-# build breaks with opencl
+net-libs/gtk-vnc python
+net-libs/phodav spice zeroconf
+net-misc/freerdp xv
+net-misc/modemmanager -qmi
+net-misc/openvswitch monitor
+net-misc/spice-gtk gtk3 lz4 python usbredir webdav vala
+net-print/cups zeroconf
 sys-apps/hwloc -opencl gl
-
+sys-cluster/ceph gtk
+sys-devel/distcc gtk
 x11-apps/xdpyinfo dga dmx
-
 x11-base/xorg-server dmx glamor tslib xnest xvfb
-
 x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
 x11-drivers/xf86-video-dummy dga
-
+x11-drivers/xf86-video-qxl xspice
 x11-libs/cairo xlib-xcb
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia
-
-x11-terms/xterm Xaw3d
-
-x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf xft
-
-sys-cluster/openmpi cuda
-
-dev-util/nvidia-cuda-toolkit profiler
-
-# for ibutils
-media-gfx/graphviz tcl gdk-pixbuf gtk
-
-net-print/cups zeroconf
-app-text/ghostscript-gpl cups
-
-sys-cluster/ceph gtk
-
-net-libs/phodav spice zeroconf
-net-misc/spice-gtk gtk3 lz4 python usbredir webdav vala
-
-app-emulation/qemu gtk vte opengl virgl
-
-x11-drivers/xf86-video-qxl xspice
-
-net-misc/openvswitch monitor
-
-x11-misc/notify-osd minimal
-
-dev-vcs/git gtk
-
-sys-devel/distcc gtk
-
-gnome-base/gvfs gtk ios zeroconf udisks
-app-crypt/gcr gtk
-
-dev-util/cmake -qt5
-
-net-misc/modemmanager -qmi
-
-net-misc/freerdp xv
-
 x11-libs/vte python
-net-libs/gtk-vnc python
-
-dev-libs/weston lcms rdp screen-sharing wayland-compositor xwayland
-
-media-libs/cogl gles2
-
-app-emulation/libvirt wireshark-plugins
+x11-misc/notify-osd minimal
+x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf xft
+x11-terms/xterm Xaw3d

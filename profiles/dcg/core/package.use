@@ -1,48 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app-admin/elektra augeas ini
 app-admin/puppet augeas
 app-admin/ulogd pcap nfacct
@@ -67,7 +22,6 @@ dev-libs/nss utils
 dev-python/twisted conch
 dev-vcs/git tk
 media-libs/freetype auto-hinter
-media-libs/freetype auto-hinter
 media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
 net-analyzer/net-snmp pci python
 net-dns/bind-tools gssapi
@@ -84,10 +38,9 @@ net-wireless/bluez user-session
 sys-apps/attr static-libs
 sys-apps/busybox -pam
 sys-auth/sssd augeas autofs netlink nfsv4 -acl
-sys-cluster/ceph fuse -xfs
-sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
-sys-cluster/lustre -checksum lru-resize
-sys-cluster/lustre -gss client -server
+sys-cluster/ceph cephfs fuse -xfs
+#sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
+sys-cluster/lustre -checksum lru-resize -gss client -server
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
 sys-devel/distcc avahi gssapi
@@ -97,6 +50,7 @@ sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
 sys-fs/zfs -rootfs
 sys-libs/glibc nscd
+sys-libs/libblockdev python_single_target_python3_5
 sys-libs/libcap static-libs
 sys-libs/libseccomp static-libs
 sys-libs/tdb python
