@@ -106,3 +106,5 @@ dev-python/twisted conch
 dev-libs/glib systemtap fam
 
 net-wireless/bluez user-session
+
+sys-libs/libblockdev bcache kbd PYTHON_SINGLE_TARGET: -* python3_5
