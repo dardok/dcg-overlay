@@ -34,6 +34,7 @@ dev-python/cliff
 dev-python/deprecation
 dev-python/docker-py
 dev-python/keystoneauth
+dev-python/libvirt-python
 dev-python/openstacksdk
 dev-python/osc-lib
 dev-python/os-client-config
