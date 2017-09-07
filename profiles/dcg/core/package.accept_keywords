@@ -64,7 +64,7 @@ net-libs/nodejs
 
 net-misc/ptpd
 
-=sys-apps/irqbalance-1.1.0
+sys-apps/irqbalance
 sys-apps/keyutils
 
 sys-auth/nss_afspag
