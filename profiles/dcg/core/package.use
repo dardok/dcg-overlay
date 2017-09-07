@@ -1,108 +1,108 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 app-admin/elektra augeas ini
 app-admin/puppet augeas
-
 app-admin/ulogd pcap nfacct
-
 app-crypt/mit-krb5 keyutils pkinit
-
 app-editors/vim lua luajit ruby
-
+app-emulation/docker btrfs overlay experimental
 app-emulation/libvirt rbd iscsi libssh parted lxc fuse zeroconf virt-network nfs
-
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
-app-emulation/spice -smartcard
-
 #app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host
 app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_host
-sys-apps/attr static-libs
-sys-libs/zlib static-libs
-x11-libs/pixman static-libs
-sys-libs/libcap static-libs
-
-app-emulation/docker btrfs overlay experimental
-
+app-emulation/spice -smartcard
+>=app-text/xmlto-0.0.28-r1 text
 dev-db/postgresql -server
-
 dev-lang/python berkdb
-
+dev-libs/boost python context
+dev-libs/cyrus-sasl -postgres -openldap
+dev-libs/glib systemtap fam
 dev-libs/libpcre pcre16
-
 dev-libs/libxml2 python
 dev-libs/libxslt python
-
-media-libs/freetype auto-hinter
-
-net-analyzer/net-snmp pci python
-
-net-fs/nfs-utils nfsv41 nfsdcld
-
-net-misc/ptpd ntp
-
-net-misc/quagga multipath tcp-zebra
-
-net-nds/openldap minimal
-
-sys-fabric/ofed ibacm mstflint perftest rds srp opensm libfabric
-
-sys-libs/glibc nscd
-sys-libs/timezone-data leaps_timezone
-
 dev-libs/nss utils
-
+dev-python/twisted conch
+dev-vcs/git tk
 media-libs/freetype auto-hinter
-
+media-libs/freetype auto-hinter
 media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
-
-x11-libs/cairo xcb
-
+net-analyzer/net-snmp pci python
+net-dns/bind-tools gssapi
+net-firewall/ipset -modules
+net-fs/nfs-utils nfsv41 nfsdcld
+net-fs/samba ads client cluster dmapi fam gnutls
+net-libs/nghttp2 hpack-tools
+net-misc/curl http2
+net-misc/openvswitch -modules
+net-misc/ptpd ntp
+net-misc/quagga multipath tcp-zebra
+net-nds/openldap minimal
+net-wireless/bluez user-session
+sys-apps/attr static-libs
+sys-apps/busybox -pam
+sys-auth/sssd augeas autofs netlink nfsv4 -acl
 sys-cluster/ceph fuse -xfs
-sys-fs/cryptsetup -gcrypt
-
-sys-fs/zfs -rootfs
-
+sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
+sys-cluster/lustre -checksum lru-resize
+sys-cluster/lustre -gss client -server
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm lua
-
-sys-cluster/lustre -gss client -server
-
-net-misc/openvswitch -modules
-
-net-firewall/ipset -modules
-
-dev-libs/cyrus-sasl -postgres -openldap
-
-sys-auth/sssd augeas autofs netlink nfsv4 -acl
-
-net-dns/bind-tools gssapi
-sys-libs/libseccomp static-libs
-sys-libs/tevent python
-sys-libs/tdb python
-
-dev-vcs/git tk
-
-sys-cluster/lustre -checksum lru-resize
-sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
-
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
-
-dev-libs/boost python context
-
-net-misc/curl http2
-net-libs/nghttp2 hpack-tools
-
+sys-fabric/ofed ibacm mstflint perftest rds srp opensm libfabric
+sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
-
-sys-apps/busybox -pam
-
+sys-fs/zfs -rootfs
+sys-libs/glibc nscd
+sys-libs/libcap static-libs
+sys-libs/libseccomp static-libs
+sys-libs/tdb python
+sys-libs/tevent python
+sys-libs/timezone-data leaps_timezone
+sys-libs/zlib static-libs
 sys-process/tini static
-
->=app-text/xmlto-0.0.28-r1 text
-
-net-fs/samba ads client cluster dmapi fam gnutls
-
-dev-python/twisted conch
-
-dev-libs/glib systemtap fam
-
-net-wireless/bluez user-session
+x11-libs/cairo xcb
+x11-libs/pixman static-libs
