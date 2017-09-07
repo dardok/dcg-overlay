@@ -5,7 +5,7 @@ media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
 
 media-sound/pulseaudio gnome gtk
 
-net-analyzer/wireshark -qt4
+net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
 
 # build breaks with opencl
 sys-apps/hwloc -opencl gl
@@ -69,3 +69,5 @@ net-libs/gtk-vnc python
 dev-libs/weston lcms rdp screen-sharing wayland-compositor xwayland
 
 media-libs/cogl gles2
+
+app-emulation/libvirt wireshark-plugins
