@@ -2,8 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-
-PATCHVER="003"
+inherit eutils
 
 DESCRIPTION="Linux Driver support for the CoolKey and CAC products"
 HOMEPAGE="https://directory.fedora.redhat.com/wiki/CoolKey"
