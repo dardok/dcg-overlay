@@ -86,7 +86,7 @@ sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
 
-dev-libs/boost python
+dev-libs/boost python context
 
 net-misc/curl http2
 net-libs/nghttp2 hpack-tools
