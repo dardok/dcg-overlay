@@ -19,9 +19,16 @@ dev-python/python-systemd
 net-fs/openafs
 net-fs/openafs-kernel
 
+net-fs/nfs4-acl-tools
+>=net-fs/samba-4.6.3
+
 net-libs/nodejs
 
+net-misc/ptpd
+
 =sys-apps/irqbalance-1.1.0
+
+sys-auth/nss_afspag
 
 sys-cluster/ceph
 sys-cluster/lustre
@@ -50,6 +57,8 @@ sys-fabric/rds-tools:3.18-1
 sys-fabric/srptools:3.18-1
 
 =sys-kernel/linux-firmware-99999999 **
+
+sys-libs/libblockdev
 
 #=app-emulation/libvirt-9999 **
 #=app-emulation/containerd-9999 **
