@@ -57,7 +57,6 @@ sys-libs/libcap static-libs
 sys-libs/libseccomp static-libs
 sys-libs/tdb python
 sys-libs/tevent python
-sys-libs/timezone-data leaps_timezone
 sys-libs/zlib static-libs
 sys-process/tini static
 x11-libs/cairo xcb
