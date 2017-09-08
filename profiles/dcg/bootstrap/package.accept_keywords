@@ -4,4 +4,6 @@ dev-libs/elfutils
 
 =sys-fs/btrfs-progs-4.12
 
+sys-kernel/dracut
+
 sys-libs/readline:0
