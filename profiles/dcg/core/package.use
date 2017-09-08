@@ -19,6 +19,7 @@ dev-libs/libpcre pcre16
 dev-libs/libxml2 python
 dev-libs/libxslt python
 dev-libs/nss utils
+dev-libs/volume_key python_single_target_python3_5
 dev-python/twisted conch
 dev-vcs/git tk
 media-libs/freetype auto-hinter
