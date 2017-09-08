@@ -1,1 +1,3 @@
 >=sys-apps/irqbalance-1.2.0 # broken
+
+>=dev-db/postgresql-9.6 # build fails with "cannot find -lpgfeutils"
