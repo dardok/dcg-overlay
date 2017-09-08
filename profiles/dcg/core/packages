@@ -101,6 +101,7 @@
 *sys-cluster/slurm
 *sys-devel/distcc
 *sys-devel/llvm
+*sys-devel/prelink
 *sys-fs/multipath-tools
 *sys-fabric/ofed
 *sys-kernel/linux-firmware
