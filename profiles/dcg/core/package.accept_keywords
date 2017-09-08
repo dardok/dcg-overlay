@@ -62,7 +62,6 @@ net-libs/nodejs
 
 net-misc/ptpd
 
-=sys-apps/dbus-1.10.22
 sys-apps/irqbalance
 sys-apps/keyutils
 
