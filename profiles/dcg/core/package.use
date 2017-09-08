@@ -5,9 +5,9 @@ app-crypt/mit-krb5 keyutils pkinit
 app-editors/vim lua luajit ruby
 app-emulation/docker btrfs overlay experimental
 app-emulation/libvirt rbd iscsi libssh parted lxc fuse zeroconf virt-network nfs
-app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi
+app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi systemtap nfs python
 #app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host
-app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_host
+#app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_host
 app-emulation/spice -smartcard
 >=app-text/xmlto-0.0.28-r1 text
 dev-db/postgresql -server
