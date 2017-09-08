@@ -45,6 +45,7 @@ src_prepare() {
 	epatch -p0 "${FILESDIR}/coolkey-update.patch"
 	epatch -p0 "${FILESDIR}/coolkey-more-keys.patch"
 	epatch -p0 "${FILESDIR}/coolkey-1.1.0-max-cpu-bug.patch"
+	default
 }
 
 src_configure() {
