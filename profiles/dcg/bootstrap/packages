@@ -7,6 +7,7 @@
 *sys-apps/smartmontools
 *sys-block/parted
 *sys-boot/grub
+*sys-devel/prelink
 *sys-fs/btrfs-progs
 *sys-fs/dosfstools
 *sys-fs/lvm2
