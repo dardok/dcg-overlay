@@ -8,7 +8,7 @@
 *app-arch/star
 *app-arch/unrar
 *app-crypt/ccid
-*app-crypt/coolkey
+#*app-crypt/coolkey
 *app-crypt/pkcs11-data
 *app-crypt/pkcs11-dump
 *app-emulation/docker
