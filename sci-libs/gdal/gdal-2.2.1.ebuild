@@ -102,11 +102,6 @@ src_prepare() {
 		-e 's:spatialite/sqlite3.h:sqlite3.h:g' \
 		ogr/ogrsf_frmts/sqlite/ogr_sqlite.h || die
 
-	# Fix freexl configure check
-	sed -i \
-		-e 's:FREEXL_LIBS=missing):FREEXL_LIBS=missing,-lm):g' \
-		configure.in || die
-
 	sed \
 		-e "s: /usr/: \"${EPREFIX}\"/usr/:g" \
 		-i configure.in || die
