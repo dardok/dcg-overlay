@@ -1,6 +1,10 @@
+dev-lang/nasm
+
 dev-util/nvidia-cuda-toolkit
 
 net-analyzer/wireshark
+
+media-libs/libwebp
 
 sys-fabric/ibutils:3.18-3
 
