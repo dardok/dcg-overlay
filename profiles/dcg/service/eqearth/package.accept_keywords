@@ -11,3 +11,4 @@ sci-geosciences/liblas
 =sci-geosciences/eqearth-9999 **
 =sci-geosciences/osgearth-9999 **
 sci-libs/clblast
+sci-libs/proj
