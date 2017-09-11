@@ -1,5 +1,1 @@
-=net-libs/seed-9999 **
-=media-plugins/openwebrtc-gst-plugins-9999 **
-=media-libs/openwebrtc-9999 **
-=app-accessibility/sphinxbase-9999 **
-=app-accessibility/pocketsphinx-9999 **
+net-libs/usrsctp
