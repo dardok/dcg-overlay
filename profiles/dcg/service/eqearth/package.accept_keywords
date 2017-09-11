@@ -1,12 +1,13 @@
 dev-libs/servus
-sci-libs/clblast
 dev-libs/lunchbox
 =dev-libs/deflect-9999 **
 dev-libs/collage
 dev-libs/equalizer
-=dev-libs/glstats-9999 **
-=sci-geosciences/osgearth-9999 **
-=sci-geosciences/eqearth-9999 **
 dev-libs/vmmlib
 dev-libs/pression
 dev-libs/hwsd
+=dev-libs/glstats-9999 **
+sci-geosciences/liblas
+=sci-geosciences/eqearth-9999 **
+=sci-geosciences/osgearth-9999 **
+sci-libs/clblast
