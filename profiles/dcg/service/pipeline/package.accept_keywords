@@ -6,7 +6,6 @@ media-libs/libdc1394
 media-libs/libmodplug
 media-libs/libv4l
 media-libs/libvpx
-media-libs/libwebp
 media-libs/opencv
 media-libs/x264
 media-libs/x265
