@@ -103,6 +103,7 @@ sys-kernel/spl
 
 sys-libs/libblockdev
 
+sys-process/atop
 sys-process/tini
 
 #=app-emulation/libvirt-9999 **
