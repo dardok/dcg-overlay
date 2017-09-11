@@ -2,3 +2,8 @@ dev-libs/servus
 sci-libs/clblast
 
 =dev-libs/deflect-9999 **
+
+media-libs/openjpeg
+
+x11-libs/libva
+

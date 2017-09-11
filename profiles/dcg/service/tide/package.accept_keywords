@@ -4,4 +4,20 @@ dev-libs/servus
 
 =sys-cluster/tide-9999 **
 
+media-libs/libass
+media-libs/libbluray
+media-libs/libdc1394
+media-libs/libmodplug
+media-libs/libv4l
+media-libs/libvpx
 media-libs/libwebp
+media-libs/opencv
+media-libs/x264
+media-libs/x265
+media-libs/xvid
+
+media-plugins/frei0r-plugins
+media-plugins/gst-plugins-opencv
+
+media-sound/twolame
+
