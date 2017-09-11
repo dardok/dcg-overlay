@@ -1,1 +1,2 @@
 >net-misc/openvswitch-2.6.9999 # required by (sys-cluster/neutron-2017.1.9999
+>dev-python/ovs-2.6.9999
