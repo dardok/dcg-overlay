@@ -102,9 +102,13 @@ src_prepare() {
 		-e 's:spatialite/sqlite3.h:sqlite3.h:g' \
 		ogr/ogrsf_frmts/sqlite/ogr_sqlite.h || die
 
+	sed -i \
+		-e 's:FREEXL_LIBS=missing):FREEXL_LIBS=missing,-lm):g' \
+		configure.ac || die
+
 	sed \
 		-e "s: /usr/: \"${EPREFIX}\"/usr/:g" \
-		-i configure.in || die
+		-i configure.ac || die
 
 	sed \
 		-e 's:^ar:$(AR):g' \
