@@ -4,6 +4,8 @@ dev-libs/servus
 
 =sys-cluster/tide-9999 **
 
+dev-lang/nasm
+
 media-libs/libass
 media-libs/libbluray
 media-libs/libdc1394
