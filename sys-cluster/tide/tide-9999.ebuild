@@ -51,7 +51,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-		-DSUBPROJECT_TUIO=OFF
+		-DCLONE_SUBPROJECTS=ON
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
