@@ -64,6 +64,7 @@ net-misc/ptpd
 
 sys-apps/irqbalance
 sys-apps/keyutils
+sys-apps/sg3_utils
 
 sys-auth/nss_afspag
 sys-auth/pam-afs-session
