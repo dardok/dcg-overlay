@@ -2,6 +2,8 @@ dev-lang/python:3.5
 
 =dev-libs/expat-2.2.3
 
+dev-python/setuptools
+
 =sys-apps/gentoo-systemd-integration-7
 
 =sys-apps/dbus-1.10.22
