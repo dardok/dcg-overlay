@@ -1,2 +1,0 @@
->=dev-python/py-amqp-2
->=dev-python/kombu-4

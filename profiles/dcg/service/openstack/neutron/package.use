@@ -3,5 +3,4 @@ sys-cluster/openstack-meta neutron
 sys-cluster/neutron server openvswitch
 
 net-dns/dnsmasq dhcp-tools
-
 net-misc/iputils arping
