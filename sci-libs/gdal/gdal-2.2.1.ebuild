@@ -1,5 +1,6 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Id$
 
 EAPI=5
 
@@ -9,7 +10,7 @@ GENTOO_DEPEND_ON_PERL="no"
 PYTHON_COMPAT=( python2_7 python3_4 )
 DISTUTILS_OPTIONAL=1
 
-inherit autotools eutils libtool perl-module distutils-r1 toolchain-funcs java-pkg-opt-2
+inherit autotools eutils libtool perl-module distutils-r1 python-r1 toolchain-funcs java-pkg-opt-2
 
 DESCRIPTION="Translator library for raster geospatial data formats (includes OGR support)"
 HOMEPAGE="http://www.gdal.org/"
@@ -17,8 +18,8 @@ SRC_URI="http://download.osgeo.org/${PN}/${PV}/${P}.tar.gz"
 
 SLOT="0/2"
 LICENSE="BSD Info-ZIP MIT"
-KEYWORDS="amd64 ~arm ppc ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
-IUSE="armadillo +aux_xml curl debug doc fits geos gif gml hdf5 java jpeg jpeg2k mdb mysql netcdf odbc ogdi opencl pdf perl png postgres python spatialite sqlite threads xls"
+KEYWORDS="amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
+IUSE="armadillo +aux_xml curl debug doc fits geos gif gml hdf5 java jpeg jpeg2k mdb mysql netcdf odbc ogdi opencl pdf perl png postgres python spatialite sqlite threads webp xls"
 
 RDEPEND="
 	dev-libs/expat
@@ -55,6 +56,7 @@ RDEPEND="
 	sqlite? ( dev-db/sqlite:3 )
 	spatialite? ( dev-db/spatialite )
 	xls? ( dev-libs/freexl )
+	webp? ( media-libs/libwebp )
 "
 
 DEPEND="${RDEPEND}
@@ -64,10 +66,10 @@ DEPEND="${RDEPEND}
 	python? ( dev-lang/swig:0 )"
 
 AT_M4DIR="${S}/m4"
+MAKEOPTS+=" -j1"
 
 REQUIRED_USE="
 	spatialite? ( sqlite )
-	python? ( ${PYTHON_REQUIRED_USE} )
 	mdb? ( java )
 "
 
@@ -84,15 +86,11 @@ src_prepare() {
 		-e "s:@exec_prefix@/doc:@exec_prefix@/share/doc/${PF}/html:g" \
 		"${S}"/GDALmake.opt.in || die
 
-	if use jpeg2k; then
-		epatch "${FILESDIR}"/${P}-jasper.patch
-		epatch "${FILESDIR}"/${P}-jasper2.patch #bug 599626
-	fi
-
-	# -soname is only accepted by GNU ld/ELF
-	[[ ${CHOST} == *-darwin* ]] \
-		&& epatch "${FILESDIR}"/${PN}-1.5.0-install_name.patch \
-		|| epatch "${FILESDIR}"/${PN}-1.5.0-soname.patch
+	# the second sed expression should fix bug 371075
+	sed -i \
+		-e "s:setup.py install:setup.py install --root=\$(DESTDIR):" \
+		-e "s:--prefix=\$(DESTDIR):--prefix=:" \
+		"${S}"/swig/python/GNUmakefile || die
 
 	# Fix spatialite/sqlite include issue
 	sed -i \
@@ -102,31 +100,38 @@ src_prepare() {
 	# Fix freexl configure check
 	sed -i \
 		-e 's:FREEXL_LIBS=missing):FREEXL_LIBS=missing,-lm):g' \
-		configure.in || die
+		configure.ac || die
 
 	sed \
 		-e "s: /usr/: \"${EPREFIX}\"/usr/:g" \
-		-i configure.in || die
+		-i configure.ac || die
 
 	sed \
 		-e 's:^ar:$(AR):g' \
 		-i ogr/ogrsf_frmts/sdts/install-libs.sh || die
 
-	# updated for newer swig (must specify the path to input files)
-	sed -i \
-		-e "s: gdal_array.i: ../include/gdal_array.i:" \
-		-e "s:\$(DESTDIR)\$(prefix):\$(DESTDIR)\$(INST_PREFIX):g" \
-		swig/python/GNUmakefile || die "sed python makefile failed"
-	sed -i \
-		-e "s:library_dirs = :library_dirs = /usr/$(get_libdir):g" \
-		swig/python/setup.cfg || die "sed python setup.cfg failed"
-
 	tc-export AR RANLIB
 
 	eautoreconf
+
+	prepare_python() {
+		mkdir -p "${BUILD_DIR}" || die
+		find "${S}" -type d -maxdepth 1 -exec ln -s {} "${BUILD_DIR}"/ \; ||die
+		find "${S}" -type f -maxdepth 1 -exec cp --target="${BUILD_DIR}"/ {} + ||die
+#		mkdir -p "${BUILD_DIR}"/swig/python || die
+#		mkdir -p "${BUILD_DIR}"/apps || die
+#		cp -dpR --target="${BUILD_DIR}"/swig/ \
+#			"${S}"/swig/{python,SWIGmake.base,GNUmakefile} || die
+#		ln -s "${S}"/swig/include "${BUILD_DIR}"/swig/ || die
+#		ln -s "${S}"/apps/gdal-config "${BUILD_DIR}"/apps/ || die
+#		ln -s "${S}"/port "${BUILD_DIR}"/ || die
+	}
+	if use python; then
+		python_foreach_impl prepare_python
+	fi
 }
 
-src_configure() {
+gdal_src_configure() {
 	local myopts=""
 
 	if use java; then
@@ -177,7 +182,6 @@ src_configure() {
 		--without-oci \
 		--without-pcraster \
 		--without-podofo \
-		--without-python \
 		--without-sde \
 		$(use_enable debug) \
 		$(use_with armadillo) \
@@ -201,10 +205,12 @@ src_configure() {
 		$(use_with perl) \
 		$(use_with png) \
 		$(use_with postgres pg) \
+		$(use_with python) \
 		$(use_with spatialite) \
 		$(use_with sqlite sqlite3 "${EPREFIX}"/usr) \
 		$(use_with threads) \
 		$(use_with xls freexl) \
+		$(use_with webp) \
 		${myopts}
 
 	# mysql-config puts this in (and boy is it a PITA to get it out)
@@ -212,6 +218,29 @@ src_configure() {
 		sed -i \
 			-e "s: -rdynamic : :" \
 			GDALmake.opt || die "sed LIBS failed"
+	fi
+
+	if [[ -n $use_python ]]; then
+		# updated for newer swig (must specify the path to input files)
+		sed -i \
+			-e "s: gdal_array.i: ../include/gdal_array.i:" \
+			-e "s:\$(DESTDIR)\$(prefix):\$(DESTDIR)\$(INST_PREFIX):g" \
+			swig/python/GNUmakefile || die "sed python makefile failed"
+		sed -i \
+			-e "s:library_dirs = :library_dirs = /usr/$(get_libdir):g" \
+			swig/python/setup.cfg || die "sed python setup.cfg failed"
+#			-e "s:gdal_config=.*$:gdal_config=../../../apps/gdal-config:g" \
+	fi
+}
+
+src_configure() {
+	local use_python=""
+
+	gdal_src_configure
+
+	if use python; then
+		use_python="yes"
+		python_foreach_impl run_in_build_dir gdal_src_configure
 	fi
 }
 
@@ -221,32 +250,32 @@ src_compile() {
 		emake -C "${S}"/swig/perl generate
 	fi
 
-	# gdal-config needed before generating Python bindings
 	default
 
 	if use perl ; then
-		pushd "${S}"/swig/perl > /dev/null || die
+		pushd "${S}"/swig/perl > /dev/null
 		perl-module_src_configure
 		perl-module_src_compile
-		popd > /dev/null || die
-	fi
-
-	if use python; then
-		rm -f "${S}"swig/python/*_wrap.cpp || die
-		emake -C "${S}"/swig/python generate
-		pushd "${S}"/swig/python > /dev/null || die
-		distutils-r1_src_compile
-		popd > /dev/null || die
+		popd > /dev/null
 	fi
 
 	use doc && emake docs
+
+	compile_python() {
+		rm -f swig/python/*_wrap.cpp || die
+		emake -C swig/python generate
+		emake -C swig/python build
+	}
+	if use python; then
+		python_foreach_impl run_in_build_dir compile_python
+	fi
 }
 
 src_install() {
 	if use perl ; then
-		pushd "${S}"/swig/perl > /dev/null || die
+		pushd "${S}"/swig/perl > /dev/null
 		perl-module_src_install
-		popd > /dev/null || die
+		popd > /dev/null
 		sed -e 's:BINDINGS        =       \(.*\) perl:BINDINGS        =       \1:g' \
 			-i GDALmake.opt || die
 	fi
@@ -259,24 +288,22 @@ src_install() {
 
 	use doc && dohtml html/*
 
-	python_install() {
-		distutils-r1_python_install
-		python_doscript scripts/*.py
+	install_python() {
+		emake -C swig/python DESTDIR="${D}" install
 	}
 	if use python; then
-		pushd "${S}"/swig/python > /dev/null || die
-		distutils-r1_src_install
-		popd > /dev/null || die
+		python_foreach_impl run_in_build_dir install_python
 		newdoc swig/python/README.txt README-python.txt
 		insinto /usr/share/${PN}/samples
 		doins swig/python/samples/*
+		python_replicate_script "${ED}"/usr/bin/*py
 	fi
 
-	pushd man/man1 > /dev/null || die
+	pushd man/man1 > /dev/null
 	for i in * ; do
 		newman ${i} ${i}
 	done
-	popd > /dev/null || die
+	popd > /dev/null
 }
 
 pkg_postinst() {
