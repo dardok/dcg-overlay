@@ -70,7 +70,7 @@ sys-auth/nss_afspag
 sys-auth/pam-afs-session
 sys-auth/pam_pkcs11
 
-sys-cluster/ceph
+<sys-cluster/ceph-12
 sys-cluster/lustre
 sys-cluster/openmpi
 sys-cluster/slurm
