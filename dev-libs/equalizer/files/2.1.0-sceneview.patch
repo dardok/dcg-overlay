@@ -987,7 +987,7 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.cpp b/examples/osgScaleViewer/
  }
 diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sceneView.h
 --- a/examples/osgScaleViewer/sceneView.h	2017-09-14 12:55:24.788362985 -0400
-+++ b/examples/osgScaleViewer/sceneView.h	2017-09-14 13:28:00.732966285 -0400
++++ b/examples/osgScaleViewer/sceneView.h	2017-09-14 13:34:02.583853668 -0400
 @@ -1,548 +1,12 @@
 +#pragma once
  
@@ -1034,7 +1034,7 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sc
 -class SceneView : public osg::Object, public osg::CullSettings
 +class SceneView : public osgUtil::SceneView
  {
--public:
+ public:
 -    /** Construct a default scene view.*/
 -    SceneView(osg::DisplaySettings* ds = NULL);
 -
@@ -1484,7 +1484,7 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sc
 -    /** Extract stats for current draw list. */
 -    bool getStats(osgUtil::Statistics& primStats);
 -
- protected:
+-protected:
 -    virtual ~SceneView();
 -
 -    /** Do cull traversal of attached scene graph using Cull NodeVisitor. Return
