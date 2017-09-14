@@ -13,7 +13,7 @@ else
     #S=${WORKDIR}/Tide-${PV}
     inherit git-r3
     EGIT_REPO_URI="git://github.com/BlueBrain/Tide.git"
-    EGIT_BRANCH="${PV}"
+    EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
