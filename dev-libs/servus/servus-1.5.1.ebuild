@@ -9,8 +9,11 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/HBPVIS/Servus.git"
     EGIT_BRANCH="master"
 else
-	SRC_URI="https://github.com/HBPVIS/Servus/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Servus-${PV}
+	#SRC_URI="https://github.com/HBPVIS/Servus/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    #S=${WORKDIR}/Servus-${PV}
+    inherit git-r3
+    EGIT_REPO_URI="git://github.com/HBPVIS/Servus.git"
+    EGIT_COMMIT="${PV}"
 fi
 
 
