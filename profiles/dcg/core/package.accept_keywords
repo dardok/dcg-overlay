@@ -48,7 +48,7 @@ dev-python/s3transfer
 dev-python/urllib3
 
 dev-util/boost-build
-dev-util/google-perftools
+=dev-util/google-perftools-2.4
 
 net-firewall/nftables
 
