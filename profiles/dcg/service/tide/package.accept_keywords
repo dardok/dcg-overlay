@@ -1,8 +1,10 @@
 #=dev-libs/deflect-9999 **
+dev-libs/deflect
 
 dev-libs/servus
 
 #=sys-cluster/tide-9999 **
+sys-cluster/tide
 
 media-libs/libass
 media-libs/libbluray
