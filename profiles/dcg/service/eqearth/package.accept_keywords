@@ -1,12 +1,12 @@
-dev-libs/servus
-dev-libs/lunchbox
-dev-libs/deflect
-dev-libs/collage
-dev-libs/equalizer
-dev-libs/vmmlib
-dev-libs/pression
-dev-libs/hwsd
-dev-libs/glstats
+=dev-libs/vmmlib-1.13.0
+=dev-libs/hwsd-2.0.0
+=dev-libs/servus-1.5.1
+=dev-libs/lunchbox-1.16.0
+=dev-libs/pression-2.0.0
+=dev-libs/deflect-0.13.0
+=dev-libs/glstats-9999 **
+=dev-libs/collage-1.7.0
+=dev-libs/equalizer-2.1.0
 sci-geosciences/liblas
 =sci-geosciences/eqearth-9999 **
 =sci-geosciences/osgearth-9999 **
