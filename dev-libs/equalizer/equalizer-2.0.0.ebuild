@@ -45,7 +45,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-    "${FILESDIR}/sceneview.patch"
+    "${FILESDIR}/${PV}-sceneview.patch"
 )
 
 src_prepare() {
