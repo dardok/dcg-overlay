@@ -3,3 +3,5 @@ dev-qt/qtwebchannel qml
 dev-qt/qtwebkit printsupport
 dev-qt/qtwebengine widgets
 dev-qt/qtmultimedia widgets
+
+media-video/pitivi python_single_target_python3_5
