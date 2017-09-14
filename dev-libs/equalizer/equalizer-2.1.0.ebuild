@@ -48,6 +48,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
+    "${FILESDIR}/${PV}-sceneview.patch"
     "${FILESDIR}/${PV}-cvtracker.patch"
 )
 
