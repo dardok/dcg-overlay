@@ -29,7 +29,6 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-       -DSUBPROJECT_Lunchbox=OFF
        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
 
     )
