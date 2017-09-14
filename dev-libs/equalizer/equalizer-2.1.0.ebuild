@@ -47,6 +47,14 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+PATCHES=(
+    "${FILESDIR}/${PV}-cvtracker.patch"
+)
+
+src_prepare() {
+    epatch "${PATCHES[@]}"
+}
+
 src_configure() {
     mycmakeargs=(
        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
