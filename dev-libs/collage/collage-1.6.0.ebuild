@@ -30,7 +30,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-    "${FILESDIR}/boost-array_wrapper.patch"
+    "${FILESDIR}/${PV}-boost-array_wrapper.patch"
 )
 
 src_prepare() {
