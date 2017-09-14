@@ -1,7 +1,7 @@
+dev-libs/deflect
 dev-libs/servus
-sci-libs/clblast
 
-=dev-libs/deflect-9999 **
+sci-libs/clblast
 
 media-libs/openjpeg
 
