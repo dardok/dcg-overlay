@@ -82,6 +82,7 @@
 *sys-apps/irqbalance
 #*sys-apps/likwid
 *sys-apps/microcode-ctl
+*sys-apps/nvme-cli
 *sys-apps/pcsc-lite
 *sys-apps/unscd
 *sys-auth/nss_afspag

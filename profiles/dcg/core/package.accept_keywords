@@ -64,6 +64,7 @@ net-misc/ptpd
 
 sys-apps/irqbalance
 sys-apps/keyutils
+sys-apps/nvme-cli
 sys-apps/sg3_utils
 
 sys-auth/nss_afspag
