@@ -27,6 +27,10 @@ DEPEND="${RDEPEND}
 	sys-devel/llvm
 "
 
+src_prepare() {
+	git submodule update --init
+}
+
 src_configure() {
     mycmakeargs=(
         $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
