@@ -89,7 +89,6 @@
 *sys-auth/nss-mdns
 *sys-auth/pam-afs-session
 *sys-auth/pam_krb5
-*sys-auth/pam_pkcs11
 *sys-apps/sg3_utils
 *sys-auth/sssd
 *sys-block/nbd
