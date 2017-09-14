@@ -19,7 +19,7 @@ fi
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 x86"
-IUSE="debug +cxx11-stdlib hwsd glstats opencv osg +glew qt5"
+IUSE="debug +cxx11-stdlib hwsd glstats osg +glew qt5"
 
 RDEPEND="
     >=dev-libs/vmmlib-1.12
