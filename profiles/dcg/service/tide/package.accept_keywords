@@ -4,7 +4,7 @@ dev-libs/deflect
 dev-libs/servus
 
 #=sys-cluster/tide-9999 **
-sys-cluster/tide
+=sys-cluster/tide-1.3.1
 
 media-libs/libass
 media-libs/libbluray
