@@ -19,7 +19,7 @@ SRC_URI="http://download.osgeo.org/${PN}/${PV}/${P}.tar.gz"
 SLOT="0/2"
 LICENSE="BSD Info-ZIP MIT"
 KEYWORDS="amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
-IUSE="armadillo +aux_xml curl debug doc fits geos gif gml hdf5 java jpeg jpeg2k mdb mysql netcdf odbc ogdi opencl pdf perl png postgres python spatialite sqlite threads xls"
+IUSE="armadillo +aux_xml curl debug doc fits geos gif gml hdf5 java jpeg jpeg2k mdb mysql netcdf odbc ogdi opencl pdf perl png postgres python spatialite sqlite threads webp xls"
 
 RDEPEND="
 	dev-libs/expat
@@ -56,6 +56,7 @@ RDEPEND="
 	sqlite? ( dev-db/sqlite:3 )
 	spatialite? ( dev-db/spatialite )
 	xls? ( dev-libs/freexl )
+	webp? ( media-libs/libwebp )
 "
 
 DEPEND="${RDEPEND}
@@ -91,11 +92,6 @@ src_prepare() {
 		-e "s:--prefix=\$(DESTDIR):--prefix=:" \
 		"${S}"/swig/python/GNUmakefile || die
 
-	# -soname is only accepted by GNU ld/ELF
-	[[ ${CHOST} == *-darwin* ]] \
-		&& epatch "${FILESDIR}"/${PN}-1.5.0-install_name.patch \
-		|| epatch "${FILESDIR}"/${PN}-1.5.0-soname.patch
-
 	# Fix spatialite/sqlite include issue
 	sed -i \
 		-e 's:spatialite/sqlite3.h:sqlite3.h:g' \
@@ -104,11 +100,11 @@ src_prepare() {
 	# Fix freexl configure check
 	sed -i \
 		-e 's:FREEXL_LIBS=missing):FREEXL_LIBS=missing,-lm):g' \
-		configure.in || die
+		configure.ac || die
 
 	sed \
 		-e "s: /usr/: \"${EPREFIX}\"/usr/:g" \
-		-i configure.in || die
+		-i configure.ac || die
 
 	sed \
 		-e 's:^ar:$(AR):g' \
@@ -214,6 +210,7 @@ gdal_src_configure() {
 		$(use_with sqlite sqlite3 "${EPREFIX}"/usr) \
 		$(use_with threads) \
 		$(use_with xls freexl) \
+		$(use_with webp) \
 		${myopts}
 
 	# mysql-config puts this in (and boy is it a PITA to get it out)
