@@ -1,13 +1,12 @@
 diff -u -r -N a/eq/detail/cvTracker.cpp b/eq/detail/cvTracker.cpp
 --- a/eq/detail/cvTracker.cpp	2017-09-14 12:55:24.743362627 -0400
-+++ b/eq/detail/cvTracker.cpp	2017-09-14 12:57:55.658565370 -0400
-@@ -108,7 +108,8 @@
++++ b/eq/detail/cvTracker.cpp	2017-09-14 13:00:55.331996999 -0400
+@@ -108,7 +108,7 @@
  
      while (running_)
      {
 -        const cv::Mat frame = cvQueryFrame(capture_);
-+		IplImage* image = cvQueryFrame(capture_);
-+        const cv::Mat frame(image);
++        const cv::Mat frame = cvarrToMat(cvQueryFrame(capture_));
          if (frame.empty())
          {
              LBWARN << "Failure to grab a video frame, bailing" << std::endl;
