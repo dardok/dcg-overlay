@@ -5,11 +5,15 @@ DESCRIPTION="Compression and data transfer plugins"
 HOMEPAGE="https://github.com/Eyescale/Pression"
 
 if [[ ${PV} = *9999* ]]; then
+	inherit git-r3
     EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/Eyescale/Pression/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Pression-${PV}
+	inherit git-r3
+    #SRC_URI="https://github.com/Eyescale/Pression/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    #S=${WORKDIR}/Pression-${PV}
+    EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
+    EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
