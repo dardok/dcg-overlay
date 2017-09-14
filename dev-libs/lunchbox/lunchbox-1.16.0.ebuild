@@ -9,6 +9,7 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/Eyescale/Lunchbox.git"
     EGIT_BRANCH="master"
 else
+    inherit git-r3
     #SRC_URI="https://github.com/Eyescale/Lunchbox/archive/${PV}.tar.gz -> ${P}.tar.gz"
     #S=${WORKDIR}/Lunchbox-${PV}
 	EGIT_REPO_URI="git://github.com/Eyescale/Lunchbox.git"

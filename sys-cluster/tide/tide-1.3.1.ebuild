@@ -11,6 +11,7 @@ if [[ ${PV} = *9999* ]]; then
 else
     #SRC_URI="https://github.com/BlueBrain/Tide/archive/${PV}.tar.gz -> ${P}.tar.gz"
     #S=${WORKDIR}/Tide-${PV}
+    inherit git-r3
     EGIT_REPO_URI="git://github.com/BlueBrain/Tide.git"
     EGIT_BRANCH="${PV}"
 fi
