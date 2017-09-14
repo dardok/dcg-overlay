@@ -1,8 +1,8 @@
-=dev-libs/deflect-9999 **
+#=dev-libs/deflect-9999 **
 
 dev-libs/servus
 
-=sys-cluster/tide-9999 **
+#=sys-cluster/tide-9999 **
 
 media-libs/libass
 media-libs/libbluray
@@ -20,4 +20,3 @@ media-plugins/frei0r-plugins
 media-plugins/gst-plugins-opencv
 
 media-sound/twolame
-
