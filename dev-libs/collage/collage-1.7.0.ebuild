@@ -14,7 +14,7 @@ else
     #S=${WORKDIR}/Collage-${PV}
     inherit git-r3
     EGIT_REPO_URI="git://github.com/Eyescale/Collage.git"
-    EGIT_BRANCH="${PV}"
+    EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
