@@ -1,6 +1,6 @@
 diff -u -r -N a/examples/osgScaleViewer/sceneView.cpp b/examples/osgScaleViewer/sceneView.cpp
 --- a/examples/osgScaleViewer/sceneView.cpp	2017-09-14 12:55:24.787362977 -0400
-+++ b/examples/osgScaleViewer/sceneView.cpp	2017-09-14 13:25:12.116619761 -0400
++++ b/examples/osgScaleViewer/sceneView.cpp	2017-09-14 13:27:55.412923815 -0400
 @@ -1,941 +1,102 @@
 -
 -/* -*-c++-*- OpenSceneGraph - Copyright (C) 1998-2006 Robert Osfield
@@ -41,12 +41,11 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.cpp b/examples/osgScaleViewer/
  using namespace osg;
  using namespace osgUtil;
  
--namespace osgScaleViewer
--{
+ namespace osgScaleViewer
+ {
 -SceneView::SceneView(osg::DisplaySettings* ds)
 -    : _fusionDistanceValue(0.f)
-+namespace eqEarth
- {
+-{
 -    _displaySettings = ds;
 -
 -    _lightingMode = NO_SCENEVIEW_LIGHT;
@@ -988,7 +987,7 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.cpp b/examples/osgScaleViewer/
  }
 diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sceneView.h
 --- a/examples/osgScaleViewer/sceneView.h	2017-09-14 12:55:24.788362985 -0400
-+++ b/examples/osgScaleViewer/sceneView.h	2017-09-14 13:25:13.702632428 -0400
++++ b/examples/osgScaleViewer/sceneView.h	2017-09-14 13:28:00.732966285 -0400
 @@ -1,548 +1,12 @@
 +#pragma once
  
@@ -1005,8 +1004,7 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sc
 - * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 - * OpenSceneGraph Public License for more details.
 - */
-+#include <osgUtil/SceneView>
- 
+-
 -#ifndef OSG_SV_SCENEVIEW
 -#define OSG_SV_SCENEVIEW
 -
@@ -1020,9 +1018,9 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sc
 -#include <osg/StateSet>
 -
 -#include <osgUtil/CullVisitor>
--
--namespace osgScaleViewer
-+namespace eqEarth
++#include <osgUtil/SceneView>
+ 
+ namespace osgScaleViewer
  {
 -/**
 - * Based on osgUtil::SceneView, but stripped done to only render and not
@@ -1543,3 +1541,4 @@ diff -u -r -N a/examples/osgScaleViewer/sceneView.h b/examples/osgScaleViewer/sc
  }
 -
 -#endif
+Binary files a/examples/osgScaleViewer/sceneView.o and b/examples/osgScaleViewer/sceneView.o differ
