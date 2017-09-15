@@ -1,0 +1,2 @@
+# only build userspace tools
+sys-cluster/lustre -client
