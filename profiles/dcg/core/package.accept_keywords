@@ -45,6 +45,7 @@ dev-python/python-keystoneclient
 dev-python/python-neutronclient
 dev-python/python-novaclient
 dev-python/python-openstackclient
+dev-python/python-swiftclient
 dev-python/python-systemd
 dev-python/requests
 dev-python/s3transfer
