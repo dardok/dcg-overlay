@@ -35,6 +35,7 @@ dev-python/keystoneauth
 dev-python/libvirt-python
 dev-python/openstacksdk
 dev-python/osc-lib
+dev-python/oslo-config
 dev-python/os-client-config
 dev-python/protobuf-python
 dev-python/python-cinderclient
