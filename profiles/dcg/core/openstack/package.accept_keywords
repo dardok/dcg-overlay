@@ -50,12 +50,6 @@
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[neutron]
 # required by @system
 # required by @world (argument)
-=dev-python/oslo-i18n-3.17.0 ~amd64
-# required by dev-python/oslo-messaging-5.30.0::gentoo
-# required by sys-cluster/neutron-2017.2.9999::gentoo
-# required by sys-cluster/openstack-meta-2017.2.9999::gentoo[neutron]
-# required by @system
-# required by @world (argument)
 =dev-python/kombu-4.1.0 ~amd64
 # required by sys-cluster/nova-2017.2.9999::gentoo
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[nova]

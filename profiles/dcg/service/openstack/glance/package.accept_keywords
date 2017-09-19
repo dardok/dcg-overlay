@@ -51,14 +51,6 @@
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[glance]
 # required by @profile
 # required by @world (argument)
-=dev-python/oslo-i18n-3.17.0 ~amd64
-# required by dev-python/oslo-middleware-3.30.0::gentoo
-# required by dev-python/oslo-messaging-5.30.0::gentoo
-# required by dev-python/osprofiler-1.5.0::gentoo
-# required by app-admin/glance-2017.2.9999::gentoo
-# required by sys-cluster/openstack-meta-2017.2.9999::gentoo[glance]
-# required by @profile
-# required by @world (argument)
 =dev-python/oslo-config-4.11.0 ~amd64
 # required by dev-python/kombu-4.1.0::gentoo
 # required by dev-python/oslo-messaging-5.30.0::gentoo

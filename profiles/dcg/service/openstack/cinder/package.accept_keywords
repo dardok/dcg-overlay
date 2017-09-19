@@ -49,12 +49,6 @@
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[cinder]
 # required by @profile
 # required by @world (argument)
-=dev-python/oslo-i18n-3.17.0 ~amd64
-# required by dev-python/os-brick-1.15.2::gentoo
-# required by sys-cluster/cinder-2017.2.9999::gentoo
-# required by sys-cluster/openstack-meta-2017.2.9999::gentoo[cinder]
-# required by @profile
-# required by @world (argument)
 =dev-python/oslo-log-3.30.0 ~amd64
 # required by sys-cluster/cinder-2017.2.9999::gentoo
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[cinder]

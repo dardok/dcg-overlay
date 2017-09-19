@@ -98,13 +98,6 @@ app-arch/lzma
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[nova]
 # required by @profile
 # required by @world (argument)
-=dev-python/oslo-i18n-3.17.0 ~amd64
-# required by dev-python/kombu-4.1.0::gentoo
-# required by dev-python/oslo-messaging-5.30.0::gentoo
-# required by sys-cluster/nova-2017.2.9999::gentoo
-# required by sys-cluster/openstack-meta-2017.2.9999::gentoo[nova]
-# required by @profile
-# required by @world (argument)
 =dev-python/py-amqp-2.2.1 ~amd64
 # required by dev-python/oslo-policy-1.25.1::gentoo
 # required by sys-cluster/nova-2017.2.9999::gentoo

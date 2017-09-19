@@ -26,11 +26,6 @@
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[heat]
 # required by @profile
 # required by @world (argument)
-=dev-python/oslo-i18n-3.17.0 ~amd64
-# required by sys-cluster/heat-2017.2.9999::gentoo
-# required by sys-cluster/openstack-meta-2017.2.9999::gentoo[heat]
-# required by @profile
-# required by @world (argument)
 =dev-python/oslo-messaging-5.30.0 ~amd64
 # required by sys-cluster/heat-2017.2.9999::gentoo
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[heat]
