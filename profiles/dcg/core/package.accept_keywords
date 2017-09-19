@@ -63,6 +63,7 @@ net-fs/nfs4-acl-tools
 net-libs/libnftnl
 net-libs/nodejs
 
+net-misc/memcached
 <net-misc/openvswitch-2.8.0
 net-misc/ptpd
 

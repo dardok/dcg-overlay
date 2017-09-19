@@ -74,6 +74,7 @@
 *net-libs/libnfsidmap
 *net-misc/bridge-utils
 *net-misc/keychain
+*net-misc/memcached
 *net-misc/openvswitch
 *net-misc/ptpd
 *net-misc/quagga
