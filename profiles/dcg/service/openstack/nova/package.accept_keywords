@@ -1,4 +1,6 @@
 app-emulation/libguestfs
+app-emulation/libguestfs-appliance
+app-arch/lzma
 
 # required by sys-cluster/nova-2017.2.9999::gentoo
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[nova]

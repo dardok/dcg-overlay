@@ -1,3 +1,6 @@
+# pulls in dev-libs/gjs
+app-emulation/libguestfs -introspection
+
 sys-cluster/openstack-meta nova
 
 sys-cluster/nova -rabbitmq
