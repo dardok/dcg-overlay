@@ -1,5 +1,5 @@
 app-admin/elektra augeas ini
-app-admin/puppet augeas diff experimental shadow
+app-admin/puppet augeas diff shadow
 app-admin/ulogd pcap nfacct
 app-crypt/mit-krb5 keyutils pkinit
 app-editors/vim lua luajit ruby
