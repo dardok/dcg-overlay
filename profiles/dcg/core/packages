@@ -43,6 +43,7 @@
 *dev-python/protobuf-python
 *dev-python/python-openstackclient
 *dev-python/python-heatclient
+*dev-python/python-neutronclient
 *dev-python/pygobject
 *dev-python/python-systemd
 *dev-python/virtualenv
