@@ -2,7 +2,6 @@
 *app-admin/fleet
 *app-admin/mcelog
 *app-admin/puppet
-*app-admin/puppet-agent
 *app-admin/sudo
 *app-admin/ulogd
 *app-arch/deb2targz
