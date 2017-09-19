@@ -21,7 +21,7 @@ dev-libs/libxml2 python
 dev-libs/libxslt python
 dev-libs/nss utils
 dev-libs/volume_key python_single_target_python3_5
-dev-python/twisted conch
+dev-python/twisted conch http2
 dev-vcs/git tk
 media-libs/freetype auto-hinter
 media-sound/pulseaudio realtime bluetooth zeroconf libsamplerate
