@@ -1,5 +1,7 @@
 app-admin/elektra
 app-admin/fleet
+app-admin/puppet
+app-admin/puppet-agent
 
 app-crypt/coolkey
 app-crypt/pkcs11-data
