@@ -6,5 +6,7 @@ sys-cluster/openstack-meta nova neutron
 sys-cluster/nova compute-only
 sys-cluster/neutron compute-only openvswitch
 
+app-arch/unzip natspec
+
 net-dns/dnsmasq dhcp-tools
 net-misc/iputils arping
