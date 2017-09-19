@@ -2,4 +2,5 @@
 *dev-python/vine
 *net-dns/dnsmasq
 #*net-analyzer/arping
+*net-proxy/haproxy
 *dev-python/future
