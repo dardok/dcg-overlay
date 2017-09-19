@@ -2,6 +2,8 @@ app-emulation/libguestfs
 app-emulation/libguestfs-appliance
 app-arch/lzma
 
+dev-python/vine
+
 # required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
 # required by @profile
 # required by @world (argument)

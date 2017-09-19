@@ -1,4 +1,5 @@
 *app-emulation/libguestfs
+*dev-python/vine
 *net-dns/dnsmasq
 #*net-analyzer/arping
 *dev-python/future
