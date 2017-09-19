@@ -2,6 +2,16 @@ app-emulation/libguestfs
 app-emulation/libguestfs-appliance
 app-arch/lzma
 
+# required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
+# required by @profile
+# required by @world (argument)
+=dev-ml/ocaml-gettext-0.3.7 ~amd64
+# required by dev-ml/ocaml-gettext-0.3.7::gentoo
+# required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
+# required by @profile
+# required by @world (argument)
+=dev-ml/ocaml-fileutils-0.5.2 ~amd64
+
 # required by sys-cluster/nova-2017.2.9999::gentoo
 # required by sys-cluster/openstack-meta-2017.2.9999::gentoo[nova]
 # required by @profile
