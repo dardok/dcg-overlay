@@ -5,3 +5,4 @@
 =app-admin/glance-2017.2.9999 **
 =sys-cluster/cinder-2017.2.9999 **
 =sys-cluster/heat-2017.2.9999 **
+=sys-cluster/swift-2017.2.9999 **
