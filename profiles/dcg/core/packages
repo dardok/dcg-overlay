@@ -46,6 +46,7 @@
 *dev-python/python-glanceclient
 *dev-python/python-heatclient
 *dev-python/python-keystoneclient
+*dev-python/python-memcached
 *dev-python/python-neutronclient
 *dev-python/python-novaclient
 *dev-python/python-openstackclient
