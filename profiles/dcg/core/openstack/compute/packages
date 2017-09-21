@@ -1,5 +1,6 @@
 *app-emulation/libguestfs
 *dev-python/pip
+*dev-python/tinyrpc
 *dev-python/vine
 *net-dns/dnsmasq
 #*net-analyzer/arping
