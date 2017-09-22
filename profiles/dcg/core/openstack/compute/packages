@@ -6,3 +6,4 @@
 #*net-analyzer/arping
 *net-proxy/haproxy
 *dev-python/future
+*sys-cluster/keepalived

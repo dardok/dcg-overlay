@@ -5,6 +5,8 @@ app-arch/lzma
 dev-python/tinyrpc
 dev-python/vine
 
+sys-cluster/keepalived
+
 # required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
 # required by @profile
 # required by @world (argument)
