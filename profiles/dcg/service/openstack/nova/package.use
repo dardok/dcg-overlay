@@ -1,5 +1,4 @@
-# pulls in dev-libs/gjs (big!), needs ocaml to install correctly
-app-emulation/libguestfs -introspection ocaml
+app-emulation/libguestfs -introspection
 
 sys-cluster/openstack-meta nova
 
