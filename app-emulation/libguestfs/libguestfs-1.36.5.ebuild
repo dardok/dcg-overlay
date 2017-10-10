@@ -151,14 +151,15 @@ src_configure() {
 		$(usex doc '' PO4A=no)
 }
 
-src_compile() {
-	emake
-	emake || die "emake failed"
-}
-
 src_install() {
 	strip-linguas -i po
-	emake DESTDIR="${D}" install "LINGUAS=""${LINGUAS}"""
+
+	# hackety hack...
+	sed -i '/builder\/index-parse.c/d' po/POTFILES
+	sed -i '/builder\/index-scan.c/d' po/POTFILES
+	sed -i '/mllib\/libdir.ml/d' po/POTFILES-ml
+
+	emake INSTALLDIRS=vendor DESTDIR="${D}" install "LINGUAS=""${LINGUAS}"""
 
 	use perl && perl_delete_localpod
 }
