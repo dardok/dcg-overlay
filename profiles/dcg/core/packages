@@ -89,6 +89,7 @@
 *sys-apps/ethtool
 *sys-apps/irqbalance
 #*sys-apps/likwid
+*sys-apps/lsb-release
 *sys-apps/microcode-ctl
 *sys-apps/nvme-cli
 *sys-apps/pcsc-lite
