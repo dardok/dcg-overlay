@@ -107,6 +107,7 @@
 *sys-cluster/lustre
 *sys-cluster/openmpi
 *sys-cluster/slurm
+*sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
 *sys-fs/multipath-tools

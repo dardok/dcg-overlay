@@ -83,6 +83,8 @@ sys-cluster/lustre
 sys-cluster/openmpi
 sys-cluster/slurm
 
+sys-devel/bmake
+
 sys-fabric/ofed:3.18-3
 sys-fabric/ibacm:3.18-3
 sys-fabric/ibutils:3.18-3
