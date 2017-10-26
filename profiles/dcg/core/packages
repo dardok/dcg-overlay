@@ -18,6 +18,7 @@
 *app-misc/byobu
 *app-misc/jq
 *app-misc/screen
+*app-misc/tmate
 *app-misc/tmux
 *app-portage/eix
 *app-portage/layman

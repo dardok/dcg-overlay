@@ -13,6 +13,8 @@ app-emulation/libvirt
 app-emulation/qemu
 app-emulation/rkt
 
+app-misc/tmate
+
 =app-text/xmlto-0.0.28-r1
 
 dev-db/etcd
