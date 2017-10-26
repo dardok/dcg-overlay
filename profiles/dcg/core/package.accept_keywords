@@ -14,6 +14,7 @@ app-emulation/qemu
 app-emulation/rkt
 
 app-misc/tmate
+=dev-libs/msgpack-1.1.0
 
 =app-text/xmlto-0.0.28-r1
 
