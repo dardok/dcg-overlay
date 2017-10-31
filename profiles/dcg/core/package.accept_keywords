@@ -19,6 +19,8 @@ app-misc/tmate
 
 =app-text/xmlto-0.0.28-r1
 
+app-shells/bash-completion
+
 dev-db/etcd
 
 dev-go/go-protobuf
