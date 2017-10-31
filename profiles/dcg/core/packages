@@ -26,6 +26,7 @@
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/tcsh
+*app-vim/rust-vim
 *dev-db/etcd
 *dev-go/go-protobuf
 *dev-lang/go
@@ -80,6 +81,7 @@
 *net-libs/libnetfilter_acct
 *net-libs/libnfsidmap
 *net-misc/bridge-utils
+*net-misc/ipcalc
 *net-misc/keychain
 *net-misc/memcached
 *net-misc/openvswitch
@@ -119,4 +121,5 @@
 *sys-power/acpid
 *sys-process/atop
 *sys-process/lsof
+*virtual/rust
 *x11-apps/xauth

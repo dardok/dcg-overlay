@@ -22,6 +22,11 @@ dev-db/etcd
 
 dev-go/go-protobuf
 
+dev-lang/rust
+app-vim/rust-vim
+virtual/rust
+dev-util/cargo
+
 =dev-libs/boost-1.63.0
 dev-libs/libbytesize
 dev-libs/libuv
