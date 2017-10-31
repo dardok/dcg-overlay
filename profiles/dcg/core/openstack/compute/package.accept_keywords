@@ -4,13 +4,3 @@ app-arch/lzma
 
 dev-python/tinyrpc
 dev-python/vine
-
-# required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
-# required by @profile
-# required by @world (argument)
-=dev-ml/ocaml-gettext-0.3.7 ~amd64
-# required by dev-ml/ocaml-gettext-0.3.7::gentoo
-# required by app-emulation/libguestfs-1.36.5::gentoo[ocaml]
-# required by @profile
-# required by @world (argument)
-=dev-ml/ocaml-fileutils-0.5.2 ~amd64
