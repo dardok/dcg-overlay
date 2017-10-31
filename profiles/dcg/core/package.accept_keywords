@@ -29,6 +29,7 @@ virtual/rust
 dev-util/cargo
 
 =dev-libs/boost-1.63.0
+net-libs/http-parser
 dev-libs/libbytesize
 dev-libs/libuv
 dev-libs/protobuf
@@ -70,8 +71,7 @@ net-firewall/nftables
 net-fs/openafs
 net-fs/openafs-kernel
 net-fs/nfs4-acl-tools
->=net-fs/samba-4.6.3
-<net-fs/samba-4.7
+=net-fs/samba-4.6.9
 
 net-libs/libnftnl
 net-libs/nodejs
@@ -89,6 +89,8 @@ sys-apps/sg3_utils
 
 sys-auth/nss_afspag
 sys-auth/pam-afs-session
+
+=sys-apps/util-linux-2.31
 
 <sys-cluster/ceph-12
 sys-cluster/lustre
