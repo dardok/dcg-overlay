@@ -5,10 +5,8 @@ dev-lang/ruby:2.4
 
 dev-python/setuptools
 
-=sys-apps/gentoo-systemd-integration-7
-
 =sys-apps/dbus-1.10.22
-=sys-apps/systemd-234-r4
+=sys-apps/systemd-235-r1
 
 #
 ##

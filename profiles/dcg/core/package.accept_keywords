@@ -9,6 +9,7 @@ app-crypt/pkcs11-dump
 app-emulation/containerd
 app-emulation/docker
 app-emulation/docker-runc
+app-emulation/docker-proxy
 app-emulation/libvirt
 app-emulation/qemu
 app-emulation/rkt
@@ -70,14 +71,17 @@ net-fs/openafs
 net-fs/openafs-kernel
 net-fs/nfs4-acl-tools
 >=net-fs/samba-4.6.3
+<net-fs/samba-4.7
 
 net-libs/libnftnl
 net-libs/nodejs
+net-libs/nghttp2
 
 net-misc/memcached
 <net-misc/openvswitch-2.8.0
 net-misc/ptpd
 
+sys-apps/dtc
 sys-apps/irqbalance
 sys-apps/keyutils
 sys-apps/nvme-cli
@@ -121,6 +125,7 @@ sys-kernel/spl
 =sys-kernel/linux-firmware-99999999 **
 
 sys-libs/libblockdev
+sys-libs/talloc
 
 sys-process/atop
 sys-process/tini
