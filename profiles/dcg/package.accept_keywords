@@ -1,11 +1,11 @@
 dev-lang/python:3.5
 dev-lang/ruby:2.4
 
-=dev-libs/expat-2.2.4
+=dev-libs/expat-2.2.5
 
 dev-python/setuptools
 
-=sys-apps/dbus-1.10.22
+=sys-apps/dbus-1.10.24
 =sys-apps/systemd-235-r1
 =sys-apps/util-linux-2.31
 
