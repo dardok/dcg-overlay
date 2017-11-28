@@ -10,3 +10,5 @@ media-plugins/frei0r-plugins -facedetect
 x11-libs/gdk-pixbuf -jpeg2k
 
 sci-libs/arrayfire nonfree
+
+media-libs/gst-plugins-bad -egl -opengl
