@@ -325,6 +325,7 @@ multilib_src_configure() {
 #		-DWITH_NVCUVID=$(usex cuda)
 		-DCUDA_NPP_LIBRARY_ROOT_DIR=$(usex cuda "${EPREFIX}/opt/cuda" "")
 		-DCUDA_ARCH_BIN="3.0 3.5 3.7 5.0 5.2 6.0 6.1 6.2 7.0"
+		-DCUDA_NVCC_FLAGS="--expt-relaxed-constexpr"
 	# ===================================================
 	# OpenCV build components
 	# ===================================================
