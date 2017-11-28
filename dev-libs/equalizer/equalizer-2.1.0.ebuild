@@ -50,6 +50,7 @@ DEPEND="${RDEPEND}
 PATCHES=(
     "${FILESDIR}/${PV}-sceneview.patch"
     "${FILESDIR}/${PV}-cvtracker.patch"
+    "${FILESDIR}/cuda-9.0.patch"
 )
 
 src_prepare() {
