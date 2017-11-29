@@ -105,6 +105,8 @@ src_configure() {
 		$(use_enable lru-resize) \
 		$(use_enable snmp) \
 		$(use_enable gss)
+
+	touch undef.h
 }
 
 src_compile() {
