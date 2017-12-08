@@ -6,4 +6,4 @@ sci-libs/clblast
 media-libs/openjpeg
 
 x11-libs/libva
-
+media-video/libva-utils
