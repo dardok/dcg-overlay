@@ -56,6 +56,7 @@
 *dev-python/python-systemd
 *dev-python/virtualenv
 *dev-util/cmake
+*dev-util/indent
 *dev-util/debugedit
 *dev-util/strace
 *dev-util/systemtap
