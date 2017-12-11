@@ -36,6 +36,14 @@ RDEPEND="
     )
 "
 
+PATCHES=(
+    "${FILESDIR}/cuda-cmake.patch"
+)
+
+src_prepare() {
+    epatch "${PATCHES[@]}"
+}
+
 src_configure() {
     local mycmakeargs=(
        $(cmake-utils_use_build unified UNIFIED)
