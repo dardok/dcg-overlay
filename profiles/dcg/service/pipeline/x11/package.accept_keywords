@@ -7,3 +7,5 @@ media-libs/openjpeg
 
 x11-libs/libva
 media-video/libva-utils
+
+media-plugins/gst-plugins-vaapi
