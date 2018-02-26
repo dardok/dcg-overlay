@@ -80,7 +80,7 @@
 *net-libs/libnetfilter_log
 *net-libs/libnetfilter_conntrack
 *net-libs/libnetfilter_acct
-*net-libs/libnfsidmap
+#*net-libs/libnfsidmap # conflicts with nfs-utils
 *net-misc/bridge-utils
 *net-misc/ipcalc
 *net-misc/keychain
