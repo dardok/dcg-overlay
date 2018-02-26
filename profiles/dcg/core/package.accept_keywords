@@ -44,12 +44,14 @@ dev-python/chardet
 dev-python/cliff
 dev-python/deprecation
 dev-python/docker-py
+dev-python/docker-pycreds
 dev-python/keystoneauth
 dev-python/libvirt-python
 dev-python/openstacksdk
 dev-python/osc-lib
 dev-python/oslo-config
 dev-python/oslo-i18n
+dev-python/oslo-utils
 dev-python/os-client-config
 dev-python/protobuf-python
 dev-python/python-cinderclient
@@ -64,6 +66,7 @@ dev-python/python-systemd
 dev-python/requests
 dev-python/s3transfer
 dev-python/urllib3
+dev-python/warlock
 
 dev-util/boost-build
 =dev-util/google-perftools-2.4
@@ -132,6 +135,7 @@ sys-kernel/spl
 =sys-kernel/linux-firmware-99999999 **
 
 sys-libs/libblockdev
+sys-libs/libxcrypt
 sys-libs/talloc
 
 sys-process/atop

@@ -14,6 +14,7 @@ app-misc/jq oniguruma
 >=app-text/xmlto-0.0.28-r1 text
 dev-db/postgresql -server
 dev-lang/python berkdb
+dev-libs/beecrypt -cxx # requires old icu
 dev-libs/boost python context
 dev-libs/cyrus-sasl -postgres -openldap
 dev-libs/glib systemtap fam
@@ -41,7 +42,7 @@ net-nds/openldap minimal
 net-wireless/bluez user-session
 sys-apps/attr static-libs
 sys-apps/busybox -pam
-sys-auth/sssd augeas autofs netlink nfsv4 -acl
+sys-auth/sssd augeas autofs netlink -nfsv4 -acl # libnfsidmap conflicts with nfs-utils
 sys-cluster/ceph cephfs fuse -xfs
 #sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
 sys-cluster/lustre -checksum lru-resize -gss client -server

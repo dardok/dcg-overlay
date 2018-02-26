@@ -38,7 +38,7 @@
 *dev-libs/jansson
 *dev-libs/libnl
 *dev-libs/protobuf
-*dev-libs/protobuf-c
+#*dev-libs/protobuf-c
 *dev-python/awscli
 *dev-python/docker-py
 *dev-python/libcloud
