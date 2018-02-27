@@ -4,3 +4,5 @@ app-arch/lzma
 
 dev-python/tinyrpc
 dev-python/vine
+
+sys-cluster/keepalived
