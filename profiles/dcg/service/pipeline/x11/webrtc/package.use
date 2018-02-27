@@ -1,1 +1,2 @@
 net-libs/gnome-js-common -seed -gjs
+net-libs/webkit-gtk -egl
