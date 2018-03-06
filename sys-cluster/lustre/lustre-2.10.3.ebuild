@@ -20,7 +20,7 @@ inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
 DESCRIPTION="Lustre is a parallel distributed file system"
 HOMEPAGE="http://wiki.whamcloud.com/"
-EGIT_REPO_URI="https://git.hpdd.intel.com/fs/lustre-release.git"
+EGIT_REPO_URI="git://git.hpdd.intel.com/fs/lustre-release.git"
 
 LICENSE="GPL-2"
 SLOT="0"
