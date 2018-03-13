@@ -20,7 +20,7 @@ IUSE="doc debug protobuf qt5"
 
 RDEPEND="
 	dev-db/sqlite:3
-	>=dev-games/openscenegraph-3.2.1[curl]
+	>=dev-games/openscenegraph-3.5[curl]
     dev-libs/leveldb
 	dev-libs/tinyxml
 	net-misc/curl
@@ -35,6 +35,7 @@ RDEPEND="
 		dev-qt/qtgui:5
 		dev-qt/qtopengl:5
 		dev-qt/qtwidgets:5
+	    >=dev-games/openscenegraph-qt-3.5
 	)"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
