@@ -22,7 +22,6 @@ RDEPEND="
 	dev-db/sqlite:3
 	>=dev-games/openscenegraph-3.5[curl]
     dev-libs/leveldb
-	dev-libs/tinyxml
 	net-misc/curl
 	sci-libs/gdal
 	sci-libs/geos
@@ -49,7 +48,7 @@ src_configure() {
 	# V8 disabled due to
 	# https://github.com/gwaldron/osgearth/issues/333
 	local mycmakeargs=(
-		-DWITH_EXTERNAL_TINYXML=ON
+		-DWITH_EXTERNAL_TINYXML=OFF
 		$(cmake-utils_use qt5 OSGEARTH_USE_QT)
 		-DOSGEARTH_USE_V8=OFF
 		-DOSGEARTH_USE_JAVASCRIPTCORE=OFF
