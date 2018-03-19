@@ -47,14 +47,17 @@ dev-python/cliff
 dev-python/deprecation
 dev-python/docker-py
 dev-python/docker-pycreds
+dev-python/jsonpatch
 dev-python/keystoneauth
 dev-python/libvirt-python
+dev-python/munch
 dev-python/openstacksdk
 dev-python/osc-lib
 dev-python/oslo-config
 dev-python/oslo-i18n
 dev-python/oslo-utils
 dev-python/os-client-config
+dev-python/os-service-types
 dev-python/protobuf-python
 dev-python/python-cinderclient
 dev-python/python-glanceclient
@@ -66,6 +69,7 @@ dev-python/python-openstackclient
 dev-python/python-swiftclient
 dev-python/python-systemd
 dev-python/requests
+dev-python/requestsexceptions
 dev-python/s3transfer
 dev-python/urllib3
 dev-python/warlock
