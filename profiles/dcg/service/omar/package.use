@@ -1,4 +1,4 @@
-sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp
+sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp jpeg2k
 
 sci-libs/armadillo lapack
 
