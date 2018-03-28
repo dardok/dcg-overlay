@@ -1,6 +1,6 @@
 sci-libs/proj
 dev-games/openscenegraph
 dev-games/openscenegraph-qt
-sci-geosciences/osgearth
+sci-geosciences/osgearth-simdis-sdk
 sci-visualization/simdissdk
 dev-libs/poco
