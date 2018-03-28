@@ -1,0 +1,17 @@
+media-video/ffmpeg cpudetection ieee1394 libv4l network mp3 x265 xvid aac aacplus bluray faac frei0r ladspa libass -libcaca librtmp modplug opus schroedinger snappy twolame
+
+dev-games/openscenegraph ffmpeg gdal glut asio gstreamer xrandr qt5 las lua jpeg2k osgapps
+
+media-libs/opencv gstreamer ffmpeg
+
+sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
+
+sci-libs/armadillo lapack
+
+sci-libs/hdf5 -fortran -threads
+
+sci-geosciences/liblas gdal
+
+media-plugins/frei0r-plugins -facedetect
+
+sci-geosciences/osgearth leveldb qt5 server
