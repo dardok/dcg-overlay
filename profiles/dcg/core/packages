@@ -30,8 +30,6 @@
 *dev-db/etcd
 *dev-go/go-protobuf
 *dev-lang/go
-*dev-lang/lua:5.1
-*dev-lang/lua:5.2
 *dev-libs/apr
 *dev-libs/apr-util
 *dev-libs/libp11
