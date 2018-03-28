@@ -27,6 +27,8 @@ dev-go/go-protobuf
 
 dev-ruby/facter
 
+dev-lang/lua
+
 dev-lang/rust
 app-vim/rust-vim
 virtual/rust

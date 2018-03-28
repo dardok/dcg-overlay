@@ -3,7 +3,7 @@ app-admin/puppet augeas diff shadow
 app-admin/ulogd pcap nfacct
 app-arch/unzip natspec
 app-crypt/mit-krb5 keyutils pkinit
-app-editors/vim lua luajit ruby
+app-editors/vim -lua -luajit ruby
 app-emulation/docker btrfs overlay experimental
 app-emulation/libvirt rbd iscsi libssh parted lxc fuse zeroconf virt-network nfs
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi systemtap nfs python
@@ -47,7 +47,7 @@ sys-cluster/ceph cephfs fuse -xfs
 #sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
 sys-cluster/lustre -checksum lru-resize -gss client -server
 sys-cluster/openmpi mpi-threads heterogeneous
-sys-cluster/slurm lua
+sys-cluster/slurm -lua
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm mstflint perftest rds srp opensm libfabric
