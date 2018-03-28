@@ -2,3 +2,4 @@ dev-games/openscenegraph
 dev-games/openscenegraph-qt
 sci-geosciences/osgearth
 sci-visualization/simdissdk
+dev-libs/poco
