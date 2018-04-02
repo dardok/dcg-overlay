@@ -13,6 +13,11 @@ app-emulation/docker-proxy
 app-emulation/libvirt
 app-emulation/qemu
 app-emulation/rkt
+app-emulation/runc
+
+sys-firmware/ipxe
+sys-firmware/sgabios
+sys-firmware/seabios
 
 app-misc/tmate
 =dev-libs/msgpack-1.1.0
@@ -41,6 +46,7 @@ dev-libs/volume_key
 
 dev-python/awscli
 dev-python/Babel
+dev-python/bcrypt
 dev-python/botocore
 dev-python/chardet
 dev-python/cliff
@@ -110,6 +116,8 @@ sys-auth/pam-afs-session
 
 sys-cluster/openmpi
 sys-cluster/slurm
+sys-cluster/ucx
+sys-cluster/pmix
 
 sys-devel/bmake
 

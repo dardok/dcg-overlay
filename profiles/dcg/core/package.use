@@ -19,6 +19,7 @@ dev-libs/boost python context
 dev-libs/cyrus-sasl -postgres -openldap
 dev-libs/glib systemtap fam
 dev-libs/libpcre pcre16
+dev-libs/libpcre2 pcre16
 dev-libs/libxml2 python
 dev-libs/libxslt python
 dev-libs/nss utils
