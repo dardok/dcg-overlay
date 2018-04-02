@@ -2,6 +2,4 @@
 
 >=dev-db/postgresql-9.6 # build fails with "cannot find -lpgfeutils"
 
->net-misc/openvswitch-2.7.9999 # required by sys-cluster/neutron-2017.2.9999
-
 >app-admin/puppet-agent-5
