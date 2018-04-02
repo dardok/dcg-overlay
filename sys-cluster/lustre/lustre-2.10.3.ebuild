@@ -32,8 +32,8 @@ RDEPEND="
 	tcpd? ( sys-apps/tcp-wrappers )
 	server? (
 		>=sys-kernel/spl-0.7.6
-		>=sys-fs/zfs-kmod-0.7.6
-		sys-fs/zfs
+		>=sys-fs/zfs-kmod-0.7.6:=
+		sys-fs/zfs:=
 	)
     snmp? ( net-analyzer/net-snmp )
 	"
