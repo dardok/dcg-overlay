@@ -2,4 +2,6 @@
 
 >=dev-db/postgresql-9.6 # build fails with "cannot find -lpgfeutils"
 
+>sys-cluster/slurm-17.11.4 # .5 breaks shits
+
 >app-admin/puppet-agent-5
