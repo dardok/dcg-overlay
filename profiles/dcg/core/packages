@@ -117,6 +117,7 @@
 *sys-devel/llvm
 *sys-fs/multipath-tools
 *sys-fabric/ofed
+*sys-fabric/mstflint
 *sys-kernel/linux-firmware
 *sys-libs/libblockdev
 *sys-power/acpid
