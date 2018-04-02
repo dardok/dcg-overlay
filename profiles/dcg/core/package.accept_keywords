@@ -95,7 +95,7 @@ net-libs/nodejs
 net-libs/nghttp2
 
 net-misc/memcached
-<net-misc/openvswitch-2.8.0
+net-misc/openvswitch
 net-misc/ptpd
 
 sys-apps/dtc
