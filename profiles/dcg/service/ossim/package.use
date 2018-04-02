@@ -1,0 +1,14 @@
+sci-libs/hdf5 szip -fortran -threads
+
+sci-libs/cfitsio -fortran
+sci-libs/netcdf szip
+sci-libs/armadillo hdf5 lapack
+sys-libs/zlib minizip
+dev-python/numpy lapack
+app-text/poppler curl png tiff
+media-libs/libwebp tiff
+
+sci-libs/gdal armadillo curl jpeg netcdf webp hdf5 jpeg2k geos ogdi pdf png sqlite spatialite xls fits gml python
+
+sci-libs/ossim hdf5 npi
+sci-libs/ossim-plugins -atp fftw gdal geopdf kml -opencv png potrace -jpeg2k -registration sqlite web
