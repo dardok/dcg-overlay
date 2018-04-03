@@ -42,13 +42,11 @@ PATCHES=(
 
 src_prepare() {
     epatch "${PATCHES[@]}"
-
-	git submodule update --init
 }
 
 src_configure() {
     mycmakeargs=(
-		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
+        $(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
     cmake-utils_src_configure
