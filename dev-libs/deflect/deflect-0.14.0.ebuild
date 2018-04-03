@@ -9,8 +9,11 @@ if [[ ${PV} = *9999* ]]; then
     EGIT_REPO_URI="git://github.com/BlueBrain/Deflect.git"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/BlueBrain/Deflect/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Deflect-${PV}
+    #SRC_URI="https://github.com/BlueBrain/Deflect/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    #S=${WORKDIR}/Deflect-${PV}
+    inherit git-r3
+    EGIT_REPO_URI="https://github.com/BlueBrain/Deflect"
+    EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
