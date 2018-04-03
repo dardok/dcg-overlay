@@ -9,6 +9,6 @@ media-plugins/frei0r-plugins -facedetect
 # fscking demands jasper-2.0
 x11-libs/gdk-pixbuf -jpeg2k
 
-sci-libs/arrayfire nonfree cuda_compute_30 cuda_compute_35 cuda_compute_52 cuda_compute_53 cuda_compute_60 cuda_compute_61 cuda_compute_62 cuda_compute_70
+sci-libs/arrayfire nonfree
 
 media-libs/gst-plugins-bad -egl -opengl
