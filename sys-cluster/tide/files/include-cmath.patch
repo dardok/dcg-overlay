@@ -1,0 +1,13 @@
+diff --git a/tide/master/localstreamer/WebkitPixelStreamer.cpp b/tide/master/localstreamer/WebkitPixelStreamer.cpp
+index 10ab95b..82ccdbc 100644
+--- a/tide/master/localstreamer/WebkitPixelStreamer.cpp
++++ b/tide/master/localstreamer/WebkitPixelStreamer.cpp
+@@ -57,6 +57,8 @@ using namespace zeroeq::http;
+ #include <QWebHistory>
+ #include <QWebView>
+ 
++#include <cmath>
++
+ #define WEBPAGE_MIN_WIDTH 640
+ #define WEBPAGE_MIN_HEIGHT 512
+ 

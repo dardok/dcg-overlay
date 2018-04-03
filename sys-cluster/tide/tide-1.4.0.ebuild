@@ -46,6 +46,10 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+PATCHES=(
+    "${FILESDIR}/include-cmath.patch"
+)
+
 src_configure() {
     mycmakeargs=(
         -DCLONE_SUBPROJECTS=ON
