@@ -6,11 +6,14 @@ HOMEPAGE="https://github.com/BlueBrain/Tide"
 
 if [[ ${PV} = *9999* ]]; then
     inherit git-r3
-    EGIT_REPO_URI="git://github.com/BlueBrain/Tide.git"
+    EGIT_REPO_URI="https://github.com/BlueBrain/Tide"
     EGIT_BRANCH="master"
 else
-    SRC_URI="https://github.com/BlueBrain/Tide/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    S=${WORKDIR}/Tide-${PV}
+    #SRC_URI="https://github.com/BlueBrain/Tide/archive/${PV}.tar.gz -> ${P}.tar.gz"
+    #S=${WORKDIR}/Tide-${PV}
+    inherit git-r3
+    EGIT_REPO_URI="https://github.com/BlueBrain/Tide"
+    EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
@@ -18,10 +21,9 @@ SLOT="0"
 KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
-# NOTE: replace qtquick1 with qtdeclarative when possible
 RDEPEND="
     >=dev-libs/boost-1.54.0
-    =dev-libs/deflect-0.11.1
+    >=dev-libs/deflect-0.13.0
     dev-libs/fcgi
     media-video/ffmpeg
     sys-cluster/openmpi
@@ -38,6 +40,7 @@ RDEPEND="
     dev-qt/qtxml:5
     dev-qt/qtxmlpatterns:5
     dev-qt/qtgraphicaleffects:5
+    dev-qt/qtx11extras:5
 "
 DEPEND="${RDEPEND}
     sys-devel/llvm
@@ -45,7 +48,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
     mycmakeargs=(
-		-DSUBPROJECT_TUIO=OFF
+		-DCLONE_SUBPROJECTS=ON
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
     )
 
