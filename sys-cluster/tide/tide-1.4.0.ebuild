@@ -23,7 +23,7 @@ IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
     >=dev-libs/boost-1.54.0
-    >=dev-libs/deflect-0.13.0
+    >=dev-libs/deflect-0.14.0
     dev-libs/fcgi
     media-video/ffmpeg
     sys-cluster/openmpi
