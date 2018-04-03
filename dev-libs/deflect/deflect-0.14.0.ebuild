@@ -39,6 +39,8 @@ PATCHES=(
 
 src_prepare() {
     epatch "${PATCHES[@]}"
+
+	git submodule update --init
 }
 
 src_configure() {
