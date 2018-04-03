@@ -1,5 +1,5 @@
 # don't rebuild from dcg/core/x11
-net-misc/spice-gtk -gstreamer
+app-emulation/spice -gstreamer
 
 media-libs/gst-plugins-bad gtk
 media-libs/libvpx svc
