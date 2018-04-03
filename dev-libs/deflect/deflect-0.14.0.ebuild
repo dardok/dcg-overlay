@@ -23,7 +23,7 @@ IUSE="debug +cxx11-stdlib +servus +glut +slurm"
 
 RDEPEND="
     >=dev-libs/boost-1.54.0
-    servus? ( =dev-libs/servus-1.5.1 )
+    servus? ( =dev-libs/servus-9999 )
     >=media-libs/libjpeg-turbo-1.2.1
     glut? ( media-libs/freeglut )
     dev-qt/qtconcurrent:5
