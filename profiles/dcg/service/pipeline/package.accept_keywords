@@ -12,5 +12,6 @@ media-libs/x265
 media-libs/xvid
 
 media-plugins/frei0r-plugins
+media-plugins/gst-plugins-opencv
 
 media-sound/twolame
