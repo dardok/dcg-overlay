@@ -1,0 +1,5 @@
+dev-java/commons-compress
+dev-java/commons-lang
+www-servers/tomcat:8.5
+dev-java/tomcat-servlet-api:3.1
+dev-java/jdbc-postgresql
