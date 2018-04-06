@@ -1,5 +1,8 @@
 dev-libs/jsoncpp
 sci-libs/proj
 sci-libs/libgeotiff
-sci-libs/ossim
-sci-libs/ossim-plugins
+
+=sci-libs/ossim-2.3.0
+=sci-libs/ossim-plugins-2.3.0
+=sci-libs/ossim-video-2.3.0
+=sci-libs/ossim-oms-2.3.0

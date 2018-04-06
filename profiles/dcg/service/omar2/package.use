@@ -1,9 +1,3 @@
-sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
-
-sci-libs/armadillo lapack
-
 dev-java/icedtea-bin -cups -gtk -alsa headless-awt
 
-sys-cluster/mvapich2 -fortran
-
-sci-libs/hdf5 -fortran -threads
+sci-libs/ossim-oms java
