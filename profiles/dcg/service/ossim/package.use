@@ -10,5 +10,6 @@ media-libs/libwebp tiff
 
 sci-libs/gdal armadillo curl jpeg netcdf webp hdf5 jpeg2k geos ogdi pdf png sqlite spatialite xls fits gml python
 
+dev-cpp/aws-sdk s3 kms
 sci-libs/ossim hdf5 mpi
 sci-libs/ossim-plugins -atp aws fftw gdal geopdf kml -opencv png potrace -jpeg2k -registration sqlite web

@@ -1,7 +1,7 @@
 dev-libs/jsoncpp
 sci-libs/proj
 sci-libs/libgeotiff
-dev-cpp/awssdk
+dev-cpp/aws-sdk
 
 =sci-libs/ossim-2.3.0
 =sci-libs/ossim-plugins-2.3.0
