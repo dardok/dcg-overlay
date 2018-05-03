@@ -88,7 +88,7 @@ net-firewall/nftables
 net-fs/openafs
 net-fs/openafs-kernel
 net-fs/nfs4-acl-tools
-=net-fs/samba-4.6.9
+=net-fs/samba-4.6.15
 
 net-libs/libnftnl
 net-libs/nodejs
