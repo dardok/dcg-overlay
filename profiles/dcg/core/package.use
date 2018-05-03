@@ -33,7 +33,7 @@ net-dns/bind-tools gssapi
 net-dns/dnsmasq script
 net-firewall/ipset -modules
 net-fs/nfs-utils nfsv41 nfsdcld
-net-fs/samba client cluster dmapi fam gnutls 
+net-fs/samba ads client cluster dmapi fam gnutls winbind 
 net-libs/nghttp2 hpack-tools
 net-misc/curl http2
 net-misc/openvswitch -modules
