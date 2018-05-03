@@ -5,6 +5,7 @@ dev-lang/ruby:2.4
 
 dev-python/setuptools
 
+=sys-libs/libseccomp-2.3.3
 =sys-apps/dbus-1.10.24
 =sys-apps/systemd-238-r6
 =sys-apps/util-linux-2.31
