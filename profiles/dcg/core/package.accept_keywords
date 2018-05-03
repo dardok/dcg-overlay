@@ -89,6 +89,7 @@ net-fs/openafs
 net-fs/openafs-kernel
 net-fs/nfs4-acl-tools
 =net-fs/samba-4.6.15
+sys-libs/tevent
 
 net-libs/libnftnl
 net-libs/nodejs
