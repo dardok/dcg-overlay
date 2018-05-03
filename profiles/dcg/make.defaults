@@ -12,4 +12,4 @@ USE="-bindist introspection audit"
 
 PYTHON_SINGLE_TARGET="-* python2_7"
 PYTHON_TARGETS="-* python2_7 python3_5"
-RUBY_TARGETS="-* ruby22 ruby24"
+RUBY_TARGETS="-* ruby23 ruby24"
