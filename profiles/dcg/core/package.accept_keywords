@@ -65,6 +65,7 @@ dev-python/oslo-utils
 dev-python/os-client-config
 dev-python/os-service-types
 dev-python/protobuf-python
+dev-python/pynacl
 dev-python/python-cinderclient
 dev-python/python-glanceclient
 dev-python/python-heatclient
