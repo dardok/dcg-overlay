@@ -2,6 +2,7 @@ media-libs/gst-plugins-bad
 media-libs/gst-plugins-base
 media-libs/gst-plugins-good
 media-libs/gst-plugins-ugly
+media-libs/gst-rtsp-server
 media-libs/gstreamer
 media-plugins/gst-plugins-dash
 media-plugins/gst-plugins-dtls
