@@ -116,6 +116,7 @@
 *sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
+*sys-fs/bcache-tools
 *sys-fs/multipath-tools
 *sys-fabric/ofed
 *sys-fabric/mstflint

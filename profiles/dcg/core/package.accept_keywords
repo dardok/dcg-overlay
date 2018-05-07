@@ -144,6 +144,8 @@ sys-fabric/perftest:3.18-3
 sys-fabric/rds-tools:3.18-3
 sys-fabric/srptools:3.18-3
 
+sys-fs/bcache-tools
+
 sys-fs/zfs
 sys-fs/zfs-kmod
 sys-kernel/spl
