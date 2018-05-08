@@ -17,7 +17,9 @@ dev-libs/beecrypt -cxx # requires old icu
 dev-libs/boost python context
 dev-libs/cyrus-sasl -postgres -openldap
 dev-libs/glib systemtap fam static-libs
-dev-libs/libpcre pcre16
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/libpcre pcre16 static-libs
 dev-libs/libpcre2 pcre16
 dev-libs/libxml2 python
 dev-libs/libxslt python
@@ -42,6 +44,7 @@ net-nds/openldap minimal
 net-wireless/bluez user-session
 sys-apps/attr static-libs
 sys-apps/busybox -pam
+sys-apps/usbredir static-libs
 sys-auth/sssd augeas autofs netlink -nfsv4 -acl # libnfsidmap conflicts with nfs-utils
 sys-cluster/ceph cephfs fuse -xfs
 #sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
