@@ -7,7 +7,7 @@ app-editors/vim lua luajit ruby
 app-emulation/docker btrfs overlay experimental
 app-emulation/libvirt rbd iscsi libssh parted lxc fuse zeroconf virt-network nfs
 app-emulation/qemu bluetooth snappy rbd numa spice tls usb usbredir virtfs vde iscsi systemtap nfs python
-app-emulation/rkt rkt_stage1_kvm_lkvm rkt_stage1_host # rkt_stage1_kvm_qemu 
+app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_kvm_lkvm rkt_stage1_host
 app-emulation/spice -smartcard
 app-misc/jq oniguruma
 >=app-text/xmlto-0.0.28-r1 text
@@ -16,7 +16,7 @@ dev-lang/python berkdb
 dev-libs/beecrypt -cxx # requires old icu
 dev-libs/boost python context
 dev-libs/cyrus-sasl -postgres -openldap
-dev-libs/glib systemtap fam
+dev-libs/glib systemtap fam static-libs
 dev-libs/libpcre pcre16
 dev-libs/libpcre2 pcre16
 dev-libs/libxml2 python
