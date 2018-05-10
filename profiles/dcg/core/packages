@@ -66,6 +66,7 @@
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
 *net-dns/avahi
+*net-firewall/conntrack-tools
 *net-firewall/ebtables
 *net-firewall/ipset
 *net-firewall/nftables
@@ -77,10 +78,12 @@
 *net-libs/nodejs
 *net-libs/libgssglue
 *net-libs/libnet
-*net-libs/libnetfilter_queue
-*net-libs/libnetfilter_log
-*net-libs/libnetfilter_conntrack
 *net-libs/libnetfilter_acct
+*net-libs/libnetfilter_conntrack
+*net-libs/libnetfilter_cthelper
+*net-libs/libnetfilter_cttimeout
+*net-libs/libnetfilter_log
+*net-libs/libnetfilter_queue
 #*net-libs/libnfsidmap # conflicts with nfs-utils
 *net-misc/bridge-utils
 *net-misc/ipcalc

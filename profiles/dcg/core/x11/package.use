@@ -1,4 +1,6 @@
 app-crypt/gcr gtk
+app-emulation/libnvidia-container system-libelf
+app-emulation/virt-manager gtk
 app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
 app-text/ghostscript-gpl cups

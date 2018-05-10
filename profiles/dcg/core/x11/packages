@@ -1,4 +1,6 @@
+*app-emulation/nvidia-container-runtime
 *app-emulation/virt-viewer
+*app-emulation/virt-manager
 *gnome-base/gnome-settings-daemon
 *media-fonts/freefont
 *media-libs/glew
