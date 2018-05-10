@@ -7,6 +7,7 @@ app-crypt/pkcs11-data
 app-crypt/pkcs11-dump
 
 app-emulation/containerd
+app-emulation/cri-tools
 app-emulation/docker
 app-emulation/docker-runc
 app-emulation/docker-proxy
