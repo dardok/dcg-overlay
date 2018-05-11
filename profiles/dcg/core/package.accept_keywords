@@ -101,6 +101,7 @@ net-misc/memcached
 net-misc/openvswitch
 net-misc/ptpd
 
+net-misc/cni-plugins
 net-misc/calicoctl
 net-misc/calico-cni-plugin
 
