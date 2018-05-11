@@ -101,6 +101,9 @@ net-misc/memcached
 net-misc/openvswitch
 net-misc/ptpd
 
+net-misc/calicoctl
+net-misc/calico-cni-plugin
+
 sys-apps/dtc
 sys-apps/irqbalance
 sys-apps/keyutils
