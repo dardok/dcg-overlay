@@ -11,6 +11,7 @@ app-emulation/cri-tools
 app-emulation/docker
 app-emulation/docker-runc
 app-emulation/docker-proxy
+app-emulation/flannel
 app-emulation/libvirt
 app-emulation/qemu
 app-emulation/rkt
