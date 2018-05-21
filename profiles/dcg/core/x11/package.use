@@ -3,6 +3,7 @@ app-emulation/libnvidia-container system-libelf
 app-emulation/virt-manager gtk
 app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
+dev-python/PyQt5 bluetooth dbus declarative designer doc gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg webchannel webengine webkit websockets widgets x11extras xmlpatterns
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
 dev-util/cmake server -qt5
