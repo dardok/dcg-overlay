@@ -117,6 +117,7 @@
 *sys-block/open-iscsi
 *sys-cluster/ceph
 #*sys-cluster/glusterfs
+*sys-cluster/ipvsadm
 *sys-cluster/lustre
 *sys-cluster/openmpi
 *sys-cluster/slurm
