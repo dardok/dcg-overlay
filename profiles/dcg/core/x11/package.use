@@ -4,6 +4,10 @@ app-emulation/virt-manager gtk
 app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
 dev-python/PyQt5 bluetooth dbus declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-qt/qtwebkit printsupport
+dev-qt/qtwebengine widgets
+dev-qt/qtmultimedia widgets
+dev-qt/qtwebchannel qml
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
 dev-util/cmake server -qt5
@@ -12,6 +16,7 @@ dev-vcs/git gtk
 gnome-base/gvfs gtk ios zeroconf udisks
 media-gfx/graphviz tcl gdk-pixbuf gtk
 media-libs/cogl gles2
+media-libs/libvpx svc
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
 media-sound/pulseaudio gnome gtk
 net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
