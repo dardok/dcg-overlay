@@ -30,7 +30,7 @@ app-shells/bash-completion
 
 dev-db/etcd
 
-dev-go/glide
+<dev-go/glide-0.13
 dev-go/go-protobuf
 
 dev-ruby/facter
