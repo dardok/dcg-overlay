@@ -30,6 +30,7 @@
 *app-shells/tcsh
 *app-vim/rust-vim
 *dev-db/etcd
+*dev-go/glide
 *dev-go/go-protobuf
 *dev-lang/go
 *dev-libs/apr
