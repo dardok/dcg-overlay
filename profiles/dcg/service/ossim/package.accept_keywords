@@ -3,7 +3,7 @@ sci-libs/proj
 sci-libs/libgeotiff
 dev-cpp/aws-sdk
 
-=sci-libs/ossim-2.3.0
-=sci-libs/ossim-plugins-2.3.0
-=sci-libs/ossim-video-2.3.0
-=sci-libs/ossim-oms-2.3.0
+=sci-libs/ossim-2.3.2
+=sci-libs/ossim-plugins-2.3.2
+=sci-libs/ossim-video-2.3.2
+=sci-libs/ossim-oms-2.3.2
