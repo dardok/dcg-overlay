@@ -1,4 +1,3 @@
-*app-admin/elektra
 *app-admin/fleet
 *app-admin/mcelog
 *app-admin/puppet
@@ -87,7 +86,6 @@
 *net-libs/libnetfilter_cttimeout
 *net-libs/libnetfilter_log
 *net-libs/libnetfilter_queue
-#*net-libs/libnfsidmap # conflicts with nfs-utils
 *net-misc/bridge-utils
 *net-misc/calicoctl
 *net-misc/calico-cni-plugin
@@ -101,9 +99,7 @@
 *net-misc/socat
 *sys-apps/ethtool
 *sys-apps/irqbalance
-#*sys-apps/likwid
 *sys-apps/lsb-release
-*sys-apps/microcode-ctl
 *sys-apps/nvme-cli
 *sys-apps/pcsc-lite
 *sys-apps/unscd
@@ -116,19 +112,18 @@
 *sys-auth/sssd
 *sys-block/nbd
 *sys-block/open-iscsi
-*sys-cluster/ceph
-#*sys-cluster/glusterfs
+#*sys-cluster/ceph
 *sys-cluster/ipvsadm
-*sys-cluster/lustre
-*sys-cluster/openmpi
-*sys-cluster/slurm
+#*sys-cluster/lustre
+#*sys-cluster/openmpi
+#*sys-cluster/slurm
 *sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
 *sys-fs/bcache-tools
 *sys-fs/multipath-tools
-*sys-fabric/ofed
-*sys-fabric/mstflint
+#*sys-fabric/ofed
+#*sys-fabric/mstflint
 *sys-kernel/linux-firmware
 *sys-libs/libblockdev
 *sys-power/acpid

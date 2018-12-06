@@ -13,5 +13,6 @@
 *sys-fs/lvm2
 *sys-fs/mdadm
 *sys-fs/squashfs-tools
+*sys-fs/xfsprogs
 *sys-kernel/dracut
 *sys-libs/freeipmi

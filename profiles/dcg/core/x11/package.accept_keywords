@@ -1,20 +1,17 @@
-app-emulation/libnvidia-container
-app-emulation/nvidia-container-runtime-hook
-app-emulation/nvidia-container-runtime
+#app-emulation/libnvidia-container
+#app-emulation/nvidia-container-runtime-hook
+#app-emulation/nvidia-container-runtime
 
 dev-lang/nasm
 
 dev-util/nvidia-cuda-toolkit
+dev-util/vulkan-headers
 
 net-analyzer/wireshark
 
 media-libs/libwebp
 
-sys-fabric/ibutils:3.18-3
-
 x11-drivers/nvidia-drivers
-
-x11-libs/libva
 
 x11-misc/lightdm-gtk-greeter
 x11-misc/lightdm

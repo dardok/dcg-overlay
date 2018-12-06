@@ -3,5 +3,5 @@ dev-lang/python sqlite threads
 net-libs/libmicrohttpd epoll messages
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils
-sys-firmware/intel-microcode monolithic
+sys-firmware/intel-microcode initramfs
 sys-libs/timezone-data leaps_timezone

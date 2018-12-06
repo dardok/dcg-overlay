@@ -1,15 +1,15 @@
 app-crypt/gcr gtk
 app-emulation/libnvidia-container system-libelf
-app-emulation/virt-manager gtk
 app-emulation/libvirt wireshark-plugins
 app-emulation/qemu gtk vte opengl virgl
-dev-python/PyQt5 bluetooth dbus declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg webchannel webengine webkit websockets widgets x11extras xmlpatterns
-dev-qt/qtwebkit printsupport
-dev-qt/qtwebengine widgets
-dev-qt/qtmultimedia widgets
-dev-qt/qtwebchannel qml
+app-emulation/virt-manager gtk
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
+dev-python/PyQt5 bluetooth dbus declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-qt/qtmultimedia widgets
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
+dev-qt/qtwebkit printsupport
 dev-util/cmake server -qt5
 dev-util/nvidia-cuda-toolkit profiler
 dev-vcs/git gtk

@@ -1,3 +1,0 @@
-# for ibdiagui
->dev-lang/tcl-8.5.17
->dev-lang/tk-8.5.17

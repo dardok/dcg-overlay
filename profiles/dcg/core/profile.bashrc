@@ -8,4 +8,3 @@ case ${CATEGORY}/${PN} in
         export LIBZFS_CFLAGS="-I/usr/include/libzfs -I/usr/include/libspl"
         ;;
 esac
-
