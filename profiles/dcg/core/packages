@@ -120,6 +120,7 @@
 *sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
+*sys-firmware/intel-microcode
 *sys-fs/bcache-tools
 *sys-fs/multipath-tools
 #*sys-fabric/ofed

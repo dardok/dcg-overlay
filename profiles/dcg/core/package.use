@@ -54,6 +54,7 @@ sys-auth/sssd augeas autofs netlink nfsv4 acl
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
 #sys-fabric/ofed ibacm mstflint perftest rds srp opensm libfabric
+sys-firmware/intel-microcode initramfs
 sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
 sys-fs/zfs -rootfs

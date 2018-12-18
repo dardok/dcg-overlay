@@ -1,0 +1,20 @@
+--- a/scripts/sldd.sh.in	2018-12-07 13:14:03.716962043 -0500
++++ b/scripts/sldd.sh.in	2018-12-07 13:14:51.237324347 -0500
+@@ -42,7 +42,7 @@
+ prefix=@prefix@
+ exec_prefix=@exec_prefix@
+ 
+-CONFIG=@sysconfdir@/sysconfig/opensm
++CONFIG=@sysconfdir@/conf.d/opensm
+ if [ -f $CONFIG ]; then
+ 	. $CONFIG
+ fi
+@@ -57,7 +57,7 @@
+ 
+ RCP=${RCP:-/usr/bin/scp}
+ RSH=${RSH:-/usr/bin/ssh}
+-IFCONFIG=${IFCONFIG:-'/sbin/ifconfig -a'}
++IFCONFIG=${IFCONFIG:-'/bin/ifconfig -a'}
+ 
+ declare -i SLDD_DEBUG
+ RESCAN_TIME=${RESCAN_TIME:-60}

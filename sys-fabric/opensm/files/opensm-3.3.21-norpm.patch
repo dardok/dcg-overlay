@@ -1,0 +1,15 @@
+--- a/configure.ac	2018-12-07 13:16:00.702854296 -0500
++++ b/configure.ac	2018-12-07 13:17:26.686510739 -0500
+@@ -17,11 +17,7 @@
+                    [name of the RDMA service: "rdma" when using /etc/init.d/rdma to start RDMA services; "openibd" when using /etc/init.d/openibd to start RDMA services [default=${default_rdma_service}]]))
+ AC_SUBST(RDMA_SERVICE, ${with_rdma_service:-${default_rdma_service}})
+ 
+-if { rpm -q sles-release || rpm -q openSUSE-release; } >/dev/null 2>&1; then
+-   default_stop="0 1 4 6"
+-else
+-   default_stop="0 1 6"
+-fi
++default_stop="0 1 6"
+ 
+ default_start="null"
+ 

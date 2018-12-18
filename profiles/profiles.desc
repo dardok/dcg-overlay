@@ -1,6 +1,6 @@
 amd64 dcg/bootstrap stable
 amd64 dcg/core stable
 amd64 dcg/core/x11 stable
-amd64 dcg/core/x11/edge stable
-amd64 dcg/core/lustre stable
-amd64 dcg/core/openstack/compute stable
+#amd64 dcg/core/x11/edge stable
+#amd64 dcg/core/lustre stable
+#amd64 dcg/core/openstack/compute stable

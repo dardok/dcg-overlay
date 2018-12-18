@@ -7,7 +7,7 @@
 # Original Author: Alexey Shvetsov <alexxy@gentoo.org>
 # @BLURB: Simplify working with OFED packages
 
-inherit eutils rpm versionator
+inherit eutils rpm versionator eapi7-ver
 
 EXPORT_FUNCTIONS src_unpack
 
@@ -16,7 +16,7 @@ LICENSE="|| ( GPL-2 BSD-2 )"
 
 # @ECLASS-VARIABLE: OFED_VER
 # @DESCRIPTION:
-# Defines OFED version eg 1.4 or 1.4.0.1
+# Defines OFED version
 
 # @ECLASS-VARIABLE: OFED_RC
 # @DESCRIPTION:
@@ -26,14 +26,13 @@ LICENSE="|| ( GPL-2 BSD-2 )"
 # @DESCRIPTION:
 # Sets RC version
 
-
 # @ECLASS-VARIABLE: OFED_SUFFIX
 # @DESCRIPTION:
-# Defines OFED package suffix eg -1.ofed1.4
+# Defines OFED package suffix eg -1.g78b04f2
 
-# @ECLASS-VARIABLE: OFED_SNAPSHOT
+# @ECLASS-VARIABLE: RDMA_CORE_VER
 # @DESCRIPTION:
-# Defines if src tarball is git snapshot
+# Defines rdma-core package version eg 17.2-1
 
 SLOT="${OFED_VER}"
 
@@ -42,11 +41,7 @@ SLOT="${OFED_VER}"
 # Defines array of ofed version supported by eclass
 
 OFED_VERSIONS=(
-	"1.5.4.1"
-	"3.5"
-	"3.12"
-	"3.18"
-	"3.18-1"
+	"4.17"
 	)
 
 # @FUNCTION: block_other_ofed_versions
@@ -70,39 +65,24 @@ else
 	SRC_URI="https://www.openfabrics.org/downloads/OFED/ofed-${OFED_BASE_VER}/OFED-${OFED_VER}-rc${OFED_RC_VER}.tgz"
 fi
 
-MY_SEP="-"
 case ${PN} in
 	ofed)
-		case ${OFED_VER} in
-			1.5.*|1.5.*.*)
-				MY_PN="ofa_kernel"
-				;;
-			*-*)
-				MY_PN="compat-rdma"
-				MY_SEP="."
-				;;
-			*)
-				MY_PN="compat-rdma"
-				MY_SEP="-"
-				;;
-		esac
+		MY_PN="compat-rdma"
+		S="${WORKDIR}/${MY_PN}-${PV}"
+		;;
+	ibacm|libibumad|libibverbs|librdmacm|srptools|libbnxt-re|libcxgb3|libcxgb4|libhfi1|libhns|libi40iw|libipath|libmlx4|libmlx5|libmthca|libnes|libocrdma|libqedr|librxe|libvmw-pvrdma)
+		MY_PN="rdma-core"
+		RDMA_CORE_PKG_VER=$(get_version_component_range 1-2 ${RDMA_CORE_VER})
+		S="${WORKDIR}/${MY_PN}-${RDMA_CORE_PKG_VER}"
 		;;
 	*)
 		MY_PN="${PN}"
-		;;
-esac
-
-case ${PV} in
-	*p*)
-		MY_PV="${PV/p/}"
-		;;
-	*)
-		MY_PV="${PV}"
+		S="${WORKDIR}/${MY_PN}-${PV}"
 		;;
 esac
 
 case ${MY_PN} in
-	ofa_kernel|compat-rdma)
+	compat-rdma)
 		EXT="tgz"
 		;;
 	libfabric)
@@ -113,70 +93,50 @@ case ${MY_PN} in
 		;;
 esac
 
-if [ -z ${OFED_SRC_SNAPSHOT} ]; then
-	S="${WORKDIR}/${MY_PN}-${MY_PV}"
-else
-	S="${WORKDIR}/${MY_PN}-${MY_PV}-${OFED_SUFFIX}"
-fi
-
-
 # @FUNCTION: openib_src_unpack
 # @DESCRIPTION:
 # This function will unpack OFED packages
 openib_src_unpack() {
 	unpack ${A}
 	if [ -z ${OFED_RC} ]; then
-		case ${PN} in
-			ofed)
-				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}${MY_SEP}${OFED_SUFFIX}.src.rpm"
+		case ${MY_PN} in
+			compat-rdma)
+				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}-rc${OFED_RC_VER}.${OFED_SUFFIX}.src.rpm"
+				;;
+			rdma-core)
+				rpm_unpack "./OFED-${OFED_VER}/SRPMS/RH/${MY_PN}-${RDMA_CORE_VER}.src.rpm"
 				;;
 			*)
-				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${MY_PV}-${OFED_SUFFIX}.src.rpm"
+				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${PV}-${OFED_SUFFIX}.src.rpm"
 				;;
 		esac
 	else
-		case ${PN} in
-			ofed)
-				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${OFED_VER}${MY_SEP}${OFED_SUFFIX}.src.rpm"
+		case ${MY_PN} in
+			compat-rdma)
+				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${OFED_VER}-${OFED_SUFFIX}.src.rpm"
+				;;
+			rdma-core)
+				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/RH/${MY_PN}-${RDMA_CORE_VER}.src.rpm"
 				;;
 			*)
-				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${MY_PV}-${OFED_SUFFIX}.src.rpm"
+				rpm_unpack "./OFED-${OFED_VER}-rc${OFED_RC_VER}/SRPMS/${MY_PN}-${PV}-${OFED_SUFFIX}.src.rpm"
 				;;
 		esac
 	fi
-	if [ -z ${OFED_SNAPSHOT} ]; then
-		case ${PN} in
-			ofed)
-				case ${OFED_VER} in
-					*-*)
-						COMPAT_VER=${PV}
-						;;
-					*)
-						COMPAT_VER=${OFED_VER}
-						;;
-				esac
-				unpack ./${MY_PN}-${COMPAT_VER}.${EXT}
-				;;
-			*)
-				unpack ./${MY_PN}-${MY_PV}.${EXT}
-				;;
-		esac
-	else
-		case ${PN} in
-			ofed)
-				case ${OFED_VER} in
-					*-*)
-						COMPAT_VER=${PV}
-						;;
-					*)
-						COMPAT_VER=${OFED_VER}
-						;;
-				esac
-				unpack ./${MY_PN}-${COMPAT_VER}-${OFED_SUFFIX}.${EXT}
-				;;
-			*)
-				unpack ./${MY_PN}-${MY_PV}-${OFED_SUFFIX}.${EXT}
-				;;
-		esac
-	fi
+	case ${MY_PN} in
+		compat-rdma)
+			unpack ./${MY_PN}-${OFED_VER}.${EXT}
+			;;
+		rdma-core)
+			RDMA_CORE_PKG_VER=$(get_version_component_range 1-2 ${RDMA_CORE_VER})
+			unpack ./${MY_PN}-${RDMA_CORE_PKG_VER}.tgz
+			;;
+		ibutils|perftest)
+			unpack ./${MY_PN}-${PV}-${OFED_SUFFIX}.${EXT}
+			;;
+		*)
+			PKG_VER=$(get_version_component_range 1-3 ${PV})
+			unpack ./${MY_PN}-${PKG_VER}.${EXT}
+			;;
+	esac
 }
