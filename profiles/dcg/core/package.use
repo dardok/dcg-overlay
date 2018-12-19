@@ -47,7 +47,7 @@ sys-apps/busybox -pam
 sys-apps/usbredir static-libs
 sys-auth/sssd augeas autofs netlink nfsv4 acl
 #sys-cluster/ceph cephfs fuse -xfs
-#sys-cluster/lustre -checksum lru-resize -gss client -server
+sys-cluster/lustre -checksum lru-resize gss client -server
 #sys-cluster/openmpi mpi-threads heterogeneous
 #sys-cluster/slurm lua
 sys-devel/distcc avahi gssapi

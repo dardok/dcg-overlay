@@ -115,7 +115,7 @@
 *sys-block/open-iscsi
 *sys-cluster/ipvsadm
 #*sys-cluster/ceph
-#*sys-cluster/lustre
+*sys-cluster/lustre
 #*sys-cluster/openmpi
 #*sys-cluster/slurm
 *sys-devel/bmake

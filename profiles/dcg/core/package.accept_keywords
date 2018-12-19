@@ -21,6 +21,7 @@ net-misc/cni-plugins
 net-misc/ptpd
 sys-auth/nss_afspag
 sys-auth/pam-afs-session
+sys-cluster/lustre
 sys-devel/bmake
 sys-fabric/ofed
 sys-fabric/rdma-core
