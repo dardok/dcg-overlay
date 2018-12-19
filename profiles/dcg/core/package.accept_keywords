@@ -13,6 +13,8 @@ dev-libs/msgpack
 dev-python/awscli
 media-libs/vulkan-loader
 net-fs/nfs4-acl-tools
+net-fs/openafs
+net-fs/openafs-kernel
 net-misc/calicoctl
 net-misc/calico-cni-plugin
 net-misc/cni-plugins
