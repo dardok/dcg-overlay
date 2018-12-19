@@ -66,7 +66,6 @@ DEPEND="${RDEPEND}"
 
 block_other_ofed_versions
 
-src_prepare() { :; }
 src_configure() { :; }
 src_compile() { :; }
 src_install() { :; }
