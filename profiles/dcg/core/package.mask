@@ -1,1 +1,1 @@
-sys-fabric/*::gentoo
+=sys-fabric/*::gentoo
