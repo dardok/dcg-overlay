@@ -47,13 +47,12 @@ sys-apps/busybox -pam
 sys-apps/usbredir static-libs
 sys-auth/sssd augeas autofs netlink nfsv4 acl
 #sys-cluster/ceph cephfs fuse -xfs
-#sys-cluster/glusterfs glupy bd-xlator crypt-xlator qemu-block
 #sys-cluster/lustre -checksum lru-resize -gss client -server
 #sys-cluster/openmpi mpi-threads heterogeneous
 #sys-cluster/slurm lua
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
-#sys-fabric/ofed ibacm mstflint perftest rds srp opensm libfabric
+sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
 sys-firmware/intel-microcode initramfs
 sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only

@@ -15,6 +15,7 @@
 *app-emulation/flannel
 *app-emulation/libvirt
 *app-emulation/qemu
+*app-emulation/qemu-guest-agent
 *app-emulation/rkt
 *app-misc/byobu
 *app-misc/jq
@@ -40,7 +41,7 @@
 *dev-libs/jansson
 *dev-libs/libnl
 *dev-libs/protobuf
-#*dev-libs/protobuf-c
+*dev-libs/protobuf-c
 *dev-python/awscli
 *dev-python/dbus-python
 *dev-python/docker-py
@@ -112,8 +113,8 @@
 *sys-auth/sssd
 *sys-block/nbd
 *sys-block/open-iscsi
-#*sys-cluster/ceph
 *sys-cluster/ipvsadm
+#*sys-cluster/ceph
 #*sys-cluster/lustre
 #*sys-cluster/openmpi
 #*sys-cluster/slurm
@@ -123,8 +124,8 @@
 *sys-firmware/intel-microcode
 *sys-fs/bcache-tools
 *sys-fs/multipath-tools
-#*sys-fabric/ofed
-#*sys-fabric/mstflint
+*sys-fabric/libfabric
+*sys-fabric/ofed
 *sys-kernel/linux-firmware
 *sys-libs/libblockdev
 *sys-power/acpid
