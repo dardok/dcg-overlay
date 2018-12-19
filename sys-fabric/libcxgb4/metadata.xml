@@ -6,6 +6,6 @@
 		<name>DC-DEV</name>
 	</maintainer>
 	<longdescription>
-		libmthca
+		libcxgb4
 	</longdescription>
 </pkgmetadata>

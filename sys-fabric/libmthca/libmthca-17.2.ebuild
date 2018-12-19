@@ -8,7 +8,7 @@ OFED_RC="1"
 OFED_RC_VER="1"
 RDMA_CORE_VER="17.2-1"
 
-inherit openib cmake-utils systemd
+inherit openib cmake-utils
 
 DESCRIPTION="libmthca"
 KEYWORDS="~amd64 ~x86"
