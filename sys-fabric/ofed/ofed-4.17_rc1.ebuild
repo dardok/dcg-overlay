@@ -3,7 +3,7 @@ EAPI=6
 OFED_VER="4.17"
 OFED_RC="1"
 OFED_RC_VER="1"
-OFED_SUFFIX="1.g78b04f2"
+OFED_SUFFIX="rc1.1.g78b04f2"
 
 IUSE_OFED_DRIVERS="
 	ofed_drivers_bnxt_re
