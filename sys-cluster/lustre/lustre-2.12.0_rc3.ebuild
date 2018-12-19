@@ -39,10 +39,10 @@ DEPEND="${RDEPEND}
 
 pkg_pretend() {
 	if use kernel_linux ; then
-		if use server && kernel_is gt 4.6.7 ; then
+		if use server && kernel_is gt 4 6 7 ; then
 			ewarn "Gentoo supports kernels which are supported by Lustre server"
 			ewarn "which are limited to the kernel versions: <= 4.6.7 "
-		elif use client && kernel_is gt 4.15.0 ; then
+		elif use client && kernel_is gt 4 15 0 ; then
 			ewarn "Gentoo supports kernels which are supported by Lustre client"
 			ewarn "which are limited to the kernel versions: <= 4.15.0 "
 		fi
