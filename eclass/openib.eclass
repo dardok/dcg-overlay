@@ -68,7 +68,7 @@ fi
 case ${PN} in
 	ofed)
 		MY_PN="compat-rdma"
-		S="${WORKDIR}/${MY_PN}-${PV}"
+		S="${WORKDIR}/${MY_PN}-${OFED_BASE_VER}"
 		;;
 	ibacm|libibumad|libibverbs|librdmacm|srptools|libbnxt-re|libcxgb3|libcxgb4|libhfi1|libhns|libi40iw|libipathverbs|libmlx4|libmlx5|libmthca|libnes|libocrdma|libqedr|librxe|libvmw-pvrdma)
 		MY_PN="rdma-core"
