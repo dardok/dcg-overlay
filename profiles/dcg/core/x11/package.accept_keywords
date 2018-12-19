@@ -3,21 +3,16 @@
 #app-emulation/nvidia-container-runtime
 
 dev-lang/nasm
-
+dev-libs/wayland-protocols
 dev-util/nvidia-cuda-toolkit
 dev-util/vulkan-headers
-
 net-analyzer/wireshark
-
 media-libs/libwebp
-
+sys-fabric/ibutils
 x11-drivers/nvidia-drivers
-
 x11-misc/lightdm-gtk-greeter
 x11-misc/lightdm
 x11-misc/notify-osd
 x11-misc/xscreensaver
-
 x11-terms/kitty
-
 x11-wm/awesome
