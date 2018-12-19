@@ -14,9 +14,7 @@ DESCRIPTION="Mellanox firmware burning application"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
-DEPEND="sys-libs/zlib
-		sys-fabric/libibmad:${SLOT}
-		"
+DEPEND="sys-libs/zlib"
 RDEPEND="${DEPEND}"
 
 block_other_ofed_versions

@@ -15,7 +15,6 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="sys-fabric/libibumad:${SLOT}
-		sys-fabric/libibmad:${SLOT}
 		sys-fabric/opensm:${SLOT}"
 RDEPEND="${DEPEND}"
 
