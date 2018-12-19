@@ -125,7 +125,7 @@
 *sys-fs/bcache-tools
 *sys-fs/multipath-tools
 *sys-fabric/libfabric
-*sys-fabric/ofed
+*sys-fabric/ofed:4.17
 *sys-kernel/linux-firmware
 *sys-libs/libblockdev
 *sys-power/acpid
