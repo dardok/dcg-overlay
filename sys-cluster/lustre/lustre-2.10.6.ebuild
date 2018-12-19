@@ -37,6 +37,8 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
+PATCHES=( "files/parser-2.10.6.patch" )
+
 pkg_pretend() {
 	if use kernel_linux ; then
 		if kernel_is gt 4 6 7 ; then

@@ -1,0 +1,25 @@
+diff --git a/libcfs/libcfs/util/parser.c b/libcfs/libcfs/util/parser.c
+index 3aa97a1a7..2249ef50c 100644
+--- a/libcfs/libcfs/util/parser.c
++++ b/libcfs/libcfs/util/parser.c
+@@ -195,7 +195,7 @@ got_it:
+ 	if ((*result)->pc_func != NULL) {
+ 		return CMD_COMPLETE;
+ 	} else {
+-		if (*next == '\0') {
++		if (**next == '\0') {
+ 			return CMD_INCOMPLETE;
+ 		} else {
+ 			return process(*next, next, (*result)->pc_sub_cmd,
+@@ -572,9 +572,9 @@ int Parser_list_commands(const command_t *cmdlist, char *buffer,
+ 
+ 		/* Add trailing spaces to pad the entry to the column size */
+ 		if (len < char_max) {
+-			snprintf(fmt, 6, "%%-%2ds", char_max - len);
+ 			snprintf(&buffer[col * char_max] + len,
+-				 char_max - len + 1, fmt, " ");
++				 char_max - len + 1, "%*s", char_max - len,
++				 " ");
+ 		} else {
+ 			buffer[(col + 1) * char_max - 1] = ' ';
+ 		}
