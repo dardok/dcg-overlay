@@ -37,7 +37,7 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
-PATCHES=( "files/parser-2.10.6.patch" )
+PATCHES=( "${FILESDIR}/parser-${PV}.patch" )
 
 pkg_pretend() {
 	if use kernel_linux ; then
@@ -62,6 +62,8 @@ pkg_setup() {
 
 src_prepare() {
 	epatch_user
+
+	epatch "${PATCHES[@]}"
 
 	# replace upstream autogen.sh by our src_prepare()
 	local DIRS="libcfs lnet lustre snmp"
