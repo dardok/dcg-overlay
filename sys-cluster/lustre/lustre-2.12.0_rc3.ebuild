@@ -8,13 +8,8 @@ WANT_AUTOCONF="2.5"
 WANT_AUTOMAKE="1.10"
 WANT_LIBTOOL="latest"
 
-if [[ $PV = *9999* ]]; then
-	KEYWORDS=""
-	EGIT_BRANCH="master"
-else
-	KEYWORDS="~amd64"
-	EGIT_TAG="${PV}"
-fi
+KEYWORDS="~amd64"
+EGIT_COMMIT="2.12.0-RC3"
 
 inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -31,9 +26,9 @@ RDEPEND="
 	readline? ( sys-libs/readline:0 )
 	tcpd? ( sys-apps/tcp-wrappers )
 	server? (
-		>=sys-kernel/spl-0.6.1
-		>=sys-fs/zfs-kmod-0.6.1
-		sys-fs/zfs
+		>=sys-kernel/spl-0.7.9
+		>=sys-fs/zfs-kmod-0.7.9:=
+		sys-fs/zfs:=
 	)
     snmp? ( net-analyzer/net-snmp )
 	"
@@ -42,20 +37,32 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
+pkg_pretend() {
+	if use kernel_linux ; then
+		if use server && kernel_is gt 4.6.7 ; then
+			ewarn "Gentoo supports kernels which are supported by Lustre server"
+			ewarn "which are limited to the kernel versions: <= 4.6.7 "
+		elif use client && kernel_is gt 4.15.0 ; then
+			ewarn "Gentoo supports kernels which are supported by Lustre client"
+			ewarn "which are limited to the kernel versions: <= 4.15.0 "
+		fi
+	fi
+}
+
 pkg_setup() {
-    linux-info_pkg_setup
+	linux-info_pkg_setup
 	filter-mfpmath sse
 	filter-mfpmath i386
 	filter-flags -msse* -mavx* -mmmx -m3dnow
-    if use client or use server; then
-	    linux-mod_pkg_setup
-	    ARCH="$(tc-arch-kernel)"
-	    ABI="${KERNEL_ABI}"
-    fi
+	if use client or use server; then
+		linux-mod_pkg_setup
+		ARCH="$(tc-arch-kernel)"
+		ABI="${KERNEL_ABI}"
+	fi
 }
 
 src_prepare() {
-    epatch_user
+	epatch_user
 
 	# replace upstream autogen.sh by our src_prepare()
 	local DIRS="libcfs lnet lustre snmp"
@@ -75,7 +82,7 @@ use_disable() {
 }
 
 src_configure() {
-    set_arch_to_kernel
+	set_arch_to_kernel
 
 	local myconf
 	if use server; then
@@ -86,9 +93,9 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}usr/src/${ZFS_PATH} \
 							--with-zfs-obj=${EROOT}usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
-    if ! use server && ! use client; then
-        myconf="${myconf} --disable-modules"
-    fi
+	if ! use server && ! use client; then
+		myconf="${myconf} --disable-modules"
+	fi
 	econf \
 		${myconf} \
 		--disable-ldiskfs \
@@ -105,11 +112,10 @@ src_configure() {
 		$(use_enable lru-resize) \
 		$(use_enable snmp) \
 		$(use_enable gss)
-
-	touch undef.h
 }
 
 src_compile() {
+	touch undef.h
 	default
 }
 
