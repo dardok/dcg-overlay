@@ -9,7 +9,7 @@ WANT_AUTOMAKE="1.10"
 WANT_LIBTOOL="latest"
 
 KEYWORDS="~amd64"
-EGIT_COMMIT="2.12.0-RC3"
+EGIT_COMMIT="2.10.5"
 
 inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -39,12 +39,9 @@ DEPEND="${RDEPEND}
 
 pkg_pretend() {
 	if use kernel_linux ; then
-		if use server && kernel_is gt 4 6 7 ; then
-			ewarn "Kernels which are supported by this Lustre server"
-			ewarn "version are limited to the kernel versions: <= 4.6.7"
-		elif use client && kernel_is gt 4 15 0 ; then
-			ewarn "Kernels which are supported by this Lustre client"
-			ewarn "version are limited to the kernel versions: <= 4.15.0 "
+		if kernel_is gt 4 6 7 ; then
+			ewarn "Kernels which are supported by this Lustre version"
+			ewarn "are limited to the kernel versions: <= 4.6.7"
 		fi
 	fi
 }
