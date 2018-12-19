@@ -14,9 +14,7 @@ DESCRIPTION="OpenSM - InfiniBand Subnet Manager and Administration for OpenIB"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE="+sldd static-libs systemd"
 
-DEPEND="
-		sys-fabric/libibmad:${SLOT}
-		sys-fabric/libibumad:${SLOT}"
+DEPEND="sys-fabric/libibumad:${SLOT}"
 RDEPEND="$DEPEND
 		sldd? (
 			net-misc/iputils
