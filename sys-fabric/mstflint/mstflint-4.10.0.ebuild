@@ -14,7 +14,7 @@ DESCRIPTION="Mellanox firmware burning application"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
-DEPEND="sys-libs/zlib"
+DEPEND="sys-libs/zlib sys-fabric/infiniband-diags:${SLOT}"
 RDEPEND="${DEPEND}"
 
 block_other_ofed_versions
