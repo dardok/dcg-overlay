@@ -12,7 +12,7 @@ inherit openib cmake-utils
 
 DESCRIPTION="OpenIB userspace RDMA CM library"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
-IUSE="+utils"
+IUSE="+utils static-libs"
 
 DEPEND="sys-fabric/libibverbs:${SLOT}"
 RDEPEND="${DEPEND}"

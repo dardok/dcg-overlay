@@ -12,7 +12,7 @@ inherit openib cmake-utils
 
 DESCRIPTION="OpenIB User MAD library functions which sit on top of the user MAD modules in the kernel"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
-IUSE=""
+IUSE="static-libs"
 
 DEPEND=""
 RDEPEND="${DEPEND}"

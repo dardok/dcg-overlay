@@ -12,7 +12,7 @@ inherit openib cmake-utils
 
 DESCRIPTION="A library allowing programs to use InfiniBand 'verbs' for direct access to IB hardware"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
-IUSE="+utils"
+IUSE="+utils static-libs"
 
 DEPEND="dev-libs/libnl:3"
 RDEPEND="${DEPEND}"
