@@ -31,3 +31,17 @@ index 3aa97a1a75..9afdaa07f8 100644
  		} else {
  			buffer[(col + 1) * char_max - 1] = ' ';
  		}
+diff --git a/lustre/utils/lsnapshot.c b/lustre/utils/lsnapshot.c
+index 856c6e915c..a4a66a3974 100644
+--- a/lustre/utils/lsnapshot.c
++++ b/lustre/utils/lsnapshot.c
+@@ -1325,8 +1325,7 @@ static int snapshot_create(struct snapshot_instance *si)
+ 		return rc;
+ 
+ 	srandom(tv.tv_usec);
+-	snprintf(new_fsname, 8, "%08x", (__u32)random());
+-	new_fsname[8] = '\0';
++	snprintf(new_fsname, sizeof(new_fsname), "%08x", (__u32)random());
+ 
+ 	rc = snapshot_get_mgsnode(si, buf, sizeof(buf));
+ 	if (rc)
