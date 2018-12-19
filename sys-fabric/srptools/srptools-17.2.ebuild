@@ -37,7 +37,7 @@ src_install() {
 	newins ${S}/srp_daemon/modules-srp_daemon.conf srp_daemon.conf
 
 	insinto /lib/udev/rules.d
-	doins ${S}/srp_daemon/srp_daemon.rules
+	newins ${S}/srp_daemon/srp_daemon.rules 60-srp_daemon.rules
 
 	insinto /etc
 	doins ${S}/srp_daemon/srp_daemon.conf
