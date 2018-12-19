@@ -70,7 +70,7 @@ case ${PN} in
 		MY_PN="compat-rdma"
 		S="${WORKDIR}/${MY_PN}-${PV}"
 		;;
-	ibacm|libibumad|libibverbs|librdmacm|srptools|libbnxt-re|libcxgb3|libcxgb4|libhfi1|libhns|libi40iw|libipath|libmlx4|libmlx5|libmthca|libnes|libocrdma|libqedr|librxe|libvmw-pvrdma)
+	ibacm|libibumad|libibverbs|librdmacm|srptools|libbnxt-re|libcxgb3|libcxgb4|libhfi1|libhns|libi40iw|libipathverbs|libmlx4|libmlx5|libmthca|libnes|libocrdma|libqedr|librxe|libvmw-pvrdma)
 		MY_PN="rdma-core"
 		RDMA_CORE_PKG_VER=$(get_version_component_range 1-2 ${RDMA_CORE_VER})
 		S="${WORKDIR}/${MY_PN}-${RDMA_CORE_PKG_VER}"

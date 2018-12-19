@@ -47,7 +47,7 @@ src_install() {
 	dosym srp_daemon ${EPREFIX}/usr/sbin/run_srp_daemon
 
 	exeinto /usr/libexec
-	newexe ${S}/srp_daemon/start_on_all_ports
+	doexe ${S}/srp_daemon/start_on_all_ports
 
 	sed -e "s^@CMAKE_INSTALL_FULL_LIBEXECDIR@^${EPREFIX}/usr/libexec^" \
 		${S}/srp_daemon/srp_daemon.service.in > ${T}/srp_daemon.service
