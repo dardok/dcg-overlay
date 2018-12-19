@@ -12,9 +12,23 @@ inherit openib
 
 DESCRIPTION="Mellanox firmware burning application"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
-IUSE=""
+IUSE="+dc +inband +cs openssl xml"
 
-DEPEND="sys-libs/zlib sys-fabric/infiniband-diags:${SLOT}"
+DEPEND="dc? ( sys-libs/zlib )
+		inband? ( sys-fabric/infiniband-diags:${SLOT} )
+		cs? ( dev-libs/openssl )
+		openssl? ( dev-libs/openssl )
+		xml? ( dev-libs/libxml2 )
+		"
 RDEPEND="${DEPEND}"
 
 block_other_ofed_versions
+
+src_configure () {
+	econf \
+		$(use_enable cs) \
+		$(use_enable inband) \
+		$(use_enable dc) \
+		$(use_enable openssl) \
+		$(use_enable xml xml2)
+}

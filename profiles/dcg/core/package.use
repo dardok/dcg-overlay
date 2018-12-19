@@ -52,6 +52,7 @@ sys-auth/sssd augeas autofs netlink nfsv4 acl
 #sys-cluster/slurm lua
 sys-devel/distcc avahi gssapi
 sys-devel/llvm python clang gold
+sys-fabric/mstflint xml openssl
 sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
 sys-firmware/intel-microcode initramfs
 sys-fs/cryptsetup -gcrypt
