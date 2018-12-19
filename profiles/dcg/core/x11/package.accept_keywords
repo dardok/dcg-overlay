@@ -18,4 +18,6 @@ x11-misc/lightdm
 x11-misc/notify-osd
 x11-misc/xscreensaver
 
+x11-terms/kitty
+
 x11-wm/awesome
