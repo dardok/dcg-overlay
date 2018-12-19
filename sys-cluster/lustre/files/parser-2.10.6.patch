@@ -1,5 +1,5 @@
 diff --git a/libcfs/libcfs/util/parser.c b/libcfs/libcfs/util/parser.c
-index 3aa97a1a7..2249ef50c 100644
+index 3aa97a1a75..9afdaa07f8 100644
 --- a/libcfs/libcfs/util/parser.c
 +++ b/libcfs/libcfs/util/parser.c
 @@ -195,7 +195,7 @@ got_it:
@@ -11,7 +11,15 @@ index 3aa97a1a7..2249ef50c 100644
  			return CMD_INCOMPLETE;
  		} else {
  			return process(*next, next, (*result)->pc_sub_cmd,
-@@ -572,9 +572,9 @@ int Parser_list_commands(const command_t *cmdlist, char *buffer,
+@@ -549,7 +549,6 @@ int Parser_list_commands(const command_t *cmdlist, char *buffer,
+ 	int col = col_start;
+ 	int char_max;
+ 	int len;
+-	char fmt[6];
+ 	int count = 0;
+ 	int rc;
+ 
+@@ -572,9 +571,9 @@ int Parser_list_commands(const command_t *cmdlist, char *buffer,
  
  		/* Add trailing spaces to pad the entry to the column size */
  		if (len < char_max) {
