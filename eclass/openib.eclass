@@ -85,7 +85,7 @@ case ${MY_PN} in
 	compat-rdma)
 		EXT="tgz"
 		;;
-	libfabric)
+	libfabric|libibscif)
 		EXT="tar.bz2"
 		;;
 	*)
