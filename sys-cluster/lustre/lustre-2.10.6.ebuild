@@ -19,12 +19,11 @@ EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+client +utils server readline tests tcpd +checksum lru-resize snmp gss"
+IUSE="+client +utils server readline tests +checksum lru-resize snmp gss"
 
 RDEPEND="
 	virtual/awk
 	readline? ( sys-libs/readline:0 )
-	tcpd? ( sys-apps/tcp-wrappers )
 	server? (
 		>=sys-kernel/spl-0.7.9
 		>=sys-fs/zfs-kmod-0.7.9:=
@@ -106,7 +105,6 @@ src_configure() {
 		$(use_enable utils) \
 		$(use_enable server) \
 		$(use_enable readline) \
-		$(use_enable tcpd libwrap) \
 		$(use_enable tests) \
 		$(use_disable checksum) \
 		$(use_enable lru-resize) \
