@@ -1,9 +1,9 @@
 app-emulation/libnvidia-container system-libelf
 app-emulation/libvirt wireshark-plugins
-app-emulation/qemu vte opengl virgl
+app-emulation/qemu vte
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
-dev-python/PyQt5 declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-python/PyQt5 declarative designer doc -gles2 gui location multimedia network positioning printsupport sensors serialport sql webchannel webengine webkit websockets widgets x11extras xmlpatterns
 dev-libs/weston wayland-compositor xwayland
 dev-qt/qtmultimedia widgets
 dev-qt/qtwebchannel qml
@@ -13,12 +13,10 @@ dev-util/cmake server -qt5
 dev-util/nvidia-cuda-toolkit profiler
 gnome-base/gvfs ios zeroconf udisks
 media-gfx/graphviz tcl gdk-pixbuf
-media-libs/cogl gles2
 media-libs/libvpx svc
-media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
-media-plugins/gst-plugins-meta X
-media-video/ffmpeg X sdl
-net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
+media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
+media-video/ffmpeg sdl
+net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
 net-libs/gtk-vnc python
 net-libs/libproxy webkit
 net-libs/phodav spice zeroconf
@@ -26,21 +24,18 @@ net-libs/webkit-gtk libnotify spell
 net-misc/freerdp xv
 net-misc/modemmanager -qmi
 net-misc/openvswitch monitor
-net-misc/spice-gtk lz4 python usbredir webdav vala
+net-misc/spice-gtk python usbredir webdav
 net-print/cups zeroconf
-sys-apps/hwloc -opencl gl
-x11-apps/xdpyinfo dga dmx
-x11-base/xorg-server dmx glamor tslib xnest xvfb
+sys-apps/hwloc gl
+x11-base/xorg-server glamor tslib xnest xvfb
 x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
-x11-drivers/xf86-video-dummy dga
 x11-drivers/xf86-video-qxl xspice
-x11-libs/cairo xlib-xcb
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
-x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf xft
+x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf
 x11-terms/kitty python_single_target_python3_6
 x11-terms/xterm Xaw3d

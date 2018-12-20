@@ -7,29 +7,30 @@ OPENMPI_OFED_FEATURES="connectx-xrc control-hdr-padding dynamic-sl failover rdma
 OPENMPI_RM="slurm"
 
 USE="dbus gudev pam policykit session"
-USE="${USE} cxx fortran nptl gmp openmp libffi vala"
-USE="${USE} readline ncurses -slang"
-USE="${USE} nls icu unicode unicode3 iconv"
 USE="${USE} acl aio caps xattr inotify"
-USE="${USE} numa sockets device-mapper"
-USE="${USE} ssl openssl ssh sasl crypt cracklib sudo"
-USE="${USE} vim vim-syntax bash-completion"
-USE="${USE} kerberos keyring snmp ldap curl lm_sensors"
-USE="${USE} -xinetd -tcpd"
+USE="${USE} readline ncurses -slang"
+USE="${USE} nls icu unicode unicode3 iconv pcre16"
+USE="${USE} numa sockets"
 
-USE="${USE} pcre expat xml"
-USE="${USE} bzip2 zlib lzma lzo minizip"
-USE="${USE} berkdb gdbm sqlite"
-
-USE="${USE} afs infiniband rdma"
-USE="${USE} xfs zfs fuse"
+USE="${USE} ssl tls openssl ssh sasl crypt cracklib sudo"
+USE="${USE} kerberos gss gssapi keyring snmp ldap curl lm_sensors"
 USE="${USE} smartcard pkcs11"
 
-USE="${USE} gstreamer alsa gpm bluetooth pulseaudio jack v4l wifi joystick"
+USE="${USE} vim vim-syntax bash-completion"
+USE="${USE} -xinetd -tcpd"
+
+USE="${USE} infiniband rdma"
+USE="${USE} afs btrfs nfs nfsv4 nfsv41 rbd xfs zfs fuse device-mapper"
+
+USE="${USE} cxx fortran nptl gmp openmp libffi lua vala"
+USE="${USE} pcre expat xml"
+USE="${USE} bzip2 zlib lzma lz4 lzo minizip"
+USE="${USE} berkdb gdbm sqlite"
+
+USE="${USE} gstreamer alsa gpm bluetooth pulseaudio jack v4l libv4l wifi joystick"
 
 USE="${USE} cairo corefonts fontconfig truetype harfbuzz fftw djvu pango pdf"
 USE="${USE} gif jpeg jbig openexr tiff apng png svg imagemagick"
-
-USE="${USE} speex ogg theora webp vpx x264"
+USE="${USE} speex ogg theora vorbis webp vpx x264 x265"
 
 USE="${USE} postgres"

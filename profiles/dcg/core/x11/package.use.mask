@@ -1,3 +1,5 @@
 # re-enable X (disabed in parent)
 media-sound/pulseaudio -X
+media-plugins/gst-plugins-meta -X
+media-video/ffmpeg -X
 x11-libs/gdk-pixbuf -X
