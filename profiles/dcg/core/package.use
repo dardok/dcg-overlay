@@ -2,7 +2,7 @@ app-admin/puppet augeas diff shadow
 app-admin/ulogd pcap nfacct
 app-arch/unzip natspec
 app-crypt/mit-krb5 keyutils pkinit
-app-editors/vim luajit ruby
+app-editors/vim ruby
 app-emulation/docker overlay experimental
 app-emulation/libvirt iscsi libssh parted lxc zeroconf virt-network
 app-emulation/libguestfs python inspect-icons libvirt
@@ -54,7 +54,6 @@ sys-auth/sssd augeas autofs netlink
 sys-cluster/ceph cephfs
 sys-cluster/lustre -checksum lru-resize client -server
 #sys-cluster/openmpi mpi-threads heterogeneous
-#sys-cluster/slurm lua
 sys-devel/distcc avahi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
