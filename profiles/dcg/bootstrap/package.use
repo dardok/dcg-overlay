@@ -1,7 +1,9 @@
 sys-apps/dbus user-session
 sys-apps/hwloc xml
+sys-firmware/ipxe undi usb
 sys-fs/lvm2 -thin device-mapper-only
 sys-libs/libcap-ng python
 sys-libs/ncurses threads
 dev-libs/elfutils threads static-libs
 dev-libs/boehm-gc threads
+sys-firmware/intel-microcode initramfs

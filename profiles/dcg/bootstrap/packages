@@ -8,8 +8,11 @@
 *sys-block/parted
 *sys-boot/grub
 *sys-devel/prelink
+*sys-firmware/intel-microcode
+*sys-firmware/ipxe
 *sys-fs/btrfs-progs
 *sys-fs/dosfstools
+*sys-fs/lsscsi
 *sys-fs/lvm2
 *sys-fs/mdadm
 *sys-fs/squashfs-tools

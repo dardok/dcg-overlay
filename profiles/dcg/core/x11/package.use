@@ -1,35 +1,34 @@
-app-crypt/gcr gtk
 app-emulation/libnvidia-container system-libelf
 app-emulation/libvirt wireshark-plugins
-app-emulation/qemu gtk vte opengl virgl
-app-emulation/virt-manager gtk
+app-emulation/qemu vte opengl virgl
 app-text/ghostscript-gpl cups
 #dev-lang/python tk
-dev-python/PyQt5 bluetooth dbus declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql svg webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-python/PyQt5 declarative designer doc -gles2 gui location multimedia network opengl positioning printsupport sensors serialport sql webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-libs/weston wayland-compositor xwayland
 dev-qt/qtmultimedia widgets
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
 dev-qt/qtwebkit printsupport
 dev-util/cmake server -qt5
 dev-util/nvidia-cuda-toolkit profiler
-dev-vcs/git gtk
-gnome-base/gvfs gtk ios zeroconf udisks
-media-gfx/graphviz tcl gdk-pixbuf gtk
+gnome-base/gvfs ios zeroconf udisks
+media-gfx/graphviz tcl gdk-pixbuf
 media-libs/cogl gles2
 media-libs/libvpx svc
 media-libs/mesa xa dri3 gallium llvm llvm-shared-libs osmesa xvmc gles2 -vaapi
-media-sound/pulseaudio gnome gtk
+media-plugins/gst-plugins-meta X
+media-video/ffmpeg X sdl
 net-analyzer/wireshark -qt4 libssh libxml2 lua nghttp2 snappy
 net-libs/gtk-vnc python
+net-libs/libproxy webkit
 net-libs/phodav spice zeroconf
+net-libs/webkit-gtk libnotify spell
 net-misc/freerdp xv
 net-misc/modemmanager -qmi
 net-misc/openvswitch monitor
-net-misc/spice-gtk gtk3 lz4 python usbredir webdav vala
+net-misc/spice-gtk lz4 python usbredir webdav vala
 net-print/cups zeroconf
 sys-apps/hwloc -opencl gl
-sys-cluster/ceph gtk
-sys-devel/distcc gtk
 x11-apps/xdpyinfo dga dmx
 x11-base/xorg-server dmx glamor tslib xnest xvfb
 x11-drivers/nvidia-drivers uvm tools static-libs
@@ -42,6 +41,6 @@ x11-libs/libdrm libkms
 x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
-x11-terms/kitty python_single_target_python3_6
 x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf xft
+x11-terms/kitty python_single_target_python3_6
 x11-terms/xterm Xaw3d

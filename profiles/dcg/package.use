@@ -1,4 +1,4 @@
-app-editors/vim python_single_target_python2_7 python
+app-editors/vim python
 dev-lang/python sqlite threads
 net-libs/libmicrohttpd epoll messages
 sys-apps/smartmontools update_drivedb

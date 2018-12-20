@@ -8,6 +8,6 @@ CPU_FLAGS_X86="-* aes avx avx2 fma3 popcnt mmx mmxext sse sse2 sse3 sse4_1 sse4_
 
 USE="-bindist introspection audit"
 
-PYTHON_SINGLE_TARGET="-* python2_7"
+PYTHON_SINGLE_TARGET="-* python3_6"
 PYTHON_TARGETS="-* python2_7 python3_6"
 RUBY_TARGETS="-* ruby23 ruby24 ruby25"

@@ -1,4 +1,4 @@
--python_targets_python3_6
--python_single_target_python3_6
+#-python_targets_python3_6
+#-python_single_target_python3_6
 
 -ruby_targets_ruby24
