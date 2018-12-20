@@ -1,8 +1,5 @@
-=sys-cluster/openstack-meta-2018.2.9999 **
-=sys-cluster/neutron-2018.2.9999 **
 =app-admin/glance-2018.2.9999 **
 =sys-auth/keystone-2018.2.9999 **
-=sys-cluster/nova-2018.2.9999 **
 =sys-cluster/cinder-2018.2.9999 **
 =sys-cluster/heat-2018.2.9999 **
 =sys-cluster/swift-2018.2.9999 **
