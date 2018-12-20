@@ -1,0 +1,2 @@
+sys-cluster/nova rabbitmq memcached postgres sqlite
+sys-cluster/neutron rabbitmq memcached postgres sqlite
