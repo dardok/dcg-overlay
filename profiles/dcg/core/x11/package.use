@@ -20,7 +20,7 @@ net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
 net-libs/gtk-vnc python
 net-libs/libproxy webkit
 net-libs/phodav spice zeroconf
-net-libs/webkit-gtk libnotify spell
+net-libs/webkit-gtk libnotify spell -gles2
 net-misc/freerdp xv
 net-misc/modemmanager -qmi
 net-misc/openvswitch monitor
