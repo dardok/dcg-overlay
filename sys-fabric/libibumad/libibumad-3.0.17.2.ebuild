@@ -14,7 +14,7 @@ DESCRIPTION="OpenIB User MAD library functions which sit on top of the user MAD 
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE="static-libs"
 
-DEPEND=""
+DEPEND="dev-libs/libnl:3"
 RDEPEND="${DEPEND}"
 
 block_other_ofed_versions
