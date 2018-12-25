@@ -1,6 +1,7 @@
 *app-crypt/mit-krb5
 *app-portage/cpuid2cpuflags
 *dev-tcltk/expect
+*sys-apps/cpuid
 *sys-apps/haveged
 *sys-apps/hwloc
 *sys-apps/ipmitool
