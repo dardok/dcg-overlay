@@ -97,7 +97,6 @@
 *net-libs/libnetfilter_log
 *net-libs/libnetfilter_queue
 *net-libs/libtirpc
-*sys-apps/biosdevname
 *net-misc/bridge-utils
 *net-misc/calicoctl
 *net-misc/calico-cni-plugin
