@@ -8,7 +8,7 @@ OFED_RC="1"
 OFED_RC_VER="1"
 OFED_SUFFIX="3.3.21"
 
-inherit autotools eutils openib
+inherit autotools eutils openib systemd
 
 DESCRIPTION="OpenSM - InfiniBand Subnet Manager and Administration for OpenIB"
 KEYWORDS="~amd64 ~x86 ~amd64-linux"
