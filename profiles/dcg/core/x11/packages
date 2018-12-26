@@ -2,7 +2,6 @@
 #*app-emulation/nvidia-container-runtime
 *app-emulation/virt-viewer
 *app-emulation/virt-manager
-*app-laptop/laptop-mode-tools
 *dev-libs/weston
 *dev-python/pygtk
 *dev-util/nvidia-cuda-toolkit
