@@ -12,7 +12,6 @@ app-emulation/spice -smartcard
 app-misc/jq oniguruma
 >=app-text/xmlto-0.0.28-r1 text
 app-text/asciidoc python_single_target_python2_7
-dev-db/postgresql -server
 dev-lang/python berkdb
 dev-libs/beecrypt -cxx # requires old icu
 dev-libs/boost python context

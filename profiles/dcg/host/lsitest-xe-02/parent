@@ -1,4 +1,4 @@
-../../core
 ../../service/web
 ../../service/ldap
 ../../service/psql
+../../core

@@ -1,6 +1,6 @@
-../../core
 ../../service/web
 ../../service/ldap
 ../../service/smtp
 ../../service/dhcp
 ../../service/dns
+../../core
