@@ -1,2 +1,1 @@
 dev-libs/cyrus-sasl postgres # circular
-net-nds/openldap minimal tcpd
