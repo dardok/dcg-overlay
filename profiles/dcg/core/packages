@@ -31,6 +31,7 @@
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/tcsh
+*app-text/csvfix
 *app-vim/pathogen
 *app-vim/rust-vim
 *app-vim/vim-tmux
