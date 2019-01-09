@@ -85,8 +85,9 @@
 #*net-firewall/nftables
 *net-fs/nfs-utils
 *net-fs/nfs4-acl-tools
-*net-fs/openafs
-*net-fs/openafs-kernel
+*>net-fs/openafs-1.8
+#<*net-fs/openafs-1.8
+#<*net-fs/openafs-kernel-1.8
 *>=net-fs/samba-4.6.3
 *net-libs/nodejs
 *net-libs/libgssglue
