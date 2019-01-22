@@ -21,7 +21,6 @@ USE="${USE} kerberos gss gssapi keyring snmp ldap curl"
 USE="${USE} smartcard pkcs11 lm_sensors"
 
 USE="${USE} vim vim-syntax bash-completion"
-USE="${USE} -xinetd -tcpd"
 
 USE="${USE} infiniband rdma"
 USE="${USE} afs btrfs nfs nfsv4 nfsv41 rbd xfs zfs fuse device-mapper"
