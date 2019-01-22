@@ -8,3 +8,4 @@ sys-libs/ncurses threads
 dev-libs/elfutils threads static-libs
 dev-libs/boehm-gc threads
 sys-firmware/intel-microcode initramfs
+app-text/asciidoc python_single_target_python2_7
