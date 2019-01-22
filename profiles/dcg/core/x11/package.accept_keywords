@@ -8,6 +8,7 @@ dev-util/nvidia-cuda-toolkit
 dev-util/vulkan-headers
 net-analyzer/wireshark
 media-fonts/fontawesome
+media-fonts/symbola
 media-libs/libwebp
 media-libs/nv-codec-headers
 media-video/ffmpeg
