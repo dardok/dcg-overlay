@@ -1,4 +1,5 @@
 *app-admin/fleet
+*app-admin/logrotate
 *app-admin/mcelog
 *app-admin/puppet
 *app-admin/sudo
