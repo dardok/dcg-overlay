@@ -12,7 +12,7 @@ USE="${USE} readline ncurses -slang"
 USE="${USE} nls icu unicode unicode3 iconv"
 USE="${USE} numa sockets"
 
-USE="${USE} cxx -fortran nptl gmp openmp libffi lua luajit vala"
+USE="${USE} cxx fortran nptl gmp openmp libffi lua luajit vala"
 USE="${USE} pcre pcre16 expat xml"
 USE="${USE} bzip2 zlib lzma lz4 lzo minizip"
 
