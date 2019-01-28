@@ -3,6 +3,6 @@ media-libs/clutter-gst
 media-libs/clutter-gtk
 media-plugins/gst-plugins-libvisual
 media-plugins/gst-plugins-v4l2
-media-plugins/gst-plugins-vaapi
+#media-plugins/gst-plugins-vaapi
 media-plugins/gst-plugins-ximagesrc
 media-video/libva-utils

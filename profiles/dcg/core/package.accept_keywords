@@ -30,6 +30,8 @@ sys-auth/nss_afspag
 sys-auth/pam-afs-session
 =sys-cluster/lustre-2.10*
 sys-devel/bmake
+sys-cluster/openmpi
+sys-cluster/slurm
 sys-fabric/ofed
 sys-fabric/rdma-core
 sys-fabric/infiniband-diags
@@ -114,7 +116,7 @@ media-plugins/gst-plugins-ogg
 media-plugins/gst-plugins-opencv
 media-plugins/gst-plugins-openh264
 media-plugins/gst-plugins-opus
-media-plugins/gst-plugins-oss
+#media-plugins/gst-plugins-oss
 media-plugins/gst-plugins-pango
 media-plugins/gst-plugins-pulse
 media-plugins/gst-plugins-raw1394
@@ -142,6 +144,4 @@ media-plugins/gst-plugins-wavpack
 media-plugins/gst-plugins-x264
 media-plugins/gst-plugins-x265
 media-plugins/gst-plugins-ximagesrc
-media-plugins/gst-plugins-xvid
-media-plugins/gst-plugins-xvideo
 media-plugins/gst-plugins-zbar
