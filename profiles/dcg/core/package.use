@@ -47,6 +47,7 @@ net-misc/openvswitch -modules
 net-misc/ptpd ntp
 net-misc/quagga multipath tcp-zebra
 net-wireless/bluez user-session
+sci-libs/hdf5 -fortran -threads
 sys-apps/attr static-libs
 sys-apps/busybox -pam
 sys-apps/usbredir static-libs
