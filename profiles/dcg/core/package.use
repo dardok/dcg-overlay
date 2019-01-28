@@ -54,7 +54,7 @@ sys-auth/sssd augeas autofs netlink
 sys-cluster/ceph cephfs
 sys-cluster/lustre -checksum lru-resize client -server
 sys-cluster/openmpi mpi-threads heterogeneous
-sys-cluster/slurm hdf5 html ipmi netloc numa ofed}
+sys-cluster/slurm hdf5 html ipmi netloc numa ofed
 sys-devel/distcc avahi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
