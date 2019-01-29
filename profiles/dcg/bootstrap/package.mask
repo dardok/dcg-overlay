@@ -1,1 +1,2 @@
 >sys-kernel/gentoo-sources-4.5
+>=sys-apps/hwloc-2
