@@ -101,7 +101,7 @@ openib_src_unpack() {
 	if [ -z ${OFED_RC} ]; then
 		case ${MY_PN} in
 			compat-rdma)
-				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}-rc${OFED_RC_VER}.${OFED_SUFFIX}.src.rpm"
+				rpm_unpack "./OFED-${OFED_VER}/SRPMS/${MY_PN}-${OFED_VER}-${OFED_SUFFIX}.src.rpm"
 				;;
 			rdma-core)
 				rpm_unpack "./OFED-${OFED_VER}/SRPMS/RH/${MY_PN}-${RDMA_CORE_VER}.src.rpm"

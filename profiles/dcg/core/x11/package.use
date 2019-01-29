@@ -12,6 +12,8 @@ dev-qt/qtwebkit printsupport
 dev-util/cmake server -qt5
 dev-util/nvidia-cuda-toolkit profiler
 gnome-base/gvfs ios zeroconf udisks google cdda archive
+media-libs/gst-plugins-bad gtk
+media-libs/gst-plugins-base egl gles2 opengl
 media-gfx/graphviz tcl gdk-pixbuf
 media-libs/libvpx svc
 media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
