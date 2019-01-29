@@ -11,4 +11,5 @@ x11-libs/gdk-pixbuf -jpeg2k
 
 sci-libs/arrayfire nonfree
 
-media-libs/gst-plugins-bad -egl -opengl
+media-libs/gst-plugins-bad -egl -gles2 -opengl
+media-libs/gst-plugins-base -egl -gles2 -opengl
