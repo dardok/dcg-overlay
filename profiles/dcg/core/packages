@@ -27,7 +27,7 @@
 *app-misc/tmux
 *app-misc/tmux-mem-cpu-load
 *app-portage/eix
-*app-portage/layman
+#*app-portage/layman
 *app-portage/repoman
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
@@ -86,9 +86,7 @@
 #*net-firewall/nftables
 *net-fs/nfs-utils
 *net-fs/nfs4-acl-tools
-*>net-fs/openafs-1.8
-#*<net-fs/openafs-1.8
-#*<net-fs/openafs-kernel-1.8
+*>=net-fs/openafs-1.8
 *>=net-fs/samba-4.6.3
 *net-libs/nodejs
 *net-libs/libgssglue
@@ -121,10 +119,10 @@
 *sys-apps/pcsc-lite
 *sys-apps/unscd
 *sys-auth/nss_afspag
-*sys-auth/nss_ldap
-*sys-auth/nss-mdns
+#*sys-auth/nss_ldap
+#*sys-auth/nss-mdns
 *sys-auth/pam-afs-session
-*sys-auth/pam_krb5
+#*sys-auth/pam_krb5
 *sys-apps/sg3_utils
 *sys-auth/sssd
 *sys-block/nbd
