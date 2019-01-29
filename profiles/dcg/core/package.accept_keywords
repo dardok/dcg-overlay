@@ -135,7 +135,7 @@ media-plugins/gst-plugins-theora
 media-plugins/gst-plugins-twolame
 media-plugins/gst-plugins-uvch264
 media-plugins/gst-plugins-v4l2
-media-plugins/gst-plugins-vaapi
+#media-plugins/gst-plugins-vaapi
 media-plugins/gst-plugins-voaacenc
 media-plugins/gst-plugins-voamrwbenc
 media-plugins/gst-plugins-vorbis
