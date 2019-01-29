@@ -4,9 +4,9 @@
 EAPI=6
 
 OFED_VER="4.17"
-OFED_RC="1"
-OFED_RC_VER="1"
-OFED_SUFFIX="0.3.g7a8e409"
+OFED_RC=""
+OFED_RC_VER=""
+OFED_SUFFIX="0.5.g1ceab48"
 
 inherit openib
 

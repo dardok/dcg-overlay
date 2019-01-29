@@ -4,8 +4,8 @@
 EAPI=6
 
 OFED_VER="4.17"
-OFED_RC="1"
-OFED_RC_VER="1"
+OFED_RC=""
+OFED_RC_VER=""
 RDMA_CORE_VER="17.2-1"
 
 inherit openib cmake-utils systemd
