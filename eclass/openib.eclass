@@ -131,7 +131,7 @@ openib_src_unpack() {
 			RDMA_CORE_PKG_VER=$(get_version_component_range 1-2 ${RDMA_CORE_VER})
 			unpack ./${MY_PN}-${RDMA_CORE_PKG_VER}.tgz
 			;;
-		ibutils|perftest)
+		ibutils|perftest|mstflint)
 			unpack ./${MY_PN}-${PV}-${OFED_SUFFIX}.${EXT}
 			;;
 		*)
