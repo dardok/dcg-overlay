@@ -55,8 +55,9 @@
 *dev-python/dbus-python
 *dev-python/docker-py
 *dev-python/libcloud
-*dev-python/protobuf-python
 *dev-python/numpy
+*dev-python/protobuf-python
+*dev-python/psycopg
 *dev-python/pycurl
 *dev-python/pygobject
 *dev-python/python-cinderclient
