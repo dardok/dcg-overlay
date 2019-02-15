@@ -6,14 +6,14 @@ HOMEPAGE="https://github.com/Eyescale/Pression"
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
-    EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
-    EGIT_BRANCH="master"
+	EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
+	EGIT_BRANCH="master"
 else
 	inherit git-r3
-    #SRC_URI="https://github.com/Eyescale/Pression/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    #S=${WORKDIR}/Pression-${PV}
-    EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
-    EGIT_COMMIT="${PV}"
+	#SRC_URI="https://github.com/Eyescale/Pression/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	#S=${WORKDIR}/Pression-${PV}
+	EGIT_REPO_URI="git://github.com/Eyescale/Pression.git"
+	EGIT_COMMIT="${PV}"
 fi
 
 LICENSE="LGPL-3"
@@ -22,11 +22,11 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
-    >=dev-libs/boost-1.41.0
-    >=dev-libs/lunchbox-1.10
+	>=dev-libs/boost-1.41.0
+	>=dev-libs/lunchbox-1.10
 "
 DEPEND="${RDEPEND}
-    sys-devel/llvm
+	sys-devel/llvm
 "
 
 src_prepare() {
@@ -35,9 +35,10 @@ src_prepare() {
 }
 
 src_configure() {
-    mycmakeargs=(
+	mycmakeargs=(
+		-DCMAKE_C_FLAGS="${CFLAGS} -Wno-expansion-to-defined -Wno-implicit-fallthrough"
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
-    )
+	)
 
-    cmake-utils_src_configure
+	cmake-utils_src_configure
 }
