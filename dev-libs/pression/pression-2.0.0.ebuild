@@ -37,6 +37,7 @@ src_prepare() {
 src_configure() {
 	mycmakeargs=(
 		-DCMAKE_C_FLAGS="${CFLAGS} -Wno-expansion-to-defined -Wno-implicit-fallthrough -Wno-unused-function"
+		-DCMAKE_CXX_FLAGS="${CXXFLAGS} -Wno-expansion-to-defined -Wno-implicit-fallthrough -Wno-unused-function"
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
 	)
 
