@@ -1,0 +1,56 @@
+From 6983f2eb061353094469dbcbb0a40f693b3c8662 Mon Sep 17 00:00:00 2001
+From: Raphael Dumusc <raphael.dumusc@epfl.ch>
+Date: Thu, 17 May 2018 18:11:49 +0200
+Subject: [PATCH] Update Deflect to 0.14.0, replace deprecated swapYAxis()
+ function
+
+This maintains future compatibility with Deflect 1.0 API without
+imposing yet the use of C++14 in Equalizer (required by Deflect
+0.14.1).
+---
+ .gitsubprojects      |  2 +-
+ eq/deflect/proxy.cpp | 11 ++++-------
+ 2 files changed, 5 insertions(+), 8 deletions(-)
+
+diff --git a/.gitsubprojects b/.gitsubprojects
+index dc235205c..ac0399ae4 100644
+--- a/.gitsubprojects
++++ b/.gitsubprojects
+@@ -6,4 +6,4 @@ git_subproject(Pression https://github.com/Eyescale/Pression.git 08cd4bf)
+ git_subproject(hwsd https://github.com/Eyescale/hwsd.git 03b6581)
+ git_subproject(Collage https://github.com/Eyescale/Collage.git e2bc13d)
+ git_subproject(GLStats https://github.com/Eyescale/GLStats.git f9bf19e)
+-git_subproject(Deflect https://github.com/BlueBrain/Deflect.git 9373b53)
++git_subproject(Deflect https://github.com/BlueBrain/Deflect.git cc4c732)
+diff --git a/eq/deflect/proxy.cpp b/eq/deflect/proxy.cpp
+index 8de2867a8..a7c4631f3 100644
+--- a/eq/deflect/proxy.cpp
++++ b/eq/deflect/proxy.cpp
+@@ -122,16 +122,12 @@ class Proxy::Impl : public boost::noncopyable
+         if (!stream)
+             return;
+ 
+-        // copy pixels to perform swapYAxis()
+-        const size_t dataSize = image.getPixelDataSize(Frame::Buffer::color);
++        // copy pixels to retain data until _sendFuture is ready
+         _buffer[eye].replace(image.getPixelPointer(Frame::Buffer::color),
+-                             dataSize);
+-        const PixelViewport& pvp = image.getPixelViewport();
+-        ::deflect::ImageWrapper::swapYAxis(_buffer[eye].getData(), pvp.w, pvp.h,
+-                                           image.getPixelSize(
+-                                               Frame::Buffer::color));
++                             image.getPixelDataSize(Frame::Buffer::color));
+ 
+         // determine image offset wrt global view
++        const PixelViewport& pvp = image.getPixelViewport();
+         const Viewport& vp = channel.getViewport();
+         const int32_t width = pvp.w / vp.w;
+         const int32_t height = pvp.h / vp.h;
+@@ -144,6 +140,7 @@ class Proxy::Impl : public boost::noncopyable
+         imageWrapper.compressionPolicy = ::deflect::COMPRESSION_ON;
+         imageWrapper.compressionQuality = 100;
+         imageWrapper.view = view;
++        imageWrapper.rowOrder = ::deflect::RowOrder::bottom_up;
+ 
+         _sendFuture[eye] = stream->send(imageWrapper);
+     }
