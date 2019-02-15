@@ -1,0 +1,54 @@
+From 6cbafd9769e2e4a221a69dc2a0ba83cb49e6e416 Mon Sep 17 00:00:00 2001
+From: Jonas Karlsson <jonaskarlsson@fripost.org>
+Date: Wed, 4 Jul 2018 21:33:50 +0200
+Subject: [PATCH] Fix fallthrough warning
+
+---
+ lunchbox/request.h | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+
+diff --git a/lunchbox/request.h b/lunchbox/request.h
+index 35e35767..1078fc8b 100644
+--- a/lunchbox/request.h
++++ b/lunchbox/request.h
+@@ -64,7 +64,7 @@ class Request : public Future<T>
+      */
+     void unregister();
+ };
+-}
++} // namespace lunchbox
+ 
+ // Implementation: Here be dragons
+ 
+@@ -99,6 +99,7 @@ class Request<T>::Impl : public FutureImpl<T>
+     }
+ 
+     bool isUnresolved() const { return state_ == UNRESOLVED; }
++
+ protected:
+     T wait(const uint32_t timeout) final
+     {
+@@ -110,10 +111,12 @@ class Request<T>::Impl : public FutureImpl<T>
+             if (!handler_.waitRequest(request, result, timeout))
+                 throw FutureTimeout();
+             state_ = DONE;
+-        // No break
+-        default: // DONE
+-            return result;
++            break;
++        case DONE:
++        default:
++            break;
+         }
++        return result;
+     }
+ 
+     bool isReady() const final
+@@ -180,6 +183,6 @@ inline void Request<T>::unregister()
+ {
+     static_cast<Impl*>(this->impl_.get())->unregister();
+ }
+-}
++} // namespace lunchbox
+ 
+ #endif // LUNCHBOX_REQUEST_H

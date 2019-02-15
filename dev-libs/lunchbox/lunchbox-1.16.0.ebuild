@@ -29,6 +29,8 @@ DEPEND="${RDEPEND}
     sys-devel/llvm
 "
 
+PATCHES=( "${FILESDIR}"/${P}-fallthrough.patch )
+
 src_configure() {
     mycmakeargs=(
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
