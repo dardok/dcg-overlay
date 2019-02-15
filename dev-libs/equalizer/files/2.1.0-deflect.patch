@@ -8,20 +8,9 @@ This maintains future compatibility with Deflect 1.0 API without
 imposing yet the use of C++14 in Equalizer (required by Deflect
 0.14.1).
 ---
- .gitsubprojects      |  2 +-
  eq/deflect/proxy.cpp | 11 ++++-------
- 2 files changed, 5 insertions(+), 8 deletions(-)
+ 1 files changed, 4 insertions(+), 7 deletions(-)
 
-diff --git a/.gitsubprojects b/.gitsubprojects
-index dc235205c..ac0399ae4 100644
---- a/.gitsubprojects
-+++ b/.gitsubprojects
-@@ -6,4 +6,4 @@ git_subproject(Pression https://github.com/Eyescale/Pression.git 08cd4bf)
- git_subproject(hwsd https://github.com/Eyescale/hwsd.git 03b6581)
- git_subproject(Collage https://github.com/Eyescale/Collage.git e2bc13d)
- git_subproject(GLStats https://github.com/Eyescale/GLStats.git f9bf19e)
--git_subproject(Deflect https://github.com/BlueBrain/Deflect.git 9373b53)
-+git_subproject(Deflect https://github.com/BlueBrain/Deflect.git cc4c732)
 diff --git a/eq/deflect/proxy.cpp b/eq/deflect/proxy.cpp
 index 8de2867a8..a7c4631f3 100644
 --- a/eq/deflect/proxy.cpp
