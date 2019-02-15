@@ -5,4 +5,4 @@
 #>sys-devel/bison-2.7.1
 #>sys-devel/flex-2.6.1
 
->=sci-libs/geos-3.6
+#>=sci-libs/geos-3.6
