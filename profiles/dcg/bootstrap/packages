@@ -6,6 +6,7 @@
 *sys-apps/haveged
 *sys-apps/hwloc
 *sys-apps/ipmitool
+*sys-apps/kexec-tools
 *sys-apps/pciutils
 *sys-apps/smartmontools
 *sys-block/parted
