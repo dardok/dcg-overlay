@@ -55,6 +55,8 @@ PATCHES=(
 
 src_prepare() {
 	epatch "${PATCHES[@]}"
+
+	cmake-utils_src_prepare
 }
 
 src_configure() {
