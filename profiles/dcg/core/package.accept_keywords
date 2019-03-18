@@ -17,6 +17,7 @@ dev-libs/msgpack
 dev-ml/ocaml-gettext
 dev-ml/ocaml-fileutils
 dev-python/awscli
+dev-python/botocore
 media-libs/vulkan-loader
 net-fs/nfs4-acl-tools
 net-fs/openafs
