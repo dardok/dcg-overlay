@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="sys-fabric/libibverbs:${SLOT}
-		=dev-lang/tk-8.5.17-r1
+		=dev-lang/tk-8.6.8
         media-gfx/graphviz[tcl]"
 RDEPEND="${DEPEND}
 		!sys-fabric/openib-userspace"
