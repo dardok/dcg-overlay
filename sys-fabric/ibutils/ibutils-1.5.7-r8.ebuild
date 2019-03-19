@@ -22,3 +22,7 @@ RDEPEND="${DEPEND}
 		!sys-fabric/openib-userspace"
 
 block_other_ofed_versions
+
+src_configure() {
+	econf --with-tk-lib=/usr/lib64/tk8.6
+}
