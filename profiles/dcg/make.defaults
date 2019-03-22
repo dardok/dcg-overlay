@@ -4,4 +4,4 @@ ACCEPT_LICENSE="*"
 
 LINGUAS="-* en"
 
-USE="-bindist introspection audit -xinetd -tcpd"
+USE="-bindist introspection audit -xinetd -tcpd -elogind"
