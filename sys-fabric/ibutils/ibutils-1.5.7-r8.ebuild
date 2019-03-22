@@ -16,9 +16,13 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="sys-fabric/libibverbs:${SLOT}
-		=dev-lang/tk-8.5.17
+		=dev-lang/tk-8.6.8
         media-gfx/graphviz[tcl]"
 RDEPEND="${DEPEND}
 		!sys-fabric/openib-userspace"
 
 block_other_ofed_versions
+
+src_configure() {
+	econf --with-tk-lib=/usr/lib64/tk8.6
+}
