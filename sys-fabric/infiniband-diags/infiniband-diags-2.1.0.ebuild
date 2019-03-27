@@ -15,7 +15,8 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux"
 IUSE=""
 
 DEPEND="sys-fabric/libibumad:${SLOT}
-		sys-fabric/opensm:${SLOT}"
+		sys-fabric/opensm:${SLOT}
+		dev-libs/glib"
 RDEPEND="${DEPEND}"
 
 block_other_ofed_versions
