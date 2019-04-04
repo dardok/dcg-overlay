@@ -75,6 +75,7 @@
 *dev-util/cmake
 *dev-util/indent
 *dev-util/debugedit
+*dev-util/perf
 *dev-util/strace
 *dev-util/systemtap
 *dev-vcs/subversion
