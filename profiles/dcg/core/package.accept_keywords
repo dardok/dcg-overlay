@@ -19,7 +19,7 @@ dev-ml/ocaml-gettext
 dev-ml/ocaml-fileutils
 dev-python/awscli
 dev-python/botocore
-=dev-util/perf-4.14.*
+=dev-util/perf-4.14*
 media-libs/vulkan-loader
 net-fs/nfs4-acl-tools
 net-fs/openafs
