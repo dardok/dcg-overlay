@@ -82,6 +82,7 @@
 *mail-mta/nullmailer
 *media-libs/alsa-lib
 *net-analyzer/tcpdump
+*net-analyzer/openbsd-netcat
 *net-dns/avahi
 *net-firewall/conntrack-tools
 *net-firewall/ebtables
