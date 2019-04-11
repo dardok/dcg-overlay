@@ -60,6 +60,7 @@
 *dev-python/protobuf-python
 *dev-python/psycopg
 *dev-python/pycurl
+*dev-python/pyelftools
 *dev-python/pygobject
 *dev-python/python-cinderclient
 *dev-python/python-glanceclient
