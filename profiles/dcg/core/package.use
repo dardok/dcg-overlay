@@ -44,7 +44,7 @@ net-libs/nghttp2 hpack-tools
 net-libs/phodav spice
 net-misc/curl http2
 net-misc/openvswitch -modules
-net-misc/ptpd ntp
+net-misc/ptpd ntp experimental
 net-misc/quagga multipath tcp-zebra
 net-wireless/bluez user-session
 sci-libs/hdf5 -fortran -threads
