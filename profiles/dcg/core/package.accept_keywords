@@ -27,6 +27,7 @@ net-fs/openafs-kernel
 net-misc/calicoctl
 net-misc/calico-cni-plugin
 net-misc/cni-plugins
+net-misc/linuxptp
 net-misc/ptpd
 net-misc/rclone
 sys-apps/netloc
