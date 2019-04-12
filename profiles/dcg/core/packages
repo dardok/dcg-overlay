@@ -108,6 +108,7 @@
 *net-misc/calico-cni-plugin
 *net-misc/ipcalc
 *net-misc/keychain
+*net-misc/linuxptp
 *net-misc/memcached
 *net-misc/openvswitch
 *net-misc/ptpd
