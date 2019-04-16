@@ -103,6 +103,7 @@
 *net-libs/libnetfilter_log
 *net-libs/libnetfilter_queue
 *net-libs/libtirpc
+*net-misc/adjtimex
 *net-misc/bridge-utils
 *net-misc/calicoctl
 *net-misc/calico-cni-plugin
