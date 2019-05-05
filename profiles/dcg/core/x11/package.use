@@ -38,6 +38,6 @@ x11-libs/libdrm libkms
 x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
-x11-terms/rxvt-unicode 256-color -vanilla fading-colors pixbuf
+x11-terms/rxvt-unicode 256-color -vanilla fading-colors gdk-pixbuf
 x11-terms/kitty python_single_target_python3_6
 x11-terms/xterm Xaw3d
