@@ -50,6 +50,7 @@ net-wireless/bluez user-session
 sci-libs/hdf5 -fortran -threads
 sys-apps/attr static-libs
 sys-apps/busybox -pam
+sys-apps/iproute2 elf
 sys-apps/usbredir static-libs
 sys-auth/sssd augeas autofs netlink
 sys-cluster/ceph cephfs
