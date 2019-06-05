@@ -19,7 +19,7 @@
 *app-emulation/libvirt-glib
 *app-emulation/qemu
 *app-emulation/qemu-guest-agent
-*app-emulation/rkt
+#*app-emulation/rkt
 *app-metrics/node_exporter
 *app-misc/byobu
 *app-misc/jq
