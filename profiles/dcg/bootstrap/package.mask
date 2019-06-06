@@ -1,3 +1,3 @@
 >dev-libs/elfutils-0.173 # https://forums.gentoo.org/viewtopic-t-1089690-start-0.html
 >sys-kernel/gentoo-sources-4.4.164 # .173 breaks stuff (e.g. Lustre, Mellanox OFED)
->=sys-apps/hwloc-2
+#>=sys-apps/hwloc-2
