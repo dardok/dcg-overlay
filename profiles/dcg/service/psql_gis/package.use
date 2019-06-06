@@ -1,4 +1,5 @@
 dev-db/postgresql server python uuid
+dev-db/postgis -postgres_targets_postgres10
 
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
