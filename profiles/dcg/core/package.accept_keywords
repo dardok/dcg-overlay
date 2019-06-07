@@ -17,6 +17,7 @@ dev-go/go-protobuf
 dev-libs/msgpack
 dev-ml/ocaml-gettext
 dev-ml/ocaml-fileutils
+dev-python/autobahn
 dev-python/awscli
 dev-python/botocore
 =dev-util/perf-4.14*

@@ -52,6 +52,7 @@
 *dev-libs/libnl
 *dev-libs/protobuf
 *dev-libs/protobuf-c
+*dev-python/autobahn
 *dev-python/awscli
 *dev-python/dbus-python
 *dev-python/docker-py
