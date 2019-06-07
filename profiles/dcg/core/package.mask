@@ -1,2 +1,2 @@
 >=dev-libs/leveldb-1.20 # rebuilds ceph
->dev-python/pyyaml-3 # required by awscli
+>=dev-python/pyyaml-5 # 3.x is required by awscli
