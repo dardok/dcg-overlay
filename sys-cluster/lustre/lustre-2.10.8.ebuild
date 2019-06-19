@@ -36,7 +36,10 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
-PATCHES=( "${FILESDIR}/parser-${PV}.patch" )
+PATCHES=(
+	"${FILESDIR}/parser-${PV}.patch"
+	"${FILESDIR}/get_user_pages_backport.patch"
+)
 
 pkg_pretend() {
 	if use kernel_linux ; then
