@@ -1,5 +1,5 @@
 diff --git a/libcfs/autoconf/lustre-libcfs.m4 b/libcfs/autoconf/lustre-libcfs.m4
-index b2ba484dc..5c1913cfd 100644
+index b2ba484dc..b1b580be5 100644
 --- a/libcfs/autoconf/lustre-libcfs.m4
 +++ b/libcfs/autoconf/lustre-libcfs.m4
 @@ -680,6 +680,22 @@ get_user_pages_gup_flags, [
@@ -35,15 +35,15 @@ index b2ba484dc..5c1913cfd 100644
  LIBCFS_CRYPTO_HASH_HELPERS
  # 4.6
 diff --git a/libcfs/libcfs/linux/linux-curproc.c b/libcfs/libcfs/linux/linux-curproc.c
-index 7b2e46e61..5e7d199a6 100644
+index 7b2e46e61..c3d30975a 100644
 --- a/libcfs/libcfs/linux/linux-curproc.c
 +++ b/libcfs/libcfs/linux/linux-curproc.c
-@@ -153,6 +153,8 @@ static int cfs_access_process_vm(struct task_struct *tsk,
+@@ -151,6 +151,8 @@ static int cfs_access_process_vm(struct task_struct *tsk,
+ 
+ #if defined(HAVE_GET_USER_PAGES_GUP_FLAGS)
  		rc = get_user_pages(addr, 1, write ? FOLL_WRITE : 0, &page, &vma);
- #elif defined(HAVE_GET_USER_PAGES_6ARG)
- 		rc = get_user_pages(addr, 1, write, 1, &page, &vma);
 +#elif defined(HAVE_GET_USER_PAGES_GUP_FLAGS_BACKPORT)
 +		rc = get_user_pages(tsk, mm, addr, 1, write ? FOLL_WRITE : 0, &page, &vma);
+ #elif defined(HAVE_GET_USER_PAGES_6ARG)
+ 		rc = get_user_pages(addr, 1, write, 1, &page, &vma);
  #else
- 		rc = get_user_pages(tsk, mm, addr, 1, write, 1, &page, &vma);
- #endif
