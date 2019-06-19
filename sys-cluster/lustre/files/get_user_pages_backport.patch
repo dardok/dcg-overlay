@@ -10,7 +10,7 @@ index b2ba484dc..5c1913cfd 100644
 +#
 +AC_DEFUN([LIBCFS_GET_USER_PAGES_GUP_FLAGS_BACKPORT], [
 +LB_CHECK_COMPILE([if 'get_user_pages()' takes gup_flags in arguments - backport],
-+get_user_pages_gup_flags, [
++get_user_pages_gup_flags_backport, [
 +	#include <linux/mm.h>
 +],[
 +	int rc;
