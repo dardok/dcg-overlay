@@ -1,12 +1,14 @@
 diff --git a/libcfs/autoconf/lustre-libcfs.m4 b/libcfs/autoconf/lustre-libcfs.m4
-index b2ba484dc..b1b580be5 100644
+index b2ba484dc0..7ece383cf5 100644
 --- a/libcfs/autoconf/lustre-libcfs.m4
 +++ b/libcfs/autoconf/lustre-libcfs.m4
-@@ -680,6 +680,22 @@ get_user_pages_gup_flags, [
+@@ -680,6 +680,24 @@ get_user_pages_gup_flags, [
  ])
  ]) # LIBCFS_GET_USER_PAGES_GUP_FLAGS
  
 +#
++# Kernel version 4.4.168 commit 8e50b8b07f462ab4b91bc1491b1c91bd75e4ad40
++# mm: replace get_user_pages() write/force parameters with gup_flags (backport)
 +#
 +AC_DEFUN([LIBCFS_GET_USER_PAGES_GUP_FLAGS_BACKPORT], [
 +LB_CHECK_COMPILE([if 'get_user_pages()' takes gup_flags in arguments - backport],
@@ -25,7 +27,7 @@ index b2ba484dc..b1b580be5 100644
  #
  # Kernel version 4.10 commit 7b737965b33188bd3dbb44e938535c4006d97fbb
  # libcfs: Convert to hotplug state machine
-@@ -764,6 +780,8 @@ LIBCFS_HAVE_CPUMASK_PRINT_TO_PAGEBUF
+@@ -764,6 +782,8 @@ LIBCFS_HAVE_CPUMASK_PRINT_TO_PAGEBUF
  # 4.2
  LIBCFS_HAVE_TOPOLOGY_SIBLING_CPUMASK
  LIBCFS_FPU_API
@@ -35,7 +37,7 @@ index b2ba484dc..b1b580be5 100644
  LIBCFS_CRYPTO_HASH_HELPERS
  # 4.6
 diff --git a/libcfs/libcfs/linux/linux-curproc.c b/libcfs/libcfs/linux/linux-curproc.c
-index 7b2e46e61..c3d30975a 100644
+index 7b2e46e61b..c3d30975a0 100644
 --- a/libcfs/libcfs/linux/linux-curproc.c
 +++ b/libcfs/libcfs/linux/linux-curproc.c
 @@ -151,6 +151,8 @@ static int cfs_access_process_vm(struct task_struct *tsk,
