@@ -3,7 +3,7 @@ dev-games/openscenegraph-qt
 =dev-libs/vmmlib-1.13.0
 =dev-libs/hwsd-2.0.0
 =dev-libs/servus-1.5.1
-=dev-libs/lunchbox-1.16.0
+=dev-libs/lunchbox-1.17.0
 =dev-libs/pression-2.0.0
 =dev-libs/deflect-0.13.0
 =dev-libs/glstats-9999 **
