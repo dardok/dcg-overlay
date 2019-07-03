@@ -5,13 +5,13 @@ DESCRIPTION="Your toolbox, since the free lunch is over: a C++ library for multi
 HOMEPAGE="https://github.com/Eyescale/Lunchbox"
 
 if [[ ${PV} = *9999* ]]; then
-    inherit git-r3
-    EGIT_REPO_URI="git://github.com/Eyescale/Lunchbox.git"
-    EGIT_BRANCH="master"
+	inherit git-r3
+	EGIT_REPO_URI="git://github.com/Eyescale/Lunchbox.git"
+	EGIT_BRANCH="master"
 else
-    inherit git-r3
-    #SRC_URI="https://github.com/Eyescale/Lunchbox/archive/${PV}.tar.gz -> ${P}.tar.gz"
-    #S=${WORKDIR}/Lunchbox-${PV}
+	inherit git-r3
+	#SRC_URI="https://github.com/Eyescale/Lunchbox/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	#S=${WORKDIR}/Lunchbox-${PV}
 	EGIT_REPO_URI="git://github.com/Eyescale/Lunchbox.git"
 	EGIT_COMMIT="${PV}"
 fi
@@ -22,19 +22,17 @@ KEYWORDS="~amd64 x86"
 IUSE="debug +cxx11-stdlib"
 
 RDEPEND="
-    >=dev-libs/boost-1.41.0
-    >=dev-libs/servus-1.0
+	>=dev-libs/boost-1.41.0
+	>=dev-libs/servus-1.0
 "
 DEPEND="${RDEPEND}
-    sys-devel/llvm
+	sys-devel/llvm
 "
 
-PATCHES=( "${FILESDIR}"/${P}-fallthrough.patch )
-
 src_configure() {
-    mycmakeargs=(
+	mycmakeargs=(
 		$(cmake-utils_use_enable cxx11-stdlib CXX11_STDLIB)
-    )
+	)
 
-    cmake-utils_src_configure
+	cmake-utils_src_configure
 }
