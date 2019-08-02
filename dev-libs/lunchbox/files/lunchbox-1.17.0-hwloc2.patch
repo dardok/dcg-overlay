@@ -1,0 +1,38 @@
+diff --git a/lunchbox/thread.cpp b/lunchbox/thread.cpp
+index 5e40cec..7b74c61 100644
+--- a/lunchbox/thread.cpp
++++ b/lunchbox/thread.cpp
+@@ -325,6 +325,9 @@ static hwloc_bitmap_t _getCpuSet(const int32_t affinity,
+ {
+     hwloc_bitmap_t cpuSet = hwloc_bitmap_alloc(); // HWloc CPU set
+     hwloc_bitmap_zero(cpuSet);                    // Initialize to zeros
++#if HWLOC_API_VERSION >= 0x00020000
++    (void) hwloc_bitmap_copy(cpuSet, hwloc_topology_get_allowed_cpuset(topology));
++#endif
+ 
+     if (affinity >= Thread::CORE)
+     {
+@@ -340,7 +343,11 @@ static hwloc_bitmap_t _getCpuSet(const int32_t affinity,
+         const hwloc_obj_t coreObj =
+             hwloc_get_obj_by_type(topology, HWLOC_OBJ_CORE, coreIndex);
+         // Get the CPU set associated with the specified core
++#if HWLOC_API_VERSION >= 0x00020000
++        hwloc_bitmap_and(cpuSet, cpuSet, coreObj->cpuset);
++#else
+         cpuSet = coreObj->allowed_cpuset;
++#endif
+         return cpuSet;
+     }
+ 
+@@ -362,7 +369,11 @@ static hwloc_bitmap_t _getCpuSet(const int32_t affinity,
+     const hwloc_obj_t socketObj =
+         hwloc_get_obj_by_type(topology, HWLOC_OBJ_SOCKET, socketIndex);
+     // Get the CPU set associated with the specified socket
++#if HWLOC_API_VERSION >= 0x00020000
++    hwloc_bitmap_and(cpuSet, cpuSet, socketObj->cpuset);
++#else
+     hwloc_bitmap_copy(cpuSet, socketObj->allowed_cpuset);
++#endif
+     return cpuSet;
+ }
+ #endif
