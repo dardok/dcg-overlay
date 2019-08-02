@@ -5,7 +5,7 @@ dev-games/openscenegraph-qt webkit
 
 media-libs/opencv gstreamer ffmpeg
 
-dev-libs/equalizer -opencv
+dev-libs/equalizer -opencv -hwsd
 
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
