@@ -5,8 +5,6 @@ dev-games/openscenegraph-qt webkit
 
 media-libs/opencv gstreamer ffmpeg
 
-dev-libs/equalizer -opencv
-
 sci-libs/gdal armadillo python ruby spatialite xls postgres ogdi gml geos fits netcdf webp -pdf
 
 sci-libs/armadillo lapack
@@ -17,4 +15,4 @@ sci-geosciences/liblas gdal
 
 media-plugins/frei0r-plugins -facedetect
 
-dev-libs/equalizer hwsd glstats osg qt5
+dev-libs/equalizer -opencv hwsd glstats osg qt5

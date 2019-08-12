@@ -50,6 +50,7 @@ PATCHES=(
 	"${FILESDIR}/${PV}-sceneview.patch"
 	"${FILESDIR}/${PV}-cvtracker.patch"
 	"${FILESDIR}/${PV}-deflect.patch"
+	"${FILESDIR}/${PV}-class-memaccess.patch"
 	"${FILESDIR}/cuda-9.0.patch"
 )
 
