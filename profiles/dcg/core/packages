@@ -57,6 +57,7 @@
 *dev-python/dbus-python
 *dev-python/docker-py
 *dev-python/libcloud
+*dev-python/jsonrpclib
 *dev-python/numpy
 *dev-python/protobuf-python
 *dev-python/psycopg
