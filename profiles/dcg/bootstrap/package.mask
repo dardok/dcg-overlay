@@ -1,2 +1,1 @@
->dev-libs/elfutils-0.173 # https://forums.gentoo.org/viewtopic-t-1089690-start-0.html
 >=sys-kernel/gentoo-sources-4.5 # 4.4 is latest LTS to support Lustre 2.10 (with get_user_pages fixes for > .164)
