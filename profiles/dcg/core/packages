@@ -3,6 +3,7 @@
 *app-admin/mcelog
 *app-admin/puppet
 *app-admin/sudo
+*app-admin/sysstat
 *app-admin/ulogd
 *app-arch/deb2targz
 *app-arch/star
@@ -37,6 +38,7 @@
 *app-vim/pathogen
 *app-vim/rust-vim
 *app-vim/vim-tmux
+*dev-cpp/websocketpp
 *dev-db/etcd
 *dev-go/glide
 *dev-go/go-protobuf
@@ -45,6 +47,7 @@
 *dev-lang/spidermonkey
 *dev-libs/apr
 *dev-libs/apr-util
+*dev-libs/libbpf
 *dev-libs/libp11
 *dev-libs/opensc
 *dev-libs/dbus-glib
@@ -74,6 +77,7 @@
 *dev-python/python-openstackclient
 *dev-python/python-swiftclient
 *dev-python/python-systemd
+*dev-python/simplekml
 *dev-python/virtualenv
 *dev-util/cmake
 *dev-util/indent
@@ -133,6 +137,7 @@
 *sys-auth/pam-afs-session
 #*sys-auth/pam_krb5
 *sys-apps/sg3_utils
+*sys-apps/usbutils
 *sys-auth/sssd
 *sys-block/nbd
 *sys-block/open-iscsi
