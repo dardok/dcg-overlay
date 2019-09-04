@@ -1,6 +1,7 @@
 app-admin/puppet augeas diff shadow
 app-admin/logrotate -cron
 app-admin/ulogd pcap nfacct
+app-admin/sudo sssd
 app-arch/unzip natspec
 app-crypt/mit-krb5 keyutils pkinit
 app-editors/vim ruby
