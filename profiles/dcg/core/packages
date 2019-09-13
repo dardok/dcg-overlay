@@ -125,7 +125,7 @@
 *net-misc/socat
 *sys-apps/ethtool
 *sys-apps/irqbalance
-*sys-apps/lm_sensors
+*sys-apps/lm-sensors
 *sys-apps/lsb-release
 *sys-apps/keyutils
 *sys-apps/nvme-cli
