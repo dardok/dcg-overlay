@@ -1,4 +1,4 @@
-EAPI=5
+EAPI=6
 
 DESCRIPTION="Intel(R) Multi-Buffer Crypto for IPSec"
 HOMEPAGE="https://github.com/intel/intel-ipsec-mb"
@@ -39,10 +39,14 @@ src_compile() {
 src_install() {
 	local myconf
 
-	myconf="PREFIX=${EPREFIX} NOLDCONFIG=y"
+	myconf=""
 	if use static-libs ; then
 		myconf="${myconf} SHARED=n"
 	fi
 
-	emake install ${myconf}
+	emake install NOLDCONFIG=y \
+		PREFIX="${ED}/usr" \
+		LIB_INSTALL_DIR="${ED}/usr/lib64" \
+		MAN_DIR="${ED}/usr/share/man/man7" \
+		${myconf}
 }
