@@ -39,7 +39,7 @@ src_compile() {
 src_install() {
 	local myconf
 
-	myconf="NOLDCONFIG=y"
+	myconf="PREFIX=${EPREFIX} NOLDCONFIG=y"
 	if use static-libs ; then
 		myconf="${myconf} SHARED=n"
 	fi
