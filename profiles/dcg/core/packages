@@ -41,7 +41,7 @@
 *dev-cpp/websocketpp
 *dev-db/etcd
 *dev-go/glide
-*dev-go/go-protobuf
+#*dev-go/go-protobuf
 *dev-libs/nss
 *dev-lang/go
 *dev-lang/spidermonkey
