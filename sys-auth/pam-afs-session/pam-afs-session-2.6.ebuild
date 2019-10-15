@@ -9,7 +9,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="virtual/krb5 virtual/pam"
+DEPEND="app-crypt/mit-krb5 sys-libs/pam"
 RDEPEND="${DEPEND}"
 
 src_compile() {
