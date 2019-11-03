@@ -24,6 +24,8 @@ RDEPEND="${DEPEND}"
 
 block_other_ofed_versions
 
+PATCHES=( "${FILESDIR}"/openssl-hmac.patch )
+
 src_configure () {
 	econf \
 		$(use_enable cs) \
