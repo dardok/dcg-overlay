@@ -40,6 +40,7 @@ sys-auth/nss_afspag
 sys-auth/pam-afs-session
 =sys-cluster/lustre-2.10*
 sys-devel/bmake
+sys-cluster/ceph
 sys-cluster/openmpi
 sys-cluster/slurm
 sys-fabric/ofed
