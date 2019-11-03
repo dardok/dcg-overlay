@@ -1,1 +1,2 @@
 media-video/nvidia-settings
+->=sys-cluster/slurm-19
