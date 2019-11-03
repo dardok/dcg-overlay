@@ -61,7 +61,6 @@ sys-cluster/slurm hdf5 html ipmi numa ofed
 sys-devel/distcc avahi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
-sys-fabric/mstflint -openssl
 sys-firmware/intel-microcode initramfs
 sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
