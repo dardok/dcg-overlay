@@ -9,7 +9,7 @@ WANT_AUTOMAKE="1.10"
 WANT_LIBTOOL="latest"
 
 KEYWORDS="~amd64"
-EGIT_COMMIT="2.12.0-RC4"
+EGIT_COMMIT="2.12.3"
 
 inherit git-r3 autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
