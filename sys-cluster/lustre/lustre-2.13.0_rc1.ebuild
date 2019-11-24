@@ -31,6 +31,7 @@ RDEPEND="
 	)
 	snmp? ( net-analyzer/net-snmp )
 	gss? ( app-crypt/mit-krb5 )
+	dev-libs/libyaml
 	"
 DEPEND="${RDEPEND}
 	dev-python/docutils
