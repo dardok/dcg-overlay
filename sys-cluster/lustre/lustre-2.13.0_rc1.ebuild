@@ -29,10 +29,12 @@ RDEPEND="
 		>=sys-fs/zfs-kmod-0.7.9:=
 		sys-fs/zfs:=
 	)
-    snmp? ( net-analyzer/net-snmp )
+	snmp? ( net-analyzer/net-snmp )
+	gss? ( app-crypt/mit-krb5 )
+	dev-libs/libyaml
 	"
 DEPEND="${RDEPEND}
-    dev-python/docutils
+	dev-python/docutils
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
