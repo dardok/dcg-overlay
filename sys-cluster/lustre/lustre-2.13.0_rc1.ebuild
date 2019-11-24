@@ -38,6 +38,11 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
+
+PATCHES=(
+	"${FILESDIR}/get_user_pages_backport.patch"
+)
+
 pkg_pretend() {
 	if use kernel_linux ; then
 		if use server && kernel_is gt 4 6 7 ; then
@@ -64,6 +69,8 @@ pkg_setup() {
 
 src_prepare() {
 	epatch_user
+
+	epatch "${PATCHES[@]}"
 
 	# replace upstream autogen.sh by our src_prepare()
 	local DIRS="libcfs lnet lustre snmp"
