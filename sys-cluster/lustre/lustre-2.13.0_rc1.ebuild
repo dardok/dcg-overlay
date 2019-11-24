@@ -38,7 +38,6 @@ DEPEND="${RDEPEND}
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
 
-
 PATCHES=(
 	"${FILESDIR}/get_user_pages_backport.patch"
 )
