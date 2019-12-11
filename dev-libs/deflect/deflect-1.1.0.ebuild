@@ -23,7 +23,7 @@ IUSE="debug +cxx11-stdlib +glut"
 
 RDEPEND="
     >=dev-libs/boost-1.54.0
-    =media-libs/libjpeg-turbo-1.*
+	( =media-libs/libjpeg-turbo-1.* )
     glut? ( media-libs/freeglut )
     dev-qt/qtconcurrent:5
     dev-qt/qtcore:5
