@@ -38,7 +38,7 @@ DEPEND="${RDEPEND}
 
 PATCHES=(
 	"${FILESDIR}/parser-${PV}.patch"
-	"${FILESDIR}/get_user_pages_backport.patch"
+	"${FILESDIR}/get_user_pages_backport-${PV}.patch"
 )
 
 pkg_pretend() {
