@@ -11,6 +11,7 @@ app-emulation/libguestfs python inspect-icons libvirt
 app-emulation/qemu snappy spice usb usbredir virtfs vde iscsi systemtap python
 app-emulation/rkt rkt_stage1_kvm_qemu rkt_stage1_kvm_lkvm rkt_stage1_host
 app-emulation/spice -smartcard
+app-misc/byobu python_single_target_python2_7
 app-misc/jq oniguruma
 >=app-text/xmlto-0.0.28-r1 text
 app-text/asciidoc python_single_target_python2_7
@@ -28,17 +29,19 @@ dev-libs/libxslt python
 dev-libs/nss utils
 dev-libs/volume_key python_single_target_python3_6
 dev-python/twisted conch http2
+dev-util/itstool python_single_target_python2_7
+dev-util/systemtap python_single_target_python2_7
 dev-util/glib-utils python_single_target_python3_6
 dev-vcs/git tk
 media-libs/freetype auto-hinter
 media-plugins/gst-plugins-meta a52 aac cdda dts dvd flac mp3 mpeg -dv -dvb ffmpeg http -jack -lame -libass libvisual -mms -modplug -opus -oss taglib -vcd -wavpack
 media-video/ffmpeg encode gpl hardcoded-tables iconv mp3 network postproc threads xvid gcrypt openh264
 media-sound/pulseaudio realtime zeroconf libsamplerate
-net-analyzer/net-snmp pci python
+net-analyzer/net-snmp pci python python_single_target_python2_7
 net-dns/dnsmasq script conntrack
 net-firewall/ipset -modules
 net-fs/nfs-utils nfsdcld
-net-fs/samba ads client cluster dmapi fam gnutls winbind 
+net-fs/samba ads client cluster dmapi fam gnutls winbind python_single_target_python2_7
 net-libs/liboauth -nss
 net-libs/libproxy python spidermonkey
 net-libs/nghttp2 hpack-tools
@@ -58,6 +61,7 @@ sys-cluster/ceph cephfs
 sys-cluster/lustre -checksum lru-resize client -server
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm hdf5 html ipmi numa ofed
+sys-devel/clang python_single_target_python2_7
 sys-devel/distcc avahi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm ibpd mstflint opensm perftest srp
@@ -66,11 +70,13 @@ sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
 sys-fs/zfs -rootfs
 sys-libs/glibc nscd
+sys-libs/ldb python_single_target_python2_7
 sys-libs/libblockdev python_single_target_python3_6 bcache dmraid
 sys-libs/libcap static-libs
 sys-libs/libseccomp static-libs
-sys-libs/tdb python
-sys-libs/tevent python
+sys-libs/talloc python_single_target_python2_7
+sys-libs/tdb python python_single_target_python2_7
+sys-libs/tevent python python_single_target_python2_7
 sys-libs/zlib static-libs
 sys-process/tini static
 x11-libs/pixman static-libs

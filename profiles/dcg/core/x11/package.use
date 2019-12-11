@@ -32,7 +32,7 @@ sys-apps/hwloc gl
 x11-base/xorg-server glamor tslib xnest xvfb xephyr kdrive
 x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
-x11-drivers/xf86-video-qxl xspice
+x11-drivers/xf86-video-qxl xspice python_single_target_python2_7
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia
