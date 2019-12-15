@@ -1,3 +1,4 @@
+*app-admin/ec2-ami-tools
 #*app-admin/fleet # obsolete 15 Mar 2019
 *app-admin/logrotate
 *app-admin/mcelog
@@ -12,7 +13,7 @@
 #*app-crypt/coolkey
 *app-crypt/pkcs11-data
 *app-crypt/pkcs11-dump
-*app-emulation/cri-tools
+#*app-emulation/cri-tools
 *app-emulation/docker
 *app-emulation/flannel
 *app-emulation/libguestfs
@@ -40,7 +41,7 @@
 *app-vim/vim-tmux
 *dev-cpp/websocketpp
 *dev-db/etcd
-*dev-go/glide
+#*dev-go/glide
 #*dev-go/go-protobuf
 *dev-libs/nss
 *dev-lang/go

@@ -1,8 +1,9 @@
+app-admin/ec2-ami-tools
 app-admin/fleet
 app-arch/lzma
 app-crypt/pkcs11-data
 app-crypt/pkcs11-dump
-app-emulation/cri-tools
+#app-emulation/cri-tools
 app-emulation/flannel
 app-emulation/libguestfs
 app-emulation/libguestfs-appliance
@@ -13,7 +14,7 @@ app-text/csvfix
 app-vim/rust-vim
 dev-cpp/websocketpp
 dev-db/etcd
-dev-go/glide
+#dev-go/glide
 dev-go/go-protobuf
 dev-libs/libbpf
 dev-libs/msgpack
