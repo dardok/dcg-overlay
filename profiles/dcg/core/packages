@@ -59,6 +59,8 @@
 *dev-libs/protobuf-c
 *dev-python/autobahn
 *dev-python/awscli
+*dev-python/boto
+*dev-python/boto3
 *dev-python/dbus-python
 *dev-python/docker-py
 *dev-python/libcloud
