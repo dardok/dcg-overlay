@@ -5,6 +5,7 @@
 *app-admin/puppet
 *app-admin/sudo
 *app-admin/sysstat
+*app-admin/terraform
 *app-admin/ulogd
 *app-arch/deb2targz
 *app-arch/star

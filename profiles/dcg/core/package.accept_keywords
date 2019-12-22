@@ -1,5 +1,6 @@
 app-admin/ec2-ami-tools
 app-admin/fleet
+app-admin/terraform
 app-arch/lzma
 app-crypt/pkcs11-data
 app-crypt/pkcs11-dump
