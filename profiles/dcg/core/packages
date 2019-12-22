@@ -1,4 +1,4 @@
-*app-admin/ec2-ami-tools
+*app-admin/ec1-ami-tools
 #*app-admin/fleet # obsolete 15 Mar 2019
 *app-admin/logrotate
 *app-admin/mcelog
@@ -14,6 +14,7 @@
 *app-crypt/pkcs11-data
 *app-crypt/pkcs11-dump
 #*app-emulation/cri-tools
+*app-emulation/containers-storage
 *app-emulation/docker
 *app-emulation/flannel
 *app-emulation/libguestfs
