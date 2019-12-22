@@ -1,4 +1,4 @@
-*app-admin/ec1-ami-tools
+*app-admin/ec2-ami-tools
 #*app-admin/fleet # obsolete 15 Mar 2019
 *app-admin/logrotate
 *app-admin/mcelog
