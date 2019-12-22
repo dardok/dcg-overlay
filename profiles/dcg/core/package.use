@@ -46,6 +46,7 @@ net-libs/liboauth -nss
 net-libs/libproxy python spidermonkey
 net-libs/nghttp2 hpack-tools
 net-libs/phodav spice
+net-libs/zeromq drafts
 net-misc/curl http2
 net-misc/openvswitch -modules
 net-misc/ptpd ntp experimental
