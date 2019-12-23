@@ -32,6 +32,7 @@ RDEPEND="
     snmp? ( net-analyzer/net-snmp )
 	"
 DEPEND="${RDEPEND}
+	sys-devel/gcc:7.4.0
     dev-python/docutils
 	server? ( virtual/linux-sources )
 	client? ( virtual/linux-sources )"
@@ -99,7 +100,7 @@ src_configure() {
 	if ! use server && ! use client; then
 		myconf="${myconf} --disable-modules"
 	fi
-	econf \
+	CC=gcc-7.4.0 CXX=g++-7.4.0 econf \
 		${myconf} \
 		--disable-ldiskfs \
 		--with-linux="${KV_DIR}" \
