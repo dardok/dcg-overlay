@@ -168,3 +168,4 @@
 *sys-process/lsof
 *virtual/rust
 *x11-apps/xauth
+*x11-libs/gtk+ # required for slurm
