@@ -151,7 +151,7 @@
 *sys-cluster/ceph
 *sys-cluster/lustre
 *sys-cluster/openmpi
-*=sys-cluster/slurm-19.05.4.1::dcg
+*=sys-cluster/slurm-19.05.4.1 # force
 *sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
