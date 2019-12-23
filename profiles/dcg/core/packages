@@ -147,8 +147,6 @@
 *sys-block/nbd
 *sys-block/open-iscsi
 *sys-devel/gdb
-*sys-devel/gcc:7.4.0
-*sys-devel/gcc:8.3.0
 *sys-cluster/ipvsadm
 *sys-cluster/ceph
 *sys-cluster/lustre
