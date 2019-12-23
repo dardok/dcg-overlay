@@ -80,4 +80,5 @@ sys-libs/tdb python python_single_target_python2_7
 sys-libs/tevent python python_single_target_python2_7
 sys-libs/zlib static-libs
 sys-process/tini static
+x11-libs/cairo X # required for x11-libs/gtk+
 x11-libs/pixman static-libs
