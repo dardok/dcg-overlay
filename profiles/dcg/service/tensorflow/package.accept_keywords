@@ -1,5 +1,6 @@
 dev-libs/cudnn
 net-dns/c-ares
+=dev-python/wrapt-1.11*
 dev-python/astor
 net-libs/google-cloud-cpp
 dev-python/grpcio-tools
