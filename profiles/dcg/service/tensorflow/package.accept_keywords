@@ -14,3 +14,4 @@ dev-python/google-pasta
 =dev-python/numpy-1.16*
 dev-python/opt-einsum
 =sci-libs/keras-applications-1*
+=virtual/mpi-2.0-r5
