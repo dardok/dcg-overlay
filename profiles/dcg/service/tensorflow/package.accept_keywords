@@ -2,11 +2,11 @@ dev-libs/cudnn
 net-dns/c-ares
 =dev-python/wrapt-1.11*
 dev-python/astor
-net-libs/google-cloud-cpp
-dev-python/grpcio-tools
+=net-libs/google-cloud-cpp-0.10*
 dev-python/setuptools
-net-libs/grpc
-dev-python/grpcio
+=net-libs/grpc-1.22*
+=dev-python/grpcio-1.22*
+=dev-python/grpcio-tools-1.22*
 =sci-visualization/tensorboard-1.15*
 =sci-libs/tensorflow-estimator-1.15*
 =sci-libs/tensorflow-1.15*
