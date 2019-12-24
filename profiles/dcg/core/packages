@@ -149,6 +149,7 @@
 *sys-devel/gdb
 *sys-cluster/ipvsadm
 *sys-cluster/ceph
+*sys-cluster/kubectl
 *sys-cluster/lustre
 *sys-cluster/openmpi
 *=sys-cluster/slurm-19.05.4.1 # force
