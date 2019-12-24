@@ -6,8 +6,6 @@ OPENMPI_FABRICS="ofed"
 OPENMPI_OFED_FEATURES="connectx-xrc control-hdr-padding dynamic-sl failover rdmacm udcm"
 OPENMPI_RM="slurm"
 
-LLVM_TARGETS="AMDGPU NVPTX BPF WebAssembly"
-
 USE="-cups dbus gudev pam policykit session"
 USE="${USE} acl aio caps xattr inotify"
 USE="${USE} readline ncurses -slang"
