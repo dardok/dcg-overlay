@@ -1,0 +1,15 @@
+dev-libs/cudnn
+net-dns/c-ares
+dev-python/astor
+net-libs/google-cloud-cpp
+dev-python/grpcio-tools
+dev-python/setuptools
+net-libs/grpc
+dev-python/grpcio
+=sci-visualization/tensorboard-1.15*
+=sci-libs/tensorflow-estimator-1.15*
+=sci-libs/tensorflow-1.15*
+dev-python/google-pasta
+=dev-python/numpy-1.16*
+dev-python/opt-einsum
+=sci-libs/keras-applications-1*
