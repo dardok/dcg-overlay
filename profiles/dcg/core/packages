@@ -21,6 +21,7 @@
 *app-emulation/libguestfs
 *app-emulation/libvirt
 *app-emulation/libvirt-glib
+*app-emulation/lxd
 *app-emulation/qemu
 *app-emulation/qemu-guest-agent
 #*app-emulation/rkt
