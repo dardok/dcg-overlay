@@ -87,6 +87,7 @@
 *dev-util/cmake
 *dev-util/indent
 *dev-util/debugedit
+*dev-util/packer
 *dev-util/perf
 *dev-util/strace
 *dev-util/systemtap
