@@ -1,0 +1,5 @@
+=sys-cluster/kube-apiserver-1.16*
+=sys-cluster/kube-controller-manager-1.16*
+=sys-cluster/kube-scheduler-1.16*
+=sys-cluster/kube-proxy-1.16*
+=sys-cluster/kubelet-1.16*
