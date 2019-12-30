@@ -2,6 +2,7 @@ app-admin/ec2-ami-tools
 app-admin/fleet
 app-admin/terraform
 app-arch/lzma
+app-crypt/coolkey
 app-crypt/pkcs11-data
 app-crypt/pkcs11-dump
 #app-emulation/cri-tools
