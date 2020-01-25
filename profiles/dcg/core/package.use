@@ -62,7 +62,8 @@ sys-cluster/ceph cephfs
 sys-cluster/lustre -checksum lru-resize client -server
 sys-cluster/openmpi mpi-threads heterogeneous
 sys-cluster/slurm hdf5 html ipmi numa ofed
-sys-devel/clang python_single_target_python2_7
+<sys-devel/clang-9 python_single_target_python2_7
+>=sys-devel/clang-9 python_single_target_python3_6
 sys-devel/distcc avahi
 sys-devel/llvm python clang gold
 sys-fabric/ofed ibacm ibpd opensm mstflint perftest srp
