@@ -1,2 +1,4 @@
 >=dev-python/pyyaml-5 # 3.x is required by awscli
+
 >dev-libs/protobuf-3.8.0 # triggers tensorflow rebuild
+>dev-python/protobuf-python-3.8.0
