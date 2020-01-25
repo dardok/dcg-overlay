@@ -28,6 +28,7 @@ dev-python/autobahn
 dev-python/awscli
 dev-python/botocore
 dev-python/simplekml
+dev-python/s3transfer
 dev-util/packer
 =dev-util/perf-4.14*
 media-libs/vulkan-loader
