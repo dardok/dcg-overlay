@@ -72,6 +72,7 @@ sys-fabric/srptools
 sys-fs/bcache-tools
 sys-libs/libxcrypt
 sys-power/thermald
+sys-process/atop
 
 media-libs/gstreamer
 media-libs/gst-plugins-base
