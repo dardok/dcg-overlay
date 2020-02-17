@@ -2,3 +2,10 @@
 
 >dev-libs/protobuf-3.8.0 # triggers tensorflow rebuild
 >dev-python/protobuf-python-3.8.0
+
+>=net-fs/samba-4.11
+>=sys-libs/ldb-2
+>=dev-lang/ocaml-4.05
+
+>=sci-libs/proj-6
+>=sci-libs/libgeotiff-1.5
