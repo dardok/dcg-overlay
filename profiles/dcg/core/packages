@@ -28,6 +28,7 @@
 *app-metrics/node_exporter
 *app-misc/byobu
 *app-misc/jq
+*app-misc/yq
 *app-misc/screen
 *app-misc/tmate
 *app-misc/tmux
