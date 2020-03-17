@@ -19,6 +19,7 @@
 *app-emulation/docker
 *app-emulation/flannel
 *app-emulation/libguestfs
+*app-emulation/libpod
 *app-emulation/libvirt
 *app-emulation/libvirt-glib
 *app-emulation/lxd
