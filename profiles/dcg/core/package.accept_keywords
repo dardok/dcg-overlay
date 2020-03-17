@@ -18,7 +18,7 @@ app-misc/yq
 app-text/csvfix
 app-vim/rust-vim
 dev-cpp/websocketpp
-dev-db/etcd
+#dev-db/etcd
 #dev-go/glide
 dev-go/go-protobuf
 =dev-lang/go-1.13*
