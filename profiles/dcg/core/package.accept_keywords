@@ -7,7 +7,7 @@ app-crypt/pkcs11-data
 app-crypt/pkcs11-dump
 #app-emulation/cri-tools
 app-emulation/conmon
-=app-emulation/containers-storage-1.15.1
+#=app-emulation/containers-storage
 app-emulation/flannel
 app-emulation/libguestfs
 app-emulation/libguestfs-appliance
