@@ -42,7 +42,7 @@ net-analyzer/net-snmp pci python python_single_target_python2_7
 net-dns/dnsmasq script conntrack
 net-firewall/ipset -modules
 net-fs/nfs-utils nfsdcld
-net-fs/samba ads client cluster dmapi fam gnutls winbind python_single_target_python3_6
+net-fs/samba ads client cluster dmapi fam gnutls winbind python_single_target_python2_7
 net-libs/liboauth -nss
 net-libs/libproxy python spidermonkey
 net-libs/nghttp2 hpack-tools
