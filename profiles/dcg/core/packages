@@ -8,7 +8,7 @@
 *app-admin/terraform
 *app-admin/ulogd
 *app-arch/deb2targz
-*app-arch/star
+#*app-arch/star
 *app-arch/unrar
 *app-crypt/ccid
 *app-crypt/coolkey
@@ -139,7 +139,7 @@
 *sys-apps/nvme-cli
 *sys-apps/pcsc-lite
 *sys-apps/unscd
-*sys-auth/nss_afspag
+#*sys-auth/nss_afspag
 #*sys-auth/nss_ldap
 #*sys-auth/nss-mdns
 *sys-auth/pam-afs-session
@@ -154,15 +154,16 @@
 *sys-cluster/ceph
 *sys-cluster/kubectl
 *sys-cluster/lustre
-*sys-cluster/openmpi
-*=sys-cluster/slurm-19.05.4.1 # force
+#*sys-cluster/openmpi
+#*=sys-cluster/slurm-19.05.4.1 # force
+*sys-cluster/rdma-core
 *sys-devel/bmake
 *sys-devel/distcc
 *sys-devel/llvm
 *sys-fs/bcache-tools
 *sys-fs/multipath-tools
-*sys-fabric/libfabric
-*sys-fabric/ofed:4.17
+#*sys-fabric/libfabric
+#*sys-fabric/ofed:4.17
 *sys-kernel/linux-firmware
 *sys-libs/libblockdev
 *sys-power/acpid
