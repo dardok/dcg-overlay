@@ -36,6 +36,7 @@ dev-vcs/git tk
 media-libs/freetype auto-hinter
 media-plugins/gst-plugins-meta a52 aac cdda dts dvd flac mp3 mpeg -dv -dvb ffmpeg http -jack -lame -libass libvisual -mms -modplug -opus -oss taglib -vcd -wavpack
 media-video/ffmpeg encode gpl hardcoded-tables iconv mp3 network postproc threads xvid gcrypt openh264
+media-libs/mesa -libglvnd
 media-sound/pulseaudio realtime zeroconf libsamplerate
 net-analyzer/net-snmp pci python python_single_target_python2_7
 net-dns/dnsmasq script conntrack
@@ -72,13 +73,13 @@ sys-fs/cryptsetup -gcrypt
 sys-fs/lvm2 thin -device-mapper-only
 sys-fs/zfs -rootfs
 sys-libs/glibc nscd
-sys-libs/ldb python_single_target_python2_7
+sys-libs/ldb python_single_target_python3_6
 sys-libs/libblockdev python_single_target_python3_6 bcache dmraid
 sys-libs/libcap static-libs
 sys-libs/libseccomp static-libs
-sys-libs/talloc python_single_target_python2_7
-sys-libs/tdb python python_single_target_python2_7
-sys-libs/tevent python python_single_target_python2_7
+sys-libs/talloc python_single_target_python3_6
+sys-libs/tdb python python_single_target_python3_6
+sys-libs/tevent python python_single_target_python3_6
 sys-libs/zlib static-libs
 sys-process/tini static
 x11-libs/cairo X # required for x11-libs/gtk+
