@@ -83,3 +83,6 @@ sys-libs/zlib static-libs
 sys-process/tini static
 x11-libs/cairo X # required for x11-libs/gtk+
 x11-libs/pixman static-libs
+
+>=app-arch/bzip2-1.0.6-r11 static-libs
+>=app-arch/xz-utils-5.2.4-r2 static-libs

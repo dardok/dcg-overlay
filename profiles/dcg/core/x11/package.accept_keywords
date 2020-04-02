@@ -21,6 +21,7 @@ x11-misc/lightdm
 x11-misc/sunflower
 x11-misc/xscreensaver
 x11-terms/kitty
+x11-terms/kitty-terminfo
 x11-wm/awesome
 
 media-plugins/gst-plugins-x
