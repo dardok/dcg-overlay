@@ -1,4 +1,4 @@
-app-crypt/mit-krb5
+<app-crypt/mit-krb5-1.18
 dev-libs/elfutils
 sys-apps/hwloc
 sys-fs/btrfs-progs
