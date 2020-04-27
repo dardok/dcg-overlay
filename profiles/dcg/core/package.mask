@@ -9,3 +9,6 @@
 
 >=sci-libs/proj-6
 >=sci-libs/libgeotiff-1.5
+>=sci-libs/gdal-3
+
+>=dev-util/cmake-3.16
