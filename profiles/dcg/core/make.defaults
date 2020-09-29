@@ -16,7 +16,7 @@ USE="${USE} cxx fortran nptl gmp openmp libffi lua luajit vala"
 USE="${USE} pcre pcre16 expat xml"
 USE="${USE} bzip2 zlib lzma lz4 lzo minizip"
 
-USE="${USE} ssl tls openssl ssh sasl crypt cracklib sudo"
+USE="${USE} ssl tls openssl ssh sasl crypt sudo"
 USE="${USE} kerberos gss gssapi keyring snmp ldap curl"
 USE="${USE} smartcard pkcs11 lm_sensors"
 
