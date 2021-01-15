@@ -3,5 +3,5 @@ GRUB_PLATFORMS="-* efi-32 efi-64 pc qemu"
 USE="acpi efi -debug -doc -examples -suid"
 
 PYTHON_SINGLE_TARGET="-* python3_6"
-PYTHON_TARGETS="-* python2_7 python3_6"
+PYTHON_TARGETS="-* python2_7 python3_6 python3_7"
 RUBY_TARGETS="-* ruby23 ruby24 ruby25"
